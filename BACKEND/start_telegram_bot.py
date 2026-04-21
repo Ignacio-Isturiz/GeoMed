@@ -29,7 +29,7 @@ os.chdir(Path(__file__).resolve().parent)
 # Load token from .env into process env (overrides existing Process env)
 _load_token_from_envfile(Path(__file__).resolve().parent / '.env')
 
-from app.services.telegram_bot import run_polling
+from app.services.telegram_bot import start_bot_polling
 
 if __name__ == '__main__':
-    run_polling()
+    start_bot_polling()
