@@ -1,4 +1,4 @@
-# Dockerfile para el backend de MECIA
+# Dockerfile para el backend de GEOMED
 FROM python:3.11-slim
 
 # Establecer directorio de trabajo

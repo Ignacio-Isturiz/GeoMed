@@ -156,18 +156,18 @@ export default function DashboardLayout({
         {/* ══ SIDEBAR ══ */}
         <aside className="db-sidebar" aria-label="Navegación lateral">
 
-          <Link to="/" className="db-logo" aria-label="Ir al inicio de MECIA">
+          <Link to="/" className="db-logo" aria-label="Ir al inicio de GEOMED">
             <div className="db-logo-mark">
-              <img src="/mecialogoog.png" alt="MECIA" style={{width:'100%',height:'100%',objectFit:'contain',borderRadius:6}} />
+              <img src="/geomedlogoog.png" alt="GEOMED" style={{width:'100%',height:'100%',objectFit:'contain',borderRadius:6}} />
             </div>
-            <span className="db-logo-text">MECIA</span>
+            <span className="db-logo-text">GEOMED</span>
           </Link>
 
           <div className="db-sidebar-user" role="region" aria-label="Información de usuario">
             <div className="db-user-avatar" title={user?.full_name} aria-label={`Avatar de ${user?.full_name || 'usuario'}`}>{initials}</div>
             <div className="db-user-info">
               <div className="db-user-name">{user?.full_name}</div>
-              <div className="db-user-role">{user?.role}</div>
+              <div className="db-user-role">Usuario GEOMED</div>
             </div>
           </div>
 
@@ -202,7 +202,7 @@ export default function DashboardLayout({
         <div className="db-main">
           <header className="db-topbar" role="banner">
             <div className="db-breadcrumbs">
-              <span>MECIA</span>
+              <span>GEOMED</span>
               <span className="bc-sep">›</span>
               <span className="bc-active">{breadcrumb || pageTitle}</span>
             </div>

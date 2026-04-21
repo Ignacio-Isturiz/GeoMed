@@ -60,9 +60,9 @@ import CriminalidadDashboard from '../components/CriminalidadDashboard';
 </div>
 ```
 
-### Opción 2: Agregar al Dashboard de Emprendedor
+### Opción 2: Agregar al Dashboard principal
 
-En `src/pages/EmprendedorDashboard.jsx`:
+En `src/pages/CiudadanoDashboard.jsx`:
 
 ```jsx
 import CriminalidadDashboard from '../components/CriminalidadDashboard';
@@ -165,8 +165,7 @@ FRONTEND/
 │   ├── components/
 │   │   └── CriminalidadDashboard.jsx (NUEVO)
 │   └── pages/
-│       ├── CiudadanoDashboard.jsx    (existente)
-│       └── EmprendedorDashboard.jsx  (existente)
+│       └── CiudadanoDashboard.jsx    (existente)
 ```
 
 ## Validación

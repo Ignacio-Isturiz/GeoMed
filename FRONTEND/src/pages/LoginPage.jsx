@@ -7,10 +7,8 @@ import './AuthPages.css';
 export default function LoginPage() {
   const navigate = useNavigate();
 
-  const handleLoginSuccess = (result) => {
-    const role = result.user.role;
-    if (role === 'emprendedor') navigate('/emprendedor/dashboard');
-    else navigate('/ciudadano/dashboard');
+  const handleLoginSuccess = () => {
+    navigate('/dashboard');
   };
 
   return (
@@ -25,8 +23,8 @@ export default function LoginPage() {
           <div className="auth-orb auth-orb-4" />
 
           <Link to="/" className="auth-brand">
-            <img src="/mecialogoog.png" alt="MECIA" className="auth-brand-logo-img auth-logo-dark" />
-            <img src="/mecialogoblanco2.png" alt="MECIA" className="auth-brand-logo-img auth-logo-light" />
+            <img src="/geomedlogoog.png" alt="GEOMED" className="auth-brand-logo-img auth-logo-dark" />
+            <img src="/geomedlogoblanco2.png" alt="GEOMED" className="auth-brand-logo-img auth-logo-light" />
           </Link>
 
           <div className="auth-left-content">

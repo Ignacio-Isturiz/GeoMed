@@ -1,4 +1,4 @@
-# Backend MECIA
+# Backend GEOMED
 
 ## Bot de Telegram (Ciudadano)
 

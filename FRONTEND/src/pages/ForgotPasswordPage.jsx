@@ -13,7 +13,7 @@ export default function ForgotPasswordPage() {
 
       <div className="auth-reset-card">
         <Link to="/" className="auth-reset-brand">
-          <img src="/mecialogoog.png" alt="MECIA" className="auth-brand-logo-img" style={{height:36}} />
+          <img src="/geomedlogoog.png" alt="GEOMED" className="auth-brand-logo-img" style={{height:36}} />
         </Link>
         <div className="auth-reset-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none"

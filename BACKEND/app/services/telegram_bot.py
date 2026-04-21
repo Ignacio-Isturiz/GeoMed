@@ -41,7 +41,7 @@ async def _start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     if not update.message:
         return
     await update.message.reply_text(
-        "¡Hola! Soy MECIA — puedo ayudarte con información sobre seguridad en Medellín y recomendaciones locales. "
+        "¡Hola! Soy GEOMED — puedo ayudarte con información sobre seguridad en Medellín y recomendaciones locales. "
         "Dime a dónde piensas ir o qué te preocupa y te doy una respuesta cercana y práctica; si quieres, también puedo listar zonas más seguras o peligrosas."
     )
 

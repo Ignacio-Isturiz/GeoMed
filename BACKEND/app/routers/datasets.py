@@ -203,33 +203,6 @@ async def get_empresarial_top_comunas(
 
 
 @router.get(
-    "/emprendedor/overview",
-    status_code=status.HTTP_200_OK,
-    summary="Obtener overview unificado para dashboard de emprendedor"
-)
-async def get_emprendedor_overview(
-    year: int | None = Query(default=None, description="Año de filtro"),
-    limit: int = Query(default=5, ge=1, le=20, description="Cantidad de resultados")
-):
-    try:
-        service = DatasetsService()
-        data = service.get_emprendedor_overview(year=year, limit=limit)
-        return {"success": True, "data": data}
-    except FileNotFoundError as e:
-        logger.error(f"Dataset no encontrado: {e}")
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="Dataset empresarial no encontrado"
-        )
-    except Exception as e:
-        logger.error(f"Error inesperado: {e}")
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail="Error al obtener overview de emprendedor"
-        )
-
-
-@router.get(
     "/estratificacion-cobertura",
     status_code=status.HTTP_200_OK,
     summary="Obtener datos de estratificacion y cobertura"

@@ -6,23 +6,23 @@ export default function UseCases() {
       <div className="w">
         <div className="sh">
           <div className="eye">Casos de Uso</div>
-          <h2 className="d3" style={{marginTop:'12px'}}>¿Quién usa MECIA?</h2>
-          <p className="body-md" style={{marginTop:'14px'}}>Desde familias hasta entidades públicas, MECIA se adapta a cada necesidad.</p>
+          <h2 className="d3" style={{marginTop:'12px'}}>¿Quién usa GEOMED?</h2>
+          <p className="body-md" style={{marginTop:'14px'}}>Desde familias hasta entidades públicas, GEOMED se adapta a cada necesidad.</p>
         </div>
         <div className="casos-grid">
           {[
             {
               num: '01',
               title: 'Ciudadanos de Medellín',
-              desc: 'Consulta si tu barrio es seguro, el estado de tu factura EPM, cuánto tardará el Metro o si hay alerta de lluvia antes de salir.',
-              tags: ['Seguridad barrial', 'Factura EPM', 'Metro MDE'],
+              desc: 'Consulta si tu barrio es seguro, cuánto tardará el Metro, noticias relevantes o si hay alerta de lluvia antes de salir.',
+              tags: ['Seguridad barrial', 'Metro MDE', 'Alertas'],
               icon: <><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></>
             },
             {
               num: '02',
-              title: 'Emprendedores y PYMEs',
-              desc: 'Identifica zonas con mayor afluencia antes de abrir un local. Analiza el contexto de seguridad e indicadores económicos zonales.',
-              tags: ['Afluencia zonal', 'Riesgo operacional', 'Oportunidad'],
+              title: 'Comunidades y Líderes Barriales',
+              desc: 'Analiza alertas de seguridad, novedades de servicios y comportamiento por comuna para organizar acciones preventivas.',
+              tags: ['Prevención local', 'Alertas comunitarias', 'Priorización por comuna'],
               icon: <><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></>
             },
             {

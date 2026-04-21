@@ -30,7 +30,7 @@ class IUserRepository(ABC):
         pass
     
     @abstractmethod
-    async def create(self, email: str, full_name: str, hashed_password: str, role: str) -> User:
+    async def create(self, email: str, full_name: str, hashed_password: str) -> User:
         """Crea un nuevo usuario"""
         pass
     
@@ -84,7 +84,6 @@ class UserRepository(IUserRepository):
         email: str,
         full_name: str,
         hashed_password: str,
-        role: str
     ) -> User:
         """
         Crea un nuevo usuario.
@@ -93,7 +92,6 @@ class UserRepository(IUserRepository):
             email: Email único
             full_name: Nombre completo
             hashed_password: Contraseña hasheada
-            role: Rol del usuario (emprendedor/ciudadano)
             
         Returns:
             Usuario creado
@@ -112,7 +110,6 @@ class UserRepository(IUserRepository):
             email=email,
             full_name=full_name,
             hashed_password=hashed_password,
-            role=role
         )
         self.db.add(user)
         self.db.commit()

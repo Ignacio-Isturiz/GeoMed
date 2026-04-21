@@ -18,7 +18,7 @@ export default function Hero() {
           Medellín, <em>Inteligente.</em><br/>Tu Ciudad en Tiempo Real.
         </h1>
         <p className="hero-sub" id="hsub">
-          Seguridad, movilidad y servicios públicos en un solo dashboard. MECIA transforma datos abiertos en decisiones claras para cada ciudadano.
+          Seguridad, movilidad y servicios públicos en un solo dashboard. GEOMED transforma datos abiertos en decisiones claras para cada ciudadano.
         </p>
         <div className="hero-btns" id="hbtns">
           <Link to="/register" className="btn btn-g" id="hero-cta">Comenzar Gratis →</Link>
@@ -31,7 +31,7 @@ export default function Hero() {
             {/* ── Top bar ── */}
             <div className="mk-top">
               <div className="mk-breadcrumb">
-                <span className="mk-bc-main">MECIA</span>
+                <span className="mk-bc-main">GEOMED</span>
                 <span className="mk-bc-sep"> › </span>
                 <span className="mk-bc-chip">Ciudadano / Federico</span>
               </div>
@@ -48,8 +48,8 @@ export default function Hero() {
               {/* LEFT SIDEBAR */}
               <div className="mk-sidebar">
                 <div className="mk-sidebar-logo">
-                  <img src="/mecialogoog.png" alt="MECIA" style={{height:'16px',width:'auto'}} />
-                  <span>MECIA</span>
+                  <img src="/geomedlogoog.png" alt="GEOMED" style={{height:'16px',width:'auto'}} />
+                  <span>GEOMED</span>
                 </div>
                 <div className="mk-user-card">
                   <div className="mk-av mk-av-sm">SR</div>
@@ -63,14 +63,6 @@ export default function Hero() {
                   <div className="mk-nav-item mk-nav-item--active">
                     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                     Inicio
-                  </div>
-                  <div className="mk-nav-item">
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    Seguridad
-                  </div>
-                  <div className="mk-nav-item">
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                    Servicios EPM
                   </div>
                   <div className="mk-nav-item">
                     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -99,46 +91,11 @@ export default function Hero() {
 
                 <div className="mk-tabs-row">
                   <div className="mk-tab mk-tab--active"><span className="mk-tab-dot"></span>Seguridad</div>
-                  <div className="mk-tab">Servicios EPM</div>
                   <div className="mk-tab">Noticias</div>
                   <div className="mk-tab-cta">Consultar Guardián →</div>
                 </div>
 
-                <div className="mk-panels">
-                  <div className="mk-panel">
-                    <div className="mk-panel-top">
-                      <div>
-                        <div className="mk-panel-title">Guardián · Asistente de Seguridad</div>
-                        <div className="mk-panel-sub">Consulta sobre barrios, zonas y criminalidad en Medellín</div>
-                      </div>
-                      <div className="mk-ia-badge">IA</div>
-                    </div>
-                    <div className="mk-qs-label">PUEDES PREGUNTARLE SOBRE...</div>
-                    <div className="mk-qs">
-                      <div className="mk-q">¿Cuál es el barrio más seguro para vivir?</div>
-                      <div className="mk-q">Quiero ir a trotar por La Candelaria, ¿es seguro?</div>
-                      <div className="mk-q">Compara la seguridad entre Laureles y Buenos Aires</div>
-                    </div>
-                    <div className="mk-panel-cta-btn">Abrir Guardián →</div>
-                  </div>
-
-                  <div className="mk-panel">
-                    <div className="mk-panel-title">Explorar Medellín</div>
-                    <div className="mk-panel-sub">Zonas recomendadas para visitar</div>
-                    <div className="mk-zones-list">
-                      <div className="mk-zone"><div className="mk-zdot" style={{background:'#4ade80'}}></div><div><div className="mk-zname">El Poblado <span className="mk-ztag" style={{background:'rgba(74,222,128,.12)',color:'#4ade80'}}>TURÍSTICO</span></div><div className="mk-zdesc">Zona rosa, restaurantes y comercio seguro</div></div></div>
-                      <div className="mk-zone"><div className="mk-zdot" style={{background:'#60a5fa'}}></div><div><div className="mk-zname">Laureles <span className="mk-ztag" style={{background:'rgba(96,165,250,.12)',color:'#60a5fa'}}>FAMILIAR</span></div><div className="mk-zdesc">Parques, barrio residencial y gastronomía</div></div></div>
-                      <div className="mk-zone"><div className="mk-zdot" style={{background:'#818cf8'}}></div><div><div className="mk-zname">Envigado <span className="mk-ztag" style={{background:'rgba(129,140,248,.12)',color:'#818cf8'}}>RESIDENCIAL</span></div><div className="mk-zdesc">Tranquilo, fácil acceso al metro</div></div></div>
-                      <div className="mk-zone"><div className="mk-zdot" style={{background:'#fb923c'}}></div><div><div className="mk-zname">El Centro <span className="mk-ztag" style={{background:'rgba(251,146,60,.12)',color:'#fb923c'}}>CULTURAL</span></div><div className="mk-zdesc">Historia, museos, Parque Berrío y el Metro</div></div></div>
-                    </div>
-                  </div>
-                </div>
-
                 <div className="mk-bot-cards">
-                  <div className="mk-bot-card">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--g)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                    <div><div className="mk-bot-title">Servicios EPM</div><div className="mk-bot-desc">Análisis de facturas con IA. Recomendaciones de ahorro y predicción.</div><div className="mk-bot-link">Abrir módulo →</div></div>
-                  </div>
                   <div className="mk-bot-card">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--g)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                     <div><div className="mk-bot-title">Noticias</div><div className="mk-bot-desc">Noticias verificadas de Medellín filtradas por categoría en tiempo real.</div><div className="mk-bot-link">Abrir módulo →</div></div>
@@ -150,7 +107,7 @@ export default function Hero() {
               <div className="mk-right">
                 <div className="mk-rcard">
                   <div className="mk-rcard-title">Ciudad Inteligente</div>
-                  <div className="mk-rcard-body">MECIA integra <strong>datos reales</strong> de Medellín: seguridad, servicios públicos y noticias en tiempo real.</div>
+                  <div className="mk-rcard-body">GEOMED integra <strong>datos reales</strong> de Medellín: seguridad, servicios públicos y noticias en tiempo real.</div>
                   <div className="mk-rcard-badge">Medellín · Valle de Aburrá</div>
                   <div className="mk-connected">✓ Conectado</div>
                 </div>

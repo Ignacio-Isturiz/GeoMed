@@ -75,20 +75,6 @@ export function useKeyboardNavigation() {
         }, 300);
       }
 
-      if (event.key === "n" || event.key === "N") {
-        event.preventDefault();
-        if (window.toggleVoiceGuide) {
-          window.toggleVoiceGuide();
-          // Pequeño delay para que el estado se actualice
-          setTimeout(() => {
-            const isVoiceEnabled = localStorage.getItem("mecia_voice_guide_enabled") !== "false";
-            announce(
-              isVoiceEnabled ? "Guía de voz activada" : "Guía de voz desactivada",
-              true
-            );
-          }, 50);
-        }
-      }
     };
 
     window.addEventListener("keydown", handleKeyDown);

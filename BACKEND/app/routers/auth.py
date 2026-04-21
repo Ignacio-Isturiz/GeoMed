@@ -39,7 +39,6 @@ async def register(
     - **email**: Email válido único
     - **full_name**: Nombre completo (mínimo 2 caracteres)
     - **password**: Contraseña (mínimo 8 caracteres)
-    - **role**: "emprendedor" o "ciudadano"
     
     Devuelve tokens JWT para autenticación automática.
     """

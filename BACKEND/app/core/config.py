@@ -13,12 +13,12 @@ class Settings(BaseSettings):
     """
     
     # Configuración de la aplicación
-    APP_NAME: str = "MECIA Auth API"
+    APP_NAME: str = "GeoMed Auth API"
     DEBUG: bool = os.getenv("DEBUG", "False").lower() == "true"
     
     # Configuración de base de datos
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "postgresql://mecia_user:mecia_password@db:5432/mecia")
-    LOCAL_DATABASE_URL: str = os.getenv("LOCAL_DATABASE_URL", "sqlite:///./mecia.db")
+    DATABASE_URL: str = os.getenv("DATABASE_URL", "postgresql://geomed_user:geomed_password@db:5432/geomed")
+    LOCAL_DATABASE_URL: str = os.getenv("LOCAL_DATABASE_URL", "sqlite:///./geomed.db")
     DB_FALLBACK_TO_LOCAL: bool = os.getenv("DB_FALLBACK_TO_LOCAL", "False").lower() == "true"
     DB_CONNECT_TIMEOUT: int = int(os.getenv("DB_CONNECT_TIMEOUT", "8"))
     DB_PRECHECK_TIMEOUT: int = int(os.getenv("DB_PRECHECK_TIMEOUT", "8"))
@@ -38,7 +38,7 @@ class Settings(BaseSettings):
     SMTP_PORT: int = int(os.getenv("SMTP_PORT", "587"))
     SMTP_USER: str = os.getenv("SMTP_USER", "")
     SMTP_PASSWORD: str = os.getenv("SMTP_PASSWORD", "")
-    FROM_EMAIL: str = os.getenv("FROM_EMAIL", "noreply@mecia.com")
+    FROM_EMAIL: str = os.getenv("FROM_EMAIL", "noreply@geomed.com")
     
     # Configuración de CORS para frontend
     FRONTEND_URL: str = os.getenv("FRONTEND_URL", "http://localhost:5173")
