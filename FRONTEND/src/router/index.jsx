@@ -7,7 +7,6 @@ import {
   RegisterPage, 
   ForgotPasswordPage, 
   ResetPasswordPage, 
-  EmprendedorDashboard, 
   CiudadanoDashboard 
 } from './lazyComponents';
 
@@ -42,19 +41,9 @@ export const router = createBrowserRouter([
     element: <LazyRoute element={<ResetPasswordPage />} />
   },
 
-  // Rutas protegidas para emprendedor
+  // Ruta protegida de dashboard único
   {
-    path: '/emprendedor/dashboard',
-    element: (
-      <ProtectedRoute>
-        <LazyRoute element={<EmprendedorDashboard />} />
-      </ProtectedRoute>
-    )
-  },
-
-  // Rutas protegidas para ciudadano
-  {
-    path: '/ciudadano/dashboard',
+    path: '/dashboard',
     element: (
       <ProtectedRoute>
         <LazyRoute element={<CiudadanoDashboard />} />

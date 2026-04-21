@@ -27,7 +27,6 @@ import Hero from '@/components/landing/Hero';
 import { TrustedLogos, StatsStrip } from '@/components/landing/TrustedStats';
 import Features from '@/components/landing/Features';
 import FAQ from '@/components/landing/FAQ';
-import Roles from '@/components/landing/Roles';
 import Footer from '@/components/landing/Footer';
 
 export default function HomePage() {
@@ -38,12 +37,12 @@ export default function HomePage() {
     // Delay initialization slightly to let the browser prioritize LCP (hero text)
     const timeout = setTimeout(() => {
       const cleanup = initLandingPageAnimation(containerRef.current);
-      window._mecia_cleanup = cleanup;
+      window._geomed_cleanup = cleanup;
     }, 150); // Increased 150ms for even better LCP priority
 
     return () => {
       clearTimeout(timeout);
-      if (window._mecia_cleanup) window._mecia_cleanup();
+      if (window._geomed_cleanup) window._geomed_cleanup();
     };
   }, []);
 
@@ -58,13 +57,12 @@ export default function HomePage() {
       {/* ══ NAVBAR ══ */}
       <header id="nav">
         <Link className="logo" to="/">
-          <img src="/mecialogoog.png" alt="MECIA" style={{ height: '36px', width: 'auto' }} />
+          <img src="/geomedlogoog.png" alt="GEOMED" style={{ height: '36px', width: 'auto' }} />
         </Link>
         <nav className="nav-links">
           <a href="#" className="active">Inicio</a>
           <a href="#features">Características</a>
           <a href="#faq">Preguntas</a>
-          <a href="#roles">Explorar</a>
         </nav>
         <div className="nav-r">
           <button className="theme-btn" id="theme-btn">
@@ -79,13 +77,13 @@ export default function HomePage() {
             </svg>
           </button>
           <Link to="/login" className="btn btn-outline" style={{padding:'9px 20px',fontSize:'13px'}} viewTransition>Iniciar Sesión</Link>
-          <Link to="/register" className="btn btn-g" style={{padding:'9px 20px',fontSize:'13px'}} viewTransition>Explorar MECIA →</Link>
+          <Link to="/register" className="btn btn-g" style={{padding:'9px 20px',fontSize:'13px'}} viewTransition>Explorar GEOMED →</Link>
         </div>
       </header>
 
       {/* ══ TELEGRAM FLOATING BUTTON ══ */}
       <a
-        href="https://t.me/MECIA_bot"
+        href="https://t.me/GEOMED_bot"
         target="_blank"
         rel="noopener noreferrer"
         className="tg-fab"
@@ -102,7 +100,6 @@ export default function HomePage() {
       <TrustedLogos />
       <StatsStrip />
       <Features />
-      <Roles />
       <FAQ />
       <Footer />
     </div>

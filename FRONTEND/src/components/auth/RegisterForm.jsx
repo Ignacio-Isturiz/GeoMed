@@ -7,8 +7,7 @@ export default function RegisterForm({ onSuccess }) {
     email: '',
     full_name: '',
     password: '',
-    passwordConfirm: '',
-    role: 'ciudadano'
+    passwordConfirm: ''
   });
   const [showPwd, setShowPwd] = useState(false);
   const [showPwdConfirm, setShowPwdConfirm] = useState(false);
@@ -48,8 +47,7 @@ export default function RegisterForm({ onSuccess }) {
       const result = await authService.register({
         email,
         full_name,
-        password,
-        role: formData.role
+        password
       });
       onSuccess?.(result);
     } catch (err) {
@@ -107,36 +105,6 @@ export default function RegisterForm({ onSuccess }) {
             minLength="2"
             autoComplete="name"
           />
-        </div>
-
-        <div style={{ marginBottom: '1rem' }}>
-          <label>¿Cuál es tu perfil?</label>
-          <div className="auth-role-toggle">
-            <button
-              type="button"
-              className={`auth-role-btn${formData.role === 'ciudadano' ? ' active' : ''}`}
-              onClick={() => setFormData(p => ({ ...p, role: 'ciudadano' }))}
-            >
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                <circle cx="12" cy="7" r="4"/>
-              </svg>
-              Ciudadano
-            </button>
-            <button
-              type="button"
-              className={`auth-role-btn${formData.role === 'emprendedor' ? ' active' : ''}`}
-              onClick={() => setFormData(p => ({ ...p, role: 'emprendedor' }))}
-            >
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
-                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
-                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
-                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
-              </svg>
-              Emprendedor
-            </button>
-          </div>
         </div>
 
         <div style={{ marginBottom: '1rem' }}>

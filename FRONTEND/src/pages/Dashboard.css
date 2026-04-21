@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════
-   DASHBOARD.CSS — MECIA
-   Estructura exacta de G.Take · Colores MECIA
+   DASHBOARD.CSS — GEOMED
+   Estructura exacta de G.Take · Colores GEOMED
    #0F172A  #00C896  #239677  #1F2937  #FFFFFF
    Reemplaza Dashboard.css + DashboardComponents.css
 ═══════════════════════════════════════════════════════ */
@@ -73,7 +73,7 @@ textarea:focus-visible,
   --tag-bd:   rgba(255,255,255,0.14);
   --pr-track: rgba(255,255,255,0.10);
   --toggle:   rgba(255,255,255,0.10);
-  /* Accent — verde MECIA reemplaza azul G.Take */
+  /* Accent — verde GEOMED reemplaza azul G.Take */
   --accent:       #00C896;
   --accent-2:     #239677;
   --accent-glow:  rgba(0,200,150,0.32);
@@ -419,7 +419,7 @@ body:has(.db-shell) { display:flex; align-items:center; justify-content:center; 
   box-shadow:0 16px 48px rgba(0,0,20,.25), inset 0 1px 0 rgba(255,255,255,.18);
 }
 
-/* Accent card (verde MECIA) — equivalente a .card-ds de G.Take */
+/* Accent card (verde GEOMED) — equivalente a .card-ds de G.Take */
 .db-card-accent {
   background:var(--ds-bg);
   backdrop-filter:blur(24px) saturate(1.6);
@@ -1049,7 +1049,7 @@ body:has(.db-shell) { display:flex; align-items:center; justify-content:center; 
 .db-comunas-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; }
 .db-market-legend { display:grid; grid-template-columns:1fr 1fr; gap:4px 14px; }
 
-/* Emprendedor right column: participacion + contexto */
+/* Shared right column: participacion + contexto */
 .db-sector-share-card { padding:14px 16px; }
 .db-sector-share-bar {
   height:8px;
@@ -1153,7 +1153,7 @@ body:has(.db-shell) { display:flex; align-items:center; justify-content:center; 
 }
 
 /* ════════════════════════════════
-   SECTOR TILES (emprendedor inicio)
+  SECTOR TILES
 ════════════════════════════════ */
 .db-sector-grid {
   display:grid; grid-template-columns:repeat(5,1fr); gap:10px;

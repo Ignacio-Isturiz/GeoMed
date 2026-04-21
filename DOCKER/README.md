@@ -1,6 +1,6 @@
 # 📁 Directorio DOCKER
 
-Este directorio contiene toda la configuración Docker para el proyecto MECIA.
+Este directorio contiene toda la configuración Docker para el proyecto GEOMED.
 
 ## 📂 Estructura
 

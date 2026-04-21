@@ -1,4 +1,4 @@
-# MECIA - Guía de Instalación y Ejecución Rápida
+# GEOMED - Guía de Instalación y Ejecución Rápida
 
 ## 🎯 Resumen
 
@@ -14,7 +14,7 @@ Se ha implementado:
 ### Paso 1: Backend
 
 ```bash
-cd /home/ignacio/MECIA/BACKEND
+cd /home/ignacio/GEOMED/BACKEND
 
 # Crear entorno virtual
 python3 -m venv venv
@@ -36,7 +36,7 @@ uvicorn app.main:app --reload
 ### Paso 2: Frontend
 
 ```bash
-cd /home/ignacio/MECIA/FRONTEND
+cd /home/ignacio/GEOMED/FRONTEND
 
 # Instalar dependencias base
 npm install
@@ -63,8 +63,7 @@ npm run dev
 {
   "email": "test@example.com",
   "full_name": "Juan Pérez",
-  "password": "password123",
-  "role": "ciudadano"
+  "password": "password123"
 }
 ```
 
@@ -73,8 +72,7 @@ npm run dev
 2. Usa las credenciales del registro anterior
 
 ### Ver Dashboard
-- Si eres ciudadano: http://localhost:5173/ciudadano/dashboard
-- Si eres emprendedor: http://localhost:5173/emprendedor/dashboard
+- Dashboard único: http://localhost:5173/dashboard
 
 ## 📡 Llamadas a API (con curl)
 
@@ -85,8 +83,7 @@ curl -X POST http://localhost:8000/api/auth/register \
   -d '{
     "email":"test@example.com",
     "full_name":"Juan Pérez",
-    "password":"password123",
-    "role":"ciudadano"
+    "password":"password123"
   }'
 
 # Login
@@ -106,7 +103,7 @@ curl -X GET http://localhost:8000/api/auth/me \
 
 ### Backend (.env)
 ```env
-DATABASE_URL=sqlite:///./mecia.db
+DATABASE_URL=sqlite:///./geomed.db
 SECRET_KEY=tu-clave-secreta-super-segura
 DEBUG=True
 FRONTEND_URL=http://localhost:5173
@@ -150,7 +147,7 @@ El frontend tiene toda la estructura, ahora necesita:
 2. **Validaciones mejoradas** en los formularios
 3. **Loading states** y feedback visual
 4. **Diseño de dashboards**
-5. **Componentes específicos** para emprendedor/ciudadano
+5. **Componentes específicos** para dashboard ciudadano
 
 ## 🐛 Troubleshooting
 
@@ -186,8 +183,8 @@ kill -9 <PID>
 
 ## ✉️ Resumen de Propósito
 
-**EMPRENDEDOR:**
-- Chatbot para clasificar tipo de negocio
+**CIUDADANO:**
+- Chatbot para consultas de seguridad y contexto urbano
 - Mapa con mejores zonas para emprender
 - Análisis de seguridad y servicios
 - Información de competencia

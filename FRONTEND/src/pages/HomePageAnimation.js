@@ -56,7 +56,7 @@ export function initLandingPageAnimation(container) {
       blending: THREE.AdditiveBlending, depthWrite: false
     });
     
-    console.log('[MECIA] Creating street geometries');
+    console.log('[GEOMED] Creating street geometries');
     const streetPts = [];
     const avePts = [];
 
@@ -84,7 +84,7 @@ export function initLandingPageAnimation(container) {
       target.push(new THREE.Vector3(-w / 2, 0, z), new THREE.Vector3(w / 2, 0, z));
     }
 
-    console.log('[MECIA] Compiling grid geometries');
+    console.log('[GEOMED] Compiling grid geometries');
     if (streetPts.length) {
       const g = new THREE.BufferGeometry().setFromPoints(streetPts);
       scene.add(new THREE.LineSegments(g, streetMat));
@@ -117,11 +117,11 @@ export function initLandingPageAnimation(container) {
     });
     scene.add(new THREE.Points(centerGeo, centerMat));
 
-    console.log('[MECIA] Initializing pulses');
+    console.log('[GEOMED] Initializing pulses');
     const PULSES = 8;
     const pulsePositions = new Float32Array(PULSES * 3);
     for (let i = 0; i < PULSES; i++) {
-      console.log('[MECIA] pulse loop iteration:', i);
+      console.log('[GEOMED] pulse loop iteration:', i);
       const isNS = Math.random() > 0.5;
       if (isNS) {
         const x = (Math.floor(Math.random() * nsCount) / (nsCount - 1) - 0.5) * valleyW;
@@ -135,7 +135,7 @@ export function initLandingPageAnimation(container) {
         pulseData.push({ type: 'ew', z, xMin: -w / 2, xMax: w / 2, x: Math.random() * w - w / 2, speed: (Math.random() * .04 + .015) * (Math.random() > .5 ? 1 : -1) });
       }
     }
-    console.log('[MECIA] pulse loop complete');
+    console.log('[GEOMED] pulse loop complete');
 
     const pulseGeo = new THREE.BufferGeometry();
     pulseGeo.setAttribute('position', new THREE.BufferAttribute(pulsePositions, 3));
@@ -147,7 +147,7 @@ export function initLandingPageAnimation(container) {
     const pulseSystem = new THREE.Points(pulseGeo, pulseMat);
     // Save refs for the loop to avoid expensive lookups every frame
     const refs = { pulseSystem, pulseGeo, pulseMat, centerMat };
-    console.log('[MECIA] refs created, scheduling animate');
+    console.log('[GEOMED] refs created, scheduling animate');
     if (canvas) setTimeout(() => animate(refs), 100);
   }
 
@@ -163,7 +163,7 @@ export function initLandingPageAnimation(container) {
       cam.aspect = window.innerWidth / window.innerHeight;
       cam.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
-      console.log('[MECIA] Resize handled');
+      console.log('[GEOMED] Resize handled');
     }
   };
   window.addEventListener('resize', onResize);
@@ -173,7 +173,7 @@ export function initLandingPageAnimation(container) {
     animationFrameId = requestAnimationFrame(() => animate(refs));
     // Simplified guard: only check if core Three.js objects exist
     if (!renderer || !scene || !cam) return;
-    if (t === 0) console.log('[MECIA] animate loop started');
+    if (t === 0) console.log('[GEOMED] animate loop started');
     t += 0.008;
 
     mouse.x += (mouse.tx - mouse.x) * 0.04;
@@ -305,13 +305,12 @@ export function initLandingPageAnimation(container) {
     ['.feat-card', '.feat-grid', .08],
     ['.caso', '.casos-grid', .1],
     ['.svc', '.svc-grid', .07],
-    ['.role-card', '.roles-grid', .12],
     ['.ins', '.ins-grid', .1],
     ['.blog-h', '.blog-main', .12],
     ['.faq-it', '.faq-list', .07],
     ['.footer-card', '.footer-shell', 0],
   ];
-  console.log('[MECIA] Animating revTargets');
+  console.log('[GEOMED] Animating revTargets');
   revTargets.forEach(([sel, trig, stag]) => {
     const elements = container.querySelectorAll(sel);
     const triggerEl = container.querySelector(trig);

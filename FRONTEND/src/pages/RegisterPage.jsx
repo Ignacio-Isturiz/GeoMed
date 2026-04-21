@@ -7,10 +7,8 @@ import './AuthPages.css';
 export default function RegisterPage() {
   const navigate = useNavigate();
 
-  const handleRegisterSuccess = (result) => {
-    const role = result.user.role;
-    if (role === 'emprendedor') navigate('/emprendedor/dashboard');
-    else navigate('/ciudadano/dashboard');
+  const handleRegisterSuccess = () => {
+    navigate('/dashboard');
   };
 
   return (
@@ -25,8 +23,8 @@ export default function RegisterPage() {
           <div className="auth-orb auth-orb-4" />
 
           <Link to="/" className="auth-brand">
-            <img src="/mecialogoog.png" alt="MECIA" className="auth-brand-logo-img auth-logo-dark" />
-            <img src="/mecialogoblanco2.png" alt="MECIA" className="auth-brand-logo-img auth-logo-light" />
+            <img src="/geomedlogoog.png" alt="GEOMED" className="auth-brand-logo-img auth-logo-dark" />
+            <img src="/geomedlogoblanco2.png" alt="GEOMED" className="auth-brand-logo-img auth-logo-light" />
           </Link>
 
           <div className="auth-left-content">
@@ -67,7 +65,7 @@ export default function RegisterPage() {
         <div className="auth-form-wrap">
           <div className="auth-form-header">
             <h1 className="auth-form-title">Crear Cuenta</h1>
-            <p className="auth-form-subtitle">Ingresa tus datos para registrarte en MECIA.</p>
+            <p className="auth-form-subtitle">Ingresa tus datos para registrarte en GEOMED.</p>
           </div>
 
           <RegisterForm onSuccess={handleRegisterSuccess} />

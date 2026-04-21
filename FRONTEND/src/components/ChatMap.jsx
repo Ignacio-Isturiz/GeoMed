@@ -1,6 +1,6 @@
 // src/components/ChatMap.jsx
-// Mapa de marcadores en burbujas del chatbot emprendedor
-// Restyled para coherencia con el dashboard MECIA
+// Mapa de marcadores en burbujas del chatbot
+// Restyled para coherencia con el dashboard GEOMED
 
 import { useEffect, useRef } from 'react';
 

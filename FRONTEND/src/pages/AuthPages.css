@@ -1,5 +1,5 @@
 /* ══════════════════════════════
-   AUTH PAGES — MECIA
+   AUTH PAGES — GEOMED
    Split layout · smooth animations
 ══════════════════════════════ */
 
@@ -369,35 +369,6 @@
 [data-theme="light"] .auth-eye-btn { color: rgba(15,23,42,.35); }
 [data-theme="light"] .auth-eye-btn:hover { color: #009970; }
 
-/* ── ROLE TOGGLE BUTTONS ── */
-.auth-role-toggle {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 8px; margin-bottom: 13px;
-}
-.auth-role-btn {
-  display: flex; align-items: center; justify-content: center; gap: 7px;
-  padding: 10px 12px;
-  background: #1F2937; border: 1px solid rgba(255,255,255,.07);
-  border-radius: 11px; color: rgba(255,255,255,.45);
-  font-size: 13px; font-weight: 600; font-family: 'Inter', sans-serif;
-  cursor: pointer; transition: all .2s;
-}
-.auth-role-btn:hover {
-  background: rgba(0,200,150,.06); border-color: rgba(0,200,150,.18); color: rgba(255,255,255,.75);
-}
-.auth-role-btn.active {
-  background: rgba(0,200,150,.12); border-color: rgba(0,200,150,.38); color: #00C896;
-}
-[data-theme="light"] .auth-role-btn {
-  background: #fff; border-color: rgba(15,23,42,.10); color: rgba(15,23,42,.45);
-}
-[data-theme="light"] .auth-role-btn:hover {
-  background: rgba(0,153,112,.06); border-color: rgba(0,153,112,.22); color: rgba(15,23,42,.75);
-}
-[data-theme="light"] .auth-role-btn.active {
-  background: rgba(0,153,112,.10); border-color: rgba(0,153,112,.40); color: #009970;
-}
-
 /* ── SMALL / HINT TEXT ── */
 .auth-form-wrap small,
 .auth-reset-card small {
@@ -600,7 +571,7 @@
 
 /* ═══════════════════════════════════════
    LIGHT MODE — overrides para auth pages
-   MECIA palette: #0F172A #00C896 #239677 #FFFFFF #1F2937
+   GEOMED palette: #0F172A #00C896 #239677 #FFFFFF #1F2937
 ═══════════════════════════════════════ */
 [data-theme="light"] .auth-layout {
   background: #FFFFFF;
@@ -667,13 +638,6 @@
 [data-theme="light"] .auth-role-btn {
   background: #FFFFFF; border-color: rgba(15,23,42,.14); color: rgba(15,23,42,.55);
 }
-[data-theme="light"] .auth-role-btn:hover {
-  background: rgba(35,150,119,.06); border-color: rgba(35,150,119,.28); color: #0F172A;
-}
-[data-theme="light"] .auth-role-btn.active {
-  background: rgba(35,150,119,.10); border-color: #239677; color: #239677;
-}
-
 [data-theme="light"] .auth-theme-btn {
   border-color: rgba(15,23,42,.12);
   background: rgba(15,23,42,.04);

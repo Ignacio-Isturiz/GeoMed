@@ -23,7 +23,7 @@ export default function ResetPasswordPage() {
               <circle cx="25" cy="10" r="3" fill="white"/>
             </svg>
           </div>
-          <span className="auth-brand-name">MECIA</span>
+          <span className="auth-brand-name">GEOMED</span>
         </Link>
         <div className="auth-reset-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
@@ -34,7 +34,7 @@ export default function ResetPasswordPage() {
         </div>
         <div className="auth-form-header" style={{textAlign:'center'}}>
           <h1 className="auth-form-title">Nueva Contraseña</h1>
-          <p className="auth-form-subtitle">Crea una contraseña segura para tu cuenta MECIA.</p>
+          <p className="auth-form-subtitle">Crea una contraseña segura para tu cuenta GEOMED.</p>
         </div>
         <ResetPasswordForm onSuccess={handleResetSuccess} />
         <p className="auth-switch" style={{marginTop:'16px'}}>

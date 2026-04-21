@@ -278,12 +278,12 @@ class LLMMockService:
         }
 
     def simulate_entrepreneur_chat(self, prompt: str) -> Dict[str, Any]:
-        """Simula respuesta del chatbot de emprendedor."""
+        """Simula respuesta del chatbot."""
         time.sleep(0.8)
         
         # Respuesta base
         texto = (
-            "Como asesor MECIA, he analizado tu idea. "
+            "Como asesor GEOMED, he analizado tu idea. "
             f"Emprender con '{prompt[:50]}...' en Medellín es una gran iniciativa. "
             "Basado en los datos de la zona, veo una oportunidad interesante pero con competencia moderada."
         )

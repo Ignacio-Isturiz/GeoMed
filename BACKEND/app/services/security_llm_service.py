@@ -42,7 +42,7 @@ def _rows_to_text(rows: List[Dict]) -> str:
     )
 
 
-_SYSTEM_PROMPT_TEMPLATE = """Eres MECIA Seguridad, un asistente ciudadano para Medellín, Colombia.
+_SYSTEM_PROMPT_TEMPLATE = """Eres GEOMED Seguridad, un asistente ciudadano para Medellín, Colombia.
 Tu rol es ayudar a los ciudadanos a tomar decisiones informadas sobre seguridad en la ciudad,
 basándote en datos reales de criminalidad.
 

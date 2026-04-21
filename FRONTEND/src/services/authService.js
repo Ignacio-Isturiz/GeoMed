@@ -6,7 +6,7 @@ import { API_CONFIG, API_ENDPOINTS, getAuthHeaders } from '@/config/api';
 class AuthService {
   /**
    * Registra un nuevo usuario
-   * @param {Object} userData - {email, full_name, password, role}
+    * @param {Object} userData - {email, full_name, password}
    * @returns {Promise} - {access_token, refresh_token, user}
    */
   async register(userData) {
