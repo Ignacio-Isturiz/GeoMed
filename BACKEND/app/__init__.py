@@ -1,0 +1,3 @@
+"""
+Aplicación MECIA - Módulo principal
+"""

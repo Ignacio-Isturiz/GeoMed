@@ -1,0 +1,2941 @@
+id,comuna,barrio,tipo_negocio,categoria,cantidad_actual,fecha_recoleccion
+1,1,Popular,cafeterias,alimentos,22,2026-03
+2,1,Popular,restaurantes,alimentos,43,2026-03
+3,1,Popular,tiendas,retail,59,2026-03
+4,1,Popular,supermercados,retail,104,2026-03
+5,1,Popular,charcuterias,alimentos,17,2026-03
+6,1,Popular,licoreras,retail,20,2026-03
+7,1,Popular,veterinarias,servicios,44,2026-03
+8,1,Popular,peluquerias,servicios,64,2026-03
+9,1,Popular,droguerias,servicios,32,2026-03
+10,1,Popular,cacharrerias,retail,108,2026-03
+11,1,Popular,panaderias,alimentos,55,2026-03
+12,1,Popular,ferreterias,retail,20,2026-03
+13,1,Santo Domingo Savio,cafeterias,alimentos,62,2026-03
+14,1,Santo Domingo Savio,restaurantes,alimentos,66,2026-03
+15,1,Santo Domingo Savio,tiendas,retail,9,2026-03
+16,1,Santo Domingo Savio,supermercados,retail,15,2026-03
+17,1,Santo Domingo Savio,charcuterias,alimentos,39,2026-03
+18,1,Santo Domingo Savio,licoreras,retail,115,2026-03
+19,1,Santo Domingo Savio,veterinarias,servicios,51,2026-03
+20,1,Santo Domingo Savio,peluquerias,servicios,92,2026-03
+21,1,Santo Domingo Savio,droguerias,servicios,44,2026-03
+22,1,Santo Domingo Savio,cacharrerias,retail,68,2026-03
+23,1,Santo Domingo Savio,panaderias,alimentos,90,2026-03
+24,1,Santo Domingo Savio,ferreterias,retail,62,2026-03
+25,1,Granizal,cafeterias,alimentos,75,2026-03
+26,1,Granizal,restaurantes,alimentos,82,2026-03
+27,1,Granizal,tiendas,retail,102,2026-03
+28,1,Granizal,supermercados,retail,98,2026-03
+29,1,Granizal,charcuterias,alimentos,61,2026-03
+30,1,Granizal,licoreras,retail,111,2026-03
+31,1,Granizal,veterinarias,servicios,44,2026-03
+32,1,Granizal,peluquerias,servicios,92,2026-03
+33,1,Granizal,droguerias,servicios,53,2026-03
+34,1,Granizal,cacharrerias,retail,98,2026-03
+35,1,Granizal,panaderias,alimentos,22,2026-03
+36,1,Granizal,ferreterias,retail,24,2026-03
+37,2,Santa Cruz,cafeterias,alimentos,59,2026-03
+38,2,Santa Cruz,restaurantes,alimentos,43,2026-03
+39,2,Santa Cruz,tiendas,retail,113,2026-03
+40,2,Santa Cruz,supermercados,retail,50,2026-03
+41,2,Santa Cruz,charcuterias,alimentos,87,2026-03
+42,2,Santa Cruz,licoreras,retail,110,2026-03
+43,2,Santa Cruz,veterinarias,servicios,15,2026-03
+44,2,Santa Cruz,peluquerias,servicios,102,2026-03
+45,2,Santa Cruz,droguerias,servicios,87,2026-03
+46,2,Santa Cruz,cacharrerias,retail,112,2026-03
+47,2,Santa Cruz,panaderias,alimentos,70,2026-03
+48,2,Santa Cruz,ferreterias,retail,58,2026-03
+49,2,La Rosa,cafeterias,alimentos,85,2026-03
+50,2,La Rosa,restaurantes,alimentos,82,2026-03
+51,2,La Rosa,tiendas,retail,85,2026-03
+52,2,La Rosa,supermercados,retail,75,2026-03
+53,2,La Rosa,charcuterias,alimentos,18,2026-03
+54,2,La Rosa,licoreras,retail,105,2026-03
+55,2,La Rosa,veterinarias,servicios,90,2026-03
+56,2,La Rosa,peluquerias,servicios,30,2026-03
+57,2,La Rosa,droguerias,servicios,31,2026-03
+58,2,La Rosa,cacharrerias,retail,57,2026-03
+59,2,La Rosa,panaderias,alimentos,106,2026-03
+60,2,La Rosa,ferreterias,retail,101,2026-03
+61,2,Andalucia,cafeterias,alimentos,45,2026-03
+62,2,Andalucia,restaurantes,alimentos,53,2026-03
+63,2,Andalucia,tiendas,retail,19,2026-03
+64,2,Andalucia,supermercados,retail,119,2026-03
+65,2,Andalucia,charcuterias,alimentos,19,2026-03
+66,2,Andalucia,licoreras,retail,6,2026-03
+67,2,Andalucia,veterinarias,servicios,100,2026-03
+68,2,Andalucia,peluquerias,servicios,81,2026-03
+69,2,Andalucia,droguerias,servicios,26,2026-03
+70,2,Andalucia,cacharrerias,retail,112,2026-03
+71,2,Andalucia,panaderias,alimentos,35,2026-03
+72,2,Andalucia,ferreterias,retail,51,2026-03
+73,3,Manrique Central,cafeterias,alimentos,87,2026-03
+74,3,Manrique Central,restaurantes,alimentos,109,2026-03
+75,3,Manrique Central,tiendas,retail,33,2026-03
+76,3,Manrique Central,supermercados,retail,112,2026-03
+77,3,Manrique Central,charcuterias,alimentos,89,2026-03
+78,3,Manrique Central,licoreras,retail,17,2026-03
+79,3,Manrique Central,veterinarias,servicios,54,2026-03
+80,3,Manrique Central,peluquerias,servicios,75,2026-03
+81,3,Manrique Central,droguerias,servicios,24,2026-03
+82,3,Manrique Central,cacharrerias,retail,107,2026-03
+83,3,Manrique Central,panaderias,alimentos,92,2026-03
+84,3,Manrique Central,ferreterias,retail,60,2026-03
+85,3,Santa Ines,cafeterias,alimentos,19,2026-03
+86,3,Santa Ines,restaurantes,alimentos,108,2026-03
+87,3,Santa Ines,tiendas,retail,9,2026-03
+88,3,Santa Ines,supermercados,retail,64,2026-03
+89,3,Santa Ines,charcuterias,alimentos,10,2026-03
+90,3,Santa Ines,licoreras,retail,93,2026-03
+91,3,Santa Ines,veterinarias,servicios,51,2026-03
+92,3,Santa Ines,peluquerias,servicios,97,2026-03
+93,3,Santa Ines,droguerias,servicios,23,2026-03
+94,3,Santa Ines,cacharrerias,retail,27,2026-03
+95,3,Santa Ines,panaderias,alimentos,78,2026-03
+96,3,Santa Ines,ferreterias,retail,67,2026-03
+97,3,El Raizal,cafeterias,alimentos,79,2026-03
+98,3,El Raizal,restaurantes,alimentos,9,2026-03
+99,3,El Raizal,tiendas,retail,25,2026-03
+100,3,El Raizal,supermercados,retail,14,2026-03
+101,3,El Raizal,charcuterias,alimentos,16,2026-03
+102,3,El Raizal,licoreras,retail,36,2026-03
+103,3,El Raizal,veterinarias,servicios,79,2026-03
+104,3,El Raizal,peluquerias,servicios,61,2026-03
+105,3,El Raizal,droguerias,servicios,110,2026-03
+106,3,El Raizal,cacharrerias,retail,113,2026-03
+107,3,El Raizal,panaderias,alimentos,117,2026-03
+108,3,El Raizal,ferreterias,retail,57,2026-03
+109,3,Zamora,cafeterias,alimentos,89,2026-03
+110,3,Zamora,restaurantes,alimentos,29,2026-03
+111,3,Zamora,tiendas,retail,81,2026-03
+112,3,Zamora,supermercados,retail,40,2026-03
+113,3,Zamora,charcuterias,alimentos,48,2026-03
+114,3,Zamora,licoreras,retail,80,2026-03
+115,3,Zamora,veterinarias,servicios,94,2026-03
+116,3,Zamora,peluquerias,servicios,7,2026-03
+117,3,Zamora,droguerias,servicios,5,2026-03
+118,3,Zamora,cacharrerias,retail,105,2026-03
+119,3,Zamora,panaderias,alimentos,111,2026-03
+120,3,Zamora,ferreterias,retail,107,2026-03
+121,4,Aranjuez,cafeterias,alimentos,57,2026-03
+122,4,Aranjuez,restaurantes,alimentos,97,2026-03
+123,4,Aranjuez,tiendas,retail,37,2026-03
+124,4,Aranjuez,supermercados,retail,114,2026-03
+125,4,Aranjuez,charcuterias,alimentos,21,2026-03
+126,4,Aranjuez,licoreras,retail,29,2026-03
+127,4,Aranjuez,veterinarias,servicios,22,2026-03
+128,4,Aranjuez,peluquerias,servicios,73,2026-03
+129,4,Aranjuez,droguerias,servicios,39,2026-03
+130,4,Aranjuez,cacharrerias,retail,119,2026-03
+131,4,Aranjuez,panaderias,alimentos,86,2026-03
+132,4,Aranjuez,ferreterias,retail,70,2026-03
+133,4,Berlin,cafeterias,alimentos,33,2026-03
+134,4,Berlin,restaurantes,alimentos,72,2026-03
+135,4,Berlin,tiendas,retail,19,2026-03
+136,4,Berlin,supermercados,retail,51,2026-03
+137,4,Berlin,charcuterias,alimentos,58,2026-03
+138,4,Berlin,licoreras,retail,107,2026-03
+139,4,Berlin,veterinarias,servicios,29,2026-03
+140,4,Berlin,peluquerias,servicios,101,2026-03
+141,4,Berlin,droguerias,servicios,25,2026-03
+142,4,Berlin,cacharrerias,retail,78,2026-03
+143,4,Berlin,panaderias,alimentos,63,2026-03
+144,4,Berlin,ferreterias,retail,75,2026-03
+145,4,Moravia,cafeterias,alimentos,49,2026-03
+146,4,Moravia,restaurantes,alimentos,102,2026-03
+147,4,Moravia,tiendas,retail,72,2026-03
+148,4,Moravia,supermercados,retail,17,2026-03
+149,4,Moravia,charcuterias,alimentos,119,2026-03
+150,4,Moravia,licoreras,retail,43,2026-03
+151,4,Moravia,veterinarias,servicios,78,2026-03
+152,4,Moravia,peluquerias,servicios,106,2026-03
+153,4,Moravia,droguerias,servicios,63,2026-03
+154,4,Moravia,cacharrerias,retail,99,2026-03
+155,4,Moravia,panaderias,alimentos,49,2026-03
+156,4,Moravia,ferreterias,retail,90,2026-03
+157,5,Castilla,cafeterias,alimentos,96,2026-03
+158,5,Castilla,restaurantes,alimentos,73,2026-03
+159,5,Castilla,tiendas,retail,24,2026-03
+160,5,Castilla,supermercados,retail,19,2026-03
+161,5,Castilla,charcuterias,alimentos,82,2026-03
+162,5,Castilla,licoreras,retail,25,2026-03
+163,5,Castilla,veterinarias,servicios,97,2026-03
+164,5,Castilla,peluquerias,servicios,74,2026-03
+165,5,Castilla,droguerias,servicios,31,2026-03
+166,5,Castilla,cacharrerias,retail,114,2026-03
+167,5,Castilla,panaderias,alimentos,19,2026-03
+168,5,Castilla,ferreterias,retail,25,2026-03
+169,5,Toscana,cafeterias,alimentos,32,2026-03
+170,5,Toscana,restaurantes,alimentos,78,2026-03
+171,5,Toscana,tiendas,retail,61,2026-03
+172,5,Toscana,supermercados,retail,33,2026-03
+173,5,Toscana,charcuterias,alimentos,117,2026-03
+174,5,Toscana,licoreras,retail,24,2026-03
+175,5,Toscana,veterinarias,servicios,14,2026-03
+176,5,Toscana,peluquerias,servicios,112,2026-03
+177,5,Toscana,droguerias,servicios,12,2026-03
+178,5,Toscana,cacharrerias,retail,59,2026-03
+179,5,Toscana,panaderias,alimentos,99,2026-03
+180,5,Toscana,ferreterias,retail,36,2026-03
+181,5,Boyaca,cafeterias,alimentos,29,2026-03
+182,5,Boyaca,restaurantes,alimentos,79,2026-03
+183,5,Boyaca,tiendas,retail,77,2026-03
+184,5,Boyaca,supermercados,retail,89,2026-03
+185,5,Boyaca,charcuterias,alimentos,75,2026-03
+186,5,Boyaca,licoreras,retail,21,2026-03
+187,5,Boyaca,veterinarias,servicios,23,2026-03
+188,5,Boyaca,peluquerias,servicios,50,2026-03
+189,5,Boyaca,droguerias,servicios,87,2026-03
+190,5,Boyaca,cacharrerias,retail,70,2026-03
+191,5,Boyaca,panaderias,alimentos,45,2026-03
+192,5,Boyaca,ferreterias,retail,23,2026-03
+193,6,Doce de Octubre,cafeterias,alimentos,16,2026-03
+194,6,Doce de Octubre,restaurantes,alimentos,31,2026-03
+195,6,Doce de Octubre,tiendas,retail,84,2026-03
+196,6,Doce de Octubre,supermercados,retail,107,2026-03
+197,6,Doce de Octubre,charcuterias,alimentos,111,2026-03
+198,6,Doce de Octubre,licoreras,retail,22,2026-03
+199,6,Doce de Octubre,veterinarias,servicios,60,2026-03
+200,6,Doce de Octubre,peluquerias,servicios,33,2026-03
+201,6,Doce de Octubre,droguerias,servicios,43,2026-03
+202,6,Doce de Octubre,cacharrerias,retail,30,2026-03
+203,6,Doce de Octubre,panaderias,alimentos,14,2026-03
+204,6,Doce de Octubre,ferreterias,retail,59,2026-03
+205,6,Pedregal,cafeterias,alimentos,15,2026-03
+206,6,Pedregal,restaurantes,alimentos,15,2026-03
+207,6,Pedregal,tiendas,retail,15,2026-03
+208,6,Pedregal,supermercados,retail,40,2026-03
+209,6,Pedregal,charcuterias,alimentos,92,2026-03
+210,6,Pedregal,licoreras,retail,49,2026-03
+211,6,Pedregal,veterinarias,servicios,118,2026-03
+212,6,Pedregal,peluquerias,servicios,49,2026-03
+213,6,Pedregal,droguerias,servicios,88,2026-03
+214,6,Pedregal,cacharrerias,retail,61,2026-03
+215,6,Pedregal,panaderias,alimentos,15,2026-03
+216,6,Pedregal,ferreterias,retail,113,2026-03
+217,6,Santander,cafeterias,alimentos,58,2026-03
+218,6,Santander,restaurantes,alimentos,96,2026-03
+219,6,Santander,tiendas,retail,66,2026-03
+220,6,Santander,supermercados,retail,119,2026-03
+221,6,Santander,charcuterias,alimentos,56,2026-03
+222,6,Santander,licoreras,retail,87,2026-03
+223,6,Santander,veterinarias,servicios,97,2026-03
+224,6,Santander,peluquerias,servicios,104,2026-03
+225,6,Santander,droguerias,servicios,67,2026-03
+226,6,Santander,cacharrerias,retail,101,2026-03
+227,6,Santander,panaderias,alimentos,60,2026-03
+228,6,Santander,ferreterias,retail,103,2026-03
+229,7,Robledo,cafeterias,alimentos,52,2026-03
+230,7,Robledo,restaurantes,alimentos,98,2026-03
+231,7,Robledo,tiendas,retail,113,2026-03
+232,7,Robledo,supermercados,retail,45,2026-03
+233,7,Robledo,charcuterias,alimentos,10,2026-03
+234,7,Robledo,licoreras,retail,96,2026-03
+235,7,Robledo,veterinarias,servicios,100,2026-03
+236,7,Robledo,peluquerias,servicios,117,2026-03
+237,7,Robledo,droguerias,servicios,40,2026-03
+238,7,Robledo,cacharrerias,retail,114,2026-03
+239,7,Robledo,panaderias,alimentos,31,2026-03
+240,7,Robledo,ferreterias,retail,9,2026-03
+241,7,Villa Flora,cafeterias,alimentos,91,2026-03
+242,7,Villa Flora,restaurantes,alimentos,94,2026-03
+243,7,Villa Flora,tiendas,retail,45,2026-03
+244,7,Villa Flora,supermercados,retail,22,2026-03
+245,7,Villa Flora,charcuterias,alimentos,112,2026-03
+246,7,Villa Flora,licoreras,retail,61,2026-03
+247,7,Villa Flora,veterinarias,servicios,17,2026-03
+248,7,Villa Flora,peluquerias,servicios,51,2026-03
+249,7,Villa Flora,droguerias,servicios,31,2026-03
+250,7,Villa Flora,cacharrerias,retail,116,2026-03
+251,7,Villa Flora,panaderias,alimentos,67,2026-03
+252,7,Villa Flora,ferreterias,retail,82,2026-03
+253,7,Altamira,cafeterias,alimentos,62,2026-03
+254,7,Altamira,restaurantes,alimentos,38,2026-03
+255,7,Altamira,tiendas,retail,41,2026-03
+256,7,Altamira,supermercados,retail,14,2026-03
+257,7,Altamira,charcuterias,alimentos,38,2026-03
+258,7,Altamira,licoreras,retail,79,2026-03
+259,7,Altamira,veterinarias,servicios,107,2026-03
+260,7,Altamira,peluquerias,servicios,41,2026-03
+261,7,Altamira,droguerias,servicios,51,2026-03
+262,7,Altamira,cacharrerias,retail,44,2026-03
+263,7,Altamira,panaderias,alimentos,95,2026-03
+264,7,Altamira,ferreterias,retail,33,2026-03
+265,8,Villa Hermosa,cafeterias,alimentos,104,2026-03
+266,8,Villa Hermosa,restaurantes,alimentos,71,2026-03
+267,8,Villa Hermosa,tiendas,retail,76,2026-03
+268,8,Villa Hermosa,supermercados,retail,45,2026-03
+269,8,Villa Hermosa,charcuterias,alimentos,89,2026-03
+270,8,Villa Hermosa,licoreras,retail,114,2026-03
+271,8,Villa Hermosa,veterinarias,servicios,40,2026-03
+272,8,Villa Hermosa,peluquerias,servicios,60,2026-03
+273,8,Villa Hermosa,droguerias,servicios,92,2026-03
+274,8,Villa Hermosa,cacharrerias,retail,79,2026-03
+275,8,Villa Hermosa,panaderias,alimentos,57,2026-03
+276,8,Villa Hermosa,ferreterias,retail,9,2026-03
+277,8,La Mansión,cafeterias,alimentos,91,2026-03
+278,8,La Mansión,restaurantes,alimentos,107,2026-03
+279,8,La Mansión,tiendas,retail,66,2026-03
+280,8,La Mansión,supermercados,retail,104,2026-03
+281,8,La Mansión,charcuterias,alimentos,110,2026-03
+282,8,La Mansión,licoreras,retail,80,2026-03
+283,8,La Mansión,veterinarias,servicios,110,2026-03
+284,8,La Mansión,peluquerias,servicios,68,2026-03
+285,8,La Mansión,droguerias,servicios,54,2026-03
+286,8,La Mansión,cacharrerias,retail,103,2026-03
+287,8,La Mansión,panaderias,alimentos,14,2026-03
+288,8,La Mansión,ferreterias,retail,52,2026-03
+289,8,San Miguel,cafeterias,alimentos,48,2026-03
+290,8,San Miguel,restaurantes,alimentos,83,2026-03
+291,8,San Miguel,tiendas,retail,48,2026-03
+292,8,San Miguel,supermercados,retail,69,2026-03
+293,8,San Miguel,charcuterias,alimentos,63,2026-03
+294,8,San Miguel,licoreras,retail,84,2026-03
+295,8,San Miguel,veterinarias,servicios,70,2026-03
+296,8,San Miguel,peluquerias,servicios,66,2026-03
+297,8,San Miguel,droguerias,servicios,72,2026-03
+298,8,San Miguel,cacharrerias,retail,112,2026-03
+299,8,San Miguel,panaderias,alimentos,39,2026-03
+300,8,San Miguel,ferreterias,retail,15,2026-03
+301,9,Buenos Aires,cafeterias,alimentos,66,2026-03
+302,9,Buenos Aires,restaurantes,alimentos,38,2026-03
+303,9,Buenos Aires,tiendas,retail,74,2026-03
+304,9,Buenos Aires,supermercados,retail,107,2026-03
+305,9,Buenos Aires,charcuterias,alimentos,83,2026-03
+306,9,Buenos Aires,licoreras,retail,5,2026-03
+307,9,Buenos Aires,veterinarias,servicios,37,2026-03
+308,9,Buenos Aires,peluquerias,servicios,96,2026-03
+309,9,Buenos Aires,droguerias,servicios,5,2026-03
+310,9,Buenos Aires,cacharrerias,retail,23,2026-03
+311,9,Buenos Aires,panaderias,alimentos,48,2026-03
+312,9,Buenos Aires,ferreterias,retail,86,2026-03
+313,9,Miraflores,cafeterias,alimentos,66,2026-03
+314,9,Miraflores,restaurantes,alimentos,78,2026-03
+315,9,Miraflores,tiendas,retail,10,2026-03
+316,9,Miraflores,supermercados,retail,24,2026-03
+317,9,Miraflores,charcuterias,alimentos,27,2026-03
+318,9,Miraflores,licoreras,retail,24,2026-03
+319,9,Miraflores,veterinarias,servicios,108,2026-03
+320,9,Miraflores,peluquerias,servicios,86,2026-03
+321,9,Miraflores,droguerias,servicios,30,2026-03
+322,9,Miraflores,cacharrerias,retail,29,2026-03
+323,9,Miraflores,panaderias,alimentos,110,2026-03
+324,9,Miraflores,ferreterias,retail,69,2026-03
+325,9,Cataluña,cafeterias,alimentos,17,2026-03
+326,9,Cataluña,restaurantes,alimentos,50,2026-03
+327,9,Cataluña,tiendas,retail,29,2026-03
+328,9,Cataluña,supermercados,retail,35,2026-03
+329,9,Cataluña,charcuterias,alimentos,17,2026-03
+330,9,Cataluña,licoreras,retail,75,2026-03
+331,9,Cataluña,veterinarias,servicios,93,2026-03
+332,9,Cataluña,peluquerias,servicios,92,2026-03
+333,9,Cataluña,droguerias,servicios,119,2026-03
+334,9,Cataluña,cacharrerias,retail,119,2026-03
+335,9,Cataluña,panaderias,alimentos,106,2026-03
+336,9,Cataluña,ferreterias,retail,118,2026-03
+337,10,La Candelaria,cafeterias,alimentos,64,2026-03
+338,10,La Candelaria,restaurantes,alimentos,45,2026-03
+339,10,La Candelaria,tiendas,retail,11,2026-03
+340,10,La Candelaria,supermercados,retail,115,2026-03
+341,10,La Candelaria,charcuterias,alimentos,17,2026-03
+342,10,La Candelaria,licoreras,retail,115,2026-03
+343,10,La Candelaria,veterinarias,servicios,117,2026-03
+344,10,La Candelaria,peluquerias,servicios,26,2026-03
+345,10,La Candelaria,droguerias,servicios,46,2026-03
+346,10,La Candelaria,cacharrerias,retail,57,2026-03
+347,10,La Candelaria,panaderias,alimentos,15,2026-03
+348,10,La Candelaria,ferreterias,retail,85,2026-03
+349,10,Boston,cafeterias,alimentos,84,2026-03
+350,10,Boston,restaurantes,alimentos,41,2026-03
+351,10,Boston,tiendas,retail,96,2026-03
+352,10,Boston,supermercados,retail,62,2026-03
+353,10,Boston,charcuterias,alimentos,93,2026-03
+354,10,Boston,licoreras,retail,108,2026-03
+355,10,Boston,veterinarias,servicios,38,2026-03
+356,10,Boston,peluquerias,servicios,83,2026-03
+357,10,Boston,droguerias,servicios,79,2026-03
+358,10,Boston,cacharrerias,retail,79,2026-03
+359,10,Boston,panaderias,alimentos,30,2026-03
+360,10,Boston,ferreterias,retail,23,2026-03
+361,10,Prado,cafeterias,alimentos,25,2026-03
+362,10,Prado,restaurantes,alimentos,20,2026-03
+363,10,Prado,tiendas,retail,116,2026-03
+364,10,Prado,supermercados,retail,77,2026-03
+365,10,Prado,charcuterias,alimentos,24,2026-03
+366,10,Prado,licoreras,retail,76,2026-03
+367,10,Prado,veterinarias,servicios,94,2026-03
+368,10,Prado,peluquerias,servicios,106,2026-03
+369,10,Prado,droguerias,servicios,46,2026-03
+370,10,Prado,cacharrerias,retail,16,2026-03
+371,10,Prado,panaderias,alimentos,59,2026-03
+372,10,Prado,ferreterias,retail,16,2026-03
+373,11,Laureles,cafeterias,alimentos,56,2026-03
+374,11,Laureles,restaurantes,alimentos,77,2026-03
+375,11,Laureles,tiendas,retail,42,2026-03
+376,11,Laureles,supermercados,retail,107,2026-03
+377,11,Laureles,charcuterias,alimentos,59,2026-03
+378,11,Laureles,licoreras,retail,110,2026-03
+379,11,Laureles,veterinarias,servicios,76,2026-03
+380,11,Laureles,peluquerias,servicios,70,2026-03
+381,11,Laureles,droguerias,servicios,75,2026-03
+382,11,Laureles,cacharrerias,retail,97,2026-03
+383,11,Laureles,panaderias,alimentos,45,2026-03
+384,11,Laureles,ferreterias,retail,102,2026-03
+385,11,Estadio,cafeterias,alimentos,89,2026-03
+386,11,Estadio,restaurantes,alimentos,49,2026-03
+387,11,Estadio,tiendas,retail,13,2026-03
+388,11,Estadio,supermercados,retail,82,2026-03
+389,11,Estadio,charcuterias,alimentos,55,2026-03
+390,11,Estadio,licoreras,retail,79,2026-03
+391,11,Estadio,veterinarias,servicios,96,2026-03
+392,11,Estadio,peluquerias,servicios,43,2026-03
+393,11,Estadio,droguerias,servicios,28,2026-03
+394,11,Estadio,cacharrerias,retail,57,2026-03
+395,11,Estadio,panaderias,alimentos,88,2026-03
+396,11,Estadio,ferreterias,retail,20,2026-03
+397,11,Conquistadores,cafeterias,alimentos,33,2026-03
+398,11,Conquistadores,restaurantes,alimentos,39,2026-03
+399,11,Conquistadores,tiendas,retail,42,2026-03
+400,11,Conquistadores,supermercados,retail,65,2026-03
+401,11,Conquistadores,charcuterias,alimentos,101,2026-03
+402,11,Conquistadores,licoreras,retail,26,2026-03
+403,11,Conquistadores,veterinarias,servicios,95,2026-03
+404,11,Conquistadores,peluquerias,servicios,33,2026-03
+405,11,Conquistadores,droguerias,servicios,28,2026-03
+406,11,Conquistadores,cacharrerias,retail,64,2026-03
+407,11,Conquistadores,panaderias,alimentos,34,2026-03
+408,11,Conquistadores,ferreterias,retail,11,2026-03
+409,12,La America,cafeterias,alimentos,82,2026-03
+410,12,La America,restaurantes,alimentos,57,2026-03
+411,12,La America,tiendas,retail,86,2026-03
+412,12,La America,supermercados,retail,84,2026-03
+413,12,La America,charcuterias,alimentos,54,2026-03
+414,12,La America,licoreras,retail,16,2026-03
+415,12,La America,veterinarias,servicios,77,2026-03
+416,12,La America,peluquerias,servicios,100,2026-03
+417,12,La America,droguerias,servicios,98,2026-03
+418,12,La America,cacharrerias,retail,83,2026-03
+419,12,La America,panaderias,alimentos,31,2026-03
+420,12,La America,ferreterias,retail,80,2026-03
+421,12,Ferrini,cafeterias,alimentos,42,2026-03
+422,12,Ferrini,restaurantes,alimentos,120,2026-03
+423,12,Ferrini,tiendas,retail,120,2026-03
+424,12,Ferrini,supermercados,retail,73,2026-03
+425,12,Ferrini,charcuterias,alimentos,98,2026-03
+426,12,Ferrini,licoreras,retail,58,2026-03
+427,12,Ferrini,veterinarias,servicios,83,2026-03
+428,12,Ferrini,peluquerias,servicios,13,2026-03
+429,12,Ferrini,droguerias,servicios,48,2026-03
+430,12,Ferrini,cacharrerias,retail,36,2026-03
+431,12,Ferrini,panaderias,alimentos,119,2026-03
+432,12,Ferrini,ferreterias,retail,68,2026-03
+433,12,Calasanz,cafeterias,alimentos,111,2026-03
+434,12,Calasanz,restaurantes,alimentos,32,2026-03
+435,12,Calasanz,tiendas,retail,105,2026-03
+436,12,Calasanz,supermercados,retail,86,2026-03
+437,12,Calasanz,charcuterias,alimentos,38,2026-03
+438,12,Calasanz,licoreras,retail,67,2026-03
+439,12,Calasanz,veterinarias,servicios,29,2026-03
+440,12,Calasanz,peluquerias,servicios,102,2026-03
+441,12,Calasanz,droguerias,servicios,5,2026-03
+442,12,Calasanz,cacharrerias,retail,38,2026-03
+443,12,Calasanz,panaderias,alimentos,111,2026-03
+444,12,Calasanz,ferreterias,retail,88,2026-03
+445,13,San Javier,cafeterias,alimentos,56,2026-03
+446,13,San Javier,restaurantes,alimentos,35,2026-03
+447,13,San Javier,tiendas,retail,87,2026-03
+448,13,San Javier,supermercados,retail,34,2026-03
+449,13,San Javier,charcuterias,alimentos,9,2026-03
+450,13,San Javier,licoreras,retail,26,2026-03
+451,13,San Javier,veterinarias,servicios,91,2026-03
+452,13,San Javier,peluquerias,servicios,56,2026-03
+453,13,San Javier,droguerias,servicios,55,2026-03
+454,13,San Javier,cacharrerias,retail,10,2026-03
+455,13,San Javier,panaderias,alimentos,5,2026-03
+456,13,San Javier,ferreterias,retail,59,2026-03
+457,13,El Salado,cafeterias,alimentos,115,2026-03
+458,13,El Salado,restaurantes,alimentos,57,2026-03
+459,13,El Salado,tiendas,retail,10,2026-03
+460,13,El Salado,supermercados,retail,92,2026-03
+461,13,El Salado,charcuterias,alimentos,45,2026-03
+462,13,El Salado,licoreras,retail,15,2026-03
+463,13,El Salado,veterinarias,servicios,24,2026-03
+464,13,El Salado,peluquerias,servicios,85,2026-03
+465,13,El Salado,droguerias,servicios,103,2026-03
+466,13,El Salado,cacharrerias,retail,79,2026-03
+467,13,El Salado,panaderias,alimentos,80,2026-03
+468,13,El Salado,ferreterias,retail,52,2026-03
+469,13,20 de Julio,cafeterias,alimentos,84,2026-03
+470,13,20 de Julio,restaurantes,alimentos,34,2026-03
+471,13,20 de Julio,tiendas,retail,58,2026-03
+472,13,20 de Julio,supermercados,retail,29,2026-03
+473,13,20 de Julio,charcuterias,alimentos,24,2026-03
+474,13,20 de Julio,licoreras,retail,83,2026-03
+475,13,20 de Julio,veterinarias,servicios,52,2026-03
+476,13,20 de Julio,peluquerias,servicios,11,2026-03
+477,13,20 de Julio,droguerias,servicios,118,2026-03
+478,13,20 de Julio,cacharrerias,retail,120,2026-03
+479,13,20 de Julio,panaderias,alimentos,112,2026-03
+480,13,20 de Julio,ferreterias,retail,105,2026-03
+481,14,El Poblado,cafeterias,alimentos,106,2026-03
+482,14,El Poblado,restaurantes,alimentos,72,2026-03
+483,14,El Poblado,tiendas,retail,16,2026-03
+484,14,El Poblado,supermercados,retail,91,2026-03
+485,14,El Poblado,charcuterias,alimentos,28,2026-03
+486,14,El Poblado,licoreras,retail,45,2026-03
+487,14,El Poblado,veterinarias,servicios,53,2026-03
+488,14,El Poblado,peluquerias,servicios,79,2026-03
+489,14,El Poblado,droguerias,servicios,66,2026-03
+490,14,El Poblado,cacharrerias,retail,109,2026-03
+491,14,El Poblado,panaderias,alimentos,104,2026-03
+492,14,El Poblado,ferreterias,retail,10,2026-03
+493,14,Provenza,cafeterias,alimentos,86,2026-03
+494,14,Provenza,restaurantes,alimentos,47,2026-03
+495,14,Provenza,tiendas,retail,24,2026-03
+496,14,Provenza,supermercados,retail,107,2026-03
+497,14,Provenza,charcuterias,alimentos,97,2026-03
+498,14,Provenza,licoreras,retail,81,2026-03
+499,14,Provenza,veterinarias,servicios,38,2026-03
+500,14,Provenza,peluquerias,servicios,101,2026-03
+501,14,Provenza,droguerias,servicios,62,2026-03
+502,14,Provenza,cacharrerias,retail,61,2026-03
+503,14,Provenza,panaderias,alimentos,69,2026-03
+504,14,Provenza,ferreterias,retail,89,2026-03
+505,14,Manila,cafeterias,alimentos,109,2026-03
+506,14,Manila,restaurantes,alimentos,45,2026-03
+507,14,Manila,tiendas,retail,38,2026-03
+508,14,Manila,supermercados,retail,56,2026-03
+509,14,Manila,charcuterias,alimentos,50,2026-03
+510,14,Manila,licoreras,retail,92,2026-03
+511,14,Manila,veterinarias,servicios,18,2026-03
+512,14,Manila,peluquerias,servicios,63,2026-03
+513,14,Manila,droguerias,servicios,114,2026-03
+514,14,Manila,cacharrerias,retail,90,2026-03
+515,14,Manila,panaderias,alimentos,20,2026-03
+516,14,Manila,ferreterias,retail,105,2026-03
+517,15,Guayabal,cafeterias,alimentos,57,2026-03
+518,15,Guayabal,restaurantes,alimentos,101,2026-03
+519,15,Guayabal,tiendas,retail,8,2026-03
+520,15,Guayabal,supermercados,retail,100,2026-03
+521,15,Guayabal,charcuterias,alimentos,102,2026-03
+522,15,Guayabal,licoreras,retail,8,2026-03
+523,15,Guayabal,veterinarias,servicios,107,2026-03
+524,15,Guayabal,peluquerias,servicios,98,2026-03
+525,15,Guayabal,droguerias,servicios,6,2026-03
+526,15,Guayabal,cacharrerias,retail,117,2026-03
+527,15,Guayabal,panaderias,alimentos,56,2026-03
+528,15,Guayabal,ferreterias,retail,82,2026-03
+529,15,Trinidad,cafeterias,alimentos,105,2026-03
+530,15,Trinidad,restaurantes,alimentos,98,2026-03
+531,15,Trinidad,tiendas,retail,109,2026-03
+532,15,Trinidad,supermercados,retail,17,2026-03
+533,15,Trinidad,charcuterias,alimentos,52,2026-03
+534,15,Trinidad,licoreras,retail,18,2026-03
+535,15,Trinidad,veterinarias,servicios,113,2026-03
+536,15,Trinidad,peluquerias,servicios,110,2026-03
+537,15,Trinidad,droguerias,servicios,68,2026-03
+538,15,Trinidad,cacharrerias,retail,101,2026-03
+539,15,Trinidad,panaderias,alimentos,29,2026-03
+540,15,Trinidad,ferreterias,retail,91,2026-03
+541,15,Cristo Rey,cafeterias,alimentos,93,2026-03
+542,15,Cristo Rey,restaurantes,alimentos,47,2026-03
+543,15,Cristo Rey,tiendas,retail,22,2026-03
+544,15,Cristo Rey,supermercados,retail,89,2026-03
+545,15,Cristo Rey,charcuterias,alimentos,51,2026-03
+546,15,Cristo Rey,licoreras,retail,50,2026-03
+547,15,Cristo Rey,veterinarias,servicios,36,2026-03
+548,15,Cristo Rey,peluquerias,servicios,48,2026-03
+549,15,Cristo Rey,droguerias,servicios,68,2026-03
+550,15,Cristo Rey,cacharrerias,retail,69,2026-03
+551,15,Cristo Rey,panaderias,alimentos,77,2026-03
+552,15,Cristo Rey,ferreterias,retail,84,2026-03
+553,16,Belen,cafeterias,alimentos,55,2026-03
+554,16,Belen,restaurantes,alimentos,60,2026-03
+555,16,Belen,tiendas,retail,25,2026-03
+556,16,Belen,supermercados,retail,19,2026-03
+557,16,Belen,charcuterias,alimentos,110,2026-03
+558,16,Belen,licoreras,retail,6,2026-03
+559,16,Belen,veterinarias,servicios,69,2026-03
+560,16,Belen,peluquerias,servicios,32,2026-03
+561,16,Belen,droguerias,servicios,36,2026-03
+562,16,Belen,cacharrerias,retail,105,2026-03
+563,16,Belen,panaderias,alimentos,78,2026-03
+564,16,Belen,ferreterias,retail,40,2026-03
+565,16,Belen Rincon,cafeterias,alimentos,59,2026-03
+566,16,Belen Rincon,restaurantes,alimentos,55,2026-03
+567,16,Belen Rincon,tiendas,retail,19,2026-03
+568,16,Belen Rincon,supermercados,retail,89,2026-03
+569,16,Belen Rincon,charcuterias,alimentos,9,2026-03
+570,16,Belen Rincon,licoreras,retail,102,2026-03
+571,16,Belen Rincon,veterinarias,servicios,35,2026-03
+572,16,Belen Rincon,peluquerias,servicios,91,2026-03
+573,16,Belen Rincon,droguerias,servicios,114,2026-03
+574,16,Belen Rincon,cacharrerias,retail,27,2026-03
+575,16,Belen Rincon,panaderias,alimentos,33,2026-03
+576,16,Belen Rincon,ferreterias,retail,77,2026-03
+577,16,Loma de los Bernal,cafeterias,alimentos,96,2026-03
+578,16,Loma de los Bernal,restaurantes,alimentos,28,2026-03
+579,16,Loma de los Bernal,tiendas,retail,78,2026-03
+580,16,Loma de los Bernal,supermercados,retail,61,2026-03
+581,16,Loma de los Bernal,charcuterias,alimentos,41,2026-03
+582,16,Loma de los Bernal,licoreras,retail,91,2026-03
+583,16,Loma de los Bernal,veterinarias,servicios,78,2026-03
+584,16,Loma de los Bernal,peluquerias,servicios,105,2026-03
+585,16,Loma de los Bernal,droguerias,servicios,89,2026-03
+586,16,Loma de los Bernal,cacharrerias,retail,23,2026-03
+587,16,Loma de los Bernal,panaderias,alimentos,7,2026-03
+588,16,Loma de los Bernal,ferreterias,retail,6,2026-03
+589,1,Popular,cafeterias,alimentos,87,2026-03
+590,1,Popular,restaurantes,alimentos,77,2026-03
+591,1,Popular,tiendas,retail,87,2026-03
+592,1,Popular,supermercados,retail,45,2026-03
+593,1,Popular,charcuterias,alimentos,110,2026-03
+594,1,Popular,licoreras,retail,75,2026-03
+595,1,Popular,veterinarias,servicios,26,2026-03
+596,1,Popular,peluquerias,servicios,58,2026-03
+597,1,Popular,droguerias,servicios,83,2026-03
+598,1,Popular,cacharrerias,retail,64,2026-03
+599,1,Popular,panaderias,alimentos,56,2026-03
+600,1,Popular,ferreterias,retail,78,2026-03
+601,1,Santo Domingo Savio,cafeterias,alimentos,100,2026-03
+602,1,Santo Domingo Savio,restaurantes,alimentos,58,2026-03
+603,1,Santo Domingo Savio,tiendas,retail,81,2026-03
+604,1,Santo Domingo Savio,supermercados,retail,120,2026-03
+605,1,Santo Domingo Savio,charcuterias,alimentos,75,2026-03
+606,1,Santo Domingo Savio,licoreras,retail,61,2026-03
+607,1,Santo Domingo Savio,veterinarias,servicios,47,2026-03
+608,1,Santo Domingo Savio,peluquerias,servicios,8,2026-03
+609,1,Santo Domingo Savio,droguerias,servicios,86,2026-03
+610,1,Santo Domingo Savio,cacharrerias,retail,9,2026-03
+611,1,Santo Domingo Savio,panaderias,alimentos,47,2026-03
+612,1,Santo Domingo Savio,ferreterias,retail,45,2026-03
+613,1,Granizal,cafeterias,alimentos,54,2026-03
+614,1,Granizal,restaurantes,alimentos,49,2026-03
+615,1,Granizal,tiendas,retail,54,2026-03
+616,1,Granizal,supermercados,retail,24,2026-03
+617,1,Granizal,charcuterias,alimentos,51,2026-03
+618,1,Granizal,licoreras,retail,118,2026-03
+619,1,Granizal,veterinarias,servicios,40,2026-03
+620,1,Granizal,peluquerias,servicios,25,2026-03
+621,1,Granizal,droguerias,servicios,54,2026-03
+622,1,Granizal,cacharrerias,retail,43,2026-03
+623,1,Granizal,panaderias,alimentos,104,2026-03
+624,1,Granizal,ferreterias,retail,55,2026-03
+625,2,Santa Cruz,cafeterias,alimentos,11,2026-03
+626,2,Santa Cruz,restaurantes,alimentos,30,2026-03
+627,2,Santa Cruz,tiendas,retail,47,2026-03
+628,2,Santa Cruz,supermercados,retail,61,2026-03
+629,2,Santa Cruz,charcuterias,alimentos,21,2026-03
+630,2,Santa Cruz,licoreras,retail,104,2026-03
+631,2,Santa Cruz,veterinarias,servicios,97,2026-03
+632,2,Santa Cruz,peluquerias,servicios,23,2026-03
+633,2,Santa Cruz,droguerias,servicios,5,2026-03
+634,2,Santa Cruz,cacharrerias,retail,26,2026-03
+635,2,Santa Cruz,panaderias,alimentos,14,2026-03
+636,2,Santa Cruz,ferreterias,retail,105,2026-03
+637,2,La Rosa,cafeterias,alimentos,98,2026-03
+638,2,La Rosa,restaurantes,alimentos,116,2026-03
+639,2,La Rosa,tiendas,retail,119,2026-03
+640,2,La Rosa,supermercados,retail,39,2026-03
+641,2,La Rosa,charcuterias,alimentos,105,2026-03
+642,2,La Rosa,licoreras,retail,79,2026-03
+643,2,La Rosa,veterinarias,servicios,90,2026-03
+644,2,La Rosa,peluquerias,servicios,33,2026-03
+645,2,La Rosa,droguerias,servicios,115,2026-03
+646,2,La Rosa,cacharrerias,retail,116,2026-03
+647,2,La Rosa,panaderias,alimentos,13,2026-03
+648,2,La Rosa,ferreterias,retail,68,2026-03
+649,2,Andalucia,cafeterias,alimentos,71,2026-03
+650,2,Andalucia,restaurantes,alimentos,36,2026-03
+651,2,Andalucia,tiendas,retail,79,2026-03
+652,2,Andalucia,supermercados,retail,111,2026-03
+653,2,Andalucia,charcuterias,alimentos,11,2026-03
+654,2,Andalucia,licoreras,retail,35,2026-03
+655,2,Andalucia,veterinarias,servicios,77,2026-03
+656,2,Andalucia,peluquerias,servicios,85,2026-03
+657,2,Andalucia,droguerias,servicios,22,2026-03
+658,2,Andalucia,cacharrerias,retail,105,2026-03
+659,2,Andalucia,panaderias,alimentos,47,2026-03
+660,2,Andalucia,ferreterias,retail,94,2026-03
+661,3,Manrique Central,cafeterias,alimentos,120,2026-03
+662,3,Manrique Central,restaurantes,alimentos,109,2026-03
+663,3,Manrique Central,tiendas,retail,41,2026-03
+664,3,Manrique Central,supermercados,retail,69,2026-03
+665,3,Manrique Central,charcuterias,alimentos,105,2026-03
+666,3,Manrique Central,licoreras,retail,81,2026-03
+667,3,Manrique Central,veterinarias,servicios,8,2026-03
+668,3,Manrique Central,peluquerias,servicios,29,2026-03
+669,3,Manrique Central,droguerias,servicios,45,2026-03
+670,3,Manrique Central,cacharrerias,retail,55,2026-03
+671,3,Manrique Central,panaderias,alimentos,113,2026-03
+672,3,Manrique Central,ferreterias,retail,56,2026-03
+673,3,Santa Ines,cafeterias,alimentos,12,2026-03
+674,3,Santa Ines,restaurantes,alimentos,39,2026-03
+675,3,Santa Ines,tiendas,retail,9,2026-03
+676,3,Santa Ines,supermercados,retail,6,2026-03
+677,3,Santa Ines,charcuterias,alimentos,6,2026-03
+678,3,Santa Ines,licoreras,retail,63,2026-03
+679,3,Santa Ines,veterinarias,servicios,59,2026-03
+680,3,Santa Ines,peluquerias,servicios,89,2026-03
+681,3,Santa Ines,droguerias,servicios,100,2026-03
+682,3,Santa Ines,cacharrerias,retail,27,2026-03
+683,3,Santa Ines,panaderias,alimentos,76,2026-03
+684,3,Santa Ines,ferreterias,retail,109,2026-03
+685,3,El Raizal,cafeterias,alimentos,75,2026-03
+686,3,El Raizal,restaurantes,alimentos,87,2026-03
+687,3,El Raizal,tiendas,retail,67,2026-03
+688,3,El Raizal,supermercados,retail,50,2026-03
+689,3,El Raizal,charcuterias,alimentos,57,2026-03
+690,3,El Raizal,licoreras,retail,36,2026-03
+691,3,El Raizal,veterinarias,servicios,46,2026-03
+692,3,El Raizal,peluquerias,servicios,96,2026-03
+693,3,El Raizal,droguerias,servicios,28,2026-03
+694,3,El Raizal,cacharrerias,retail,92,2026-03
+695,3,El Raizal,panaderias,alimentos,103,2026-03
+696,3,El Raizal,ferreterias,retail,95,2026-03
+697,3,Zamora,cafeterias,alimentos,110,2026-03
+698,3,Zamora,restaurantes,alimentos,62,2026-03
+699,3,Zamora,tiendas,retail,114,2026-03
+700,3,Zamora,supermercados,retail,111,2026-03
+701,3,Zamora,charcuterias,alimentos,87,2026-03
+702,3,Zamora,licoreras,retail,80,2026-03
+703,3,Zamora,veterinarias,servicios,89,2026-03
+704,3,Zamora,peluquerias,servicios,61,2026-03
+705,3,Zamora,droguerias,servicios,46,2026-03
+706,3,Zamora,cacharrerias,retail,32,2026-03
+707,3,Zamora,panaderias,alimentos,41,2026-03
+708,3,Zamora,ferreterias,retail,71,2026-03
+709,4,Aranjuez,cafeterias,alimentos,80,2026-03
+710,4,Aranjuez,restaurantes,alimentos,57,2026-03
+711,4,Aranjuez,tiendas,retail,98,2026-03
+712,4,Aranjuez,supermercados,retail,5,2026-03
+713,4,Aranjuez,charcuterias,alimentos,58,2026-03
+714,4,Aranjuez,licoreras,retail,95,2026-03
+715,4,Aranjuez,veterinarias,servicios,95,2026-03
+716,4,Aranjuez,peluquerias,servicios,27,2026-03
+717,4,Aranjuez,droguerias,servicios,27,2026-03
+718,4,Aranjuez,cacharrerias,retail,37,2026-03
+719,4,Aranjuez,panaderias,alimentos,13,2026-03
+720,4,Aranjuez,ferreterias,retail,94,2026-03
+721,4,Berlin,cafeterias,alimentos,14,2026-03
+722,4,Berlin,restaurantes,alimentos,76,2026-03
+723,4,Berlin,tiendas,retail,111,2026-03
+724,4,Berlin,supermercados,retail,71,2026-03
+725,4,Berlin,charcuterias,alimentos,32,2026-03
+726,4,Berlin,licoreras,retail,46,2026-03
+727,4,Berlin,veterinarias,servicios,5,2026-03
+728,4,Berlin,peluquerias,servicios,100,2026-03
+729,4,Berlin,droguerias,servicios,65,2026-03
+730,4,Berlin,cacharrerias,retail,86,2026-03
+731,4,Berlin,panaderias,alimentos,59,2026-03
+732,4,Berlin,ferreterias,retail,21,2026-03
+733,4,Moravia,cafeterias,alimentos,71,2026-03
+734,4,Moravia,restaurantes,alimentos,61,2026-03
+735,4,Moravia,tiendas,retail,87,2026-03
+736,4,Moravia,supermercados,retail,77,2026-03
+737,4,Moravia,charcuterias,alimentos,117,2026-03
+738,4,Moravia,licoreras,retail,44,2026-03
+739,4,Moravia,veterinarias,servicios,116,2026-03
+740,4,Moravia,peluquerias,servicios,47,2026-03
+741,4,Moravia,droguerias,servicios,96,2026-03
+742,4,Moravia,cacharrerias,retail,66,2026-03
+743,4,Moravia,panaderias,alimentos,77,2026-03
+744,4,Moravia,ferreterias,retail,88,2026-03
+745,5,Castilla,cafeterias,alimentos,72,2026-03
+746,5,Castilla,restaurantes,alimentos,118,2026-03
+747,5,Castilla,tiendas,retail,63,2026-03
+748,5,Castilla,supermercados,retail,34,2026-03
+749,5,Castilla,charcuterias,alimentos,80,2026-03
+750,5,Castilla,licoreras,retail,85,2026-03
+751,5,Castilla,veterinarias,servicios,79,2026-03
+752,5,Castilla,peluquerias,servicios,72,2026-03
+753,5,Castilla,droguerias,servicios,99,2026-03
+754,5,Castilla,cacharrerias,retail,51,2026-03
+755,5,Castilla,panaderias,alimentos,90,2026-03
+756,5,Castilla,ferreterias,retail,19,2026-03
+757,5,Toscana,cafeterias,alimentos,64,2026-03
+758,5,Toscana,restaurantes,alimentos,72,2026-03
+759,5,Toscana,tiendas,retail,117,2026-03
+760,5,Toscana,supermercados,retail,52,2026-03
+761,5,Toscana,charcuterias,alimentos,78,2026-03
+762,5,Toscana,licoreras,retail,9,2026-03
+763,5,Toscana,veterinarias,servicios,21,2026-03
+764,5,Toscana,peluquerias,servicios,9,2026-03
+765,5,Toscana,droguerias,servicios,94,2026-03
+766,5,Toscana,cacharrerias,retail,118,2026-03
+767,5,Toscana,panaderias,alimentos,85,2026-03
+768,5,Toscana,ferreterias,retail,110,2026-03
+769,5,Boyaca,cafeterias,alimentos,49,2026-03
+770,5,Boyaca,restaurantes,alimentos,70,2026-03
+771,5,Boyaca,tiendas,retail,62,2026-03
+772,5,Boyaca,supermercados,retail,113,2026-03
+773,5,Boyaca,charcuterias,alimentos,13,2026-03
+774,5,Boyaca,licoreras,retail,62,2026-03
+775,5,Boyaca,veterinarias,servicios,92,2026-03
+776,5,Boyaca,peluquerias,servicios,117,2026-03
+777,5,Boyaca,droguerias,servicios,111,2026-03
+778,5,Boyaca,cacharrerias,retail,106,2026-03
+779,5,Boyaca,panaderias,alimentos,14,2026-03
+780,5,Boyaca,ferreterias,retail,99,2026-03
+781,6,Doce de Octubre,cafeterias,alimentos,88,2026-03
+782,6,Doce de Octubre,restaurantes,alimentos,87,2026-03
+783,6,Doce de Octubre,tiendas,retail,97,2026-03
+784,6,Doce de Octubre,supermercados,retail,56,2026-03
+785,6,Doce de Octubre,charcuterias,alimentos,28,2026-03
+786,6,Doce de Octubre,licoreras,retail,73,2026-03
+787,6,Doce de Octubre,veterinarias,servicios,92,2026-03
+788,6,Doce de Octubre,peluquerias,servicios,80,2026-03
+789,6,Doce de Octubre,droguerias,servicios,47,2026-03
+790,6,Doce de Octubre,cacharrerias,retail,104,2026-03
+791,6,Doce de Octubre,panaderias,alimentos,25,2026-03
+792,6,Doce de Octubre,ferreterias,retail,115,2026-03
+793,6,Pedregal,cafeterias,alimentos,55,2026-03
+794,6,Pedregal,restaurantes,alimentos,97,2026-03
+795,6,Pedregal,tiendas,retail,7,2026-03
+796,6,Pedregal,supermercados,retail,25,2026-03
+797,6,Pedregal,charcuterias,alimentos,53,2026-03
+798,6,Pedregal,licoreras,retail,71,2026-03
+799,6,Pedregal,veterinarias,servicios,25,2026-03
+800,6,Pedregal,peluquerias,servicios,83,2026-03
+801,6,Pedregal,droguerias,servicios,60,2026-03
+802,6,Pedregal,cacharrerias,retail,32,2026-03
+803,6,Pedregal,panaderias,alimentos,110,2026-03
+804,6,Pedregal,ferreterias,retail,89,2026-03
+805,6,Santander,cafeterias,alimentos,44,2026-03
+806,6,Santander,restaurantes,alimentos,81,2026-03
+807,6,Santander,tiendas,retail,49,2026-03
+808,6,Santander,supermercados,retail,14,2026-03
+809,6,Santander,charcuterias,alimentos,62,2026-03
+810,6,Santander,licoreras,retail,100,2026-03
+811,6,Santander,veterinarias,servicios,56,2026-03
+812,6,Santander,peluquerias,servicios,63,2026-03
+813,6,Santander,droguerias,servicios,76,2026-03
+814,6,Santander,cacharrerias,retail,10,2026-03
+815,6,Santander,panaderias,alimentos,9,2026-03
+816,6,Santander,ferreterias,retail,9,2026-03
+817,7,Robledo,cafeterias,alimentos,37,2026-03
+818,7,Robledo,restaurantes,alimentos,94,2026-03
+819,7,Robledo,tiendas,retail,90,2026-03
+820,7,Robledo,supermercados,retail,41,2026-03
+821,7,Robledo,charcuterias,alimentos,44,2026-03
+822,7,Robledo,licoreras,retail,87,2026-03
+823,7,Robledo,veterinarias,servicios,40,2026-03
+824,7,Robledo,peluquerias,servicios,70,2026-03
+825,7,Robledo,droguerias,servicios,101,2026-03
+826,7,Robledo,cacharrerias,retail,53,2026-03
+827,7,Robledo,panaderias,alimentos,102,2026-03
+828,7,Robledo,ferreterias,retail,68,2026-03
+829,7,Villa Flora,cafeterias,alimentos,43,2026-03
+830,7,Villa Flora,restaurantes,alimentos,80,2026-03
+831,7,Villa Flora,tiendas,retail,81,2026-03
+832,7,Villa Flora,supermercados,retail,39,2026-03
+833,7,Villa Flora,charcuterias,alimentos,54,2026-03
+834,7,Villa Flora,licoreras,retail,33,2026-03
+835,7,Villa Flora,veterinarias,servicios,53,2026-03
+836,7,Villa Flora,peluquerias,servicios,47,2026-03
+837,7,Villa Flora,droguerias,servicios,22,2026-03
+838,7,Villa Flora,cacharrerias,retail,112,2026-03
+839,7,Villa Flora,panaderias,alimentos,18,2026-03
+840,7,Villa Flora,ferreterias,retail,22,2026-03
+841,7,Altamira,cafeterias,alimentos,58,2026-03
+842,7,Altamira,restaurantes,alimentos,107,2026-03
+843,7,Altamira,tiendas,retail,25,2026-03
+844,7,Altamira,supermercados,retail,93,2026-03
+845,7,Altamira,charcuterias,alimentos,59,2026-03
+846,7,Altamira,licoreras,retail,11,2026-03
+847,7,Altamira,veterinarias,servicios,115,2026-03
+848,7,Altamira,peluquerias,servicios,10,2026-03
+849,7,Altamira,droguerias,servicios,92,2026-03
+850,7,Altamira,cacharrerias,retail,97,2026-03
+851,7,Altamira,panaderias,alimentos,50,2026-03
+852,7,Altamira,ferreterias,retail,99,2026-03
+853,8,Villa Hermosa,cafeterias,alimentos,29,2026-03
+854,8,Villa Hermosa,restaurantes,alimentos,118,2026-03
+855,8,Villa Hermosa,tiendas,retail,85,2026-03
+856,8,Villa Hermosa,supermercados,retail,45,2026-03
+857,8,Villa Hermosa,charcuterias,alimentos,95,2026-03
+858,8,Villa Hermosa,licoreras,retail,19,2026-03
+859,8,Villa Hermosa,veterinarias,servicios,73,2026-03
+860,8,Villa Hermosa,peluquerias,servicios,69,2026-03
+861,8,Villa Hermosa,droguerias,servicios,16,2026-03
+862,8,Villa Hermosa,cacharrerias,retail,7,2026-03
+863,8,Villa Hermosa,panaderias,alimentos,90,2026-03
+864,8,Villa Hermosa,ferreterias,retail,82,2026-03
+865,8,La Mansión,cafeterias,alimentos,68,2026-03
+866,8,La Mansión,restaurantes,alimentos,109,2026-03
+867,8,La Mansión,tiendas,retail,53,2026-03
+868,8,La Mansión,supermercados,retail,55,2026-03
+869,8,La Mansión,charcuterias,alimentos,49,2026-03
+870,8,La Mansión,licoreras,retail,53,2026-03
+871,8,La Mansión,veterinarias,servicios,38,2026-03
+872,8,La Mansión,peluquerias,servicios,64,2026-03
+873,8,La Mansión,droguerias,servicios,117,2026-03
+874,8,La Mansión,cacharrerias,retail,45,2026-03
+875,8,La Mansión,panaderias,alimentos,40,2026-03
+876,8,La Mansión,ferreterias,retail,119,2026-03
+877,8,San Miguel,cafeterias,alimentos,72,2026-03
+878,8,San Miguel,restaurantes,alimentos,22,2026-03
+879,8,San Miguel,tiendas,retail,70,2026-03
+880,8,San Miguel,supermercados,retail,99,2026-03
+881,8,San Miguel,charcuterias,alimentos,42,2026-03
+882,8,San Miguel,licoreras,retail,5,2026-03
+883,8,San Miguel,veterinarias,servicios,33,2026-03
+884,8,San Miguel,peluquerias,servicios,8,2026-03
+885,8,San Miguel,droguerias,servicios,73,2026-03
+886,8,San Miguel,cacharrerias,retail,98,2026-03
+887,8,San Miguel,panaderias,alimentos,48,2026-03
+888,8,San Miguel,ferreterias,retail,64,2026-03
+889,9,Buenos Aires,cafeterias,alimentos,64,2026-03
+890,9,Buenos Aires,restaurantes,alimentos,101,2026-03
+891,9,Buenos Aires,tiendas,retail,70,2026-03
+892,9,Buenos Aires,supermercados,retail,36,2026-03
+893,9,Buenos Aires,charcuterias,alimentos,28,2026-03
+894,9,Buenos Aires,licoreras,retail,108,2026-03
+895,9,Buenos Aires,veterinarias,servicios,120,2026-03
+896,9,Buenos Aires,peluquerias,servicios,78,2026-03
+897,9,Buenos Aires,droguerias,servicios,105,2026-03
+898,9,Buenos Aires,cacharrerias,retail,52,2026-03
+899,9,Buenos Aires,panaderias,alimentos,24,2026-03
+900,9,Buenos Aires,ferreterias,retail,42,2026-03
+901,9,Miraflores,cafeterias,alimentos,11,2026-03
+902,9,Miraflores,restaurantes,alimentos,110,2026-03
+903,9,Miraflores,tiendas,retail,31,2026-03
+904,9,Miraflores,supermercados,retail,89,2026-03
+905,9,Miraflores,charcuterias,alimentos,40,2026-03
+906,9,Miraflores,licoreras,retail,13,2026-03
+907,9,Miraflores,veterinarias,servicios,97,2026-03
+908,9,Miraflores,peluquerias,servicios,25,2026-03
+909,9,Miraflores,droguerias,servicios,32,2026-03
+910,9,Miraflores,cacharrerias,retail,18,2026-03
+911,9,Miraflores,panaderias,alimentos,47,2026-03
+912,9,Miraflores,ferreterias,retail,69,2026-03
+913,9,Cataluña,cafeterias,alimentos,69,2026-03
+914,9,Cataluña,restaurantes,alimentos,53,2026-03
+915,9,Cataluña,tiendas,retail,103,2026-03
+916,9,Cataluña,supermercados,retail,78,2026-03
+917,9,Cataluña,charcuterias,alimentos,29,2026-03
+918,9,Cataluña,licoreras,retail,59,2026-03
+919,9,Cataluña,veterinarias,servicios,40,2026-03
+920,9,Cataluña,peluquerias,servicios,73,2026-03
+921,9,Cataluña,droguerias,servicios,111,2026-03
+922,9,Cataluña,cacharrerias,retail,20,2026-03
+923,9,Cataluña,panaderias,alimentos,84,2026-03
+924,9,Cataluña,ferreterias,retail,92,2026-03
+925,10,La Candelaria,cafeterias,alimentos,46,2026-03
+926,10,La Candelaria,restaurantes,alimentos,24,2026-03
+927,10,La Candelaria,tiendas,retail,117,2026-03
+928,10,La Candelaria,supermercados,retail,71,2026-03
+929,10,La Candelaria,charcuterias,alimentos,34,2026-03
+930,10,La Candelaria,licoreras,retail,51,2026-03
+931,10,La Candelaria,veterinarias,servicios,25,2026-03
+932,10,La Candelaria,peluquerias,servicios,67,2026-03
+933,10,La Candelaria,droguerias,servicios,88,2026-03
+934,10,La Candelaria,cacharrerias,retail,47,2026-03
+935,10,La Candelaria,panaderias,alimentos,21,2026-03
+936,10,La Candelaria,ferreterias,retail,87,2026-03
+937,10,Boston,cafeterias,alimentos,111,2026-03
+938,10,Boston,restaurantes,alimentos,81,2026-03
+939,10,Boston,tiendas,retail,83,2026-03
+940,10,Boston,supermercados,retail,73,2026-03
+941,10,Boston,charcuterias,alimentos,24,2026-03
+942,10,Boston,licoreras,retail,111,2026-03
+943,10,Boston,veterinarias,servicios,81,2026-03
+944,10,Boston,peluquerias,servicios,42,2026-03
+945,10,Boston,droguerias,servicios,7,2026-03
+946,10,Boston,cacharrerias,retail,53,2026-03
+947,10,Boston,panaderias,alimentos,118,2026-03
+948,10,Boston,ferreterias,retail,9,2026-03
+949,10,Prado,cafeterias,alimentos,103,2026-03
+950,10,Prado,restaurantes,alimentos,92,2026-03
+951,10,Prado,tiendas,retail,54,2026-03
+952,10,Prado,supermercados,retail,72,2026-03
+953,10,Prado,charcuterias,alimentos,33,2026-03
+954,10,Prado,licoreras,retail,18,2026-03
+955,10,Prado,veterinarias,servicios,85,2026-03
+956,10,Prado,peluquerias,servicios,82,2026-03
+957,10,Prado,droguerias,servicios,84,2026-03
+958,10,Prado,cacharrerias,retail,87,2026-03
+959,10,Prado,panaderias,alimentos,95,2026-03
+960,10,Prado,ferreterias,retail,68,2026-03
+961,11,Laureles,cafeterias,alimentos,56,2026-03
+962,11,Laureles,restaurantes,alimentos,11,2026-03
+963,11,Laureles,tiendas,retail,106,2026-03
+964,11,Laureles,supermercados,retail,73,2026-03
+965,11,Laureles,charcuterias,alimentos,90,2026-03
+966,11,Laureles,licoreras,retail,99,2026-03
+967,11,Laureles,veterinarias,servicios,20,2026-03
+968,11,Laureles,peluquerias,servicios,70,2026-03
+969,11,Laureles,droguerias,servicios,53,2026-03
+970,11,Laureles,cacharrerias,retail,86,2026-03
+971,11,Laureles,panaderias,alimentos,50,2026-03
+972,11,Laureles,ferreterias,retail,47,2026-03
+973,11,Estadio,cafeterias,alimentos,19,2026-03
+974,11,Estadio,restaurantes,alimentos,106,2026-03
+975,11,Estadio,tiendas,retail,97,2026-03
+976,11,Estadio,supermercados,retail,71,2026-03
+977,11,Estadio,charcuterias,alimentos,63,2026-03
+978,11,Estadio,licoreras,retail,8,2026-03
+979,11,Estadio,veterinarias,servicios,109,2026-03
+980,11,Estadio,peluquerias,servicios,33,2026-03
+981,11,Estadio,droguerias,servicios,15,2026-03
+982,11,Estadio,cacharrerias,retail,24,2026-03
+983,11,Estadio,panaderias,alimentos,88,2026-03
+984,11,Estadio,ferreterias,retail,22,2026-03
+985,11,Conquistadores,cafeterias,alimentos,106,2026-03
+986,11,Conquistadores,restaurantes,alimentos,32,2026-03
+987,11,Conquistadores,tiendas,retail,63,2026-03
+988,11,Conquistadores,supermercados,retail,109,2026-03
+989,11,Conquistadores,charcuterias,alimentos,56,2026-03
+990,11,Conquistadores,licoreras,retail,14,2026-03
+991,11,Conquistadores,veterinarias,servicios,75,2026-03
+992,11,Conquistadores,peluquerias,servicios,115,2026-03
+993,11,Conquistadores,droguerias,servicios,27,2026-03
+994,11,Conquistadores,cacharrerias,retail,10,2026-03
+995,11,Conquistadores,panaderias,alimentos,13,2026-03
+996,11,Conquistadores,ferreterias,retail,117,2026-03
+997,12,La America,cafeterias,alimentos,71,2026-03
+998,12,La America,restaurantes,alimentos,89,2026-03
+999,12,La America,tiendas,retail,58,2026-03
+1000,12,La America,supermercados,retail,111,2026-03
+1001,12,La America,charcuterias,alimentos,114,2026-03
+1002,12,La America,licoreras,retail,73,2026-03
+1003,12,La America,veterinarias,servicios,60,2026-03
+1004,12,La America,peluquerias,servicios,119,2026-03
+1005,12,La America,droguerias,servicios,104,2026-03
+1006,12,La America,cacharrerias,retail,117,2026-03
+1007,12,La America,panaderias,alimentos,88,2026-03
+1008,12,La America,ferreterias,retail,11,2026-03
+1009,12,Ferrini,cafeterias,alimentos,30,2026-03
+1010,12,Ferrini,restaurantes,alimentos,20,2026-03
+1011,12,Ferrini,tiendas,retail,103,2026-03
+1012,12,Ferrini,supermercados,retail,111,2026-03
+1013,12,Ferrini,charcuterias,alimentos,51,2026-03
+1014,12,Ferrini,licoreras,retail,77,2026-03
+1015,12,Ferrini,veterinarias,servicios,37,2026-03
+1016,12,Ferrini,peluquerias,servicios,47,2026-03
+1017,12,Ferrini,droguerias,servicios,19,2026-03
+1018,12,Ferrini,cacharrerias,retail,14,2026-03
+1019,12,Ferrini,panaderias,alimentos,41,2026-03
+1020,12,Ferrini,ferreterias,retail,48,2026-03
+1021,12,Calasanz,cafeterias,alimentos,43,2026-03
+1022,12,Calasanz,restaurantes,alimentos,53,2026-03
+1023,12,Calasanz,tiendas,retail,84,2026-03
+1024,12,Calasanz,supermercados,retail,24,2026-03
+1025,12,Calasanz,charcuterias,alimentos,86,2026-03
+1026,12,Calasanz,licoreras,retail,17,2026-03
+1027,12,Calasanz,veterinarias,servicios,52,2026-03
+1028,12,Calasanz,peluquerias,servicios,40,2026-03
+1029,12,Calasanz,droguerias,servicios,115,2026-03
+1030,12,Calasanz,cacharrerias,retail,64,2026-03
+1031,12,Calasanz,panaderias,alimentos,93,2026-03
+1032,12,Calasanz,ferreterias,retail,119,2026-03
+1033,13,San Javier,cafeterias,alimentos,76,2026-03
+1034,13,San Javier,restaurantes,alimentos,76,2026-03
+1035,13,San Javier,tiendas,retail,52,2026-03
+1036,13,San Javier,supermercados,retail,75,2026-03
+1037,13,San Javier,charcuterias,alimentos,83,2026-03
+1038,13,San Javier,licoreras,retail,9,2026-03
+1039,13,San Javier,veterinarias,servicios,118,2026-03
+1040,13,San Javier,peluquerias,servicios,52,2026-03
+1041,13,San Javier,droguerias,servicios,35,2026-03
+1042,13,San Javier,cacharrerias,retail,13,2026-03
+1043,13,San Javier,panaderias,alimentos,42,2026-03
+1044,13,San Javier,ferreterias,retail,104,2026-03
+1045,13,El Salado,cafeterias,alimentos,9,2026-03
+1046,13,El Salado,restaurantes,alimentos,100,2026-03
+1047,13,El Salado,tiendas,retail,64,2026-03
+1048,13,El Salado,supermercados,retail,118,2026-03
+1049,13,El Salado,charcuterias,alimentos,108,2026-03
+1050,13,El Salado,licoreras,retail,36,2026-03
+1051,13,El Salado,veterinarias,servicios,103,2026-03
+1052,13,El Salado,peluquerias,servicios,99,2026-03
+1053,13,El Salado,droguerias,servicios,27,2026-03
+1054,13,El Salado,cacharrerias,retail,66,2026-03
+1055,13,El Salado,panaderias,alimentos,80,2026-03
+1056,13,El Salado,ferreterias,retail,17,2026-03
+1057,13,20 de Julio,cafeterias,alimentos,86,2026-03
+1058,13,20 de Julio,restaurantes,alimentos,15,2026-03
+1059,13,20 de Julio,tiendas,retail,31,2026-03
+1060,13,20 de Julio,supermercados,retail,21,2026-03
+1061,13,20 de Julio,charcuterias,alimentos,80,2026-03
+1062,13,20 de Julio,licoreras,retail,76,2026-03
+1063,13,20 de Julio,veterinarias,servicios,44,2026-03
+1064,13,20 de Julio,peluquerias,servicios,47,2026-03
+1065,13,20 de Julio,droguerias,servicios,76,2026-03
+1066,13,20 de Julio,cacharrerias,retail,15,2026-03
+1067,13,20 de Julio,panaderias,alimentos,20,2026-03
+1068,13,20 de Julio,ferreterias,retail,68,2026-03
+1069,14,El Poblado,cafeterias,alimentos,34,2026-03
+1070,14,El Poblado,restaurantes,alimentos,75,2026-03
+1071,14,El Poblado,tiendas,retail,92,2026-03
+1072,14,El Poblado,supermercados,retail,48,2026-03
+1073,14,El Poblado,charcuterias,alimentos,25,2026-03
+1074,14,El Poblado,licoreras,retail,104,2026-03
+1075,14,El Poblado,veterinarias,servicios,13,2026-03
+1076,14,El Poblado,peluquerias,servicios,84,2026-03
+1077,14,El Poblado,droguerias,servicios,29,2026-03
+1078,14,El Poblado,cacharrerias,retail,99,2026-03
+1079,14,El Poblado,panaderias,alimentos,22,2026-03
+1080,14,El Poblado,ferreterias,retail,71,2026-03
+1081,14,Provenza,cafeterias,alimentos,87,2026-03
+1082,14,Provenza,restaurantes,alimentos,44,2026-03
+1083,14,Provenza,tiendas,retail,47,2026-03
+1084,14,Provenza,supermercados,retail,107,2026-03
+1085,14,Provenza,charcuterias,alimentos,16,2026-03
+1086,14,Provenza,licoreras,retail,108,2026-03
+1087,14,Provenza,veterinarias,servicios,86,2026-03
+1088,14,Provenza,peluquerias,servicios,120,2026-03
+1089,14,Provenza,droguerias,servicios,45,2026-03
+1090,14,Provenza,cacharrerias,retail,86,2026-03
+1091,14,Provenza,panaderias,alimentos,7,2026-03
+1092,14,Provenza,ferreterias,retail,68,2026-03
+1093,14,Manila,cafeterias,alimentos,66,2026-03
+1094,14,Manila,restaurantes,alimentos,55,2026-03
+1095,14,Manila,tiendas,retail,58,2026-03
+1096,14,Manila,supermercados,retail,16,2026-03
+1097,14,Manila,charcuterias,alimentos,92,2026-03
+1098,14,Manila,licoreras,retail,107,2026-03
+1099,14,Manila,veterinarias,servicios,64,2026-03
+1100,14,Manila,peluquerias,servicios,118,2026-03
+1101,14,Manila,droguerias,servicios,71,2026-03
+1102,14,Manila,cacharrerias,retail,24,2026-03
+1103,14,Manila,panaderias,alimentos,13,2026-03
+1104,14,Manila,ferreterias,retail,80,2026-03
+1105,15,Guayabal,cafeterias,alimentos,90,2026-03
+1106,15,Guayabal,restaurantes,alimentos,20,2026-03
+1107,15,Guayabal,tiendas,retail,112,2026-03
+1108,15,Guayabal,supermercados,retail,68,2026-03
+1109,15,Guayabal,charcuterias,alimentos,82,2026-03
+1110,15,Guayabal,licoreras,retail,12,2026-03
+1111,15,Guayabal,veterinarias,servicios,49,2026-03
+1112,15,Guayabal,peluquerias,servicios,85,2026-03
+1113,15,Guayabal,droguerias,servicios,16,2026-03
+1114,15,Guayabal,cacharrerias,retail,29,2026-03
+1115,15,Guayabal,panaderias,alimentos,65,2026-03
+1116,15,Guayabal,ferreterias,retail,116,2026-03
+1117,15,Trinidad,cafeterias,alimentos,104,2026-03
+1118,15,Trinidad,restaurantes,alimentos,84,2026-03
+1119,15,Trinidad,tiendas,retail,30,2026-03
+1120,15,Trinidad,supermercados,retail,15,2026-03
+1121,15,Trinidad,charcuterias,alimentos,108,2026-03
+1122,15,Trinidad,licoreras,retail,80,2026-03
+1123,15,Trinidad,veterinarias,servicios,56,2026-03
+1124,15,Trinidad,peluquerias,servicios,32,2026-03
+1125,15,Trinidad,droguerias,servicios,26,2026-03
+1126,15,Trinidad,cacharrerias,retail,67,2026-03
+1127,15,Trinidad,panaderias,alimentos,118,2026-03
+1128,15,Trinidad,ferreterias,retail,24,2026-03
+1129,15,Cristo Rey,cafeterias,alimentos,35,2026-03
+1130,15,Cristo Rey,restaurantes,alimentos,104,2026-03
+1131,15,Cristo Rey,tiendas,retail,64,2026-03
+1132,15,Cristo Rey,supermercados,retail,48,2026-03
+1133,15,Cristo Rey,charcuterias,alimentos,67,2026-03
+1134,15,Cristo Rey,licoreras,retail,24,2026-03
+1135,15,Cristo Rey,veterinarias,servicios,5,2026-03
+1136,15,Cristo Rey,peluquerias,servicios,75,2026-03
+1137,15,Cristo Rey,droguerias,servicios,55,2026-03
+1138,15,Cristo Rey,cacharrerias,retail,115,2026-03
+1139,15,Cristo Rey,panaderias,alimentos,73,2026-03
+1140,15,Cristo Rey,ferreterias,retail,36,2026-03
+1141,16,Belen,cafeterias,alimentos,47,2026-03
+1142,16,Belen,restaurantes,alimentos,101,2026-03
+1143,16,Belen,tiendas,retail,83,2026-03
+1144,16,Belen,supermercados,retail,27,2026-03
+1145,16,Belen,charcuterias,alimentos,15,2026-03
+1146,16,Belen,licoreras,retail,17,2026-03
+1147,16,Belen,veterinarias,servicios,10,2026-03
+1148,16,Belen,peluquerias,servicios,17,2026-03
+1149,16,Belen,droguerias,servicios,103,2026-03
+1150,16,Belen,cacharrerias,retail,80,2026-03
+1151,16,Belen,panaderias,alimentos,75,2026-03
+1152,16,Belen,ferreterias,retail,16,2026-03
+1153,16,Belen Rincon,cafeterias,alimentos,87,2026-03
+1154,16,Belen Rincon,restaurantes,alimentos,77,2026-03
+1155,16,Belen Rincon,tiendas,retail,42,2026-03
+1156,16,Belen Rincon,supermercados,retail,79,2026-03
+1157,16,Belen Rincon,charcuterias,alimentos,86,2026-03
+1158,16,Belen Rincon,licoreras,retail,98,2026-03
+1159,16,Belen Rincon,veterinarias,servicios,11,2026-03
+1160,16,Belen Rincon,peluquerias,servicios,86,2026-03
+1161,16,Belen Rincon,droguerias,servicios,89,2026-03
+1162,16,Belen Rincon,cacharrerias,retail,114,2026-03
+1163,16,Belen Rincon,panaderias,alimentos,72,2026-03
+1164,16,Belen Rincon,ferreterias,retail,82,2026-03
+1165,16,Loma de los Bernal,cafeterias,alimentos,100,2026-03
+1166,16,Loma de los Bernal,restaurantes,alimentos,87,2026-03
+1167,16,Loma de los Bernal,tiendas,retail,57,2026-03
+1168,16,Loma de los Bernal,supermercados,retail,5,2026-03
+1169,16,Loma de los Bernal,charcuterias,alimentos,94,2026-03
+1170,16,Loma de los Bernal,licoreras,retail,76,2026-03
+1171,16,Loma de los Bernal,veterinarias,servicios,22,2026-03
+1172,16,Loma de los Bernal,peluquerias,servicios,114,2026-03
+1173,16,Loma de los Bernal,droguerias,servicios,73,2026-03
+1174,16,Loma de los Bernal,cacharrerias,retail,120,2026-03
+1175,16,Loma de los Bernal,panaderias,alimentos,24,2026-03
+1176,16,Loma de los Bernal,ferreterias,retail,99,2026-03
+1177,1,Popular,cafeterias,alimentos,92,2026-03
+1178,1,Popular,restaurantes,alimentos,83,2026-03
+1179,1,Popular,tiendas,retail,41,2026-03
+1180,1,Popular,supermercados,retail,70,2026-03
+1181,1,Popular,charcuterias,alimentos,90,2026-03
+1182,1,Popular,licoreras,retail,77,2026-03
+1183,1,Popular,veterinarias,servicios,52,2026-03
+1184,1,Popular,peluquerias,servicios,30,2026-03
+1185,1,Popular,droguerias,servicios,101,2026-03
+1186,1,Popular,cacharrerias,retail,36,2026-03
+1187,1,Popular,panaderias,alimentos,101,2026-03
+1188,1,Popular,ferreterias,retail,52,2026-03
+1189,1,Santo Domingo Savio,cafeterias,alimentos,79,2026-03
+1190,1,Santo Domingo Savio,restaurantes,alimentos,82,2026-03
+1191,1,Santo Domingo Savio,tiendas,retail,102,2026-03
+1192,1,Santo Domingo Savio,supermercados,retail,76,2026-03
+1193,1,Santo Domingo Savio,charcuterias,alimentos,105,2026-03
+1194,1,Santo Domingo Savio,licoreras,retail,87,2026-03
+1195,1,Santo Domingo Savio,veterinarias,servicios,67,2026-03
+1196,1,Santo Domingo Savio,peluquerias,servicios,104,2026-03
+1197,1,Santo Domingo Savio,droguerias,servicios,47,2026-03
+1198,1,Santo Domingo Savio,cacharrerias,retail,61,2026-03
+1199,1,Santo Domingo Savio,panaderias,alimentos,92,2026-03
+1200,1,Santo Domingo Savio,ferreterias,retail,110,2026-03
+1201,1,Granizal,cafeterias,alimentos,79,2026-03
+1202,1,Granizal,restaurantes,alimentos,85,2026-03
+1203,1,Granizal,tiendas,retail,96,2026-03
+1204,1,Granizal,supermercados,retail,35,2026-03
+1205,1,Granizal,charcuterias,alimentos,101,2026-03
+1206,1,Granizal,licoreras,retail,13,2026-03
+1207,1,Granizal,veterinarias,servicios,100,2026-03
+1208,1,Granizal,peluquerias,servicios,30,2026-03
+1209,1,Granizal,droguerias,servicios,55,2026-03
+1210,1,Granizal,cacharrerias,retail,115,2026-03
+1211,1,Granizal,panaderias,alimentos,60,2026-03
+1212,1,Granizal,ferreterias,retail,61,2026-03
+1213,2,Santa Cruz,cafeterias,alimentos,85,2026-03
+1214,2,Santa Cruz,restaurantes,alimentos,23,2026-03
+1215,2,Santa Cruz,tiendas,retail,11,2026-03
+1216,2,Santa Cruz,supermercados,retail,64,2026-03
+1217,2,Santa Cruz,charcuterias,alimentos,102,2026-03
+1218,2,Santa Cruz,licoreras,retail,26,2026-03
+1219,2,Santa Cruz,veterinarias,servicios,44,2026-03
+1220,2,Santa Cruz,peluquerias,servicios,72,2026-03
+1221,2,Santa Cruz,droguerias,servicios,116,2026-03
+1222,2,Santa Cruz,cacharrerias,retail,85,2026-03
+1223,2,Santa Cruz,panaderias,alimentos,102,2026-03
+1224,2,Santa Cruz,ferreterias,retail,39,2026-03
+1225,2,La Rosa,cafeterias,alimentos,107,2026-03
+1226,2,La Rosa,restaurantes,alimentos,93,2026-03
+1227,2,La Rosa,tiendas,retail,117,2026-03
+1228,2,La Rosa,supermercados,retail,25,2026-03
+1229,2,La Rosa,charcuterias,alimentos,50,2026-03
+1230,2,La Rosa,licoreras,retail,19,2026-03
+1231,2,La Rosa,veterinarias,servicios,69,2026-03
+1232,2,La Rosa,peluquerias,servicios,9,2026-03
+1233,2,La Rosa,droguerias,servicios,94,2026-03
+1234,2,La Rosa,cacharrerias,retail,25,2026-03
+1235,2,La Rosa,panaderias,alimentos,25,2026-03
+1236,2,La Rosa,ferreterias,retail,89,2026-03
+1237,2,Andalucia,cafeterias,alimentos,83,2026-03
+1238,2,Andalucia,restaurantes,alimentos,17,2026-03
+1239,2,Andalucia,tiendas,retail,49,2026-03
+1240,2,Andalucia,supermercados,retail,34,2026-03
+1241,2,Andalucia,charcuterias,alimentos,57,2026-03
+1242,2,Andalucia,licoreras,retail,97,2026-03
+1243,2,Andalucia,veterinarias,servicios,6,2026-03
+1244,2,Andalucia,peluquerias,servicios,92,2026-03
+1245,2,Andalucia,droguerias,servicios,17,2026-03
+1246,2,Andalucia,cacharrerias,retail,119,2026-03
+1247,2,Andalucia,panaderias,alimentos,102,2026-03
+1248,2,Andalucia,ferreterias,retail,59,2026-03
+1249,3,Manrique Central,cafeterias,alimentos,60,2026-03
+1250,3,Manrique Central,restaurantes,alimentos,24,2026-03
+1251,3,Manrique Central,tiendas,retail,112,2026-03
+1252,3,Manrique Central,supermercados,retail,94,2026-03
+1253,3,Manrique Central,charcuterias,alimentos,52,2026-03
+1254,3,Manrique Central,licoreras,retail,63,2026-03
+1255,3,Manrique Central,veterinarias,servicios,46,2026-03
+1256,3,Manrique Central,peluquerias,servicios,14,2026-03
+1257,3,Manrique Central,droguerias,servicios,107,2026-03
+1258,3,Manrique Central,cacharrerias,retail,20,2026-03
+1259,3,Manrique Central,panaderias,alimentos,35,2026-03
+1260,3,Manrique Central,ferreterias,retail,48,2026-03
+1261,3,Santa Ines,cafeterias,alimentos,21,2026-03
+1262,3,Santa Ines,restaurantes,alimentos,80,2026-03
+1263,3,Santa Ines,tiendas,retail,76,2026-03
+1264,3,Santa Ines,supermercados,retail,46,2026-03
+1265,3,Santa Ines,charcuterias,alimentos,85,2026-03
+1266,3,Santa Ines,licoreras,retail,74,2026-03
+1267,3,Santa Ines,veterinarias,servicios,37,2026-03
+1268,3,Santa Ines,peluquerias,servicios,87,2026-03
+1269,3,Santa Ines,droguerias,servicios,69,2026-03
+1270,3,Santa Ines,cacharrerias,retail,32,2026-03
+1271,3,Santa Ines,panaderias,alimentos,95,2026-03
+1272,3,Santa Ines,ferreterias,retail,70,2026-03
+1273,3,El Raizal,cafeterias,alimentos,40,2026-03
+1274,3,El Raizal,restaurantes,alimentos,48,2026-03
+1275,3,El Raizal,tiendas,retail,103,2026-03
+1276,3,El Raizal,supermercados,retail,23,2026-03
+1277,3,El Raizal,charcuterias,alimentos,101,2026-03
+1278,3,El Raizal,licoreras,retail,113,2026-03
+1279,3,El Raizal,veterinarias,servicios,117,2026-03
+1280,3,El Raizal,peluquerias,servicios,81,2026-03
+1281,3,El Raizal,droguerias,servicios,40,2026-03
+1282,3,El Raizal,cacharrerias,retail,66,2026-03
+1283,3,El Raizal,panaderias,alimentos,25,2026-03
+1284,3,El Raizal,ferreterias,retail,31,2026-03
+1285,3,Zamora,cafeterias,alimentos,9,2026-03
+1286,3,Zamora,restaurantes,alimentos,93,2026-03
+1287,3,Zamora,tiendas,retail,30,2026-03
+1288,3,Zamora,supermercados,retail,107,2026-03
+1289,3,Zamora,charcuterias,alimentos,83,2026-03
+1290,3,Zamora,licoreras,retail,109,2026-03
+1291,3,Zamora,veterinarias,servicios,40,2026-03
+1292,3,Zamora,peluquerias,servicios,61,2026-03
+1293,3,Zamora,droguerias,servicios,75,2026-03
+1294,3,Zamora,cacharrerias,retail,60,2026-03
+1295,3,Zamora,panaderias,alimentos,81,2026-03
+1296,3,Zamora,ferreterias,retail,11,2026-03
+1297,4,Aranjuez,cafeterias,alimentos,79,2026-03
+1298,4,Aranjuez,restaurantes,alimentos,5,2026-03
+1299,4,Aranjuez,tiendas,retail,112,2026-03
+1300,4,Aranjuez,supermercados,retail,57,2026-03
+1301,4,Aranjuez,charcuterias,alimentos,116,2026-03
+1302,4,Aranjuez,licoreras,retail,54,2026-03
+1303,4,Aranjuez,veterinarias,servicios,87,2026-03
+1304,4,Aranjuez,peluquerias,servicios,109,2026-03
+1305,4,Aranjuez,droguerias,servicios,107,2026-03
+1306,4,Aranjuez,cacharrerias,retail,77,2026-03
+1307,4,Aranjuez,panaderias,alimentos,102,2026-03
+1308,4,Aranjuez,ferreterias,retail,28,2026-03
+1309,4,Berlin,cafeterias,alimentos,40,2026-03
+1310,4,Berlin,restaurantes,alimentos,40,2026-03
+1311,4,Berlin,tiendas,retail,52,2026-03
+1312,4,Berlin,supermercados,retail,54,2026-03
+1313,4,Berlin,charcuterias,alimentos,43,2026-03
+1314,4,Berlin,licoreras,retail,20,2026-03
+1315,4,Berlin,veterinarias,servicios,77,2026-03
+1316,4,Berlin,peluquerias,servicios,81,2026-03
+1317,4,Berlin,droguerias,servicios,92,2026-03
+1318,4,Berlin,cacharrerias,retail,11,2026-03
+1319,4,Berlin,panaderias,alimentos,49,2026-03
+1320,4,Berlin,ferreterias,retail,5,2026-03
+1321,4,Moravia,cafeterias,alimentos,72,2026-03
+1322,4,Moravia,restaurantes,alimentos,77,2026-03
+1323,4,Moravia,tiendas,retail,65,2026-03
+1324,4,Moravia,supermercados,retail,108,2026-03
+1325,4,Moravia,charcuterias,alimentos,5,2026-03
+1326,4,Moravia,licoreras,retail,67,2026-03
+1327,4,Moravia,veterinarias,servicios,117,2026-03
+1328,4,Moravia,peluquerias,servicios,103,2026-03
+1329,4,Moravia,droguerias,servicios,21,2026-03
+1330,4,Moravia,cacharrerias,retail,106,2026-03
+1331,4,Moravia,panaderias,alimentos,66,2026-03
+1332,4,Moravia,ferreterias,retail,33,2026-03
+1333,5,Castilla,cafeterias,alimentos,77,2026-03
+1334,5,Castilla,restaurantes,alimentos,75,2026-03
+1335,5,Castilla,tiendas,retail,28,2026-03
+1336,5,Castilla,supermercados,retail,102,2026-03
+1337,5,Castilla,charcuterias,alimentos,65,2026-03
+1338,5,Castilla,licoreras,retail,29,2026-03
+1339,5,Castilla,veterinarias,servicios,12,2026-03
+1340,5,Castilla,peluquerias,servicios,72,2026-03
+1341,5,Castilla,droguerias,servicios,36,2026-03
+1342,5,Castilla,cacharrerias,retail,104,2026-03
+1343,5,Castilla,panaderias,alimentos,23,2026-03
+1344,5,Castilla,ferreterias,retail,88,2026-03
+1345,5,Toscana,cafeterias,alimentos,10,2026-03
+1346,5,Toscana,restaurantes,alimentos,28,2026-03
+1347,5,Toscana,tiendas,retail,27,2026-03
+1348,5,Toscana,supermercados,retail,35,2026-03
+1349,5,Toscana,charcuterias,alimentos,113,2026-03
+1350,5,Toscana,licoreras,retail,39,2026-03
+1351,5,Toscana,veterinarias,servicios,95,2026-03
+1352,5,Toscana,peluquerias,servicios,5,2026-03
+1353,5,Toscana,droguerias,servicios,29,2026-03
+1354,5,Toscana,cacharrerias,retail,34,2026-03
+1355,5,Toscana,panaderias,alimentos,77,2026-03
+1356,5,Toscana,ferreterias,retail,104,2026-03
+1357,5,Boyaca,cafeterias,alimentos,103,2026-03
+1358,5,Boyaca,restaurantes,alimentos,48,2026-03
+1359,5,Boyaca,tiendas,retail,90,2026-03
+1360,5,Boyaca,supermercados,retail,93,2026-03
+1361,5,Boyaca,charcuterias,alimentos,59,2026-03
+1362,5,Boyaca,licoreras,retail,101,2026-03
+1363,5,Boyaca,veterinarias,servicios,25,2026-03
+1364,5,Boyaca,peluquerias,servicios,10,2026-03
+1365,5,Boyaca,droguerias,servicios,50,2026-03
+1366,5,Boyaca,cacharrerias,retail,89,2026-03
+1367,5,Boyaca,panaderias,alimentos,29,2026-03
+1368,5,Boyaca,ferreterias,retail,104,2026-03
+1369,6,Doce de Octubre,cafeterias,alimentos,78,2026-03
+1370,6,Doce de Octubre,restaurantes,alimentos,78,2026-03
+1371,6,Doce de Octubre,tiendas,retail,38,2026-03
+1372,6,Doce de Octubre,supermercados,retail,74,2026-03
+1373,6,Doce de Octubre,charcuterias,alimentos,99,2026-03
+1374,6,Doce de Octubre,licoreras,retail,25,2026-03
+1375,6,Doce de Octubre,veterinarias,servicios,87,2026-03
+1376,6,Doce de Octubre,peluquerias,servicios,46,2026-03
+1377,6,Doce de Octubre,droguerias,servicios,103,2026-03
+1378,6,Doce de Octubre,cacharrerias,retail,35,2026-03
+1379,6,Doce de Octubre,panaderias,alimentos,96,2026-03
+1380,6,Doce de Octubre,ferreterias,retail,109,2026-03
+1381,6,Pedregal,cafeterias,alimentos,18,2026-03
+1382,6,Pedregal,restaurantes,alimentos,59,2026-03
+1383,6,Pedregal,tiendas,retail,27,2026-03
+1384,6,Pedregal,supermercados,retail,7,2026-03
+1385,6,Pedregal,charcuterias,alimentos,88,2026-03
+1386,6,Pedregal,licoreras,retail,45,2026-03
+1387,6,Pedregal,veterinarias,servicios,27,2026-03
+1388,6,Pedregal,peluquerias,servicios,6,2026-03
+1389,6,Pedregal,droguerias,servicios,117,2026-03
+1390,6,Pedregal,cacharrerias,retail,107,2026-03
+1391,6,Pedregal,panaderias,alimentos,8,2026-03
+1392,6,Pedregal,ferreterias,retail,91,2026-03
+1393,6,Santander,cafeterias,alimentos,104,2026-03
+1394,6,Santander,restaurantes,alimentos,37,2026-03
+1395,6,Santander,tiendas,retail,120,2026-03
+1396,6,Santander,supermercados,retail,71,2026-03
+1397,6,Santander,charcuterias,alimentos,83,2026-03
+1398,6,Santander,licoreras,retail,27,2026-03
+1399,6,Santander,veterinarias,servicios,31,2026-03
+1400,6,Santander,peluquerias,servicios,103,2026-03
+1401,6,Santander,droguerias,servicios,69,2026-03
+1402,6,Santander,cacharrerias,retail,69,2026-03
+1403,6,Santander,panaderias,alimentos,37,2026-03
+1404,6,Santander,ferreterias,retail,80,2026-03
+1405,7,Robledo,cafeterias,alimentos,103,2026-03
+1406,7,Robledo,restaurantes,alimentos,9,2026-03
+1407,7,Robledo,tiendas,retail,14,2026-03
+1408,7,Robledo,supermercados,retail,37,2026-03
+1409,7,Robledo,charcuterias,alimentos,100,2026-03
+1410,7,Robledo,licoreras,retail,120,2026-03
+1411,7,Robledo,veterinarias,servicios,93,2026-03
+1412,7,Robledo,peluquerias,servicios,72,2026-03
+1413,7,Robledo,droguerias,servicios,39,2026-03
+1414,7,Robledo,cacharrerias,retail,25,2026-03
+1415,7,Robledo,panaderias,alimentos,96,2026-03
+1416,7,Robledo,ferreterias,retail,12,2026-03
+1417,7,Villa Flora,cafeterias,alimentos,66,2026-03
+1418,7,Villa Flora,restaurantes,alimentos,20,2026-03
+1419,7,Villa Flora,tiendas,retail,5,2026-03
+1420,7,Villa Flora,supermercados,retail,26,2026-03
+1421,7,Villa Flora,charcuterias,alimentos,11,2026-03
+1422,7,Villa Flora,licoreras,retail,88,2026-03
+1423,7,Villa Flora,veterinarias,servicios,78,2026-03
+1424,7,Villa Flora,peluquerias,servicios,39,2026-03
+1425,7,Villa Flora,droguerias,servicios,36,2026-03
+1426,7,Villa Flora,cacharrerias,retail,117,2026-03
+1427,7,Villa Flora,panaderias,alimentos,102,2026-03
+1428,7,Villa Flora,ferreterias,retail,5,2026-03
+1429,7,Altamira,cafeterias,alimentos,28,2026-03
+1430,7,Altamira,restaurantes,alimentos,53,2026-03
+1431,7,Altamira,tiendas,retail,56,2026-03
+1432,7,Altamira,supermercados,retail,85,2026-03
+1433,7,Altamira,charcuterias,alimentos,111,2026-03
+1434,7,Altamira,licoreras,retail,109,2026-03
+1435,7,Altamira,veterinarias,servicios,68,2026-03
+1436,7,Altamira,peluquerias,servicios,43,2026-03
+1437,7,Altamira,droguerias,servicios,87,2026-03
+1438,7,Altamira,cacharrerias,retail,45,2026-03
+1439,7,Altamira,panaderias,alimentos,116,2026-03
+1440,7,Altamira,ferreterias,retail,8,2026-03
+1441,8,Villa Hermosa,cafeterias,alimentos,118,2026-03
+1442,8,Villa Hermosa,restaurantes,alimentos,49,2026-03
+1443,8,Villa Hermosa,tiendas,retail,57,2026-03
+1444,8,Villa Hermosa,supermercados,retail,91,2026-03
+1445,8,Villa Hermosa,charcuterias,alimentos,89,2026-03
+1446,8,Villa Hermosa,licoreras,retail,99,2026-03
+1447,8,Villa Hermosa,veterinarias,servicios,20,2026-03
+1448,8,Villa Hermosa,peluquerias,servicios,81,2026-03
+1449,8,Villa Hermosa,droguerias,servicios,56,2026-03
+1450,8,Villa Hermosa,cacharrerias,retail,40,2026-03
+1451,8,Villa Hermosa,panaderias,alimentos,77,2026-03
+1452,8,Villa Hermosa,ferreterias,retail,14,2026-03
+1453,8,La Mansión,cafeterias,alimentos,106,2026-03
+1454,8,La Mansión,restaurantes,alimentos,9,2026-03
+1455,8,La Mansión,tiendas,retail,12,2026-03
+1456,8,La Mansión,supermercados,retail,94,2026-03
+1457,8,La Mansión,charcuterias,alimentos,67,2026-03
+1458,8,La Mansión,licoreras,retail,89,2026-03
+1459,8,La Mansión,veterinarias,servicios,42,2026-03
+1460,8,La Mansión,peluquerias,servicios,76,2026-03
+1461,8,La Mansión,droguerias,servicios,35,2026-03
+1462,8,La Mansión,cacharrerias,retail,116,2026-03
+1463,8,La Mansión,panaderias,alimentos,82,2026-03
+1464,8,La Mansión,ferreterias,retail,100,2026-03
+1465,8,San Miguel,cafeterias,alimentos,17,2026-03
+1466,8,San Miguel,restaurantes,alimentos,101,2026-03
+1467,8,San Miguel,tiendas,retail,25,2026-03
+1468,8,San Miguel,supermercados,retail,10,2026-03
+1469,8,San Miguel,charcuterias,alimentos,32,2026-03
+1470,8,San Miguel,licoreras,retail,99,2026-03
+1471,8,San Miguel,veterinarias,servicios,49,2026-03
+1472,8,San Miguel,peluquerias,servicios,72,2026-03
+1473,8,San Miguel,droguerias,servicios,91,2026-03
+1474,8,San Miguel,cacharrerias,retail,15,2026-03
+1475,8,San Miguel,panaderias,alimentos,53,2026-03
+1476,8,San Miguel,ferreterias,retail,81,2026-03
+1477,9,Buenos Aires,cafeterias,alimentos,75,2026-03
+1478,9,Buenos Aires,restaurantes,alimentos,63,2026-03
+1479,9,Buenos Aires,tiendas,retail,110,2026-03
+1480,9,Buenos Aires,supermercados,retail,64,2026-03
+1481,9,Buenos Aires,charcuterias,alimentos,120,2026-03
+1482,9,Buenos Aires,licoreras,retail,54,2026-03
+1483,9,Buenos Aires,veterinarias,servicios,102,2026-03
+1484,9,Buenos Aires,peluquerias,servicios,54,2026-03
+1485,9,Buenos Aires,droguerias,servicios,46,2026-03
+1486,9,Buenos Aires,cacharrerias,retail,104,2026-03
+1487,9,Buenos Aires,panaderias,alimentos,99,2026-03
+1488,9,Buenos Aires,ferreterias,retail,71,2026-03
+1489,9,Miraflores,cafeterias,alimentos,30,2026-03
+1490,9,Miraflores,restaurantes,alimentos,64,2026-03
+1491,9,Miraflores,tiendas,retail,94,2026-03
+1492,9,Miraflores,supermercados,retail,59,2026-03
+1493,9,Miraflores,charcuterias,alimentos,47,2026-03
+1494,9,Miraflores,licoreras,retail,54,2026-03
+1495,9,Miraflores,veterinarias,servicios,9,2026-03
+1496,9,Miraflores,peluquerias,servicios,116,2026-03
+1497,9,Miraflores,droguerias,servicios,79,2026-03
+1498,9,Miraflores,cacharrerias,retail,29,2026-03
+1499,9,Miraflores,panaderias,alimentos,113,2026-03
+1500,9,Miraflores,ferreterias,retail,93,2026-03
+1501,9,Cataluña,cafeterias,alimentos,29,2026-03
+1502,9,Cataluña,restaurantes,alimentos,101,2026-03
+1503,9,Cataluña,tiendas,retail,99,2026-03
+1504,9,Cataluña,supermercados,retail,105,2026-03
+1505,9,Cataluña,charcuterias,alimentos,74,2026-03
+1506,9,Cataluña,licoreras,retail,7,2026-03
+1507,9,Cataluña,veterinarias,servicios,13,2026-03
+1508,9,Cataluña,peluquerias,servicios,112,2026-03
+1509,9,Cataluña,droguerias,servicios,84,2026-03
+1510,9,Cataluña,cacharrerias,retail,108,2026-03
+1511,9,Cataluña,panaderias,alimentos,10,2026-03
+1512,9,Cataluña,ferreterias,retail,69,2026-03
+1513,10,La Candelaria,cafeterias,alimentos,16,2026-03
+1514,10,La Candelaria,restaurantes,alimentos,92,2026-03
+1515,10,La Candelaria,tiendas,retail,33,2026-03
+1516,10,La Candelaria,supermercados,retail,86,2026-03
+1517,10,La Candelaria,charcuterias,alimentos,76,2026-03
+1518,10,La Candelaria,licoreras,retail,104,2026-03
+1519,10,La Candelaria,veterinarias,servicios,117,2026-03
+1520,10,La Candelaria,peluquerias,servicios,78,2026-03
+1521,10,La Candelaria,droguerias,servicios,18,2026-03
+1522,10,La Candelaria,cacharrerias,retail,14,2026-03
+1523,10,La Candelaria,panaderias,alimentos,52,2026-03
+1524,10,La Candelaria,ferreterias,retail,92,2026-03
+1525,10,Boston,cafeterias,alimentos,25,2026-03
+1526,10,Boston,restaurantes,alimentos,87,2026-03
+1527,10,Boston,tiendas,retail,38,2026-03
+1528,10,Boston,supermercados,retail,113,2026-03
+1529,10,Boston,charcuterias,alimentos,36,2026-03
+1530,10,Boston,licoreras,retail,114,2026-03
+1531,10,Boston,veterinarias,servicios,25,2026-03
+1532,10,Boston,peluquerias,servicios,108,2026-03
+1533,10,Boston,droguerias,servicios,95,2026-03
+1534,10,Boston,cacharrerias,retail,68,2026-03
+1535,10,Boston,panaderias,alimentos,73,2026-03
+1536,10,Boston,ferreterias,retail,41,2026-03
+1537,10,Prado,cafeterias,alimentos,98,2026-03
+1538,10,Prado,restaurantes,alimentos,97,2026-03
+1539,10,Prado,tiendas,retail,38,2026-03
+1540,10,Prado,supermercados,retail,12,2026-03
+1541,10,Prado,charcuterias,alimentos,106,2026-03
+1542,10,Prado,licoreras,retail,111,2026-03
+1543,10,Prado,veterinarias,servicios,46,2026-03
+1544,10,Prado,peluquerias,servicios,75,2026-03
+1545,10,Prado,droguerias,servicios,75,2026-03
+1546,10,Prado,cacharrerias,retail,52,2026-03
+1547,10,Prado,panaderias,alimentos,26,2026-03
+1548,10,Prado,ferreterias,retail,91,2026-03
+1549,11,Laureles,cafeterias,alimentos,52,2026-03
+1550,11,Laureles,restaurantes,alimentos,100,2026-03
+1551,11,Laureles,tiendas,retail,89,2026-03
+1552,11,Laureles,supermercados,retail,55,2026-03
+1553,11,Laureles,charcuterias,alimentos,80,2026-03
+1554,11,Laureles,licoreras,retail,69,2026-03
+1555,11,Laureles,veterinarias,servicios,42,2026-03
+1556,11,Laureles,peluquerias,servicios,109,2026-03
+1557,11,Laureles,droguerias,servicios,22,2026-03
+1558,11,Laureles,cacharrerias,retail,44,2026-03
+1559,11,Laureles,panaderias,alimentos,31,2026-03
+1560,11,Laureles,ferreterias,retail,82,2026-03
+1561,11,Estadio,cafeterias,alimentos,112,2026-03
+1562,11,Estadio,restaurantes,alimentos,68,2026-03
+1563,11,Estadio,tiendas,retail,80,2026-03
+1564,11,Estadio,supermercados,retail,78,2026-03
+1565,11,Estadio,charcuterias,alimentos,6,2026-03
+1566,11,Estadio,licoreras,retail,52,2026-03
+1567,11,Estadio,veterinarias,servicios,68,2026-03
+1568,11,Estadio,peluquerias,servicios,32,2026-03
+1569,11,Estadio,droguerias,servicios,19,2026-03
+1570,11,Estadio,cacharrerias,retail,72,2026-03
+1571,11,Estadio,panaderias,alimentos,56,2026-03
+1572,11,Estadio,ferreterias,retail,100,2026-03
+1573,11,Conquistadores,cafeterias,alimentos,105,2026-03
+1574,11,Conquistadores,restaurantes,alimentos,16,2026-03
+1575,11,Conquistadores,tiendas,retail,103,2026-03
+1576,11,Conquistadores,supermercados,retail,58,2026-03
+1577,11,Conquistadores,charcuterias,alimentos,59,2026-03
+1578,11,Conquistadores,licoreras,retail,65,2026-03
+1579,11,Conquistadores,veterinarias,servicios,79,2026-03
+1580,11,Conquistadores,peluquerias,servicios,56,2026-03
+1581,11,Conquistadores,droguerias,servicios,61,2026-03
+1582,11,Conquistadores,cacharrerias,retail,40,2026-03
+1583,11,Conquistadores,panaderias,alimentos,63,2026-03
+1584,11,Conquistadores,ferreterias,retail,77,2026-03
+1585,12,La America,cafeterias,alimentos,51,2026-03
+1586,12,La America,restaurantes,alimentos,112,2026-03
+1587,12,La America,tiendas,retail,15,2026-03
+1588,12,La America,supermercados,retail,16,2026-03
+1589,12,La America,charcuterias,alimentos,102,2026-03
+1590,12,La America,licoreras,retail,59,2026-03
+1591,12,La America,veterinarias,servicios,91,2026-03
+1592,12,La America,peluquerias,servicios,11,2026-03
+1593,12,La America,droguerias,servicios,67,2026-03
+1594,12,La America,cacharrerias,retail,80,2026-03
+1595,12,La America,panaderias,alimentos,27,2026-03
+1596,12,La America,ferreterias,retail,78,2026-03
+1597,12,Ferrini,cafeterias,alimentos,109,2026-03
+1598,12,Ferrini,restaurantes,alimentos,97,2026-03
+1599,12,Ferrini,tiendas,retail,32,2026-03
+1600,12,Ferrini,supermercados,retail,5,2026-03
+1601,12,Ferrini,charcuterias,alimentos,89,2026-03
+1602,12,Ferrini,licoreras,retail,58,2026-03
+1603,12,Ferrini,veterinarias,servicios,22,2026-03
+1604,12,Ferrini,peluquerias,servicios,56,2026-03
+1605,12,Ferrini,droguerias,servicios,82,2026-03
+1606,12,Ferrini,cacharrerias,retail,88,2026-03
+1607,12,Ferrini,panaderias,alimentos,88,2026-03
+1608,12,Ferrini,ferreterias,retail,22,2026-03
+1609,12,Calasanz,cafeterias,alimentos,88,2026-03
+1610,12,Calasanz,restaurantes,alimentos,55,2026-03
+1611,12,Calasanz,tiendas,retail,25,2026-03
+1612,12,Calasanz,supermercados,retail,19,2026-03
+1613,12,Calasanz,charcuterias,alimentos,34,2026-03
+1614,12,Calasanz,licoreras,retail,93,2026-03
+1615,12,Calasanz,veterinarias,servicios,55,2026-03
+1616,12,Calasanz,peluquerias,servicios,40,2026-03
+1617,12,Calasanz,droguerias,servicios,34,2026-03
+1618,12,Calasanz,cacharrerias,retail,31,2026-03
+1619,12,Calasanz,panaderias,alimentos,95,2026-03
+1620,12,Calasanz,ferreterias,retail,110,2026-03
+1621,13,San Javier,cafeterias,alimentos,15,2026-03
+1622,13,San Javier,restaurantes,alimentos,111,2026-03
+1623,13,San Javier,tiendas,retail,93,2026-03
+1624,13,San Javier,supermercados,retail,64,2026-03
+1625,13,San Javier,charcuterias,alimentos,113,2026-03
+1626,13,San Javier,licoreras,retail,78,2026-03
+1627,13,San Javier,veterinarias,servicios,45,2026-03
+1628,13,San Javier,peluquerias,servicios,37,2026-03
+1629,13,San Javier,droguerias,servicios,99,2026-03
+1630,13,San Javier,cacharrerias,retail,40,2026-03
+1631,13,San Javier,panaderias,alimentos,64,2026-03
+1632,13,San Javier,ferreterias,retail,91,2026-03
+1633,13,El Salado,cafeterias,alimentos,84,2026-03
+1634,13,El Salado,restaurantes,alimentos,84,2026-03
+1635,13,El Salado,tiendas,retail,97,2026-03
+1636,13,El Salado,supermercados,retail,10,2026-03
+1637,13,El Salado,charcuterias,alimentos,28,2026-03
+1638,13,El Salado,licoreras,retail,26,2026-03
+1639,13,El Salado,veterinarias,servicios,84,2026-03
+1640,13,El Salado,peluquerias,servicios,86,2026-03
+1641,13,El Salado,droguerias,servicios,96,2026-03
+1642,13,El Salado,cacharrerias,retail,100,2026-03
+1643,13,El Salado,panaderias,alimentos,62,2026-03
+1644,13,El Salado,ferreterias,retail,44,2026-03
+1645,13,20 de Julio,cafeterias,alimentos,78,2026-03
+1646,13,20 de Julio,restaurantes,alimentos,26,2026-03
+1647,13,20 de Julio,tiendas,retail,101,2026-03
+1648,13,20 de Julio,supermercados,retail,9,2026-03
+1649,13,20 de Julio,charcuterias,alimentos,60,2026-03
+1650,13,20 de Julio,licoreras,retail,73,2026-03
+1651,13,20 de Julio,veterinarias,servicios,66,2026-03
+1652,13,20 de Julio,peluquerias,servicios,108,2026-03
+1653,13,20 de Julio,droguerias,servicios,114,2026-03
+1654,13,20 de Julio,cacharrerias,retail,102,2026-03
+1655,13,20 de Julio,panaderias,alimentos,39,2026-03
+1656,13,20 de Julio,ferreterias,retail,20,2026-03
+1657,14,El Poblado,cafeterias,alimentos,38,2026-03
+1658,14,El Poblado,restaurantes,alimentos,8,2026-03
+1659,14,El Poblado,tiendas,retail,82,2026-03
+1660,14,El Poblado,supermercados,retail,91,2026-03
+1661,14,El Poblado,charcuterias,alimentos,24,2026-03
+1662,14,El Poblado,licoreras,retail,103,2026-03
+1663,14,El Poblado,veterinarias,servicios,13,2026-03
+1664,14,El Poblado,peluquerias,servicios,101,2026-03
+1665,14,El Poblado,droguerias,servicios,104,2026-03
+1666,14,El Poblado,cacharrerias,retail,22,2026-03
+1667,14,El Poblado,panaderias,alimentos,46,2026-03
+1668,14,El Poblado,ferreterias,retail,44,2026-03
+1669,14,Provenza,cafeterias,alimentos,95,2026-03
+1670,14,Provenza,restaurantes,alimentos,100,2026-03
+1671,14,Provenza,tiendas,retail,64,2026-03
+1672,14,Provenza,supermercados,retail,51,2026-03
+1673,14,Provenza,charcuterias,alimentos,44,2026-03
+1674,14,Provenza,licoreras,retail,65,2026-03
+1675,14,Provenza,veterinarias,servicios,71,2026-03
+1676,14,Provenza,peluquerias,servicios,49,2026-03
+1677,14,Provenza,droguerias,servicios,97,2026-03
+1678,14,Provenza,cacharrerias,retail,30,2026-03
+1679,14,Provenza,panaderias,alimentos,30,2026-03
+1680,14,Provenza,ferreterias,retail,90,2026-03
+1681,14,Manila,cafeterias,alimentos,48,2026-03
+1682,14,Manila,restaurantes,alimentos,94,2026-03
+1683,14,Manila,tiendas,retail,82,2026-03
+1684,14,Manila,supermercados,retail,62,2026-03
+1685,14,Manila,charcuterias,alimentos,113,2026-03
+1686,14,Manila,licoreras,retail,16,2026-03
+1687,14,Manila,veterinarias,servicios,49,2026-03
+1688,14,Manila,peluquerias,servicios,31,2026-03
+1689,14,Manila,droguerias,servicios,116,2026-03
+1690,14,Manila,cacharrerias,retail,113,2026-03
+1691,14,Manila,panaderias,alimentos,72,2026-03
+1692,14,Manila,ferreterias,retail,79,2026-03
+1693,15,Guayabal,cafeterias,alimentos,83,2026-03
+1694,15,Guayabal,restaurantes,alimentos,97,2026-03
+1695,15,Guayabal,tiendas,retail,95,2026-03
+1696,15,Guayabal,supermercados,retail,91,2026-03
+1697,15,Guayabal,charcuterias,alimentos,41,2026-03
+1698,15,Guayabal,licoreras,retail,78,2026-03
+1699,15,Guayabal,veterinarias,servicios,37,2026-03
+1700,15,Guayabal,peluquerias,servicios,61,2026-03
+1701,15,Guayabal,droguerias,servicios,60,2026-03
+1702,15,Guayabal,cacharrerias,retail,105,2026-03
+1703,15,Guayabal,panaderias,alimentos,50,2026-03
+1704,15,Guayabal,ferreterias,retail,117,2026-03
+1705,15,Trinidad,cafeterias,alimentos,82,2026-03
+1706,15,Trinidad,restaurantes,alimentos,9,2026-03
+1707,15,Trinidad,tiendas,retail,119,2026-03
+1708,15,Trinidad,supermercados,retail,8,2026-03
+1709,15,Trinidad,charcuterias,alimentos,91,2026-03
+1710,15,Trinidad,licoreras,retail,118,2026-03
+1711,15,Trinidad,veterinarias,servicios,61,2026-03
+1712,15,Trinidad,peluquerias,servicios,103,2026-03
+1713,15,Trinidad,droguerias,servicios,15,2026-03
+1714,15,Trinidad,cacharrerias,retail,72,2026-03
+1715,15,Trinidad,panaderias,alimentos,67,2026-03
+1716,15,Trinidad,ferreterias,retail,96,2026-03
+1717,15,Cristo Rey,cafeterias,alimentos,45,2026-03
+1718,15,Cristo Rey,restaurantes,alimentos,9,2026-03
+1719,15,Cristo Rey,tiendas,retail,94,2026-03
+1720,15,Cristo Rey,supermercados,retail,43,2026-03
+1721,15,Cristo Rey,charcuterias,alimentos,51,2026-03
+1722,15,Cristo Rey,licoreras,retail,88,2026-03
+1723,15,Cristo Rey,veterinarias,servicios,62,2026-03
+1724,15,Cristo Rey,peluquerias,servicios,70,2026-03
+1725,15,Cristo Rey,droguerias,servicios,22,2026-03
+1726,15,Cristo Rey,cacharrerias,retail,53,2026-03
+1727,15,Cristo Rey,panaderias,alimentos,86,2026-03
+1728,15,Cristo Rey,ferreterias,retail,105,2026-03
+1729,16,Belen,cafeterias,alimentos,98,2026-03
+1730,16,Belen,restaurantes,alimentos,31,2026-03
+1731,16,Belen,tiendas,retail,16,2026-03
+1732,16,Belen,supermercados,retail,71,2026-03
+1733,16,Belen,charcuterias,alimentos,81,2026-03
+1734,16,Belen,licoreras,retail,63,2026-03
+1735,16,Belen,veterinarias,servicios,104,2026-03
+1736,16,Belen,peluquerias,servicios,117,2026-03
+1737,16,Belen,droguerias,servicios,101,2026-03
+1738,16,Belen,cacharrerias,retail,14,2026-03
+1739,16,Belen,panaderias,alimentos,26,2026-03
+1740,16,Belen,ferreterias,retail,100,2026-03
+1741,16,Belen Rincon,cafeterias,alimentos,73,2026-03
+1742,16,Belen Rincon,restaurantes,alimentos,101,2026-03
+1743,16,Belen Rincon,tiendas,retail,40,2026-03
+1744,16,Belen Rincon,supermercados,retail,99,2026-03
+1745,16,Belen Rincon,charcuterias,alimentos,110,2026-03
+1746,16,Belen Rincon,licoreras,retail,55,2026-03
+1747,16,Belen Rincon,veterinarias,servicios,7,2026-03
+1748,16,Belen Rincon,peluquerias,servicios,37,2026-03
+1749,16,Belen Rincon,droguerias,servicios,7,2026-03
+1750,16,Belen Rincon,cacharrerias,retail,49,2026-03
+1751,16,Belen Rincon,panaderias,alimentos,70,2026-03
+1752,16,Belen Rincon,ferreterias,retail,5,2026-03
+1753,16,Loma de los Bernal,cafeterias,alimentos,36,2026-03
+1754,16,Loma de los Bernal,restaurantes,alimentos,57,2026-03
+1755,16,Loma de los Bernal,tiendas,retail,61,2026-03
+1756,16,Loma de los Bernal,supermercados,retail,100,2026-03
+1757,16,Loma de los Bernal,charcuterias,alimentos,53,2026-03
+1758,16,Loma de los Bernal,licoreras,retail,60,2026-03
+1759,16,Loma de los Bernal,veterinarias,servicios,101,2026-03
+1760,16,Loma de los Bernal,peluquerias,servicios,110,2026-03
+1761,16,Loma de los Bernal,droguerias,servicios,86,2026-03
+1762,16,Loma de los Bernal,cacharrerias,retail,102,2026-03
+1763,16,Loma de los Bernal,panaderias,alimentos,43,2026-03
+1764,16,Loma de los Bernal,ferreterias,retail,40,2026-03
+1765,1,Popular,cafeterias,alimentos,5,2026-03
+1766,1,Popular,restaurantes,alimentos,15,2026-03
+1767,1,Popular,tiendas,retail,78,2026-03
+1768,1,Popular,supermercados,retail,20,2026-03
+1769,1,Popular,charcuterias,alimentos,120,2026-03
+1770,1,Popular,licoreras,retail,22,2026-03
+1771,1,Popular,veterinarias,servicios,111,2026-03
+1772,1,Popular,peluquerias,servicios,15,2026-03
+1773,1,Popular,droguerias,servicios,82,2026-03
+1774,1,Popular,cacharrerias,retail,10,2026-03
+1775,1,Popular,panaderias,alimentos,90,2026-03
+1776,1,Popular,ferreterias,retail,80,2026-03
+1777,1,Santo Domingo Savio,cafeterias,alimentos,19,2026-03
+1778,1,Santo Domingo Savio,restaurantes,alimentos,100,2026-03
+1779,1,Santo Domingo Savio,tiendas,retail,20,2026-03
+1780,1,Santo Domingo Savio,supermercados,retail,91,2026-03
+1781,1,Santo Domingo Savio,charcuterias,alimentos,35,2026-03
+1782,1,Santo Domingo Savio,licoreras,retail,82,2026-03
+1783,1,Santo Domingo Savio,veterinarias,servicios,42,2026-03
+1784,1,Santo Domingo Savio,peluquerias,servicios,43,2026-03
+1785,1,Santo Domingo Savio,droguerias,servicios,7,2026-03
+1786,1,Santo Domingo Savio,cacharrerias,retail,22,2026-03
+1787,1,Santo Domingo Savio,panaderias,alimentos,15,2026-03
+1788,1,Santo Domingo Savio,ferreterias,retail,15,2026-03
+1789,1,Granizal,cafeterias,alimentos,12,2026-03
+1790,1,Granizal,restaurantes,alimentos,44,2026-03
+1791,1,Granizal,tiendas,retail,101,2026-03
+1792,1,Granizal,supermercados,retail,26,2026-03
+1793,1,Granizal,charcuterias,alimentos,60,2026-03
+1794,1,Granizal,licoreras,retail,104,2026-03
+1795,1,Granizal,veterinarias,servicios,118,2026-03
+1796,1,Granizal,peluquerias,servicios,54,2026-03
+1797,1,Granizal,droguerias,servicios,79,2026-03
+1798,1,Granizal,cacharrerias,retail,38,2026-03
+1799,1,Granizal,panaderias,alimentos,7,2026-03
+1800,1,Granizal,ferreterias,retail,108,2026-03
+1801,2,Santa Cruz,cafeterias,alimentos,118,2026-03
+1802,2,Santa Cruz,restaurantes,alimentos,120,2026-03
+1803,2,Santa Cruz,tiendas,retail,113,2026-03
+1804,2,Santa Cruz,supermercados,retail,105,2026-03
+1805,2,Santa Cruz,charcuterias,alimentos,6,2026-03
+1806,2,Santa Cruz,licoreras,retail,66,2026-03
+1807,2,Santa Cruz,veterinarias,servicios,96,2026-03
+1808,2,Santa Cruz,peluquerias,servicios,8,2026-03
+1809,2,Santa Cruz,droguerias,servicios,11,2026-03
+1810,2,Santa Cruz,cacharrerias,retail,112,2026-03
+1811,2,Santa Cruz,panaderias,alimentos,96,2026-03
+1812,2,Santa Cruz,ferreterias,retail,9,2026-03
+1813,2,La Rosa,cafeterias,alimentos,41,2026-03
+1814,2,La Rosa,restaurantes,alimentos,114,2026-03
+1815,2,La Rosa,tiendas,retail,79,2026-03
+1816,2,La Rosa,supermercados,retail,74,2026-03
+1817,2,La Rosa,charcuterias,alimentos,84,2026-03
+1818,2,La Rosa,licoreras,retail,36,2026-03
+1819,2,La Rosa,veterinarias,servicios,21,2026-03
+1820,2,La Rosa,peluquerias,servicios,89,2026-03
+1821,2,La Rosa,droguerias,servicios,8,2026-03
+1822,2,La Rosa,cacharrerias,retail,63,2026-03
+1823,2,La Rosa,panaderias,alimentos,54,2026-03
+1824,2,La Rosa,ferreterias,retail,59,2026-03
+1825,2,Andalucia,cafeterias,alimentos,19,2026-03
+1826,2,Andalucia,restaurantes,alimentos,50,2026-03
+1827,2,Andalucia,tiendas,retail,113,2026-03
+1828,2,Andalucia,supermercados,retail,33,2026-03
+1829,2,Andalucia,charcuterias,alimentos,72,2026-03
+1830,2,Andalucia,licoreras,retail,62,2026-03
+1831,2,Andalucia,veterinarias,servicios,72,2026-03
+1832,2,Andalucia,peluquerias,servicios,34,2026-03
+1833,2,Andalucia,droguerias,servicios,54,2026-03
+1834,2,Andalucia,cacharrerias,retail,28,2026-03
+1835,2,Andalucia,panaderias,alimentos,19,2026-03
+1836,2,Andalucia,ferreterias,retail,35,2026-03
+1837,3,Manrique Central,cafeterias,alimentos,101,2026-03
+1838,3,Manrique Central,restaurantes,alimentos,15,2026-03
+1839,3,Manrique Central,tiendas,retail,14,2026-03
+1840,3,Manrique Central,supermercados,retail,92,2026-03
+1841,3,Manrique Central,charcuterias,alimentos,109,2026-03
+1842,3,Manrique Central,licoreras,retail,39,2026-03
+1843,3,Manrique Central,veterinarias,servicios,26,2026-03
+1844,3,Manrique Central,peluquerias,servicios,104,2026-03
+1845,3,Manrique Central,droguerias,servicios,62,2026-03
+1846,3,Manrique Central,cacharrerias,retail,22,2026-03
+1847,3,Manrique Central,panaderias,alimentos,32,2026-03
+1848,3,Manrique Central,ferreterias,retail,33,2026-03
+1849,3,Santa Ines,cafeterias,alimentos,22,2026-03
+1850,3,Santa Ines,restaurantes,alimentos,96,2026-03
+1851,3,Santa Ines,tiendas,retail,51,2026-03
+1852,3,Santa Ines,supermercados,retail,93,2026-03
+1853,3,Santa Ines,charcuterias,alimentos,101,2026-03
+1854,3,Santa Ines,licoreras,retail,12,2026-03
+1855,3,Santa Ines,veterinarias,servicios,16,2026-03
+1856,3,Santa Ines,peluquerias,servicios,107,2026-03
+1857,3,Santa Ines,droguerias,servicios,106,2026-03
+1858,3,Santa Ines,cacharrerias,retail,18,2026-03
+1859,3,Santa Ines,panaderias,alimentos,34,2026-03
+1860,3,Santa Ines,ferreterias,retail,88,2026-03
+1861,3,El Raizal,cafeterias,alimentos,85,2026-03
+1862,3,El Raizal,restaurantes,alimentos,20,2026-03
+1863,3,El Raizal,tiendas,retail,7,2026-03
+1864,3,El Raizal,supermercados,retail,9,2026-03
+1865,3,El Raizal,charcuterias,alimentos,40,2026-03
+1866,3,El Raizal,licoreras,retail,30,2026-03
+1867,3,El Raizal,veterinarias,servicios,11,2026-03
+1868,3,El Raizal,peluquerias,servicios,76,2026-03
+1869,3,El Raizal,droguerias,servicios,85,2026-03
+1870,3,El Raizal,cacharrerias,retail,41,2026-03
+1871,3,El Raizal,panaderias,alimentos,22,2026-03
+1872,3,El Raizal,ferreterias,retail,79,2026-03
+1873,3,Zamora,cafeterias,alimentos,80,2026-03
+1874,3,Zamora,restaurantes,alimentos,62,2026-03
+1875,3,Zamora,tiendas,retail,76,2026-03
+1876,3,Zamora,supermercados,retail,66,2026-03
+1877,3,Zamora,charcuterias,alimentos,35,2026-03
+1878,3,Zamora,licoreras,retail,92,2026-03
+1879,3,Zamora,veterinarias,servicios,60,2026-03
+1880,3,Zamora,peluquerias,servicios,33,2026-03
+1881,3,Zamora,droguerias,servicios,103,2026-03
+1882,3,Zamora,cacharrerias,retail,39,2026-03
+1883,3,Zamora,panaderias,alimentos,72,2026-03
+1884,3,Zamora,ferreterias,retail,75,2026-03
+1885,4,Aranjuez,cafeterias,alimentos,78,2026-03
+1886,4,Aranjuez,restaurantes,alimentos,46,2026-03
+1887,4,Aranjuez,tiendas,retail,92,2026-03
+1888,4,Aranjuez,supermercados,retail,45,2026-03
+1889,4,Aranjuez,charcuterias,alimentos,61,2026-03
+1890,4,Aranjuez,licoreras,retail,17,2026-03
+1891,4,Aranjuez,veterinarias,servicios,14,2026-03
+1892,4,Aranjuez,peluquerias,servicios,119,2026-03
+1893,4,Aranjuez,droguerias,servicios,16,2026-03
+1894,4,Aranjuez,cacharrerias,retail,72,2026-03
+1895,4,Aranjuez,panaderias,alimentos,103,2026-03
+1896,4,Aranjuez,ferreterias,retail,81,2026-03
+1897,4,Berlin,cafeterias,alimentos,18,2026-03
+1898,4,Berlin,restaurantes,alimentos,28,2026-03
+1899,4,Berlin,tiendas,retail,94,2026-03
+1900,4,Berlin,supermercados,retail,103,2026-03
+1901,4,Berlin,charcuterias,alimentos,98,2026-03
+1902,4,Berlin,licoreras,retail,114,2026-03
+1903,4,Berlin,veterinarias,servicios,68,2026-03
+1904,4,Berlin,peluquerias,servicios,91,2026-03
+1905,4,Berlin,droguerias,servicios,63,2026-03
+1906,4,Berlin,cacharrerias,retail,19,2026-03
+1907,4,Berlin,panaderias,alimentos,112,2026-03
+1908,4,Berlin,ferreterias,retail,69,2026-03
+1909,4,Moravia,cafeterias,alimentos,107,2026-03
+1910,4,Moravia,restaurantes,alimentos,88,2026-03
+1911,4,Moravia,tiendas,retail,45,2026-03
+1912,4,Moravia,supermercados,retail,75,2026-03
+1913,4,Moravia,charcuterias,alimentos,31,2026-03
+1914,4,Moravia,licoreras,retail,26,2026-03
+1915,4,Moravia,veterinarias,servicios,106,2026-03
+1916,4,Moravia,peluquerias,servicios,63,2026-03
+1917,4,Moravia,droguerias,servicios,30,2026-03
+1918,4,Moravia,cacharrerias,retail,106,2026-03
+1919,4,Moravia,panaderias,alimentos,119,2026-03
+1920,4,Moravia,ferreterias,retail,29,2026-03
+1921,5,Castilla,cafeterias,alimentos,26,2026-03
+1922,5,Castilla,restaurantes,alimentos,41,2026-03
+1923,5,Castilla,tiendas,retail,88,2026-03
+1924,5,Castilla,supermercados,retail,5,2026-03
+1925,5,Castilla,charcuterias,alimentos,55,2026-03
+1926,5,Castilla,licoreras,retail,55,2026-03
+1927,5,Castilla,veterinarias,servicios,112,2026-03
+1928,5,Castilla,peluquerias,servicios,19,2026-03
+1929,5,Castilla,droguerias,servicios,63,2026-03
+1930,5,Castilla,cacharrerias,retail,28,2026-03
+1931,5,Castilla,panaderias,alimentos,114,2026-03
+1932,5,Castilla,ferreterias,retail,111,2026-03
+1933,5,Toscana,cafeterias,alimentos,36,2026-03
+1934,5,Toscana,restaurantes,alimentos,106,2026-03
+1935,5,Toscana,tiendas,retail,25,2026-03
+1936,5,Toscana,supermercados,retail,34,2026-03
+1937,5,Toscana,charcuterias,alimentos,26,2026-03
+1938,5,Toscana,licoreras,retail,38,2026-03
+1939,5,Toscana,veterinarias,servicios,94,2026-03
+1940,5,Toscana,peluquerias,servicios,117,2026-03
+1941,5,Toscana,droguerias,servicios,72,2026-03
+1942,5,Toscana,cacharrerias,retail,96,2026-03
+1943,5,Toscana,panaderias,alimentos,24,2026-03
+1944,5,Toscana,ferreterias,retail,90,2026-03
+1945,5,Boyaca,cafeterias,alimentos,112,2026-03
+1946,5,Boyaca,restaurantes,alimentos,11,2026-03
+1947,5,Boyaca,tiendas,retail,18,2026-03
+1948,5,Boyaca,supermercados,retail,119,2026-03
+1949,5,Boyaca,charcuterias,alimentos,52,2026-03
+1950,5,Boyaca,licoreras,retail,54,2026-03
+1951,5,Boyaca,veterinarias,servicios,52,2026-03
+1952,5,Boyaca,peluquerias,servicios,25,2026-03
+1953,5,Boyaca,droguerias,servicios,41,2026-03
+1954,5,Boyaca,cacharrerias,retail,67,2026-03
+1955,5,Boyaca,panaderias,alimentos,69,2026-03
+1956,5,Boyaca,ferreterias,retail,84,2026-03
+1957,6,Doce de Octubre,cafeterias,alimentos,50,2026-03
+1958,6,Doce de Octubre,restaurantes,alimentos,38,2026-03
+1959,6,Doce de Octubre,tiendas,retail,30,2026-03
+1960,6,Doce de Octubre,supermercados,retail,58,2026-03
+1961,6,Doce de Octubre,charcuterias,alimentos,72,2026-03
+1962,6,Doce de Octubre,licoreras,retail,88,2026-03
+1963,6,Doce de Octubre,veterinarias,servicios,76,2026-03
+1964,6,Doce de Octubre,peluquerias,servicios,36,2026-03
+1965,6,Doce de Octubre,droguerias,servicios,87,2026-03
+1966,6,Doce de Octubre,cacharrerias,retail,13,2026-03
+1967,6,Doce de Octubre,panaderias,alimentos,50,2026-03
+1968,6,Doce de Octubre,ferreterias,retail,9,2026-03
+1969,6,Pedregal,cafeterias,alimentos,96,2026-03
+1970,6,Pedregal,restaurantes,alimentos,86,2026-03
+1971,6,Pedregal,tiendas,retail,108,2026-03
+1972,6,Pedregal,supermercados,retail,55,2026-03
+1973,6,Pedregal,charcuterias,alimentos,103,2026-03
+1974,6,Pedregal,licoreras,retail,34,2026-03
+1975,6,Pedregal,veterinarias,servicios,110,2026-03
+1976,6,Pedregal,peluquerias,servicios,67,2026-03
+1977,6,Pedregal,droguerias,servicios,75,2026-03
+1978,6,Pedregal,cacharrerias,retail,82,2026-03
+1979,6,Pedregal,panaderias,alimentos,10,2026-03
+1980,6,Pedregal,ferreterias,retail,104,2026-03
+1981,6,Santander,cafeterias,alimentos,37,2026-03
+1982,6,Santander,restaurantes,alimentos,96,2026-03
+1983,6,Santander,tiendas,retail,82,2026-03
+1984,6,Santander,supermercados,retail,98,2026-03
+1985,6,Santander,charcuterias,alimentos,40,2026-03
+1986,6,Santander,licoreras,retail,100,2026-03
+1987,6,Santander,veterinarias,servicios,43,2026-03
+1988,6,Santander,peluquerias,servicios,40,2026-03
+1989,6,Santander,droguerias,servicios,73,2026-03
+1990,6,Santander,cacharrerias,retail,18,2026-03
+1991,6,Santander,panaderias,alimentos,59,2026-03
+1992,6,Santander,ferreterias,retail,40,2026-03
+1993,7,Robledo,cafeterias,alimentos,19,2026-03
+1994,7,Robledo,restaurantes,alimentos,106,2026-03
+1995,7,Robledo,tiendas,retail,116,2026-03
+1996,7,Robledo,supermercados,retail,10,2026-03
+1997,7,Robledo,charcuterias,alimentos,120,2026-03
+1998,7,Robledo,licoreras,retail,16,2026-03
+1999,7,Robledo,veterinarias,servicios,59,2026-03
+2000,7,Robledo,peluquerias,servicios,25,2026-03
+2001,7,Robledo,droguerias,servicios,53,2026-03
+2002,7,Robledo,cacharrerias,retail,91,2026-03
+2003,7,Robledo,panaderias,alimentos,10,2026-03
+2004,7,Robledo,ferreterias,retail,119,2026-03
+2005,7,Villa Flora,cafeterias,alimentos,70,2026-03
+2006,7,Villa Flora,restaurantes,alimentos,15,2026-03
+2007,7,Villa Flora,tiendas,retail,118,2026-03
+2008,7,Villa Flora,supermercados,retail,97,2026-03
+2009,7,Villa Flora,charcuterias,alimentos,62,2026-03
+2010,7,Villa Flora,licoreras,retail,71,2026-03
+2011,7,Villa Flora,veterinarias,servicios,59,2026-03
+2012,7,Villa Flora,peluquerias,servicios,99,2026-03
+2013,7,Villa Flora,droguerias,servicios,111,2026-03
+2014,7,Villa Flora,cacharrerias,retail,66,2026-03
+2015,7,Villa Flora,panaderias,alimentos,54,2026-03
+2016,7,Villa Flora,ferreterias,retail,66,2026-03
+2017,7,Altamira,cafeterias,alimentos,69,2026-03
+2018,7,Altamira,restaurantes,alimentos,13,2026-03
+2019,7,Altamira,tiendas,retail,13,2026-03
+2020,7,Altamira,supermercados,retail,47,2026-03
+2021,7,Altamira,charcuterias,alimentos,54,2026-03
+2022,7,Altamira,licoreras,retail,62,2026-03
+2023,7,Altamira,veterinarias,servicios,48,2026-03
+2024,7,Altamira,peluquerias,servicios,23,2026-03
+2025,7,Altamira,droguerias,servicios,110,2026-03
+2026,7,Altamira,cacharrerias,retail,23,2026-03
+2027,7,Altamira,panaderias,alimentos,60,2026-03
+2028,7,Altamira,ferreterias,retail,83,2026-03
+2029,8,Villa Hermosa,cafeterias,alimentos,104,2026-03
+2030,8,Villa Hermosa,restaurantes,alimentos,72,2026-03
+2031,8,Villa Hermosa,tiendas,retail,57,2026-03
+2032,8,Villa Hermosa,supermercados,retail,47,2026-03
+2033,8,Villa Hermosa,charcuterias,alimentos,24,2026-03
+2034,8,Villa Hermosa,licoreras,retail,37,2026-03
+2035,8,Villa Hermosa,veterinarias,servicios,69,2026-03
+2036,8,Villa Hermosa,peluquerias,servicios,29,2026-03
+2037,8,Villa Hermosa,droguerias,servicios,109,2026-03
+2038,8,Villa Hermosa,cacharrerias,retail,111,2026-03
+2039,8,Villa Hermosa,panaderias,alimentos,79,2026-03
+2040,8,Villa Hermosa,ferreterias,retail,101,2026-03
+2041,8,La Mansión,cafeterias,alimentos,18,2026-03
+2042,8,La Mansión,restaurantes,alimentos,16,2026-03
+2043,8,La Mansión,tiendas,retail,73,2026-03
+2044,8,La Mansión,supermercados,retail,47,2026-03
+2045,8,La Mansión,charcuterias,alimentos,8,2026-03
+2046,8,La Mansión,licoreras,retail,115,2026-03
+2047,8,La Mansión,veterinarias,servicios,33,2026-03
+2048,8,La Mansión,peluquerias,servicios,48,2026-03
+2049,8,La Mansión,droguerias,servicios,19,2026-03
+2050,8,La Mansión,cacharrerias,retail,42,2026-03
+2051,8,La Mansión,panaderias,alimentos,115,2026-03
+2052,8,La Mansión,ferreterias,retail,42,2026-03
+2053,8,San Miguel,cafeterias,alimentos,98,2026-03
+2054,8,San Miguel,restaurantes,alimentos,82,2026-03
+2055,8,San Miguel,tiendas,retail,16,2026-03
+2056,8,San Miguel,supermercados,retail,16,2026-03
+2057,8,San Miguel,charcuterias,alimentos,97,2026-03
+2058,8,San Miguel,licoreras,retail,23,2026-03
+2059,8,San Miguel,veterinarias,servicios,108,2026-03
+2060,8,San Miguel,peluquerias,servicios,43,2026-03
+2061,8,San Miguel,droguerias,servicios,7,2026-03
+2062,8,San Miguel,cacharrerias,retail,16,2026-03
+2063,8,San Miguel,panaderias,alimentos,6,2026-03
+2064,8,San Miguel,ferreterias,retail,10,2026-03
+2065,9,Buenos Aires,cafeterias,alimentos,38,2026-03
+2066,9,Buenos Aires,restaurantes,alimentos,109,2026-03
+2067,9,Buenos Aires,tiendas,retail,44,2026-03
+2068,9,Buenos Aires,supermercados,retail,82,2026-03
+2069,9,Buenos Aires,charcuterias,alimentos,66,2026-03
+2070,9,Buenos Aires,licoreras,retail,8,2026-03
+2071,9,Buenos Aires,veterinarias,servicios,6,2026-03
+2072,9,Buenos Aires,peluquerias,servicios,39,2026-03
+2073,9,Buenos Aires,droguerias,servicios,50,2026-03
+2074,9,Buenos Aires,cacharrerias,retail,39,2026-03
+2075,9,Buenos Aires,panaderias,alimentos,35,2026-03
+2076,9,Buenos Aires,ferreterias,retail,43,2026-03
+2077,9,Miraflores,cafeterias,alimentos,45,2026-03
+2078,9,Miraflores,restaurantes,alimentos,26,2026-03
+2079,9,Miraflores,tiendas,retail,29,2026-03
+2080,9,Miraflores,supermercados,retail,120,2026-03
+2081,9,Miraflores,charcuterias,alimentos,107,2026-03
+2082,9,Miraflores,licoreras,retail,89,2026-03
+2083,9,Miraflores,veterinarias,servicios,17,2026-03
+2084,9,Miraflores,peluquerias,servicios,115,2026-03
+2085,9,Miraflores,droguerias,servicios,68,2026-03
+2086,9,Miraflores,cacharrerias,retail,113,2026-03
+2087,9,Miraflores,panaderias,alimentos,102,2026-03
+2088,9,Miraflores,ferreterias,retail,50,2026-03
+2089,9,Cataluña,cafeterias,alimentos,46,2026-03
+2090,9,Cataluña,restaurantes,alimentos,9,2026-03
+2091,9,Cataluña,tiendas,retail,48,2026-03
+2092,9,Cataluña,supermercados,retail,71,2026-03
+2093,9,Cataluña,charcuterias,alimentos,10,2026-03
+2094,9,Cataluña,licoreras,retail,81,2026-03
+2095,9,Cataluña,veterinarias,servicios,101,2026-03
+2096,9,Cataluña,peluquerias,servicios,94,2026-03
+2097,9,Cataluña,droguerias,servicios,114,2026-03
+2098,9,Cataluña,cacharrerias,retail,75,2026-03
+2099,9,Cataluña,panaderias,alimentos,36,2026-03
+2100,9,Cataluña,ferreterias,retail,72,2026-03
+2101,10,La Candelaria,cafeterias,alimentos,79,2026-03
+2102,10,La Candelaria,restaurantes,alimentos,64,2026-03
+2103,10,La Candelaria,tiendas,retail,8,2026-03
+2104,10,La Candelaria,supermercados,retail,57,2026-03
+2105,10,La Candelaria,charcuterias,alimentos,53,2026-03
+2106,10,La Candelaria,licoreras,retail,67,2026-03
+2107,10,La Candelaria,veterinarias,servicios,36,2026-03
+2108,10,La Candelaria,peluquerias,servicios,27,2026-03
+2109,10,La Candelaria,droguerias,servicios,96,2026-03
+2110,10,La Candelaria,cacharrerias,retail,76,2026-03
+2111,10,La Candelaria,panaderias,alimentos,102,2026-03
+2112,10,La Candelaria,ferreterias,retail,91,2026-03
+2113,10,Boston,cafeterias,alimentos,102,2026-03
+2114,10,Boston,restaurantes,alimentos,15,2026-03
+2115,10,Boston,tiendas,retail,26,2026-03
+2116,10,Boston,supermercados,retail,33,2026-03
+2117,10,Boston,charcuterias,alimentos,70,2026-03
+2118,10,Boston,licoreras,retail,41,2026-03
+2119,10,Boston,veterinarias,servicios,62,2026-03
+2120,10,Boston,peluquerias,servicios,9,2026-03
+2121,10,Boston,droguerias,servicios,64,2026-03
+2122,10,Boston,cacharrerias,retail,48,2026-03
+2123,10,Boston,panaderias,alimentos,44,2026-03
+2124,10,Boston,ferreterias,retail,26,2026-03
+2125,10,Prado,cafeterias,alimentos,40,2026-03
+2126,10,Prado,restaurantes,alimentos,46,2026-03
+2127,10,Prado,tiendas,retail,34,2026-03
+2128,10,Prado,supermercados,retail,84,2026-03
+2129,10,Prado,charcuterias,alimentos,103,2026-03
+2130,10,Prado,licoreras,retail,36,2026-03
+2131,10,Prado,veterinarias,servicios,89,2026-03
+2132,10,Prado,peluquerias,servicios,90,2026-03
+2133,10,Prado,droguerias,servicios,78,2026-03
+2134,10,Prado,cacharrerias,retail,18,2026-03
+2135,10,Prado,panaderias,alimentos,26,2026-03
+2136,10,Prado,ferreterias,retail,119,2026-03
+2137,11,Laureles,cafeterias,alimentos,52,2026-03
+2138,11,Laureles,restaurantes,alimentos,49,2026-03
+2139,11,Laureles,tiendas,retail,112,2026-03
+2140,11,Laureles,supermercados,retail,40,2026-03
+2141,11,Laureles,charcuterias,alimentos,70,2026-03
+2142,11,Laureles,licoreras,retail,82,2026-03
+2143,11,Laureles,veterinarias,servicios,18,2026-03
+2144,11,Laureles,peluquerias,servicios,99,2026-03
+2145,11,Laureles,droguerias,servicios,58,2026-03
+2146,11,Laureles,cacharrerias,retail,61,2026-03
+2147,11,Laureles,panaderias,alimentos,44,2026-03
+2148,11,Laureles,ferreterias,retail,62,2026-03
+2149,11,Estadio,cafeterias,alimentos,22,2026-03
+2150,11,Estadio,restaurantes,alimentos,32,2026-03
+2151,11,Estadio,tiendas,retail,28,2026-03
+2152,11,Estadio,supermercados,retail,104,2026-03
+2153,11,Estadio,charcuterias,alimentos,54,2026-03
+2154,11,Estadio,licoreras,retail,33,2026-03
+2155,11,Estadio,veterinarias,servicios,56,2026-03
+2156,11,Estadio,peluquerias,servicios,50,2026-03
+2157,11,Estadio,droguerias,servicios,31,2026-03
+2158,11,Estadio,cacharrerias,retail,83,2026-03
+2159,11,Estadio,panaderias,alimentos,8,2026-03
+2160,11,Estadio,ferreterias,retail,45,2026-03
+2161,11,Conquistadores,cafeterias,alimentos,84,2026-03
+2162,11,Conquistadores,restaurantes,alimentos,25,2026-03
+2163,11,Conquistadores,tiendas,retail,102,2026-03
+2164,11,Conquistadores,supermercados,retail,26,2026-03
+2165,11,Conquistadores,charcuterias,alimentos,71,2026-03
+2166,11,Conquistadores,licoreras,retail,21,2026-03
+2167,11,Conquistadores,veterinarias,servicios,14,2026-03
+2168,11,Conquistadores,peluquerias,servicios,97,2026-03
+2169,11,Conquistadores,droguerias,servicios,69,2026-03
+2170,11,Conquistadores,cacharrerias,retail,83,2026-03
+2171,11,Conquistadores,panaderias,alimentos,53,2026-03
+2172,11,Conquistadores,ferreterias,retail,28,2026-03
+2173,12,La America,cafeterias,alimentos,96,2026-03
+2174,12,La America,restaurantes,alimentos,68,2026-03
+2175,12,La America,tiendas,retail,83,2026-03
+2176,12,La America,supermercados,retail,62,2026-03
+2177,12,La America,charcuterias,alimentos,54,2026-03
+2178,12,La America,licoreras,retail,72,2026-03
+2179,12,La America,veterinarias,servicios,101,2026-03
+2180,12,La America,peluquerias,servicios,99,2026-03
+2181,12,La America,droguerias,servicios,38,2026-03
+2182,12,La America,cacharrerias,retail,120,2026-03
+2183,12,La America,panaderias,alimentos,109,2026-03
+2184,12,La America,ferreterias,retail,61,2026-03
+2185,12,Ferrini,cafeterias,alimentos,35,2026-03
+2186,12,Ferrini,restaurantes,alimentos,58,2026-03
+2187,12,Ferrini,tiendas,retail,42,2026-03
+2188,12,Ferrini,supermercados,retail,88,2026-03
+2189,12,Ferrini,charcuterias,alimentos,24,2026-03
+2190,12,Ferrini,licoreras,retail,87,2026-03
+2191,12,Ferrini,veterinarias,servicios,64,2026-03
+2192,12,Ferrini,peluquerias,servicios,50,2026-03
+2193,12,Ferrini,droguerias,servicios,10,2026-03
+2194,12,Ferrini,cacharrerias,retail,98,2026-03
+2195,12,Ferrini,panaderias,alimentos,36,2026-03
+2196,12,Ferrini,ferreterias,retail,37,2026-03
+2197,12,Calasanz,cafeterias,alimentos,82,2026-03
+2198,12,Calasanz,restaurantes,alimentos,104,2026-03
+2199,12,Calasanz,tiendas,retail,33,2026-03
+2200,12,Calasanz,supermercados,retail,59,2026-03
+2201,12,Calasanz,charcuterias,alimentos,15,2026-03
+2202,12,Calasanz,licoreras,retail,13,2026-03
+2203,12,Calasanz,veterinarias,servicios,74,2026-03
+2204,12,Calasanz,peluquerias,servicios,91,2026-03
+2205,12,Calasanz,droguerias,servicios,53,2026-03
+2206,12,Calasanz,cacharrerias,retail,5,2026-03
+2207,12,Calasanz,panaderias,alimentos,61,2026-03
+2208,12,Calasanz,ferreterias,retail,18,2026-03
+2209,13,San Javier,cafeterias,alimentos,20,2026-03
+2210,13,San Javier,restaurantes,alimentos,87,2026-03
+2211,13,San Javier,tiendas,retail,57,2026-03
+2212,13,San Javier,supermercados,retail,8,2026-03
+2213,13,San Javier,charcuterias,alimentos,62,2026-03
+2214,13,San Javier,licoreras,retail,99,2026-03
+2215,13,San Javier,veterinarias,servicios,48,2026-03
+2216,13,San Javier,peluquerias,servicios,91,2026-03
+2217,13,San Javier,droguerias,servicios,106,2026-03
+2218,13,San Javier,cacharrerias,retail,69,2026-03
+2219,13,San Javier,panaderias,alimentos,18,2026-03
+2220,13,San Javier,ferreterias,retail,51,2026-03
+2221,13,El Salado,cafeterias,alimentos,10,2026-03
+2222,13,El Salado,restaurantes,alimentos,42,2026-03
+2223,13,El Salado,tiendas,retail,30,2026-03
+2224,13,El Salado,supermercados,retail,71,2026-03
+2225,13,El Salado,charcuterias,alimentos,26,2026-03
+2226,13,El Salado,licoreras,retail,18,2026-03
+2227,13,El Salado,veterinarias,servicios,86,2026-03
+2228,13,El Salado,peluquerias,servicios,69,2026-03
+2229,13,El Salado,droguerias,servicios,55,2026-03
+2230,13,El Salado,cacharrerias,retail,64,2026-03
+2231,13,El Salado,panaderias,alimentos,87,2026-03
+2232,13,El Salado,ferreterias,retail,83,2026-03
+2233,13,20 de Julio,cafeterias,alimentos,38,2026-03
+2234,13,20 de Julio,restaurantes,alimentos,109,2026-03
+2235,13,20 de Julio,tiendas,retail,120,2026-03
+2236,13,20 de Julio,supermercados,retail,33,2026-03
+2237,13,20 de Julio,charcuterias,alimentos,53,2026-03
+2238,13,20 de Julio,licoreras,retail,45,2026-03
+2239,13,20 de Julio,veterinarias,servicios,115,2026-03
+2240,13,20 de Julio,peluquerias,servicios,74,2026-03
+2241,13,20 de Julio,droguerias,servicios,59,2026-03
+2242,13,20 de Julio,cacharrerias,retail,5,2026-03
+2243,13,20 de Julio,panaderias,alimentos,20,2026-03
+2244,13,20 de Julio,ferreterias,retail,18,2026-03
+2245,14,El Poblado,cafeterias,alimentos,113,2026-03
+2246,14,El Poblado,restaurantes,alimentos,35,2026-03
+2247,14,El Poblado,tiendas,retail,82,2026-03
+2248,14,El Poblado,supermercados,retail,120,2026-03
+2249,14,El Poblado,charcuterias,alimentos,81,2026-03
+2250,14,El Poblado,licoreras,retail,80,2026-03
+2251,14,El Poblado,veterinarias,servicios,18,2026-03
+2252,14,El Poblado,peluquerias,servicios,87,2026-03
+2253,14,El Poblado,droguerias,servicios,28,2026-03
+2254,14,El Poblado,cacharrerias,retail,21,2026-03
+2255,14,El Poblado,panaderias,alimentos,106,2026-03
+2256,14,El Poblado,ferreterias,retail,57,2026-03
+2257,14,Provenza,cafeterias,alimentos,10,2026-03
+2258,14,Provenza,restaurantes,alimentos,10,2026-03
+2259,14,Provenza,tiendas,retail,71,2026-03
+2260,14,Provenza,supermercados,retail,36,2026-03
+2261,14,Provenza,charcuterias,alimentos,34,2026-03
+2262,14,Provenza,licoreras,retail,59,2026-03
+2263,14,Provenza,veterinarias,servicios,39,2026-03
+2264,14,Provenza,peluquerias,servicios,15,2026-03
+2265,14,Provenza,droguerias,servicios,78,2026-03
+2266,14,Provenza,cacharrerias,retail,111,2026-03
+2267,14,Provenza,panaderias,alimentos,88,2026-03
+2268,14,Provenza,ferreterias,retail,32,2026-03
+2269,14,Manila,cafeterias,alimentos,68,2026-03
+2270,14,Manila,restaurantes,alimentos,45,2026-03
+2271,14,Manila,tiendas,retail,104,2026-03
+2272,14,Manila,supermercados,retail,6,2026-03
+2273,14,Manila,charcuterias,alimentos,35,2026-03
+2274,14,Manila,licoreras,retail,33,2026-03
+2275,14,Manila,veterinarias,servicios,32,2026-03
+2276,14,Manila,peluquerias,servicios,32,2026-03
+2277,14,Manila,droguerias,servicios,70,2026-03
+2278,14,Manila,cacharrerias,retail,52,2026-03
+2279,14,Manila,panaderias,alimentos,7,2026-03
+2280,14,Manila,ferreterias,retail,70,2026-03
+2281,15,Guayabal,cafeterias,alimentos,50,2026-03
+2282,15,Guayabal,restaurantes,alimentos,71,2026-03
+2283,15,Guayabal,tiendas,retail,25,2026-03
+2284,15,Guayabal,supermercados,retail,38,2026-03
+2285,15,Guayabal,charcuterias,alimentos,77,2026-03
+2286,15,Guayabal,licoreras,retail,30,2026-03
+2287,15,Guayabal,veterinarias,servicios,6,2026-03
+2288,15,Guayabal,peluquerias,servicios,101,2026-03
+2289,15,Guayabal,droguerias,servicios,115,2026-03
+2290,15,Guayabal,cacharrerias,retail,79,2026-03
+2291,15,Guayabal,panaderias,alimentos,31,2026-03
+2292,15,Guayabal,ferreterias,retail,68,2026-03
+2293,15,Trinidad,cafeterias,alimentos,38,2026-03
+2294,15,Trinidad,restaurantes,alimentos,80,2026-03
+2295,15,Trinidad,tiendas,retail,72,2026-03
+2296,15,Trinidad,supermercados,retail,31,2026-03
+2297,15,Trinidad,charcuterias,alimentos,84,2026-03
+2298,15,Trinidad,licoreras,retail,83,2026-03
+2299,15,Trinidad,veterinarias,servicios,14,2026-03
+2300,15,Trinidad,peluquerias,servicios,108,2026-03
+2301,15,Trinidad,droguerias,servicios,31,2026-03
+2302,15,Trinidad,cacharrerias,retail,82,2026-03
+2303,15,Trinidad,panaderias,alimentos,38,2026-03
+2304,15,Trinidad,ferreterias,retail,41,2026-03
+2305,15,Cristo Rey,cafeterias,alimentos,72,2026-03
+2306,15,Cristo Rey,restaurantes,alimentos,49,2026-03
+2307,15,Cristo Rey,tiendas,retail,109,2026-03
+2308,15,Cristo Rey,supermercados,retail,84,2026-03
+2309,15,Cristo Rey,charcuterias,alimentos,31,2026-03
+2310,15,Cristo Rey,licoreras,retail,76,2026-03
+2311,15,Cristo Rey,veterinarias,servicios,94,2026-03
+2312,15,Cristo Rey,peluquerias,servicios,25,2026-03
+2313,15,Cristo Rey,droguerias,servicios,110,2026-03
+2314,15,Cristo Rey,cacharrerias,retail,105,2026-03
+2315,15,Cristo Rey,panaderias,alimentos,74,2026-03
+2316,15,Cristo Rey,ferreterias,retail,106,2026-03
+2317,16,Belen,cafeterias,alimentos,85,2026-03
+2318,16,Belen,restaurantes,alimentos,5,2026-03
+2319,16,Belen,tiendas,retail,5,2026-03
+2320,16,Belen,supermercados,retail,65,2026-03
+2321,16,Belen,charcuterias,alimentos,92,2026-03
+2322,16,Belen,licoreras,retail,118,2026-03
+2323,16,Belen,veterinarias,servicios,67,2026-03
+2324,16,Belen,peluquerias,servicios,107,2026-03
+2325,16,Belen,droguerias,servicios,17,2026-03
+2326,16,Belen,cacharrerias,retail,18,2026-03
+2327,16,Belen,panaderias,alimentos,12,2026-03
+2328,16,Belen,ferreterias,retail,40,2026-03
+2329,16,Belen Rincon,cafeterias,alimentos,53,2026-03
+2330,16,Belen Rincon,restaurantes,alimentos,53,2026-03
+2331,16,Belen Rincon,tiendas,retail,83,2026-03
+2332,16,Belen Rincon,supermercados,retail,39,2026-03
+2333,16,Belen Rincon,charcuterias,alimentos,101,2026-03
+2334,16,Belen Rincon,licoreras,retail,103,2026-03
+2335,16,Belen Rincon,veterinarias,servicios,32,2026-03
+2336,16,Belen Rincon,peluquerias,servicios,70,2026-03
+2337,16,Belen Rincon,droguerias,servicios,25,2026-03
+2338,16,Belen Rincon,cacharrerias,retail,53,2026-03
+2339,16,Belen Rincon,panaderias,alimentos,23,2026-03
+2340,16,Belen Rincon,ferreterias,retail,40,2026-03
+2341,16,Loma de los Bernal,cafeterias,alimentos,7,2026-03
+2342,16,Loma de los Bernal,restaurantes,alimentos,31,2026-03
+2343,16,Loma de los Bernal,tiendas,retail,105,2026-03
+2344,16,Loma de los Bernal,supermercados,retail,95,2026-03
+2345,16,Loma de los Bernal,charcuterias,alimentos,29,2026-03
+2346,16,Loma de los Bernal,licoreras,retail,53,2026-03
+2347,16,Loma de los Bernal,veterinarias,servicios,77,2026-03
+2348,16,Loma de los Bernal,peluquerias,servicios,54,2026-03
+2349,16,Loma de los Bernal,droguerias,servicios,36,2026-03
+2350,16,Loma de los Bernal,cacharrerias,retail,43,2026-03
+2351,16,Loma de los Bernal,panaderias,alimentos,9,2026-03
+2352,16,Loma de los Bernal,ferreterias,retail,60,2026-03
+2353,1,Popular,cafeterias,alimentos,38,2026-03
+2354,1,Popular,restaurantes,alimentos,14,2026-03
+2355,1,Popular,tiendas,retail,85,2026-03
+2356,1,Popular,supermercados,retail,12,2026-03
+2357,1,Popular,charcuterias,alimentos,113,2026-03
+2358,1,Popular,licoreras,retail,70,2026-03
+2359,1,Popular,veterinarias,servicios,70,2026-03
+2360,1,Popular,peluquerias,servicios,83,2026-03
+2361,1,Popular,droguerias,servicios,112,2026-03
+2362,1,Popular,cacharrerias,retail,119,2026-03
+2363,1,Popular,panaderias,alimentos,35,2026-03
+2364,1,Popular,ferreterias,retail,26,2026-03
+2365,1,Santo Domingo Savio,cafeterias,alimentos,8,2026-03
+2366,1,Santo Domingo Savio,restaurantes,alimentos,105,2026-03
+2367,1,Santo Domingo Savio,tiendas,retail,69,2026-03
+2368,1,Santo Domingo Savio,supermercados,retail,120,2026-03
+2369,1,Santo Domingo Savio,charcuterias,alimentos,14,2026-03
+2370,1,Santo Domingo Savio,licoreras,retail,80,2026-03
+2371,1,Santo Domingo Savio,veterinarias,servicios,95,2026-03
+2372,1,Santo Domingo Savio,peluquerias,servicios,108,2026-03
+2373,1,Santo Domingo Savio,droguerias,servicios,79,2026-03
+2374,1,Santo Domingo Savio,cacharrerias,retail,52,2026-03
+2375,1,Santo Domingo Savio,panaderias,alimentos,42,2026-03
+2376,1,Santo Domingo Savio,ferreterias,retail,86,2026-03
+2377,1,Granizal,cafeterias,alimentos,14,2026-03
+2378,1,Granizal,restaurantes,alimentos,120,2026-03
+2379,1,Granizal,tiendas,retail,64,2026-03
+2380,1,Granizal,supermercados,retail,64,2026-03
+2381,1,Granizal,charcuterias,alimentos,82,2026-03
+2382,1,Granizal,licoreras,retail,24,2026-03
+2383,1,Granizal,veterinarias,servicios,34,2026-03
+2384,1,Granizal,peluquerias,servicios,45,2026-03
+2385,1,Granizal,droguerias,servicios,11,2026-03
+2386,1,Granizal,cacharrerias,retail,48,2026-03
+2387,1,Granizal,panaderias,alimentos,35,2026-03
+2388,1,Granizal,ferreterias,retail,77,2026-03
+2389,2,Santa Cruz,cafeterias,alimentos,84,2026-03
+2390,2,Santa Cruz,restaurantes,alimentos,44,2026-03
+2391,2,Santa Cruz,tiendas,retail,16,2026-03
+2392,2,Santa Cruz,supermercados,retail,20,2026-03
+2393,2,Santa Cruz,charcuterias,alimentos,7,2026-03
+2394,2,Santa Cruz,licoreras,retail,31,2026-03
+2395,2,Santa Cruz,veterinarias,servicios,57,2026-03
+2396,2,Santa Cruz,peluquerias,servicios,35,2026-03
+2397,2,Santa Cruz,droguerias,servicios,93,2026-03
+2398,2,Santa Cruz,cacharrerias,retail,50,2026-03
+2399,2,Santa Cruz,panaderias,alimentos,10,2026-03
+2400,2,Santa Cruz,ferreterias,retail,23,2026-03
+2401,2,La Rosa,cafeterias,alimentos,90,2026-03
+2402,2,La Rosa,restaurantes,alimentos,72,2026-03
+2403,2,La Rosa,tiendas,retail,81,2026-03
+2404,2,La Rosa,supermercados,retail,5,2026-03
+2405,2,La Rosa,charcuterias,alimentos,118,2026-03
+2406,2,La Rosa,licoreras,retail,12,2026-03
+2407,2,La Rosa,veterinarias,servicios,25,2026-03
+2408,2,La Rosa,peluquerias,servicios,119,2026-03
+2409,2,La Rosa,droguerias,servicios,50,2026-03
+2410,2,La Rosa,cacharrerias,retail,71,2026-03
+2411,2,La Rosa,panaderias,alimentos,21,2026-03
+2412,2,La Rosa,ferreterias,retail,48,2026-03
+2413,2,Andalucia,cafeterias,alimentos,55,2026-03
+2414,2,Andalucia,restaurantes,alimentos,35,2026-03
+2415,2,Andalucia,tiendas,retail,15,2026-03
+2416,2,Andalucia,supermercados,retail,59,2026-03
+2417,2,Andalucia,charcuterias,alimentos,65,2026-03
+2418,2,Andalucia,licoreras,retail,18,2026-03
+2419,2,Andalucia,veterinarias,servicios,44,2026-03
+2420,2,Andalucia,peluquerias,servicios,68,2026-03
+2421,2,Andalucia,droguerias,servicios,105,2026-03
+2422,2,Andalucia,cacharrerias,retail,64,2026-03
+2423,2,Andalucia,panaderias,alimentos,35,2026-03
+2424,2,Andalucia,ferreterias,retail,5,2026-03
+2425,3,Manrique Central,cafeterias,alimentos,113,2026-03
+2426,3,Manrique Central,restaurantes,alimentos,91,2026-03
+2427,3,Manrique Central,tiendas,retail,68,2026-03
+2428,3,Manrique Central,supermercados,retail,25,2026-03
+2429,3,Manrique Central,charcuterias,alimentos,53,2026-03
+2430,3,Manrique Central,licoreras,retail,67,2026-03
+2431,3,Manrique Central,veterinarias,servicios,117,2026-03
+2432,3,Manrique Central,peluquerias,servicios,37,2026-03
+2433,3,Manrique Central,droguerias,servicios,15,2026-03
+2434,3,Manrique Central,cacharrerias,retail,33,2026-03
+2435,3,Manrique Central,panaderias,alimentos,13,2026-03
+2436,3,Manrique Central,ferreterias,retail,7,2026-03
+2437,3,Santa Ines,cafeterias,alimentos,86,2026-03
+2438,3,Santa Ines,restaurantes,alimentos,108,2026-03
+2439,3,Santa Ines,tiendas,retail,103,2026-03
+2440,3,Santa Ines,supermercados,retail,49,2026-03
+2441,3,Santa Ines,charcuterias,alimentos,108,2026-03
+2442,3,Santa Ines,licoreras,retail,76,2026-03
+2443,3,Santa Ines,veterinarias,servicios,20,2026-03
+2444,3,Santa Ines,peluquerias,servicios,120,2026-03
+2445,3,Santa Ines,droguerias,servicios,117,2026-03
+2446,3,Santa Ines,cacharrerias,retail,31,2026-03
+2447,3,Santa Ines,panaderias,alimentos,14,2026-03
+2448,3,Santa Ines,ferreterias,retail,93,2026-03
+2449,3,El Raizal,cafeterias,alimentos,114,2026-03
+2450,3,El Raizal,restaurantes,alimentos,83,2026-03
+2451,3,El Raizal,tiendas,retail,65,2026-03
+2452,3,El Raizal,supermercados,retail,75,2026-03
+2453,3,El Raizal,charcuterias,alimentos,50,2026-03
+2454,3,El Raizal,licoreras,retail,19,2026-03
+2455,3,El Raizal,veterinarias,servicios,25,2026-03
+2456,3,El Raizal,peluquerias,servicios,105,2026-03
+2457,3,El Raizal,droguerias,servicios,114,2026-03
+2458,3,El Raizal,cacharrerias,retail,75,2026-03
+2459,3,El Raizal,panaderias,alimentos,28,2026-03
+2460,3,El Raizal,ferreterias,retail,39,2026-03
+2461,3,Zamora,cafeterias,alimentos,109,2026-03
+2462,3,Zamora,restaurantes,alimentos,82,2026-03
+2463,3,Zamora,tiendas,retail,63,2026-03
+2464,3,Zamora,supermercados,retail,118,2026-03
+2465,3,Zamora,charcuterias,alimentos,93,2026-03
+2466,3,Zamora,licoreras,retail,43,2026-03
+2467,3,Zamora,veterinarias,servicios,33,2026-03
+2468,3,Zamora,peluquerias,servicios,84,2026-03
+2469,3,Zamora,droguerias,servicios,70,2026-03
+2470,3,Zamora,cacharrerias,retail,20,2026-03
+2471,3,Zamora,panaderias,alimentos,91,2026-03
+2472,3,Zamora,ferreterias,retail,109,2026-03
+2473,4,Aranjuez,cafeterias,alimentos,51,2026-03
+2474,4,Aranjuez,restaurantes,alimentos,20,2026-03
+2475,4,Aranjuez,tiendas,retail,49,2026-03
+2476,4,Aranjuez,supermercados,retail,21,2026-03
+2477,4,Aranjuez,charcuterias,alimentos,6,2026-03
+2478,4,Aranjuez,licoreras,retail,60,2026-03
+2479,4,Aranjuez,veterinarias,servicios,48,2026-03
+2480,4,Aranjuez,peluquerias,servicios,89,2026-03
+2481,4,Aranjuez,droguerias,servicios,116,2026-03
+2482,4,Aranjuez,cacharrerias,retail,25,2026-03
+2483,4,Aranjuez,panaderias,alimentos,76,2026-03
+2484,4,Aranjuez,ferreterias,retail,71,2026-03
+2485,4,Berlin,cafeterias,alimentos,47,2026-03
+2486,4,Berlin,restaurantes,alimentos,109,2026-03
+2487,4,Berlin,tiendas,retail,71,2026-03
+2488,4,Berlin,supermercados,retail,11,2026-03
+2489,4,Berlin,charcuterias,alimentos,55,2026-03
+2490,4,Berlin,licoreras,retail,98,2026-03
+2491,4,Berlin,veterinarias,servicios,83,2026-03
+2492,4,Berlin,peluquerias,servicios,50,2026-03
+2493,4,Berlin,droguerias,servicios,14,2026-03
+2494,4,Berlin,cacharrerias,retail,49,2026-03
+2495,4,Berlin,panaderias,alimentos,37,2026-03
+2496,4,Berlin,ferreterias,retail,44,2026-03
+2497,4,Moravia,cafeterias,alimentos,102,2026-03
+2498,4,Moravia,restaurantes,alimentos,81,2026-03
+2499,4,Moravia,tiendas,retail,114,2026-03
+2500,4,Moravia,supermercados,retail,10,2026-03
+2501,4,Moravia,charcuterias,alimentos,57,2026-03
+2502,4,Moravia,licoreras,retail,76,2026-03
+2503,4,Moravia,veterinarias,servicios,52,2026-03
+2504,4,Moravia,peluquerias,servicios,75,2026-03
+2505,4,Moravia,droguerias,servicios,80,2026-03
+2506,4,Moravia,cacharrerias,retail,9,2026-03
+2507,4,Moravia,panaderias,alimentos,30,2026-03
+2508,4,Moravia,ferreterias,retail,120,2026-03
+2509,5,Castilla,cafeterias,alimentos,96,2026-03
+2510,5,Castilla,restaurantes,alimentos,18,2026-03
+2511,5,Castilla,tiendas,retail,72,2026-03
+2512,5,Castilla,supermercados,retail,23,2026-03
+2513,5,Castilla,charcuterias,alimentos,87,2026-03
+2514,5,Castilla,licoreras,retail,26,2026-03
+2515,5,Castilla,veterinarias,servicios,71,2026-03
+2516,5,Castilla,peluquerias,servicios,99,2026-03
+2517,5,Castilla,droguerias,servicios,69,2026-03
+2518,5,Castilla,cacharrerias,retail,34,2026-03
+2519,5,Castilla,panaderias,alimentos,27,2026-03
+2520,5,Castilla,ferreterias,retail,109,2026-03
+2521,5,Toscana,cafeterias,alimentos,26,2026-03
+2522,5,Toscana,restaurantes,alimentos,25,2026-03
+2523,5,Toscana,tiendas,retail,91,2026-03
+2524,5,Toscana,supermercados,retail,57,2026-03
+2525,5,Toscana,charcuterias,alimentos,64,2026-03
+2526,5,Toscana,licoreras,retail,55,2026-03
+2527,5,Toscana,veterinarias,servicios,20,2026-03
+2528,5,Toscana,peluquerias,servicios,22,2026-03
+2529,5,Toscana,droguerias,servicios,54,2026-03
+2530,5,Toscana,cacharrerias,retail,27,2026-03
+2531,5,Toscana,panaderias,alimentos,20,2026-03
+2532,5,Toscana,ferreterias,retail,43,2026-03
+2533,5,Boyaca,cafeterias,alimentos,100,2026-03
+2534,5,Boyaca,restaurantes,alimentos,99,2026-03
+2535,5,Boyaca,tiendas,retail,118,2026-03
+2536,5,Boyaca,supermercados,retail,33,2026-03
+2537,5,Boyaca,charcuterias,alimentos,109,2026-03
+2538,5,Boyaca,licoreras,retail,30,2026-03
+2539,5,Boyaca,veterinarias,servicios,91,2026-03
+2540,5,Boyaca,peluquerias,servicios,118,2026-03
+2541,5,Boyaca,droguerias,servicios,81,2026-03
+2542,5,Boyaca,cacharrerias,retail,85,2026-03
+2543,5,Boyaca,panaderias,alimentos,53,2026-03
+2544,5,Boyaca,ferreterias,retail,117,2026-03
+2545,6,Doce de Octubre,cafeterias,alimentos,99,2026-03
+2546,6,Doce de Octubre,restaurantes,alimentos,37,2026-03
+2547,6,Doce de Octubre,tiendas,retail,101,2026-03
+2548,6,Doce de Octubre,supermercados,retail,11,2026-03
+2549,6,Doce de Octubre,charcuterias,alimentos,63,2026-03
+2550,6,Doce de Octubre,licoreras,retail,105,2026-03
+2551,6,Doce de Octubre,veterinarias,servicios,31,2026-03
+2552,6,Doce de Octubre,peluquerias,servicios,90,2026-03
+2553,6,Doce de Octubre,droguerias,servicios,7,2026-03
+2554,6,Doce de Octubre,cacharrerias,retail,52,2026-03
+2555,6,Doce de Octubre,panaderias,alimentos,92,2026-03
+2556,6,Doce de Octubre,ferreterias,retail,15,2026-03
+2557,6,Pedregal,cafeterias,alimentos,84,2026-03
+2558,6,Pedregal,restaurantes,alimentos,17,2026-03
+2559,6,Pedregal,tiendas,retail,46,2026-03
+2560,6,Pedregal,supermercados,retail,82,2026-03
+2561,6,Pedregal,charcuterias,alimentos,84,2026-03
+2562,6,Pedregal,licoreras,retail,28,2026-03
+2563,6,Pedregal,veterinarias,servicios,12,2026-03
+2564,6,Pedregal,peluquerias,servicios,47,2026-03
+2565,6,Pedregal,droguerias,servicios,94,2026-03
+2566,6,Pedregal,cacharrerias,retail,65,2026-03
+2567,6,Pedregal,panaderias,alimentos,9,2026-03
+2568,6,Pedregal,ferreterias,retail,66,2026-03
+2569,6,Santander,cafeterias,alimentos,32,2026-03
+2570,6,Santander,restaurantes,alimentos,31,2026-03
+2571,6,Santander,tiendas,retail,87,2026-03
+2572,6,Santander,supermercados,retail,23,2026-03
+2573,6,Santander,charcuterias,alimentos,113,2026-03
+2574,6,Santander,licoreras,retail,51,2026-03
+2575,6,Santander,veterinarias,servicios,109,2026-03
+2576,6,Santander,peluquerias,servicios,67,2026-03
+2577,6,Santander,droguerias,servicios,36,2026-03
+2578,6,Santander,cacharrerias,retail,57,2026-03
+2579,6,Santander,panaderias,alimentos,31,2026-03
+2580,6,Santander,ferreterias,retail,118,2026-03
+2581,7,Robledo,cafeterias,alimentos,40,2026-03
+2582,7,Robledo,restaurantes,alimentos,12,2026-03
+2583,7,Robledo,tiendas,retail,15,2026-03
+2584,7,Robledo,supermercados,retail,26,2026-03
+2585,7,Robledo,charcuterias,alimentos,13,2026-03
+2586,7,Robledo,licoreras,retail,85,2026-03
+2587,7,Robledo,veterinarias,servicios,92,2026-03
+2588,7,Robledo,peluquerias,servicios,119,2026-03
+2589,7,Robledo,droguerias,servicios,43,2026-03
+2590,7,Robledo,cacharrerias,retail,65,2026-03
+2591,7,Robledo,panaderias,alimentos,14,2026-03
+2592,7,Robledo,ferreterias,retail,51,2026-03
+2593,7,Villa Flora,cafeterias,alimentos,92,2026-03
+2594,7,Villa Flora,restaurantes,alimentos,116,2026-03
+2595,7,Villa Flora,tiendas,retail,53,2026-03
+2596,7,Villa Flora,supermercados,retail,93,2026-03
+2597,7,Villa Flora,charcuterias,alimentos,80,2026-03
+2598,7,Villa Flora,licoreras,retail,27,2026-03
+2599,7,Villa Flora,veterinarias,servicios,27,2026-03
+2600,7,Villa Flora,peluquerias,servicios,104,2026-03
+2601,7,Villa Flora,droguerias,servicios,22,2026-03
+2602,7,Villa Flora,cacharrerias,retail,9,2026-03
+2603,7,Villa Flora,panaderias,alimentos,14,2026-03
+2604,7,Villa Flora,ferreterias,retail,75,2026-03
+2605,7,Altamira,cafeterias,alimentos,23,2026-03
+2606,7,Altamira,restaurantes,alimentos,24,2026-03
+2607,7,Altamira,tiendas,retail,48,2026-03
+2608,7,Altamira,supermercados,retail,72,2026-03
+2609,7,Altamira,charcuterias,alimentos,67,2026-03
+2610,7,Altamira,licoreras,retail,6,2026-03
+2611,7,Altamira,veterinarias,servicios,67,2026-03
+2612,7,Altamira,peluquerias,servicios,77,2026-03
+2613,7,Altamira,droguerias,servicios,20,2026-03
+2614,7,Altamira,cacharrerias,retail,53,2026-03
+2615,7,Altamira,panaderias,alimentos,106,2026-03
+2616,7,Altamira,ferreterias,retail,25,2026-03
+2617,8,Villa Hermosa,cafeterias,alimentos,63,2026-03
+2618,8,Villa Hermosa,restaurantes,alimentos,30,2026-03
+2619,8,Villa Hermosa,tiendas,retail,47,2026-03
+2620,8,Villa Hermosa,supermercados,retail,105,2026-03
+2621,8,Villa Hermosa,charcuterias,alimentos,30,2026-03
+2622,8,Villa Hermosa,licoreras,retail,76,2026-03
+2623,8,Villa Hermosa,veterinarias,servicios,32,2026-03
+2624,8,Villa Hermosa,peluquerias,servicios,87,2026-03
+2625,8,Villa Hermosa,droguerias,servicios,58,2026-03
+2626,8,Villa Hermosa,cacharrerias,retail,87,2026-03
+2627,8,Villa Hermosa,panaderias,alimentos,74,2026-03
+2628,8,Villa Hermosa,ferreterias,retail,83,2026-03
+2629,8,La Mansión,cafeterias,alimentos,21,2026-03
+2630,8,La Mansión,restaurantes,alimentos,113,2026-03
+2631,8,La Mansión,tiendas,retail,60,2026-03
+2632,8,La Mansión,supermercados,retail,69,2026-03
+2633,8,La Mansión,charcuterias,alimentos,79,2026-03
+2634,8,La Mansión,licoreras,retail,9,2026-03
+2635,8,La Mansión,veterinarias,servicios,83,2026-03
+2636,8,La Mansión,peluquerias,servicios,19,2026-03
+2637,8,La Mansión,droguerias,servicios,7,2026-03
+2638,8,La Mansión,cacharrerias,retail,91,2026-03
+2639,8,La Mansión,panaderias,alimentos,49,2026-03
+2640,8,La Mansión,ferreterias,retail,66,2026-03
+2641,8,San Miguel,cafeterias,alimentos,73,2026-03
+2642,8,San Miguel,restaurantes,alimentos,91,2026-03
+2643,8,San Miguel,tiendas,retail,15,2026-03
+2644,8,San Miguel,supermercados,retail,28,2026-03
+2645,8,San Miguel,charcuterias,alimentos,58,2026-03
+2646,8,San Miguel,licoreras,retail,40,2026-03
+2647,8,San Miguel,veterinarias,servicios,78,2026-03
+2648,8,San Miguel,peluquerias,servicios,17,2026-03
+2649,8,San Miguel,droguerias,servicios,111,2026-03
+2650,8,San Miguel,cacharrerias,retail,68,2026-03
+2651,8,San Miguel,panaderias,alimentos,99,2026-03
+2652,8,San Miguel,ferreterias,retail,24,2026-03
+2653,9,Buenos Aires,cafeterias,alimentos,120,2026-03
+2654,9,Buenos Aires,restaurantes,alimentos,83,2026-03
+2655,9,Buenos Aires,tiendas,retail,36,2026-03
+2656,9,Buenos Aires,supermercados,retail,24,2026-03
+2657,9,Buenos Aires,charcuterias,alimentos,82,2026-03
+2658,9,Buenos Aires,licoreras,retail,51,2026-03
+2659,9,Buenos Aires,veterinarias,servicios,63,2026-03
+2660,9,Buenos Aires,peluquerias,servicios,76,2026-03
+2661,9,Buenos Aires,droguerias,servicios,9,2026-03
+2662,9,Buenos Aires,cacharrerias,retail,113,2026-03
+2663,9,Buenos Aires,panaderias,alimentos,14,2026-03
+2664,9,Buenos Aires,ferreterias,retail,61,2026-03
+2665,9,Miraflores,cafeterias,alimentos,12,2026-03
+2666,9,Miraflores,restaurantes,alimentos,25,2026-03
+2667,9,Miraflores,tiendas,retail,19,2026-03
+2668,9,Miraflores,supermercados,retail,81,2026-03
+2669,9,Miraflores,charcuterias,alimentos,89,2026-03
+2670,9,Miraflores,licoreras,retail,61,2026-03
+2671,9,Miraflores,veterinarias,servicios,85,2026-03
+2672,9,Miraflores,peluquerias,servicios,55,2026-03
+2673,9,Miraflores,droguerias,servicios,65,2026-03
+2674,9,Miraflores,cacharrerias,retail,64,2026-03
+2675,9,Miraflores,panaderias,alimentos,77,2026-03
+2676,9,Miraflores,ferreterias,retail,78,2026-03
+2677,9,Cataluña,cafeterias,alimentos,103,2026-03
+2678,9,Cataluña,restaurantes,alimentos,104,2026-03
+2679,9,Cataluña,tiendas,retail,48,2026-03
+2680,9,Cataluña,supermercados,retail,115,2026-03
+2681,9,Cataluña,charcuterias,alimentos,63,2026-03
+2682,9,Cataluña,licoreras,retail,43,2026-03
+2683,9,Cataluña,veterinarias,servicios,8,2026-03
+2684,9,Cataluña,peluquerias,servicios,24,2026-03
+2685,9,Cataluña,droguerias,servicios,16,2026-03
+2686,9,Cataluña,cacharrerias,retail,7,2026-03
+2687,9,Cataluña,panaderias,alimentos,66,2026-03
+2688,9,Cataluña,ferreterias,retail,93,2026-03
+2689,10,La Candelaria,cafeterias,alimentos,74,2026-03
+2690,10,La Candelaria,restaurantes,alimentos,15,2026-03
+2691,10,La Candelaria,tiendas,retail,63,2026-03
+2692,10,La Candelaria,supermercados,retail,87,2026-03
+2693,10,La Candelaria,charcuterias,alimentos,31,2026-03
+2694,10,La Candelaria,licoreras,retail,33,2026-03
+2695,10,La Candelaria,veterinarias,servicios,96,2026-03
+2696,10,La Candelaria,peluquerias,servicios,93,2026-03
+2697,10,La Candelaria,droguerias,servicios,90,2026-03
+2698,10,La Candelaria,cacharrerias,retail,118,2026-03
+2699,10,La Candelaria,panaderias,alimentos,94,2026-03
+2700,10,La Candelaria,ferreterias,retail,109,2026-03
+2701,10,Boston,cafeterias,alimentos,106,2026-03
+2702,10,Boston,restaurantes,alimentos,11,2026-03
+2703,10,Boston,tiendas,retail,23,2026-03
+2704,10,Boston,supermercados,retail,12,2026-03
+2705,10,Boston,charcuterias,alimentos,120,2026-03
+2706,10,Boston,licoreras,retail,105,2026-03
+2707,10,Boston,veterinarias,servicios,55,2026-03
+2708,10,Boston,peluquerias,servicios,98,2026-03
+2709,10,Boston,droguerias,servicios,80,2026-03
+2710,10,Boston,cacharrerias,retail,18,2026-03
+2711,10,Boston,panaderias,alimentos,42,2026-03
+2712,10,Boston,ferreterias,retail,39,2026-03
+2713,10,Prado,cafeterias,alimentos,34,2026-03
+2714,10,Prado,restaurantes,alimentos,67,2026-03
+2715,10,Prado,tiendas,retail,10,2026-03
+2716,10,Prado,supermercados,retail,111,2026-03
+2717,10,Prado,charcuterias,alimentos,6,2026-03
+2718,10,Prado,licoreras,retail,67,2026-03
+2719,10,Prado,veterinarias,servicios,100,2026-03
+2720,10,Prado,peluquerias,servicios,71,2026-03
+2721,10,Prado,droguerias,servicios,45,2026-03
+2722,10,Prado,cacharrerias,retail,23,2026-03
+2723,10,Prado,panaderias,alimentos,107,2026-03
+2724,10,Prado,ferreterias,retail,66,2026-03
+2725,11,Laureles,cafeterias,alimentos,103,2026-03
+2726,11,Laureles,restaurantes,alimentos,100,2026-03
+2727,11,Laureles,tiendas,retail,82,2026-03
+2728,11,Laureles,supermercados,retail,60,2026-03
+2729,11,Laureles,charcuterias,alimentos,113,2026-03
+2730,11,Laureles,licoreras,retail,69,2026-03
+2731,11,Laureles,veterinarias,servicios,117,2026-03
+2732,11,Laureles,peluquerias,servicios,70,2026-03
+2733,11,Laureles,droguerias,servicios,19,2026-03
+2734,11,Laureles,cacharrerias,retail,102,2026-03
+2735,11,Laureles,panaderias,alimentos,92,2026-03
+2736,11,Laureles,ferreterias,retail,29,2026-03
+2737,11,Estadio,cafeterias,alimentos,57,2026-03
+2738,11,Estadio,restaurantes,alimentos,74,2026-03
+2739,11,Estadio,tiendas,retail,114,2026-03
+2740,11,Estadio,supermercados,retail,66,2026-03
+2741,11,Estadio,charcuterias,alimentos,15,2026-03
+2742,11,Estadio,licoreras,retail,65,2026-03
+2743,11,Estadio,veterinarias,servicios,58,2026-03
+2744,11,Estadio,peluquerias,servicios,24,2026-03
+2745,11,Estadio,droguerias,servicios,60,2026-03
+2746,11,Estadio,cacharrerias,retail,82,2026-03
+2747,11,Estadio,panaderias,alimentos,88,2026-03
+2748,11,Estadio,ferreterias,retail,86,2026-03
+2749,11,Conquistadores,cafeterias,alimentos,51,2026-03
+2750,11,Conquistadores,restaurantes,alimentos,56,2026-03
+2751,11,Conquistadores,tiendas,retail,28,2026-03
+2752,11,Conquistadores,supermercados,retail,35,2026-03
+2753,11,Conquistadores,charcuterias,alimentos,25,2026-03
+2754,11,Conquistadores,licoreras,retail,30,2026-03
+2755,11,Conquistadores,veterinarias,servicios,63,2026-03
+2756,11,Conquistadores,peluquerias,servicios,53,2026-03
+2757,11,Conquistadores,droguerias,servicios,6,2026-03
+2758,11,Conquistadores,cacharrerias,retail,83,2026-03
+2759,11,Conquistadores,panaderias,alimentos,51,2026-03
+2760,11,Conquistadores,ferreterias,retail,85,2026-03
+2761,12,La America,cafeterias,alimentos,46,2026-03
+2762,12,La America,restaurantes,alimentos,27,2026-03
+2763,12,La America,tiendas,retail,8,2026-03
+2764,12,La America,supermercados,retail,9,2026-03
+2765,12,La America,charcuterias,alimentos,105,2026-03
+2766,12,La America,licoreras,retail,96,2026-03
+2767,12,La America,veterinarias,servicios,120,2026-03
+2768,12,La America,peluquerias,servicios,95,2026-03
+2769,12,La America,droguerias,servicios,23,2026-03
+2770,12,La America,cacharrerias,retail,99,2026-03
+2771,12,La America,panaderias,alimentos,92,2026-03
+2772,12,La America,ferreterias,retail,99,2026-03
+2773,12,Ferrini,cafeterias,alimentos,52,2026-03
+2774,12,Ferrini,restaurantes,alimentos,40,2026-03
+2775,12,Ferrini,tiendas,retail,109,2026-03
+2776,12,Ferrini,supermercados,retail,116,2026-03
+2777,12,Ferrini,charcuterias,alimentos,30,2026-03
+2778,12,Ferrini,licoreras,retail,98,2026-03
+2779,12,Ferrini,veterinarias,servicios,55,2026-03
+2780,12,Ferrini,peluquerias,servicios,95,2026-03
+2781,12,Ferrini,droguerias,servicios,36,2026-03
+2782,12,Ferrini,cacharrerias,retail,18,2026-03
+2783,12,Ferrini,panaderias,alimentos,61,2026-03
+2784,12,Ferrini,ferreterias,retail,113,2026-03
+2785,12,Calasanz,cafeterias,alimentos,116,2026-03
+2786,12,Calasanz,restaurantes,alimentos,30,2026-03
+2787,12,Calasanz,tiendas,retail,117,2026-03
+2788,12,Calasanz,supermercados,retail,59,2026-03
+2789,12,Calasanz,charcuterias,alimentos,68,2026-03
+2790,12,Calasanz,licoreras,retail,90,2026-03
+2791,12,Calasanz,veterinarias,servicios,26,2026-03
+2792,12,Calasanz,peluquerias,servicios,38,2026-03
+2793,12,Calasanz,droguerias,servicios,61,2026-03
+2794,12,Calasanz,cacharrerias,retail,52,2026-03
+2795,12,Calasanz,panaderias,alimentos,65,2026-03
+2796,12,Calasanz,ferreterias,retail,63,2026-03
+2797,13,San Javier,cafeterias,alimentos,112,2026-03
+2798,13,San Javier,restaurantes,alimentos,29,2026-03
+2799,13,San Javier,tiendas,retail,87,2026-03
+2800,13,San Javier,supermercados,retail,106,2026-03
+2801,13,San Javier,charcuterias,alimentos,49,2026-03
+2802,13,San Javier,licoreras,retail,48,2026-03
+2803,13,San Javier,veterinarias,servicios,51,2026-03
+2804,13,San Javier,peluquerias,servicios,113,2026-03
+2805,13,San Javier,droguerias,servicios,14,2026-03
+2806,13,San Javier,cacharrerias,retail,46,2026-03
+2807,13,San Javier,panaderias,alimentos,91,2026-03
+2808,13,San Javier,ferreterias,retail,32,2026-03
+2809,13,El Salado,cafeterias,alimentos,107,2026-03
+2810,13,El Salado,restaurantes,alimentos,58,2026-03
+2811,13,El Salado,tiendas,retail,7,2026-03
+2812,13,El Salado,supermercados,retail,61,2026-03
+2813,13,El Salado,charcuterias,alimentos,24,2026-03
+2814,13,El Salado,licoreras,retail,68,2026-03
+2815,13,El Salado,veterinarias,servicios,75,2026-03
+2816,13,El Salado,peluquerias,servicios,96,2026-03
+2817,13,El Salado,droguerias,servicios,8,2026-03
+2818,13,El Salado,cacharrerias,retail,95,2026-03
+2819,13,El Salado,panaderias,alimentos,9,2026-03
+2820,13,El Salado,ferreterias,retail,77,2026-03
+2821,13,20 de Julio,cafeterias,alimentos,9,2026-03
+2822,13,20 de Julio,restaurantes,alimentos,22,2026-03
+2823,13,20 de Julio,tiendas,retail,104,2026-03
+2824,13,20 de Julio,supermercados,retail,86,2026-03
+2825,13,20 de Julio,charcuterias,alimentos,56,2026-03
+2826,13,20 de Julio,licoreras,retail,72,2026-03
+2827,13,20 de Julio,veterinarias,servicios,34,2026-03
+2828,13,20 de Julio,peluquerias,servicios,24,2026-03
+2829,13,20 de Julio,droguerias,servicios,83,2026-03
+2830,13,20 de Julio,cacharrerias,retail,53,2026-03
+2831,13,20 de Julio,panaderias,alimentos,96,2026-03
+2832,13,20 de Julio,ferreterias,retail,13,2026-03
+2833,14,El Poblado,cafeterias,alimentos,56,2026-03
+2834,14,El Poblado,restaurantes,alimentos,62,2026-03
+2835,14,El Poblado,tiendas,retail,73,2026-03
+2836,14,El Poblado,supermercados,retail,36,2026-03
+2837,14,El Poblado,charcuterias,alimentos,41,2026-03
+2838,14,El Poblado,licoreras,retail,75,2026-03
+2839,14,El Poblado,veterinarias,servicios,105,2026-03
+2840,14,El Poblado,peluquerias,servicios,63,2026-03
+2841,14,El Poblado,droguerias,servicios,65,2026-03
+2842,14,El Poblado,cacharrerias,retail,26,2026-03
+2843,14,El Poblado,panaderias,alimentos,63,2026-03
+2844,14,El Poblado,ferreterias,retail,75,2026-03
+2845,14,Provenza,cafeterias,alimentos,66,2026-03
+2846,14,Provenza,restaurantes,alimentos,71,2026-03
+2847,14,Provenza,tiendas,retail,28,2026-03
+2848,14,Provenza,supermercados,retail,93,2026-03
+2849,14,Provenza,charcuterias,alimentos,55,2026-03
+2850,14,Provenza,licoreras,retail,63,2026-03
+2851,14,Provenza,veterinarias,servicios,25,2026-03
+2852,14,Provenza,peluquerias,servicios,66,2026-03
+2853,14,Provenza,droguerias,servicios,106,2026-03
+2854,14,Provenza,cacharrerias,retail,18,2026-03
+2855,14,Provenza,panaderias,alimentos,33,2026-03
+2856,14,Provenza,ferreterias,retail,24,2026-03
+2857,14,Manila,cafeterias,alimentos,51,2026-03
+2858,14,Manila,restaurantes,alimentos,108,2026-03
+2859,14,Manila,tiendas,retail,6,2026-03
+2860,14,Manila,supermercados,retail,92,2026-03
+2861,14,Manila,charcuterias,alimentos,83,2026-03
+2862,14,Manila,licoreras,retail,52,2026-03
+2863,14,Manila,veterinarias,servicios,28,2026-03
+2864,14,Manila,peluquerias,servicios,74,2026-03
+2865,14,Manila,droguerias,servicios,41,2026-03
+2866,14,Manila,cacharrerias,retail,60,2026-03
+2867,14,Manila,panaderias,alimentos,14,2026-03
+2868,14,Manila,ferreterias,retail,87,2026-03
+2869,15,Guayabal,cafeterias,alimentos,56,2026-03
+2870,15,Guayabal,restaurantes,alimentos,35,2026-03
+2871,15,Guayabal,tiendas,retail,42,2026-03
+2872,15,Guayabal,supermercados,retail,27,2026-03
+2873,15,Guayabal,charcuterias,alimentos,80,2026-03
+2874,15,Guayabal,licoreras,retail,13,2026-03
+2875,15,Guayabal,veterinarias,servicios,50,2026-03
+2876,15,Guayabal,peluquerias,servicios,113,2026-03
+2877,15,Guayabal,droguerias,servicios,105,2026-03
+2878,15,Guayabal,cacharrerias,retail,56,2026-03
+2879,15,Guayabal,panaderias,alimentos,16,2026-03
+2880,15,Guayabal,ferreterias,retail,12,2026-03
+2881,15,Trinidad,cafeterias,alimentos,115,2026-03
+2882,15,Trinidad,restaurantes,alimentos,84,2026-03
+2883,15,Trinidad,tiendas,retail,72,2026-03
+2884,15,Trinidad,supermercados,retail,36,2026-03
+2885,15,Trinidad,charcuterias,alimentos,79,2026-03
+2886,15,Trinidad,licoreras,retail,43,2026-03
+2887,15,Trinidad,veterinarias,servicios,64,2026-03
+2888,15,Trinidad,peluquerias,servicios,83,2026-03
+2889,15,Trinidad,droguerias,servicios,24,2026-03
+2890,15,Trinidad,cacharrerias,retail,8,2026-03
+2891,15,Trinidad,panaderias,alimentos,20,2026-03
+2892,15,Trinidad,ferreterias,retail,11,2026-03
+2893,15,Cristo Rey,cafeterias,alimentos,52,2026-03
+2894,15,Cristo Rey,restaurantes,alimentos,30,2026-03
+2895,15,Cristo Rey,tiendas,retail,63,2026-03
+2896,15,Cristo Rey,supermercados,retail,114,2026-03
+2897,15,Cristo Rey,charcuterias,alimentos,41,2026-03
+2898,15,Cristo Rey,licoreras,retail,31,2026-03
+2899,15,Cristo Rey,veterinarias,servicios,58,2026-03
+2900,15,Cristo Rey,peluquerias,servicios,9,2026-03
+2901,15,Cristo Rey,droguerias,servicios,30,2026-03
+2902,15,Cristo Rey,cacharrerias,retail,108,2026-03
+2903,15,Cristo Rey,panaderias,alimentos,16,2026-03
+2904,15,Cristo Rey,ferreterias,retail,93,2026-03
+2905,16,Belen,cafeterias,alimentos,20,2026-03
+2906,16,Belen,restaurantes,alimentos,91,2026-03
+2907,16,Belen,tiendas,retail,97,2026-03
+2908,16,Belen,supermercados,retail,103,2026-03
+2909,16,Belen,charcuterias,alimentos,69,2026-03
+2910,16,Belen,licoreras,retail,86,2026-03
+2911,16,Belen,veterinarias,servicios,115,2026-03
+2912,16,Belen,peluquerias,servicios,114,2026-03
+2913,16,Belen,droguerias,servicios,39,2026-03
+2914,16,Belen,cacharrerias,retail,104,2026-03
+2915,16,Belen,panaderias,alimentos,88,2026-03
+2916,16,Belen,ferreterias,retail,97,2026-03
+2917,16,Belen Rincon,cafeterias,alimentos,99,2026-03
+2918,16,Belen Rincon,restaurantes,alimentos,27,2026-03
+2919,16,Belen Rincon,tiendas,retail,76,2026-03
+2920,16,Belen Rincon,supermercados,retail,8,2026-03
+2921,16,Belen Rincon,charcuterias,alimentos,41,2026-03
+2922,16,Belen Rincon,licoreras,retail,97,2026-03
+2923,16,Belen Rincon,veterinarias,servicios,92,2026-03
+2924,16,Belen Rincon,peluquerias,servicios,112,2026-03
+2925,16,Belen Rincon,droguerias,servicios,55,2026-03
+2926,16,Belen Rincon,cacharrerias,retail,110,2026-03
+2927,16,Belen Rincon,panaderias,alimentos,13,2026-03
+2928,16,Belen Rincon,ferreterias,retail,99,2026-03
+2929,16,Loma de los Bernal,cafeterias,alimentos,72,2026-03
+2930,16,Loma de los Bernal,restaurantes,alimentos,94,2026-03
+2931,16,Loma de los Bernal,tiendas,retail,65,2026-03
+2932,16,Loma de los Bernal,supermercados,retail,43,2026-03
+2933,16,Loma de los Bernal,charcuterias,alimentos,43,2026-03
+2934,16,Loma de los Bernal,licoreras,retail,60,2026-03
+2935,16,Loma de los Bernal,veterinarias,servicios,110,2026-03
+2936,16,Loma de los Bernal,peluquerias,servicios,42,2026-03
+2937,16,Loma de los Bernal,droguerias,servicios,97,2026-03
+2938,16,Loma de los Bernal,cacharrerias,retail,76,2026-03
+2939,16,Loma de los Bernal,panaderias,alimentos,104,2026-03
+2940,16,Loma de los Bernal,ferreterias,retail,108,2026-03

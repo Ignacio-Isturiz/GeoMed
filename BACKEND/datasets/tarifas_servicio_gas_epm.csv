@@ -1,0 +1,815 @@
+sector,estrato,cargo_fijo,cargo_por_consumo_menor,cargo_por_consumo_mayor,year,mes
+Residencial,1,0.00,658.62,1312.92,2017,Enero
+Residencial,2,0.00,819.78,1312.92,2017,Enero
+Residencial,3,2937.31,1312.92,1312.92,2017,Enero
+Residencial,4,2937.31,1312.92,1312.92,2017,Enero
+Residencial,5,3524.77,1575.50,1575.50,2017,Enero
+Residencial,6,3524.77,1575.50,1575.50,2017,Enero
+No Residencial,Industrial y comercial,3198.73,1429.77,1429.77,2017,Enero
+No Residencial,Industrial y comercial,3198.73,1385.26,1385.26,2017,Enero
+No Residencial,Oficial,2937.31,1312.92,1312.92,2017,Enero
+Residencial,1,0.00,658.62,1312.92,2017,Febrero
+Residencial,2,0.00,819.78,1312.92,2017,Febrero
+Residencial,3,2937.31,1312.92,1312.92,2017,Febrero
+Residencial,4,2937.31,1312.92,1312.92,2017,Febrero
+Residencial,5,3524.77,1575.50,1575.50,2017,Febrero
+Residencial,6,3524.77,1575.50,1575.50,2017,Febrero
+No Residencial,Industrial y comercial,3198.73,1429.77,1429.77,2017,Febrero
+No Residencial,Industrial y comercial,3198.73,1385.26,1385.26,2017,Febrero
+No Residencial,Oficial,2937.31,1312.92,1312.92,2017,Febrero
+Residencial,1,0.00,668.16,1300.39,2017,Marzo
+Residencial,2,0.00,831.69,1300.39,2017,Marzo
+Residencial,3,2937.31,1312.92,1300.39,2017,Marzo
+Residencial,4,2972.32,1300.39,1300.39,2017,Marzo
+Residencial,5,3566.78,1560.47,1560.47,2017,Marzo
+Residencial,6,3566.78,1560.47,1560.47,2017,Marzo
+No Residencial,Industrial y comercial rango 1,3236.86,1416.12,1416.12,2017,Marzo
+No Residencial,Industrial y comercial rango 2,3236.86,1394.64,1394.64,2017,Marzo
+No Residencial,Oficial,2972.32,1300.39,1300.39,2017,Marzo
+Residencial,1,0.00,674.82,1236.01,2017,Abril
+Residencial,2,0.00,840.01,1236.01,2017,Abril
+Residencial,3,2998.34,1236.01,1236.01,2017,Abril
+Residencial,4,2998.34,1236.01,1236.01,2017,Abril
+Residencial,5,3598.01,1483.21,1483.21,2017,Abril
+Residencial,6,3598.01,1483.21,1483.21,2017,Abril
+No Residencial,Industrial y comercial rango 1,3265.19,1346.01,1346.01,2017,Abril
+No Residencial,Industrial y comercial rango 2,3265.19,1324.89,1324.89,2017,Abril
+No Residencial,Oficial,2998.34,1236.01,1236.01,2017,Abril
+Residencial,1,0.00,677.96,1265.51,2017,Mayo
+Residencial,2,0.00,843.92,1265.51,2017,Mayo
+Residencial,3,3008.67,1265.51,1265.51,2017,Mayo
+Residencial,4,3008.67,1265.51,1265.51,2017,Mayo
+Residencial,5,3610.40,1518.61,1518.61,2017,Mayo
+Residencial,6,3610.40,1518.61,1518.61,2017,Mayo
+No Residencial,Industrial y comercial rango 1,3276.44,1378.14,1378.14,2017,Mayo
+No Residencial,Industrial y comercial rango 2,3276.44,1356.92,1356.92,2017,Mayo
+No Residencial,Oficial,3008.67,1265.51,1265.51,2017,Mayo
+Residencial,1,0.00,681.15,1296.00,2017,Junio
+Residencial,2,0.00,847.83,1296.00,2017,Junio
+Residencial,3,3018.97,1296.00,1296.00,2017,Junio
+Residencial,4,3018.97,1296.00,1296.00,2017,Junio
+Residencial,5,3622.76,1555.20,1555.20,2017,Junio
+Residencial,6,3622.76,1555.20,1555.20,2017,Junio
+No Residencial,Industrial y comercial rango 1,3287.66,1411.34,1411.34,2017,Junio
+No Residencial,Industrial y comercial rango 2,3287.66,1390.87,1390.87,2017,Junio
+No Residencial,Oficial,3018.97,1296.00,1296.00,2017,Junio
+Residencial,1,0.00,682.64,1248.19,2017,Julio
+Residencial,2,0.00,849.81,1248.19,2017,Julio
+Residencial,3,3022.00,1248.19,1248.19,2017,Julio
+Residencial,4,3022.00,1248.19,1248.19,2017,Julio
+Residencial,5,3626.40,1497.83,1497.83,2017,Julio
+Residencial,6,3626.40,1497.83,1497.83,2017,Julio
+No Residencial,Industrial y comercial rango 1,3290.96,1359.28,1359.28,2017,Julio
+No Residencial,Industrial y comercial rango 2,3290.96,1339.30,1339.30,2017,Julio
+No Residencial,Oficial,3022.00,1248.19,1248.19,2017,Julio
+Residencial,1,0.00,683.44,1289.94,2017,Agosto
+Residencial,2,0.00,849.81,1289.94,2017,Agosto
+Residencial,3,3021.73,1289.94,1289.94,2017,Agosto
+Residencial,4,3021.73,1289.94,1289.94,2017,Agosto
+Residencial,5,3626.08,1547.93,1547.93,2017,Agosto
+Residencial,6,3626.08,1547.93,1547.93,2017,Agosto
+No Residencial,Industrial y comercial rango 1,3290.66,1404.74,1359.28,2017,Agosto
+No Residencial,Industrial y comercial rango 2,3290.66,1385.21,1339.30,2017,Agosto
+No Residencial,Oficial,3021.73,1289.94,1289.94,2017,Agosto
+Residencial,1,0.00,683.07,1289.94,2017,Septiembre
+Residencial,2,0.00,850.31,1289.94,2017,Septiembre
+Residencial,3,3021.73,1289.94,1289.94,2017,Septiembre
+Residencial,4,3021.73,1289.94,1289.94,2017,Septiembre
+Residencial,5,3626.08,1547.93,1547.93,2017,Septiembre
+Residencial,6,3626.08,1547.93,1547.93,2017,Septiembre
+No Residencial,Industrial y comercial rango 1,3290.66,1404.74,1404.74,2017,Septiembre
+No Residencial,Industrial y comercial rango 2,3290.66,1385.21,1385.21,2017,Septiembre
+No Residencial,Oficial,3021.73,1289.94,1289.94,2017,Septiembre
+Residencial,1,0.00,684.02,1289.94,2017,Octubre
+Residencial,2,0.00,851.44,1289.94,2017,Octubre
+Residencial,3,3021.73,1289.94,1289.94,2017,Octubre
+Residencial,4,3021.73,1289.94,1289.94,2017,Octubre
+Residencial,5,3626.08,1547.93,1547.93,2017,Octubre
+Residencial,6,3626.08,1547.93,1547.93,2017,Octubre
+No Residencial,Industrial y comercial rango 1,3290.66,1404.74,1404.74,2017,Octubre
+No Residencial,Industrial y comercial rango 2,3290.66,1385.21,1385.21,2017,Octubre
+No Residencial,Oficial,3021.73,1289.94,1289.94,2017,Octubre
+Residencial,1,0.00,684.26,1237.32,2017,Noviembre
+Residencial,2,0.00,851.81,1237.32,2017,Noviembre
+Residencial,3,3014.34,1237.32,1237.32,2017,Noviembre
+Residencial,4,3014.34,1237.32,1237.32,2017,Noviembre
+Residencial,5,3617.21,1484.78,1484.78,2017,Noviembre
+Residencial,6,3617.21,1484.78,1484.78,2017,Noviembre
+No Residencial,Industrial y comercial rango 1,3282.62,1347.44,1347.44,2017,Noviembre
+No Residencial,Industrial y comercial rango 2,3282.62,1328.33,1328.33,2017,Noviembre
+No Residencial,Oficial,3014.34,1237.32,1237.32,2017,Noviembre
+Residencial,1,0.00,684.34,1237.32,2017,Diciembre
+Residencial,2,0.00,851.97,1237.32,2017,Diciembre
+Residencial,3,3014.34,1237.32,1237.32,2017,Diciembre
+Residencial,4,3014.34,1237.32,1237.32,2017,Diciembre
+Residencial,5,3617.21,1484.78,1484.78,2017,Diciembre
+Residencial,6,3617.21,1484.78,1484.78,2017,Diciembre
+No Residencial,Industrial y comercial rango 1,3282.62,1347.44,1347.44,2017,Diciembre
+No Residencial,Industrial y comercial rango 2,3282.62,1328.33,1328.33,2017,Diciembre
+No Residencial,Oficial,3014.34,1237.32,1237.32,2017,Diciembre
+Residencial,1,0.00,685.55,1267.83,2018,Enero
+Residencial,2,0.00,853.54,1267.83,2018,Enero
+Residencial,3,3012.69,1267.83,1267.83,2018,Enero
+Residencial,4,3012.69,1267.83,1267.83,2018,Enero
+Residencial,5,3615.23,1521.40,1521.40,2018,Enero
+Residencial,6,3615.23,1521.40,1521.40,2018,Enero
+No Residencial,Industrial y comercial rango 1,3280.82,1380.67,1380.67,2018,Enero
+No Residencial,Industrial y comercial rango 2,3280.82,1361.81,1361.81,2018,Enero
+No Residencial,Oficial,3012.69,1267.83,1267.83,2018,Enero
+Residencial,1,0.00,688.18,131205.00,2018,Febrero
+Residencial,2,0.00,856.86,131205.00,2018,Febrero
+Residencial,3,3020.46,131205.00,131205.00,2018,Febrero
+Residencial,4,3020.46,131205.00,131205.00,2018,Febrero
+Residencial,5,362455.00,157446.00,157446.00,2018,Febrero
+Residencial,6,362455.00,157446.00,157446.00,2018,Febrero
+No Residencial,Industrial y comercial rango 1,328928.00,142882.00,142882.00,2018,Febrero
+No Residencial,Industrial y comercial rango 2,328928.00,141017.00,141017.00,2018,Febrero
+No Residencial,Oficial,302046.00,131205.00,131205.00,2018,Febrero
+Residencial,1,0.00,692.57,131073.00,2018,Marzo
+Residencial,2,0.00,862.29,131073.00,2018,Marzo
+Residencial,3,303558.00,131073.00,131073.00,2018,Marzo
+Residencial,4,303558.00,131073.00,131073.00,2018,Marzo
+Residencial,5,364270.00,157288.00,157288.00,2018,Marzo
+Residencial,6,364270.00,157288.00,157288.00,2018,Marzo
+No Residencial,Industrial y comercial rango 1,330575.00,127117.00,127117.00,2018,Marzo
+No Residencial,Industrial y comercial rango 2,330575.00,127117.00,127117.00,2018,Marzo
+No Residencial,Oficial,330575.00,127117.00,127117.00,2018,Marzo
+Residencial,1,0.00,693.06,1399.18,2018,Abril
+Residencial,3,3053.27,1399.18,1399.18,2018,Abril
+Residencial,4,3053.27,1399.18,1399.18,2018,Abril
+Residencial,5,3663.92,1679.02,1679.02,2018,Abril
+Residencial,6,3663.92,1679.02,1679.02,2018,Abril
+No Residencial,Rango 1 No residencial,3053.27,1350.06,1350.06,2018,Abril
+No Residencial,Rango 1 industrial,3053.27,1470.22,1470.22,2018,Abril
+No Residencial,Rango 1 comercio y otros,3325.01,1470.22,1470.22,2018,Abril
+Residencial,1,0.00,689.76,1412.34,2018,Mayo
+Residencial,2,0.00,858.89,1412.34,2018,Mayo
+Residencial,3,3056.82,1412.34,1412.34,2018,Mayo
+Residencial,4,3056.82,1412.34,1412.34,2018,Mayo
+Residencial,5,3668.18,1604.81,1604.81,2018,Mayo
+Residencial,6,3668.18,1604.81,1604.81,2018,Mayo
+No Residencial,Rango 1 No residencial,3056.82,1356.35,1356.35,2018,Mayo
+No Residencial,Rango 1 industrial,3328.88,1477.07,1477.07,2018,Mayo
+No Residencial,Rango 1 comercio y otros,3328.88,1477.07,1477.07,2018,Mayo
+Residencial,1,0.00,702.27,1374.31,2018,Junio
+Residencial,2,0.00,874.51,1374.31,2018,Junio
+Residencial,3,3067.07,1374.31,1374.31,2018,Junio
+Residencial,4,3067.07,1374.31,1374.31,2018,Junio
+Residencial,5,3680.48,1649.17,1649.17,2018,Junio
+Residencial,6,3680.48,1649.17,1649.17,2018,Junio
+No Residencial,Rango 1 No residencial,3067.07,1315.12,1315.12,2018,Junio
+No Residencial,Rango 1 industrial,3340.04,1432.17,1432.17,2018,Junio
+No Residencial,Rango 1 comercio y otros,3340.04,1432.17,1432.17,2018,Junio
+Residencial,1,0.00,704.02,1401.42,2018,Julio
+Residencial,2,0.00,876.82,1401.42,2018,Julio
+Residencial,3,3071.02,1401.42,1401.42,2018,Julio
+Residencial,4,3071.02,1401.42,1401.42,2018,Julio
+Residencial,5,3685.22,16481.70,16481.70,2018,Julio
+Residencial,6,3685.22,16481.70,16481.70,2018,Julio
+No Residencial,Rango 1 No residencial,3071.02,1335.36,1335.36,2018,Julio
+No Residencial,Rango 1 industrial,3344.34,1454.21,1454.21,2018,Julio
+No Residencial,Rango 1 comercio y otros,3344.34,1454.21,1454.21,2018,Julio
+Residencial,1,0.00,705.06,1468.26,2018,Agosto
+Residencial,2,0.00,878.22,1468.26,2018,Agosto
+Residencial,3,3071.93,1468.26,1468.26,2018,Agosto
+Residencial,4,3071.93,1468.26,1468.26,2018,Agosto
+Residencial,5,3685.32,1761.91,1761.91,2018,Agosto
+Residencial,6,3685.32,1761.91,1761.91,2018,Agosto
+No Residencial,Rango 1 No residencial,3071.93,1394.49,1394.49,2018,Agosto
+No Residencial,Rango 1 industrial,3345.33,1518.60,1518.60,2018,Agosto
+No Residencial,Rango 1 comercio y otros,3345.33,1518.60,1518.60,2018,Agosto
+Residencial,1,0.00,707.61,1471.81,2018,Septiembre
+Residencial,2,0.00,879.36,1471.81,2018,Septiembre
+Residencial,3,3064.21,1471.81,1471.81,2018,Septiembre
+Residencial,4,3064.21,1471.81,1471.81,2018,Septiembre
+Residencial,5,3677.05,1766.17,1766.17,2018,Septiembre
+Residencial,6,3677.05,1766.17,1766.17,2018,Septiembre
+No Residencial,Rango 1 No residencial,3064.21,1382.53,1382.53,2018,Septiembre
+No Residencial,Rango 1 industrial,3336.92,1505.58,1505.58,2018,Septiembre
+No Residencial,Rango 1 comercio y otros,3336.92,1505.58,1505.58,2018,Septiembre
+Residencial,1,0.00,719.44,1501.11,2018,Octubre
+Residencial,2,0.00,894.54,1501.11,2018,Octubre
+Residencial,3,3064.04,1501.11,1501.11,2018,Octubre
+Residencial,4,3064.04,1501.11,1501.11,2018,Octubre
+Residencial,5,3767.85,1801.33,1801.33,2018,Octubre
+Residencial,6,3767.85,1801.33,1801.33,2018,Octubre
+No Residencial,Rango 1 No residencial,3064.04,1401.58,1401.58,2018,Octubre
+No Residencial,Rango 1 industrial,3336.74,1526.32,1526.32,2018,Octubre
+No Residencial,Rango 1 comercio y otros,3336.74,1526.32,1526.32,2018,Octubre
+Residencial,4,3065.16,1512.36,1512.36,2018,Noviembre
+Residencial,5,3678.19,1814.83,1814.83,2018,Noviembre
+No Residencial,Rango 1 No residencial,3065.16,1399.51,1399.51,2018,Noviembre
+No Residencial,Rango 1 industrial,3337.96,1524.07,1524.07,2018,Noviembre
+No Residencial,Rango 1 comercio y otros,3337.96,1524.07,1524.07,2018,Noviembre
+Residencial,1,0.00,751.90,1581.30,2018,Diciembre
+Residencial,2,0.00,934.55,1581.30,2018,Diciembre
+Residencial,3,3064.98,1581.30,1581.30,2018,Diciembre
+Residencial,4,3064.98,1581.30,1581.30,2018,Diciembre
+Residencial,5,3677.98,1897.56,1897.56,2018,Diciembre
+Residencial,6,3677.98,1897.56,1897.56,2018,Diciembre
+No Residencial,Rango 1 No residencial,3064.98,1463.14,1463.14,2018,Diciembre
+No Residencial,Rango 1 comercio y otros,3337.76,1593.36,1593.36,2018,Diciembre
+Residencial,1,0.00,752.75,1581.30,2019,Enero
+Residencial,2,0.00,935.63,1581.30,2019,Enero
+Residencial,3,3064.98,1581.30,1581.30,2019,Enero
+Residencial,4,3064.98,1581.30,1581.30,2019,Enero
+Residencial,5,3677.98,1897.56,1897.56,2019,Enero
+Residencial,6,3677.98,1897.56,1897.56,2019,Enero
+No Residencial,Rango 1 No residencial,3064.98,1463.14,1463.14,2019,Enero
+No Residencial,Rango 1 industrial,3337.76,1593.36,1593.36,2019,Enero
+No Residencial,Rango 1 comercio y otros,3337.76,1593.36,1593.36,2019,Enero
+Residencial,1,0.00,754.99,1562.94,2019,Febrero
+Residencial,2,0.00,938.46,1562.94,2019,Febrero
+Residencial,3,3070.18,1562.94,1562.94,2019,Febrero
+Residencial,4,3070.18,1562.94,1562.94,2019,Febrero
+Residencial,5,3684.22,1875.53,1875.53,2019,Febrero
+Residencial,6,3684.22,1875.53,1875.53,2019,Febrero
+No Residencial,Rango 1 No residencial,3684.22,1434.27,1434.27,2019,Febrero
+No Residencial,Rango 1 industrial,3343.43,1561.92,1561.92,2019,Febrero
+No Residencial,Rango 1 comercio y otros,3343.43,1561.92,1561.92,2019,Febrero
+Residencial,1,0.00,759.52,1562.94,2019,Marzo
+Residencial,2,0.00,944.18,1562.94,2019,Marzo
+Residencial,3,3070.18,1562.94,1562.94,2019,Marzo
+Residencial,4,3070.18,1562.94,1562.94,2019,Marzo
+Residencial,5,3684.22,1875.53,1875.53,2019,Marzo
+Residencial,6,3684.22,1875.53,1875.53,2019,Marzo
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3070.18,1434.27,1434.27,2019,Marzo
+No Residencial,Rango 1 industrial,3343.43,1561.92,1561.92,2019,Marzo
+No Residencial,Rango 1 comercio y otros,3343.43,1561.92,1561.92,2019,Marzo
+Residencial,1,0.00,763.95,1504.79,2019,Abril
+Residencial,2,0.00,949.66,1504.79,2019,Abril
+Residencial,3,3098.63,1504.79,1504.79,2019,Abril
+Residencial,4,3098.63,1504.79,1504.79,2019,Abril
+Residencial,5,3718.36,1805.75,1805.75,2019,Abril
+Residencial,6,3718.36,1805.75,1805.75,2019,Abril
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3098.63,1357.91,1357.91,2019,Abril
+No Residencial,Rango 1 industrial,3374.41,1478.76,1478.76,2019,Abril
+No Residencial,Rango 1 comercio y otros,3374.41,1478.76,1478.76,2019,Abril
+Residencial,1,0.00,767.29,1531.21,2019,Mayo
+Residencial,2,0.00,953.70,1531.21,2019,Mayo
+Residencial,3,3108.21,1531.21,1531.21,2019,Mayo
+Residencial,4,3108.21,1531.21,1531.21,2019,Mayo
+Residencial,5,3729.85,1837.45,1837.45,2019,Mayo
+Residencial,6,3729.85,1837.45,1837.45,2019,Mayo
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3108.21,1369.34,1369.34,2019,Mayo
+No Residencial,Rango 1 industrial,3384.84,1491.21,1491.21,2019,Mayo
+No Residencial,Rango 1 comercio y otros,3384.84,1491.21,1491.21,2019,Mayo
+Residencial,1,0.00,771.13,1531.21,2019,Junio
+Residencial,2,0.00,958.45,1531.21,2019,Junio
+Residencial,3,3108.21,1531.21,1531.21,2019,Junio
+Residencial,4,3108.21,1531.21,1531.21,2019,Junio
+Residencial,5,3729.85,1837.45,1837.45,2019,Junio
+Residencial,6,3729.85,1837.45,1837.45,2019,Junio
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3108.21,1369.34,1369.34,2019,Junio
+No Residencial,Rango 1 industrial,3384.84,1491.21,1491.21,2019,Junio
+No Residencial,Rango 1 comercio y otros,3384.84,1491.21,1491.21,2019,Junio
+Residencial,1,0.00,773.64,1605.45,2019,Julio
+Residencial,2,0.00,958.45,1605.45,2019,Julio
+Residencial,3,3125.57,1605.45,1605.45,2019,Julio
+Residencial,4,3125.57,1605.45,1605.45,2019,Julio
+Residencial,5,3750.68,1926.54,1926.54,2019,Julio
+Residencial,6,3750.68,1926.54,1926.54,2019,Julio
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3125.57,1426.51,1426.51,2019,Julio
+No Residencial,Rango 1 industrial,3403.75,1553.47,1553.47,2019,Julio
+No Residencial,Rango 1 comercio y otros,3403.75,1553.47,1553.47,2019,Julio
+Residencial,1,0.00,775.74,1611.98,2019,Agosto
+Residencial,2,0.00,963.87,1611.98,2019,Agosto
+Residencial,3,3129.96,1611.98,1611.98,2019,Agosto
+Residencial,4,3129.96,1611.98,1611.98,2019,Agosto
+Residencial,5,3755.95,1934.38,1934.38,2019,Agosto
+Residencial,6,3755.95,1934.38,1934.38,2019,Agosto
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3129.96,1426.51,1426.51,2019,Agosto
+No Residencial,Rango 1 industrial,3408.53,1558.20,1558.20,2019,Agosto
+No Residencial,Rango 1 comercio y otros,3408.53,1558.20,1558.20,2019,Agosto
+Residencial,1,0.00,777.52,1628.08,2019,Septiembre
+Residencial,2,0.00,965.97,1628.08,2019,Septiembre
+Residencial,3,3133.06,1628.08,1628.08,2019,Septiembre
+Residencial,4,3133.06,1628.08,1628.08,2019,Septiembre
+Residencial,5,3759.67,1953.70,1953.70,2019,Septiembre
+Residencial,6,3759.67,1953.70,1953.70,2019,Septiembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3133.06,1445.86,1445.86,2019,Septiembre
+No Residencial,Rango 1 industrial,3408.53,1574.54,1574.54,2019,Septiembre
+No Residencial,Rango 1 comercio y otros,3408.53,1574.54,1574.54,2019,Septiembre
+Residencial,1,0.00,800.94,1701.51,2019,Octubre
+Residencial,2,0.00,995.22,1701.51,2019,Octubre
+Residencial,3,3131.90,1701.51,1701.51,2019,Octubre
+Residencial,4,3131.90,1701.51,1701.51,2019,Octubre
+Residencial,5,3758.28,2041.81,2041.81,2019,Octubre
+Residencial,6,3758.28,2041.81,2041.81,2019,Octubre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3131.90,1516.91,1516.91,2019,Octubre
+No Residencial,Rango 1 industrial,3410.64,1651.91,1651.91,2019,Octubre
+No Residencial,Rango 1 comercio y otros,3410.64,1651.91,1651.91,2019,Octubre
+Residencial,1,0.00,802.72,1701.51,2019,Noviembre
+Residencial,2,0.00,997.41,1701.51,2019,Noviembre
+Residencial,3,3131.90,1701.51,1701.51,2019,Noviembre
+Residencial,4,3131.90,1701.51,1701.51,2019,Noviembre
+Residencial,5,3758.28,2041.81,2041.81,2019,Noviembre
+Residencial,6,3758.28,2041.81,2041.81,2019,Noviembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3131.90,1516.91,1516.91,2019,Noviembre
+No Residencial,Rango 1 industrial,3410.64,1651.91,1651.91,2019,Noviembre
+No Residencial,Rango 1 comercio y otros,3410.64,1651.91,1651.91,2019,Noviembre
+Residencial,1,0.00,804.04,1664.59,2019,Diciembre
+Residencial,2,0.00,999.03,1664.59,2019,Diciembre
+Residencial,3,3136.14,1664.59,1664.59,2019,Diciembre
+Residencial,4,3136.14,1664.59,1664.59,2019,Diciembre
+Residencial,5,3763.37,1997.51,1997.51,2019,Diciembre
+Residencial,6,3763.37,1997.51,1997.51,2019,Diciembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3136.14,1456.65,1456.65,2019,Diciembre
+No Residencial,Rango 1 industrial,3415.26,1586.29,1586.29,2019,Diciembre
+No Residencial,Rango 1 comercio y otros,3415.26,1586.29,1586.29,2019,Diciembre
+Residencial,1,0.00,804.82,1709.03,2020,Enero
+Residencial,2,0.00,1000.08,1709.03,2020,Enero
+Residencial,3,3135.60,1709.03,1709.03,2020,Enero
+Residencial,4,3135.60,1709.03,1709.03,2020,Enero
+Residencial,5,3762.72,2050.84,2050.84,2020,Enero
+Residencial,6,3762.72,2050.84,2050.84,2020,Enero
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3135.60,1486.16,1486.16,2020,Enero
+No Residencial,"Rango 1 industrial, comercial y otros",3414.67,1618.43,1618.43,2020,Enero
+Residencial,1,0.00,806.87,1650.61,2020,Febrero
+Residencial,2,0.00,1002.56,1650.61,2020,Febrero
+Residencial,3,3139.49,1650.61,1650.61,2020,Febrero
+Residencial,4,3139.49,1650.61,1650.61,2020,Febrero
+Residencial,5,3767.39,1980.73,1980.73,2020,Febrero
+Residencial,6,3767.39,1980.73,1980.73,2020,Febrero
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3139.49,1418.44,1418.44,2020,Febrero
+No Residencial,"Rango 1 industrial, comercial y otros",3418.90,1544.68,1544.68,2020,Febrero
+Residencial,1,0.00,852.93,1826.91,2020,Marzo
+Residencial,2,0.00,1061.29,1826.91,2020,Marzo
+Residencial,3,3148.85,1826.91,1826.91,2020,Marzo
+Residencial,4,3148.85,1826.91,1826.91,2020,Marzo
+Residencial,5,3778.62,2192.29,2192.29,2020,Marzo
+Residencial,6,3778.62,2192.29,2192.29,2020,Marzo
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3148.85,1548.98,1548.98,2020,Marzo
+No Residencial,"Rango 1 industrial, comercial y otros",3429.10,1686.84,1686.84,2020,Marzo
+Residencial,1,0.00,879.72,1894.88,2020,Abril
+Residencial,2,0.00,1095.25,1894.88,2020,Abril
+Residencial,3,3165.97,1894.88,1894.88,2020,Abril
+Residencial,4,3165.97,1894.88,1894.88,2020,Abril
+Residencial,5,3799.16,2273.86,2273.86,2020,Abril
+Residencial,6,3799.16,2273.86,2273.86,2020,Abril
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3165.97,1626.69,1626.69,2020,Abril
+No Residencial,"Rango 1 industrial, comercial y otros",3447.74,1771.47,1771.47,2020,Abril
+Residencial,1,0.00,964.42,2105.60,2020,Mayo
+Residencial,2,0.00,1201.40,2105.60,2020,Mayo
+Residencial,3,3179.89,2105.60,2105.60,2020,Mayo
+Residencial,4,3179.89,2105.60,2105.60,2020,Mayo
+Residencial,5,3815.87,2526.72,2526.72,2020,Mayo
+Residencial,6,3815.87,2526.72,2526.72,2020,Mayo
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3179.89,1845.69,1845.69,2020,Mayo
+No Residencial,"Rango 1 industrial, comercial y otros",3462.90,2009.96,2009.96,2020,Mayo
+Residencial,1,0.00,965.89,1938.62,2020,Junio
+Residencial,2,0.00,1203.42,1938.62,2020,Junio
+Residencial,3,3180.95,1938.62,1938.62,2020,Junio
+Residencial,4,3180.95,1938.62,1938.62,2020,Junio
+Residencial,5,3817.14,2326.34,2326.34,2020,Junio
+Residencial,6,3817.14,2326.34,2326.34,2020,Junio
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3180.95,1673.95,1673.95,2020,Junio
+No Residencial,"Rango 1 industrial, comercial y otros",3464.05,1822.93,1822.93,2020,Junio
+Residencial,1,0.00,962.78,1964.48,2020,Julio
+Residencial,2,0.00,1199.53,1964.48,2020,Julio
+Residencial,3,3166.70,1964.48,1964.48,2020,Julio
+Residencial,4,3166.70,1964.48,1964.48,2020,Julio
+Residencial,5,3800.04,2357.38,2357.38,2020,Julio
+Residencial,6,3800.04,2357.38,2357.38,2020,Julio
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3166.70,1698.71,1698.71,2020,Julio
+No Residencial,"Rango 1 industrial, comercial y otros",3448.54,1849.90,1849.90,2020,Julio
+Residencial,1,0.00,959.15,1974.20,2020,Agosto
+Residencial,2,0.00,1195.16,1974.20,2020,Agosto
+Residencial,3,3151.01,1974.20,1974.20,2020,Agosto
+Residencial,4,3151.01,1974.20,1974.20,2020,Agosto
+Residencial,5,3781.21,2369.04,2369.04,2020,Agosto
+Residencial,6,3781.21,2369.04,2369.04,2020,Agosto
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3151.01,1684.44,1684.44,2020,Agosto
+No Residencial,"Rango 1 industrial, comercial y otros",3431.45,1834.36,1834.36,2020,Agosto
+Residencial,1,0.00,959.20,1886.50,2020,Septiembre
+Residencial,2,0.00,1195.11,1886.50,2020,Septiembre
+Residencial,3,3147.07,1886.50,1886.50,2020,Septiembre
+Residencial,4,3147.07,1886.50,1886.50,2020,Septiembre
+Residencial,5,3776.48,2263.80,2263.80,2020,Septiembre
+Residencial,6,3776.48,2263.80,2263.80,2020,Septiembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3147.07,1590.90,1590.90,2020,Septiembre
+No Residencial,"Rango 1 industrial, comercial y otros",3427.16,1732.49,1732.49,2020,Septiembre
+Residencial,1,0.00,959.17,1886.50,2020,Octubre
+Residencial,2,0.00,1195.10,1886.50,2020,Octubre
+Residencial,3,3147.07,1886.50,1886.50,2020,Octubre
+Residencial,4,3147.07,1886.50,1886.50,2020,Octubre
+Residencial,5,3776.48,2263.80,2263.80,2020,Octubre
+Residencial,6,3776.48,2263.80,2263.80,2020,Octubre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3147.07,1590.90,1590.90,2020,Octubre
+No Residencial,"Rango 1 industrial, comercial y otros",3427.16,1732.49,1732.49,2020,Octubre
+Residencial,1,0.00,962.09,1917.55,2020,Noviembre
+Residencial,2,0.00,1198.95,1917.55,2020,Noviembre
+Residencial,3,3148.81,1917.55,1917.55,2020,Noviembre
+Residencial,4,3148.81,1917.55,1917.55,2020,Noviembre
+Residencial,5,3778.57,2301.06,2301.06,2020,Noviembre
+Residencial,6,3778.57,2301.06,2301.06,2020,Noviembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3148.81,1629.39,1629.39,2020,Noviembre
+No Residencial,"Rango 1 industrial, comercial y otros",3429.05,1774.41,1774.41,2020,Noviembre
+Residencial,1,0.00,961.63,1942.58,2020,Diciembre
+Residencial,2,0.00,1198.23,1942.58,2020,Diciembre
+Residencial,3,3143.00,1942.58,1942.58,2020,Diciembre
+Residencial,4,3143.00,1942.58,1942.58,2020,Diciembre
+Residencial,5,3771.60,2331.10,2331.10,2020,Diciembre
+Residencial,6,3771.60,2331.10,2331.10,2020,Diciembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3143.00,1658.62,1658.62,2020,Diciembre
+No Residencial,"Rango 1 industrial, comercial y otros",3422.73,1806.24,1806.24,2020,Diciembre
+Residencial,1,0.00,960.35,1849.42,2021,Enero
+Residencial,2,0.00,1196.53,1849.42,2021,Enero
+Residencial,3,3134.69,1849.42,1849.42,2021,Enero
+Residencial,4,3134.69,1849.42,1849.42,2021,Enero
+Residencial,5,3761.63,2219.30,2219.30,2021,Enero
+Residencial,6,3761.63,2219.30,2219.30,2021,Enero
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3134.69,1570.31,1570.31,2021,Enero
+No Residencial,"Rango 1 industrial, comercial y otros",3413.68,1710.07,1710.07,2021,Enero
+Residencial,1,0.00,886.80,1905.59,2021,Febrero
+Residencial,2,0.00,1105.06,1905.59,2021,Febrero
+Residencial,3,3142.63,1905.59,1905.59,2021,Febrero
+Residencial,4,3142.63,1905.59,1905.59,2021,Febrero
+Residencial,5,3771.16,2286.71,2286.71,2021,Febrero
+Residencial,6,3771.16,2286.71,2286.71,2021,Febrero
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3142.63,1627.84,1627.84,2021,Febrero
+No Residencial,"Rango 1 industrial, comercial y otros",3422.32,1772.72,1772.72,2021,Febrero
+Residencial,1,0.00,913.18,1978.44,2021,Marzo
+Residencial,2,0.00,1135.67,1978.44,2021,Marzo
+Residencial,3,3151.58,1978.44,1978.44,2021,Marzo
+Residencial,4,3151.58,1978.44,1978.44,2021,Marzo
+Residencial,5,3781.90,2374.13,2374.13,2021,Marzo
+Residencial,6,3781.90,2374.13,2374.13,2021,Marzo
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3151.58,1705.51,1705.51,2021,Marzo
+No Residencial,"Rango 1 industrial, comercial y otros",3432.07,1857.30,1857.30,2021,Marzo
+Residencial,1,0.00,905.57,1960.81,2021,Abril
+Residencial,2,0.00,1126.24,1960.81,2021,Abril
+Residencial,3,3167.55,1960.81,1960.81,2021,Abril
+Residencial,4,3167.55,1960.81,1960.81,2021,Abril
+Residencial,5,3801.06,2352.97,2352.97,2021,Abril
+Residencial,6,3801.06,2352.97,2352.97,2021,Abril
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3167.55,1688.38,1688.38,2021,Abril
+No Residencial,"Rango 1 industrial, comercial y otros",3449.46,1838.65,1838.65,2021,Abril
+Residencial,1,0.00,907.91,1967.82,2021,Mayo
+Residencial,2,0.00,1129.36,1967.82,2021,Mayo
+Residencial,3,3179.55,1967.82,1967.82,2021,Mayo
+Residencial,4,3179.55,1967.82,1967.82,2021,Mayo
+Residencial,5,3815.46,2361.38,2361.38,2021,Mayo
+Residencial,6,3815.46,2361.38,2361.38,2021,Mayo
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3179.55,1696.18,1696.18,2021,Mayo
+No Residencial,"Rango 1 industrial, comercial y otros",3462.53,1847.14,1847.14,2021,Mayo
+Residencial,1,0.00,925.68,2015.64,2021,Junio
+Residencial,2,0.00,1151.98,2015.64,2021,Junio
+Residencial,3,3194.61,2015.64,2015.64,2021,Junio
+Residencial,4,3194.61,2015.64,2015.64,2021,Junio
+Residencial,5,3833.53,2418.77,2418.77,2021,Junio
+Residencial,6,3833.53,2418.77,2418.77,2021,Junio
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3194.61,1726.79,1726.79,2021,Junio
+No Residencial,"Rango 1 industrial, comercial y otros",3478.93,1880.47,1880.47,2021,Junio
+Residencial,1,0.00,925.46,2015.64,2021,Julio
+Residencial,2,0.00,1153.03,2015.64,2021,Julio
+Residencial,3,3194.61,2015.64,2015.64,2021,Julio
+Residencial,4,3194.61,2015.64,2015.64,2021,Julio
+Residencial,5,3833.53,2418.77,2418.77,2021,Julio
+Residencial,6,3833.53,2418.77,2418.77,2021,Julio
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3194.61,1726.79,1726.79,2021,Julio
+No Residencial,"Rango 1 industrial, comercial y otros",3478.93,1880.47,1880.47,2021,Julio
+Residencial,1,0.00,927.84,2015.64,2021,Agosto
+Residencial,2,0.00,1154.50,2015.64,2021,Agosto
+Residencial,3,3194.61,2015.64,2015.64,2021,Agosto
+Residencial,4,3194.61,2015.64,2015.64,2021,Agosto
+Residencial,5,3833.53,2418.77,2418.77,2021,Agosto
+Residencial,6,3833.53,2418.77,2418.77,2021,Agosto
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3194.61,1726.79,1726.79,2021,Agosto
+No Residencial,"Rango 1 industrial, comercial y otros",3478.93,1880.47,1880.47,2021,Agosto
+Residencial,1,0.00,943.84,2052.61,2021,Septiembre
+Residencial,2,0.00,1174.72,2052.61,2021,Septiembre
+Residencial,3,3223.46,2052.61,2052.61,2021,Septiembre
+Residencial,4,3223.46,2052.61,2052.61,2021,Septiembre
+Residencial,5,3868.15,2463.13,2463.13,2021,Septiembre
+Residencial,6,3868.15,2463.13,2463.13,2021,Septiembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3223.46,1750.54,1750.54,2021,Septiembre
+No Residencial,"Rango 1 industrial, comercial y otros",3510.35,1906.34,1906.34,2021,Septiembre
+Residencial,1,0.00,943.49,2052.61,2021,Octubre
+Residencial,2,0.00,1175.13,2052.61,2021,Octubre
+Residencial,3,3223.46,2052.61,2052.61,2021,Octubre
+Residencial,4,3223.46,2052.61,2052.61,2021,Octubre
+Residencial,5,3868.15,2463.13,2463.13,2021,Octubre
+Residencial,6,3868.15,2463.13,2463.13,2021,Octubre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3223.46,1750.54,1750.54,2021,Octubre
+No Residencial,"Rango 1 industrial, comercial y otros",3510.35,1906.34,1906.34,2021,Octubre
+Residencial,1,0.00,917.11,1985.19,2021,Noviembre
+Residencial,2,0.00,1141.45,1985.19,2021,Noviembre
+Residencial,3,3241.93,1985.19,1985.19,2021,Noviembre
+Residencial,4,3241.93,1985.19,1985.19,2021,Noviembre
+Residencial,5,3890.32,2382.23,2382.23,2021,Noviembre
+Residencial,6,3890.32,2382.23,2382.23,2021,Noviembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3241.93,1685.47,1685.47,2021,Noviembre
+No Residencial,"Rango 1 industrial, comercial y otros",3530.46,1835.48,1835.48,2021,Noviembre
+Residencial,1,0.00,917.34,1985.19,2021,Diciembre
+Residencial,2,0.00,1141.04,1985.19,2021,Diciembre
+Residencial,3,3241.93,1985.19,1985.19,2021,Diciembre
+Residencial,4,3241.93,1985.19,1985.19,2021,Diciembre
+Residencial,5,3890.32,2382.23,2382.23,2021,Diciembre
+Residencial,6,3890.32,2382.23,2382.23,2021,Diciembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3241.93,1685.47,1685.47,2021,Diciembre
+No Residencial,"Rango 1 industrial, comercial y otros",3530.46,1835.48,1835.48,2021,Diciembre
+Residencial,1,0.00,952.50,2069.34,2022,Enero
+Residencial,2,0.00,1185.57,2069.34,2022,Enero
+Residencial,3,3250.24,2069.34,2069.34,2022,Enero
+Residencial,4,3250.24,2069.34,2069.34,2022,Enero
+Residencial,5,3900.29,2483.21,2483.21,2022,Enero
+Residencial,6,3900.29,2483.21,2483.21,2022,Enero
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3250.24,1747.72,1747.72,2022,Enero
+No Residencial,"Rango 1 industrial, comercial y otros",3539.51,1903.27,1903.27,2022,Enero
+Residencial,1,0.00,1019.02,2234.04,2022,Febrero
+Residencial,2,0.00,1268.55,2234.04,2022,Febrero
+Residencial,3,3269.94,2234.04,2234.04,2022,Febrero
+Residencial,4,3269.94,2234.04,2234.04,2022,Febrero
+Residencial,5,3923.93,2680.85,2680.85,2022,Febrero
+Residencial,6,3923.93,2680.85,2680.85,2022,Febrero
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3269.94,1906.93,1906.93,2022,Febrero
+No Residencial,"Rango 1 industrial, comercial y otros",3560.96,2076.65,2076.65,2022,Febrero
+Residencial,1,0.00,1027.29,2244.31,2022,Marzo
+Residencial,2,0.00,1278.03,2244.31,2022,Marzo
+Residencial,3,3320.07,2244.31,2244.31,2022,Marzo
+Residencial,4,3320.07,2244.31,2244.31,2022,Marzo
+Residencial,5,3984.08,2693.17,2693.17,2022,Marzo
+Residencial,6,3984.08,2693.17,2693.17,2022,Marzo
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3320.07,1917.47,1917.47,2022,Marzo
+No Residencial,"Rango 1 industrial, comercial y otros",3615.56,2088.12,2088.12,2022,Marzo
+Residencial,1,0.00,1014.40,2207.85,2022,Abril
+Residencial,2,0.00,1261.26,2207.85,2022,Abril
+Residencial,3,3370.08,2207.85,2207.85,2022,Abril
+Residencial,4,3370.08,2207.85,2207.85,2022,Abril
+Residencial,5,4044.10,2649.42,2649.42,2022,Abril
+Residencial,6,4044.10,2649.42,2649.42,2022,Abril
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3370.08,1866.82,1866.82,2022,Abril
+No Residencial,"Rango 1 industrial, comercial y otros",3670.02,2032.97,2032.97,2022,Abril
+Residencial,1,0.00,982.96,2127.67,2022,Mayo
+Residencial,2,0.00,1222.10,2127.67,2022,Mayo
+Residencial,3,3399.54,2127.67,2127.67,2022,Mayo
+Residencial,4,3399.54,2127.67,2127.67,2022,Mayo
+Residencial,5,4079.45,2553.20,2553.20,2022,Mayo
+Residencial,6,4079.45,2553.20,2553.20,2022,Mayo
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3399.54,1785.09,1785.09,2022,Mayo
+No Residencial,"Rango 1 industrial, comercial y otros",3702.10,1943.96,1943.96,2022,Mayo
+Residencial,1,0.00,1021.15,2218.47,2022,Junio
+Residencial,2,0.00,1269.88,2218.47,2022,Junio
+Residencial,3,3437.69,2218.47,2218.47,2022,Junio
+Residencial,4,3437.69,2218.47,2218.47,2022,Junio
+Residencial,5,4125.23,2662.16,2662.16,2022,Junio
+Residencial,6,4125.23,2662.16,2662.16,2022,Junio
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3437.69,1873.82,1873.82,2022,Junio
+No Residencial,"Rango 1 industrial, comercial y otros",3743.64,2040.59,2040.59,2022,Junio
+Residencial,1,0.00,1023.53,2210.16,2022,Julio
+Residencial,2,0.00,1273.16,2210.16,2022,Julio
+Residencial,3,3462.30,2210.16,2210.16,2022,Julio
+Residencial,4,3462.30,2210.16,2210.16,2022,Julio
+Residencial,5,4154.76,2652.19,2652.19,2022,Julio
+Residencial,6,4154.76,2652.19,2652.19,2022,Julio
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3462.30,1862.12,1862.12,2022,Julio
+No Residencial,"Rango 1 industrial, comercial y otros",3770.44,2027.85,2027.85,2022,Julio
+Residencial,1,0.00,1038.48,2240.82,2022,Agosto
+Residencial,2,0.00,1290.79,2240.82,2022,Agosto
+Residencial,3,3475.66,2240.82,2240.82,2022,Agosto
+Residencial,4,3475.66,2240.82,2240.82,2022,Agosto
+Residencial,5,4170.79,2688.98,2688.98,2022,Agosto
+Residencial,6,4170.79,2688.98,2688.98,2022,Agosto
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3475.66,1896.38,1896.38,2022,Agosto
+No Residencial,"Rango 1 industrial, comercial y otros",3784.99,2065.16,2065.16,2022,Agosto
+Residencial,1,0.00,1079.67,2358.44,2022,Septiembre
+Residencial,2,0.00,1343.67,2358.44,2022,Septiembre
+Residencial,3,3499.34,2358.44,2358.44,2022,Septiembre
+Residencial,4,3499.34,2358.44,2358.44,2022,Septiembre
+Residencial,5,4199.21,2830.13,2830.13,2022,Septiembre
+Residencial,6,4199.21,2830.13,2830.13,2022,Septiembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3499.34,2008.18,2008.18,2022,Septiembre
+No Residencial,"Rango 1 industrial, comercial y otros",3810.78,2186.91,2186.91,2022,Septiembre
+Residencial,1,0.00,1090.78,2358.44,2022,Octubre
+Residencial,2,0.00,1357.50,2358.44,2022,Octubre
+Residencial,3,3499.34,2358.44,2358.44,2022,Octubre
+Residencial,4,3499.34,2358.44,2358.44,2022,Octubre
+Residencial,5,4199.21,2830.13,2830.13,2022,Octubre
+Residencial,6,4199.21,2830.13,2830.13,2022,Octubre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3499.34,2008.18,2008.18,2022,Octubre
+No Residencial,"Rango 1 industrial, comercial y otros",3810.78,2186.91,2186.91,2022,Octubre
+Residencial,1,0.00,1109.09,2416.46,2022,Noviembre
+Residencial,2,0.00,1379.51,2416.46,2022,Noviembre
+Residencial,3,3559.06,2416.46,2416.46,2022,Noviembre
+Residencial,4,3559.06,2416.46,2416.46,2022,Noviembre
+Residencial,5,4270.87,2899.75,2899.75,2022,Noviembre
+Residencial,6,4270.87,2899.75,2899.75,2022,Noviembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3559.06,2062.59,2062.59,2022,Noviembre
+No Residencial,"Rango 1 industrial, comercial y otros",3875.82,2246.16,2246.16,2022,Noviembre
+Residencial,1,0.00,1117.11,2416.46,2022,Diciembre
+Residencial,2,0.00,1389.55,2416.46,2022,Diciembre
+Residencial,3,3559.06,2416.46,2416.46,2022,Diciembre
+Residencial,4,3559.06,2416.46,2416.46,2022,Diciembre
+Residencial,5,4270.87,2899.75,2899.75,2022,Diciembre
+Residencial,6,4270.87,2899.75,2899.75,2022,Diciembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3559.06,2062.59,2062.59,2022,Diciembre
+No Residencial,"Rango 1 industrial, comercial y otros",3875.82,2246.16,2246.16,2022,Diciembre
+Residencial,1,0.00,1151.14,2531.41,2023,Enero
+Residencial,2,0.00,1432.98,2531.41,2023,Enero
+Residencial,3,3603.11,2531.41,2531.41,2023,Enero
+Residencial,4,3603.11,2531.41,2531.41,2023,Enero
+Residencial,5,4323.73,3037.69,3037.69,2023,Enero
+Residencial,6,4323.73,3037.69,3037.69,2023,Enero
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3603.11,2162.15,2162.15,2023,Enero
+No Residencial,"Rango 1 industrial, comercial y otros",3923.79,2354.58,2354.58,2023,Enero
+Residencial,1,0.00,1165.79,2493.09,2023,Febrero
+Residencial,2,0.00,1451.10,2493.09,2023,Febrero
+Residencial,3,3644.01,2493.09,2493.09,2023,Febrero
+Residencial,4,3644.01,2493.09,2493.09,2023,Febrero
+Residencial,5,4372.81,2991.71,2991.71,2023,Febrero
+Residencial,6,4372.81,2991.71,2991.71,2023,Febrero
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3644.01,2120.32,2120.32,2023,Febrero
+No Residencial,"Rango 1 industrial, comercial y otros",3968.33,2309.03,2309.03,2023,Febrero
+Residencial,1,0.00,1186.59,2567.54,2023,Marzo
+Residencial,2,0.00,1476.94,2567.54,2023,Marzo
+Residencial,3,3704.16,2567.54,2567.54,2023,Marzo
+Residencial,4,3704.16,2567.54,2567.54,2023,Marzo
+Residencial,5,4444.99,3081.05,3081.05,2023,Marzo
+Residencial,6,4444.99,3081.05,3081.05,2023,Marzo
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3704.16,2190.15,2190.15,2023,Marzo
+No Residencial,"Rango 1 industrial, comercial y otros",4033.83,2385.07,2385.07,2023,Marzo
+Residencial,1,0.00,1208.96,2629.41,2023,Abril
+Residencial,2,0.00,1503.32,2629.41,2023,Abril
+Residencial,3,3760.92,2629.41,2629.41,2023,Abril
+Residencial,4,3760.92,2629.41,2629.41,2023,Abril
+Residencial,5,4513.10,3155.29,3155.29,2023,Abril
+Residencial,6,4513.10,3155.29,3155.29,2023,Abril
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3760.92,2247.58,2247.58,2023,Abril
+No Residencial,"Rango 1 industrial, comercial y otros",4095.64,2447.61,2447.61,2023,Abril
+Residencial,1,0.00,1221.60,2522.44,2023,Mayo
+Residencial,2,0.00,1518.97,2522.44,2023,Mayo
+Residencial,3,3795.63,2522.44,2522.44,2023,Mayo
+Residencial,4,3795.63,2522.44,2522.44,2023,Mayo
+Residencial,5,4554.76,3026.93,3026.93,2023,Mayo
+Residencial,6,4554.76,3026.93,3026.93,2023,Mayo
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3795.63,2142.44,2142.44,2023,Mayo
+No Residencial,"Rango 1 industrial, comercial y otros",4133.44,2333.12,2333.12,2023,Mayo
+Residencial,1,0.00,1231.01,2586.17,2023,Junio
+Residencial,2,0.00,1530.94,2586.17,2023,Junio
+Residencial,3,3820.60,2586.17,2586.17,2023,Junio
+Residencial,4,3820.60,2586.17,2586.17,2023,Junio
+Residencial,5,4584.72,3103.40,3103.40,2023,Junio
+Residencial,6,4584.72,3103.40,3103.40,2023,Junio
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3820.60,2211.52,2211.52,2023,Junio
+No Residencial,"Rango 1 industrial, comercial y otros",4160.63,2408.35,2408.35,2023,Junio
+Residencial,1,0.00,1236.39,2505.94,2023,Julio
+Residencial,2,0.00,1537.58,2505.94,2023,Julio
+Residencial,3,3832.47,2505.94,2505.94,2023,Julio
+Residencial,4,3832.47,2505.94,2505.94,2023,Julio
+Residencial,5,4598.96,3007.13,3007.13,2023,Julio
+Residencial,6,4598.96,3007.13,3007.13,2023,Julio
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3832.47,2154.86,2154.86,2023,Julio
+No Residencial,"Rango 1 industrial, comercial y otros",4173.56,2346.64,2346.64,2023,Julio
+Residencial,1,0.00,1240.07,2401.05,2023,Agosto
+Residencial,2,0.00,1542.24,2401.05,2023,Agosto
+Residencial,3,3839.10,2401.05,2401.05,2023,Agosto
+Residencial,4,3839.10,2401.05,2401.05,2023,Agosto
+Residencial,5,4606.92,2881.26,2881.26,2023,Agosto
+Residencial,6,4606.92,2881.26,2881.26,2023,Agosto
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3839.10,2055.14,2055.14,2023,Agosto
+No Residencial,"Rango 1 industrial, comercial y otros",4180.78,2238.05,2238.05,2023,Agosto
+Residencial,1,0.00,1246.26,2349.35,2023,Septiembre
+Residencial,2,0.00,1549.97,2349.35,2023,Septiembre
+Residencial,3,3853.50,2349.35,2349.35,2023,Septiembre
+Residencial,4,3853.50,2349.35,2349.35,2023,Septiembre
+Residencial,5,4624.20,2819.22,2819.22,2023,Septiembre
+Residencial,6,4624.20,2819.22,2819.22,2023,Septiembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3853.50,2010.30,2010.30,2023,Septiembre
+No Residencial,"Rango 1 industrial, comercial y otros",4196.46,2189.22,2189.22,2023,Septiembre
+Residencial,1,0.00,1255.00,2384.49,2023,Octubre
+Residencial,2,0.00,1560.87,2384.49,2023,Octubre
+Residencial,3,3875.66,2384.49,2384.49,2023,Octubre
+Residencial,4,3875.66,2384.49,2384.49,2023,Octubre
+Residencial,5,4650.79,2861.39,2861.39,2023,Octubre
+Residencial,6,4650.79,2861.39,2861.39,2023,Octubre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3875.66,2040.69,2040.69,2023,Octubre
+No Residencial,"Rango 1 industrial, comercial y otros",4220.59,2222.31,2222.31,2023,Octubre
+Residencial,1,0.00,1261.56,2384.49,2023,Noviembre
+Residencial,2,0.00,1569.14,2384.49,2023,Noviembre
+Residencial,3,3875.66,2384.49,2384.49,2023,Noviembre
+Residencial,4,3875.66,2384.49,2384.49,2023,Noviembre
+Residencial,5,4650.79,2861.39,2861.39,2023,Noviembre
+Residencial,6,4650.79,2861.39,2861.39,2023,Noviembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3875.66,2040.69,2040.69,2023,Noviembre
+No Residencial,"Rango 1 industrial, comercial y otros",4220.59,2222.31,2222.31,2023,Noviembre
+Residencial,1,0.00,1264.81,2384.49,2023,Diciembre
+Residencial,2,0.00,1572.98,2384.49,2023,Diciembre
+Residencial,3,3875.66,2384.49,2384.49,2023,Diciembre
+Residencial,4,3875.66,2384.49,2384.49,2023,Diciembre
+Residencial,5,4650.79,2861.39,2861.39,2023,Diciembre
+Residencial,6,4650.79,2861.39,2861.39,2023,Diciembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3875.66,2040.69,2040.69,2023,Diciembre
+No Residencial,"Rango 1 industrial, comercial y otros",4220.59,2222.31,2222.31,2023,Diciembre
+Residencial,1,0.00,1270.61,2281.06,2024,Enero
+Residencial,2,0.00,1580.30,2281.06,2024,Enero
+Residencial,3,3909.71,2281.06,2281.06,2024,Enero
+Residencial,4,3909.71,2281.06,2281.06,2024,Enero
+Residencial,5,4691.65,2737.27,2737.27,2024,Enero
+Residencial,6,4691.65,2737.27,2737.27,2024,Enero
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3909.71,1930.48,1930.48,2024,Enero
+No Residencial,"Rango 1 industrial, comercial y otros",4257.67,2102.29,2102.29,2024,Enero
+Residencial,1,0.00,1276.56,2438.92,2024,Febrero
+Residencial,2,0.00,1587.59,2438.92,2024,Febrero
+Residencial,3,3922.72,2438.92,2438.92,2024,Febrero
+Residencial,4,3922.72,2438.92,2438.92,2024,Febrero
+Residencial,5,4707.26,2926.70,2926.70,2024,Febrero
+Residencial,6,4707.26,2926.70,2926.70,2024,Febrero
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3922.72,2089.51,2089.51,2024,Febrero
+No Residencial,"Rango 1 industrial, comercial y otros",4271.84,2275.48,2275.48,2024,Febrero
+Residencial,1,0.00,1288.34,2483.27,2024,Marzo
+Residencial,2,0.00,1602.17,2483.27,2024,Marzo
+Residencial,3,3953.75,2483.27,2483.27,2024,Marzo
+Residencial,4,3953.75,2483.27,2483.27,2024,Marzo
+Residencial,5,4744.50,2979.92,2979.92,2024,Marzo
+Residencial,6,4744.50,2979.92,2979.92,2024,Marzo
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3953.75,2139.91,2139.91,2024,Marzo
+No Residencial,"Rango 1 industrial, comercial y otros",4305.63,2330.36,2330.36,2024,Marzo
+Residencial,1,0.00,1302.21,2477.79,2024,Abril
+Residencial,2,0.00,1619.48,2477.79,2024,Abril
+Residencial,3,3991.64,2477.79,2477.79,2024,Abril
+Residencial,4,3991.64,2477.79,2477.79,2024,Abril
+Residencial,5,4789.97,2973.35,2973.35,2024,Abril
+Residencial,6,4789.97,2973.35,2973.35,2024,Abril
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",3991.64,2118.39,2118.39,2024,Abril
+No Residencial,"Rango 1 industrial, comercial y otros",4346.90,2306.93,2306.93,2024,Abril
+Residencial,1,0.00,1311.29,2526.66,2024,Mayo
+Residencial,2,0.00,1631.03,2526.66,2024,Mayo
+Residencial,3,4014.78,2526.66,2526.66,2024,Mayo
+Residencial,4,4014.78,2526.66,2526.66,2024,Mayo
+Residencial,5,4817.74,3031.99,3031.99,2024,Mayo
+Residencial,6,4817.74,3031.99,3031.99,2024,Mayo
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",4014.78,2166.77,2166.77,2024,Mayo
+No Residencial,"Rango 1 industrial, comercial y otros",4372.10,2359.61,2359.61,2024,Mayo
+Residencial,1,0.00,1319.18,2467.32,2024,Junio
+Residencial,2,0.00,1640.64,2467.32,2024,Junio
+Residencial,3,4033.49,2467.32,2467.32,2024,Junio
+Residencial,4,4033.49,2467.32,2467.32,2024,Junio
+Residencial,5,4840.19,2960.78,2960.78,2024,Junio
+Residencial,6,4840.19,2960.78,2960.78,2024,Junio
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",4033.49,2109.26,2109.26,2024,Junio
+No Residencial,"Rango 1 industrial, comercial y otros",4392.47,2296.98,2296.98,2024,Junio
+Residencial,1,0.00,1324.63,2467.32,2024,Julio
+Residencial,2,0.00,1647.49,2467.32,2024,Julio
+Residencial,3,4033.49,2467.32,2467.32,2024,Julio
+Residencial,4,4033.49,2467.32,2467.32,2024,Julio
+Residencial,5,4840.19,2960.78,2960.78,2024,Julio
+Residencial,6,4840.19,2960.78,2960.78,2024,Julio
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",4033.49,2109.26,2109.26,2024,Julio
+No Residencial,"Rango 1 industrial, comercial y otros",4392.47,2296.98,2296.98,2024,Julio
+Residencial,1,0.00,1328.84,2522.95,2024,Agosto
+Residencial,2,0.00,1652.72,2522.95,2024,Agosto
+Residencial,3,4053.41,2522.95,2522.95,2024,Agosto
+Residencial,4,4053.41,2522.95,2522.95,2024,Agosto
+Residencial,5,4864.09,3027.54,3027.54,2024,Agosto
+Residencial,6,4864.09,3027.54,3027.54,2024,Agosto
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",4053.41,2158.91,2158.91,2024,Agosto
+No Residencial,"Rango 1 industrial, comercial y otros",4414.16,2351.05,2351.05,2024,Agosto
+Residencial,1,0.00,1331.43,2412.37,2024,Septiembre
+Residencial,2,0.00,1655.95,2412.37,2024,Septiembre
+Residencial,3,4056.62,2412.37,2412.37,2024,Septiembre
+Residencial,4,4056.62,2412.37,2412.37,2024,Septiembre
+Residencial,5,4867.94,2894.84,2894.84,2024,Septiembre
+Residencial,6,4867.94,2894.84,2894.84,2024,Septiembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",4056.62,2047.70,2047.70,2024,Septiembre
+No Residencial,"Rango 1 industrial, comercial y otros",4417.66,2229.95,2229.95,2024,Septiembre
+Residencial,1,0.00,1331.50,2399.88,2024,Octubre
+Residencial,2,0.00,1656.06,2399.88,2024,Octubre
+Residencial,3,4051.54,2399.88,2399.88,2024,Octubre
+Residencial,4,4051.54,2399.88,2399.88,2024,Octubre
+Residencial,5,4861.85,2879.86,2879.86,2024,Octubre
+Residencial,6,4861.85,2879.86,2879.86,2024,Octubre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",4051.54,2039.91,2039.91,2024,Octubre
+No Residencial,"Rango 1 industrial, comercial y otros",4412.13,2221.46,2221.46,2024,Octubre
+Residencial,1,0.00,1334.68,2399.88,2024,Noviembre
+Residencial,2,0.00,1660.00,2399.88,2024,Noviembre
+Residencial,3,4051.54,2399.88,2399.88,2024,Noviembre
+Residencial,4,4051.54,2399.88,2399.88,2024,Noviembre
+Residencial,5,4861.85,2879.86,2879.86,2024,Noviembre
+Residencial,6,4861.85,2879.86,2879.86,2024,Noviembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",4051.54,2039.91,2039.91,2024,Noviembre
+No Residencial,"Rango 1 industrial, comercial y otros",4412.13,2221.46,2221.46,2024,Noviembre
+Residencial,1,0.00,1332.81,2435.19,2024,Diciembre
+Residencial,2,0.00,1657.89,2435.19,2024,Diciembre
+Residencial,3,4045.94,2435.19,2435.19,2024,Diciembre
+Residencial,4,4045.94,2435.19,2435.19,2024,Diciembre
+Residencial,5,4855.13,2922.23,2922.23,2024,Diciembre
+Residencial,6,4855.13,2922.23,2922.23,2024,Diciembre
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",4045.94,2074.85,2074.85,2024,Diciembre
+No Residencial,"Rango 1 industrial, comercial y otros",4406.03,2259.51,2259.51,2024,Diciembre
+Residencial,1,0.00,1336.55,2449.65,2025,Enero
+Residencial,2,0.00,1662.32,2449.65,2025,Enero
+Residencial,3,4051.86,2449.65,2449.65,2025,Enero
+Residencial,4,4051.86,2449.65,2449.65,2025,Enero
+Residencial,5,4862.23,2939.58,2939.58,2025,Enero
+Residencial,6,4862.23,2939.58,2939.58,2025,Enero
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",4051.86,2092.06,2092.06,2025,Enero
+No Residencial,"Rango 1 industrial, comercial y otros",4412.48,2278.25,2278.25,2025,Enero
+Residencial,1,0.00,1348.72,2968.49,2025,Febrero
+Residencial,2,0.00,1680.08,2968.49,2025,Febrero
+Residencial,3,4065.40,2968.49,2968.49,2025,Febrero
+Residencial,4,4065.40,2968.49,2968.49,2025,Febrero
+Residencial,5,4878.48,3562.19,3562.19,2025,Febrero
+Residencial,6,4878.48,3562.19,3562.19,2025,Febrero
+No Residencial,"Rango 1 Cogenración, Autogeneración, oficiales y exentos",4065.40,2607.07,2607.07,2025,Febrero
+No Residencial,"Rango 1 industrial, comercial y otros",4427.22,2839.10,2839.10,2025,Febrero
