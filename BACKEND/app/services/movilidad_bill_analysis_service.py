@@ -83,7 +83,7 @@ def _build_system_prompt() -> str:
     acueducto = _load_latest_tarifas_acueducto()
     gas = _load_latest_tarifas_gas()
 
-    return f"""Eres MECIA Servicios, un analista experto en facturas EPM de Medellín.
+    return f"""Eres GEOMED Servicios, un analista experto en facturas EPM de Medellín.
 Recibirás una o varias imágenes de una factura EPM (energía, acueducto, gas, o combinada).
 
 TARIFAS REALES EPM (datos oficiales más recientes):

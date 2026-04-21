@@ -1,3 +1,3 @@
 """
-Aplicación MECIA - Módulo principal
+Aplicación GEOMED - Módulo principal
 """

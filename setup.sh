@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Script de configuración inicial para MECIA con Docker
+# Script de configuración inicial para GEOMED con Docker
 
-echo "🚀 Configuración inicial de MECIA con Docker"
+echo "🚀 Configuración inicial de GEOMED con Docker"
 
 # Verificar si Docker está instalado
 if ! command -v docker &> /dev/null; then
@@ -41,7 +41,7 @@ docker-compose -f docker-compose.dev.yml up -d
 echo "⏳ Esperando a que los servicios estén listos..."
 sleep 10
 
-echo "✅ ¡MECIA está ejecutándose!"
+echo "✅ ¡GEOMED está ejecutándose!"
 echo "   📱 Frontend: http://localhost:3000"
 echo "   🔌 API: http://localhost:8000"
 echo "   📚 API Docs: http://localhost:8000/docs"

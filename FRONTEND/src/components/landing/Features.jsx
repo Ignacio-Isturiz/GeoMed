@@ -17,12 +17,6 @@ export default function Features() {
               icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
             },
             {
-              title: 'Servicios Públicos',
-              desc: 'Revisa tu factura EPM, entiende tu consumo mensual y recibe alertas útiles para anticiparte a cambios en tus servicios.',
-              tag: 'EPM · Consumo · Alertas',
-              icon: <><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></>
-            },
-            {
               title: 'Chatbot Guardián',
               desc: 'Asistente de seguridad que responde en lenguaje natural sobre zonas, horarios y recomendaciones según tu ubicación y la hora.',
               tag: 'IA + datos ciudad',

@@ -60,9 +60,9 @@ import CriminalidadDashboard from '../components/CriminalidadDashboard';
 </div>
 ```
 
-### OpciÃ³n 2: Agregar al Dashboard de Emprendedor
+### Opción 2: Agregar al Dashboard principal
 
-En `src/pages/EmprendedorDashboard.jsx`:
+En `src/pages/CiudadanoDashboard.jsx`:
 
 ```jsx
 import CriminalidadDashboard from '../components/CriminalidadDashboard';
@@ -158,15 +158,14 @@ BACKEND/
 â”‚   â””â”€â”€ main.py              (modificado - se agregÃ³ datasets router)
 
 FRONTEND/
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ services/
-â”‚   â”‚   â”œâ”€â”€ authService.js       (existente)
-â”‚   â”‚   â””â”€â”€ datasetsService.js   (NUEVO)
-â”‚   â”œâ”€â”€ components/
-â”‚   â”‚   â””â”€â”€ CriminalidadDashboard.jsx (NUEVO)
-â”‚   â””â”€â”€ pages/
-â”‚       â”œâ”€â”€ CiudadanoDashboard.jsx    (existente)
-â”‚       â””â”€â”€ EmprendedorDashboard.jsx  (existente)
+├── src/
+│   ├── services/
+│   │   ├── authService.js       (existente)
+│   │   └── datasetsService.js   (NUEVO)
+│   ├── components/
+│   │   └── CriminalidadDashboard.jsx (NUEVO)
+│   └── pages/
+│       └── CiudadanoDashboard.jsx    (existente)
 ```
 
 ## ValidaciÃ³n

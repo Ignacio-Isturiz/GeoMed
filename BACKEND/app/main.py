@@ -21,7 +21,7 @@ settings = get_settings()
 # Crear aplicación FastAPI
 app = FastAPI(
     title=settings.APP_NAME,
-    description="API de autenticación para MECIA - Emprendedores y Ciudadanos",
+    description="API de GEOMED para autenticación y servicios ciudadanos",
     version="1.0.0",
     docs_url="/api/docs",
     openapi_url="/api/openapi.json"

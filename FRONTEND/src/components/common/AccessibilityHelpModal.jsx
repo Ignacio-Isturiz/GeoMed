@@ -4,7 +4,6 @@ import '@/pages/Dashboard.css';
 const KEYBOARD_COMMANDS = [
   { key: '?', desc: 'Abrir esta ayuda de accesibilidad' },
   { key: 'Alt+H', desc: 'Abrir ayuda (alternativa)' },
-  { key: 'Alt+N', desc: 'Apagar / Prender la guía de voz' },
   { key: 'Alt+C', desc: 'Acceder directamente al chatbot' },
   { key: 'Alt+G', desc: 'Ir al contenido principal de la página' },
   { key: 'Alt+L', desc: 'Navegar a la siguiente sección' },
@@ -22,7 +21,6 @@ export default function AccessibilityHelpModal() {
   const getCommandsAnnouncement = () => {
     return `Comandos de accesibilidad disponibles: 
     Signo de interrogación para abrir esta ayuda. 
-    Alt más N para apagar o prender la voz. 
     Alt más C para acceder al chatbot. 
     Alt más G para ir al contenido principal. 
     Alt más L para siguiente sección. 

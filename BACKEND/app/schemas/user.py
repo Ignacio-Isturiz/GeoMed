@@ -16,7 +16,6 @@ class UserBase(BaseModel):
 class UserRegister(UserBase):
     """Schema para registro de usuarios"""
     password: str = Field(..., min_length=8, max_length=72)  # Bcrypt tiene límite de 72 bytes
-    role: str = Field(default="ciudadano", pattern="^(emprendedor|ciudadano)$")
 
 
 class UserLogin(BaseModel):
@@ -39,7 +38,6 @@ class UserPasswordResetConfirm(BaseModel):
 class UserResponse(UserBase):
     """Schema para respuesta de usuario (sin contraseña)"""
     id: str
-    role: str
     is_active: bool
     is_verified: bool
     created_at: datetime

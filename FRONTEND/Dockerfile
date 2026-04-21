@@ -1,4 +1,4 @@
-# Dockerfile para el frontend de MECIA
+# Dockerfile para el frontend de GEOMED
 
 # Stage 1: Solo instalar dependencias (usado en desarrollo)
 FROM node:20-alpine AS deps

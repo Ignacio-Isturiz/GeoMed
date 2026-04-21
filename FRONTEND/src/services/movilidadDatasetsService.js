@@ -126,29 +126,6 @@ export const datasetsService = {
     }
   },
 
-  async getEmprendedorOverview(year = null, limit = 5) {
-    try {
-      const params = new URLSearchParams();
-      if (year !== null && year !== undefined && year !== "") {
-        params.set("year", String(year));
-      }
-      params.set("limit", String(limit));
-
-      const response = await fetch(
-        `${API_CONFIG.baseURL}/api/datasets/emprendedor/overview?${params.toString()}`
-      );
-
-      if (!response.ok) {
-        throw new Error(`Error ${response.status}: ${response.statusText}`);
-      }
-
-      return await response.json();
-    } catch (error) {
-      console.error("Error al obtener overview de emprendedor:", error);
-      throw error;
-    }
-  },
-
   async getEstratificacionData({ servicio = null, estrato = null, periodo = null, limit = 200 } = {}) {
     try {
       const params = new URLSearchParams();

@@ -384,25 +384,6 @@ body{background:var(--ink);color:var(--txt);font-family:var(--fb);font-size:15px
 .faq-ans-in{padding:0 22px 18px;font-size:13.5px;color:var(--t2);line-height:1.7;transition:color .45s}
 .faq-it.open .faq-ans{max-height:300px}
 
-/* ══ ROLES ══ */
-.roles-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;max-width:1140px;margin:0 auto}
-.role-card{background:var(--card);border:1px solid var(--bdr3);border-radius:20px;overflow:hidden;transition:all .3s;display:flex;flex-direction:column;height:100%}
-.role-card:hover{border-color:var(--g);box-shadow:0 16px 52px rgba(0,200,150,0.12)}
-.role-card.emprendedor{border-color:var(--g);background:linear-gradient(135deg,rgba(0,200,150,0.08) 0%,rgba(0,200,150,0.02) 100%)}
-.role-header{padding:36px 32px;display:flex;flex-direction:column;align-items:center;text-align:center;border-bottom:1px solid var(--bdr3)}
-.role-icon{width:68px;height:68px;border-radius:16px;background:var(--g4);border:1px solid var(--bdr);display:flex;align-items:center;justify-content:center;margin-bottom:20px;transition:all .3s}
-.role-icon svg{width:32px;height:32px}
-.role-card:hover .role-icon,.role-card.emprendedor .role-icon{background:var(--g);border-color:var(--g)}
-.role-card:hover .role-icon svg,.role-card.emprendedor .role-icon svg{stroke:#050810}
-.role-title{font-family:var(--fh);font-size:22px;font-weight:800;color:var(--txt);margin-bottom:0;letter-spacing:-.02em}
-.role-body{padding:28px 32px 32px;flex-grow:1;display:flex;flex-direction:column}
-.role-subtitle{font-size:13px;font-weight:600;color:var(--g);text-transform:uppercase;letter-spacing:.06em;margin:0 0 18px 0}
-.role-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px}
-.role-list li{font-size:14px;color:var(--t2);line-height:1.5;padding-left:24px;position:relative}
-.role-list li::before{content:'✓';position:absolute;left:0;color:var(--g);font-weight:700}
-.role-footer{display:flex;padding-top:20px;margin-top:auto}
-.role-footer .btn{width:100%;text-align:center;margin:0}
-
 /* ══ TRUSTED ══ */
 .trusted{padding:44px 48px 32px;text-align:center;position:relative;z-index:1}
 .trusted-lbl{font-size:11px;color:var(--t3);margin-bottom:22px;letter-spacing:.09em;text-transform:uppercase}
@@ -613,23 +594,6 @@ body{background:var(--ink);color:var(--txt);font-family:var(--fb);font-size:15px
   margin-top:-4px;
 }
 
-/* ── Roles map ── */
-.roles-map-wrap{
-  position:relative;width:100%;height:340px;
-  border-radius:18px;overflow:hidden;
-  border:1px solid var(--bdr3);margin-bottom:44px;
-}
-.roles-map-badge{
-  position:absolute;top:14px;left:14px;z-index:5;
-  background:rgba(5,8,16,.72);border:1px solid var(--bdr);
-  border-radius:8px;padding:3px 10px;font-size:10px;
-  color:var(--g);font-weight:700;letter-spacing:.06em;
-  backdrop-filter:blur(8px);
-}
-[data-theme="light"] .roles-map-badge{background:rgba(255,255,255,.88);color:var(--g)}
-.roles-map-frame{width:100%;height:100%;border:0;display:block}
-[data-theme="dark"] .roles-map-frame{filter:invert(0.93) hue-rotate(180deg) saturate(0.6) brightness(0.78)}
-
 /* ── Light mode hero orbs (more visible) ── */
 [data-theme="light"] .orb-teal{background:radial-gradient(circle,rgba(0,153,112,.22) 0%,transparent 70%)}
 [data-theme="light"] .orb-blue{background:radial-gradient(circle,rgba(30,80,255,.11) 0%,transparent 70%)}
@@ -676,7 +640,6 @@ spline-viewer::part(logo),
   .stats-strip{grid-template-columns:1fr}
   .st-it{border-right:none;border-bottom:1px solid var(--bdr)}
   .faq-layout{grid-template-columns:1fr}
-  .roles-grid{grid-template-columns:1fr}
   .vid-text{padding:0 28px;max-width:100%}
   .blog-h{flex-direction:column}
   .blog-h-thumb{width:100%;min-width:0;height:160px;border-right:none;border-bottom:1px solid var(--bdr3)}

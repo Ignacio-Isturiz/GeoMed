@@ -2,12 +2,10 @@ import React from 'react';
 
 const LOGOS_DARK = [
   { src: '/alcaldia.png', alt: 'Alcaldía de Medellín', large: true },
-  { src: '/epm.png',      alt: 'EPM' },
   { src: '/dane.png',     alt: 'DANE' },
 ];
 const LOGOS_LIGHT = [
   { src: '/alcaldiaB.png', alt: 'Alcaldía de Medellín', large: true },
-  { src: '/epmB.png',      alt: 'EPM' },
   { src: '/daneB.png',     alt: 'DANE' },
 ];
 

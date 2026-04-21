@@ -525,19 +525,6 @@ class DatasetsService:
             for comuna, total in ordered[:limit]
         ]
 
-    def get_emprendedor_overview(
-        self,
-        year: Optional[int] = None,
-        limit: int = 5,
-    ) -> Dict[str, Any]:
-        return {
-            "criminalidad": self.get_criminalidad_summary(),
-            "empresarial": self.get_empresarial_summary(year),
-            "top_actividades": self.get_empresarial_top_actividades(year=year, limit=limit),
-            "top_comunas": self.get_empresarial_top_comunas(year=year, limit=limit),
-            "years": self.get_empresarial_years(),
-        }
-
     def _load_estratificacion_rows(self) -> tuple[List[Dict[str, Any]], List[str], List[int], List[str]]:
         """Carga y normaliza el dataset de estratificacion y cobertura."""
         csv_path = self._get_pasajeros_movilizados_file()

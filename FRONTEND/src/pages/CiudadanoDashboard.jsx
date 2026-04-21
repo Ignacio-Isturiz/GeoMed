@@ -11,8 +11,6 @@ import MapaLeafletComunas from '@/components/MapaLeafletComunas';
 
 const NAV = [
   { id: 'inicio',    label: 'Inicio',        icon: <Icons.Dashboard /> },
-  { id: 'seguridad', label: 'Seguridad',     icon: <Icons.Shield />, chatbot:true },
-  { id: 'servicios', label: 'Servicios EPM', icon: <Icons.Bolt /> },
   { id: 'noticias',  label: 'Noticias',      icon: <Icons.News /> },
 ];
 
@@ -587,8 +585,6 @@ export default function CiudadanoDashboard() {
 
       {/* Pills de acceso rÃ¡pido */}
       <div className="db-filter-bar" style={{flexShrink:0}}>
-        <button type="button" className="db-fpill" onClick={() => setMod('seguridad')}><span className="db-dot"/>Seguridad</button>
-        <button type="button" className="db-fpill" onClick={() => setMod('servicios')}>Servicios EPM</button>
         <button type="button" className="db-fpill" onClick={() => setMod('noticias')}>Noticias</button>
         <button className="db-btn-primary" onClick={() => setMod('seguridad')}>Consultar GuardiÃ¡n â†’</button>
       </div>
@@ -670,6 +666,7 @@ export default function CiudadanoDashboard() {
         {[
           { icon:<Icons.Bolt/>, title:'Servicios EPM', desc:'AnÃ¡lisis de facturas con IA. Recomendaciones de ahorro y predicciÃ³n.', action:()=>setMod('servicios') },
           { icon:<Icons.News/>, title:'Noticias',      desc:'Noticias verificadas de MedellÃ­n filtradas por categorÃ­a en tiempo real.', action:()=>setMod('noticias') },
+          { icon:<Icons.News/>, title:'Noticias',      desc:'Noticias verificadas de Medellín filtradas por categoría en tiempo real.', action:()=>setMod('noticias') },
         ].map((item,i)=>(
           <button key={i} type="button" className="db-card db-card-action" onClick={item.action}
             aria-label={`Abrir mÃ³dulo ${item.title}`}
@@ -728,6 +725,7 @@ export default function CiudadanoDashboard() {
   );
 
   // â”€â”€ NOTICIAS: solo noticias â”€â”€
+  // ── NOTICIAS: solo noticias ──
   const noticiasLeft = (
     <div className="db-card" style={{flex:1,display:'flex',flexDirection:'column',overflow:'hidden',padding:0}}>
       <div style={{padding:'18px 22px 14px',flexShrink:0}}>
@@ -743,7 +741,6 @@ export default function CiudadanoDashboard() {
   const leftMap = {
     inicio:    inicioLeft,
     seguridad: seguridadLeft,
-    servicios: serviciosLeft,
     noticias:  noticiasLeft,
   };
 

@@ -20,15 +20,11 @@ const SplineLoader = () => (
 const FAQ_ITEMS = [
   {
     q: '¿Qué hace esta plataforma?',
-    a: 'Es una herramienta que ayuda a tomar decisiones usando datos de Medellín, tanto para emprender como para mejorar la vida en la ciudad.'
+    a: 'Es una herramienta que ayuda a tomar decisiones usando datos de Medellín para mejorar la vida en la ciudad.'
   },
   {
     q: '¿Qué tipo de datos utiliza?',
     a: 'Utiliza datos de seguridad, servicios públicos y actividad económica para analizar qué tan viable es una zona y qué decisiones se pueden tomar en ella.'
-  },
-  {
-    q: '¿Cómo ayuda a emprendedores?',
-    a: 'Permite identificar en qué zonas es mejor abrir o mejorar un negocio, recomendando tipos de negocio según las condiciones del entorno.'
   },
   {
     q: '¿Cómo ayuda a ciudadanos?',

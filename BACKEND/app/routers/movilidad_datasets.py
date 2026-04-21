@@ -1,4 +1,4 @@
-﻿"""
+"""
 Rutas (endpoints) de datasets
 Capa de presentaciÃ³n: se encarga de validar entrada/salida HTTP
 """
@@ -208,7 +208,7 @@ async def get_empresarial_top_comunas(
     summary="Obtener overview unificado para dashboard de emprendedor"
 )
 async def get_emprendedor_overview(
-    year: int | None = Query(default=None, description="AÃ±o de filtro"),
+    year: int | None = Query(default=None, description="Año de filtro"),
     limit: int = Query(default=5, ge=1, le=20, description="Cantidad de resultados")
 ):
     try:

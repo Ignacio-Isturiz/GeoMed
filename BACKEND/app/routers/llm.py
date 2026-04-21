@@ -1,20 +1,15 @@
-﻿"""Endpoints de LLM: anÃ¡lisis de modelos, seguridad, anÃ¡lisis de facturas e historial de conversaciones."""
+"""Endpoints de LLM: análisis de modelos, seguridad, análisis de facturas e historial de conversaciones."""
 
 from pydantic import BaseModel, Field
-from typing import Optional
-from fastapi import APIRouter, HTTPException, status, UploadFile, File, Depends
-from fastapi.responses import Response
+from fastapi import APIRouter, HTTPException, status
 import logging
-import httpx
 
 from app.services.llm_mock import LLMMockService
-from app.services.simmtraffic_llm_service import security_chat_real
+from app.services.security_llm_service import security_chat_real
 from app.services.entrepreneur_llm_service import entrepreneur_chat_real
 from app.services.movilidad_bill_analysis_service import analyze_bill
 from app.services.conversation_service import ConversationService
 from app.core.config import get_settings
-from app.core.dependencies import get_current_user, get_db
-from app.models.user import User
 
 logger = logging.getLogger(__name__)
 
@@ -33,17 +28,6 @@ class SimulateRecommendationRequest(BaseModel):
 
 class SecurityChatRequest(BaseModel):
     prompt: str = Field(min_length=3, max_length=2000)
-
-
-class EmprendedorChatRequest(BaseModel):
-    prompt: str = Field(min_length=3, max_length=2000)
-    conversation_id: Optional[str] = None  # NEW: for saving to conversation history
-
-
-class TextToSpeechRequest(BaseModel):
-    text: str = Field(min_length=1, max_length=700)
-    voice: str = Field(default="alloy")
-    language: str = Field(default="es", pattern=r"^[a-z]{2}(-[A-Z]{2})?$")
 
 
 @router.get(
@@ -96,22 +80,22 @@ async def recommendation(payload: SimulateRecommendationRequest):
 @router.post(
     "/facturas/analizar",
     status_code=status.HTTP_200_OK,
-    summary="Analizar factura EPM (1 o varias imÃ¡genes) con visiÃ³n IA y tarifas reales",
+    summary="Analizar factura EPM (1 o varias imágenes) con visión IA y tarifas reales",
 )
 async def analizar_factura(files: list[UploadFile] = File(...)):
     _ALLOWED = {"image/jpeg", "image/png", "image/webp", "image/gif"}
     if not files:
         raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail="Debes subir al menos una imagen.")
     if len(files) > 6:
-        raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail="MÃ¡ximo 6 imÃ¡genes por factura.")
+        raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail="Máximo 6 imágenes por factura.")
     try:
         images = []
         for file in files:
             if file.content_type not in _ALLOWED:
-                raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail=f"Archivo '{file.filename}' no es una imagen vÃ¡lida (JPG, PNG, WEBP).")
+                raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail=f"Archivo '{file.filename}' no es una imagen válida (JPG, PNG, WEBP).")
             image_bytes = await file.read()
             if len(image_bytes) > 10 * 1024 * 1024:
-                raise HTTPException(status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE, detail=f"'{file.filename}' supera el lÃ­mite de 10 MB.")
+                raise HTTPException(status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE, detail=f"'{file.filename}' supera el límite de 10 MB.")
             images.append((image_bytes, file.content_type))
 
         settings = get_settings()
