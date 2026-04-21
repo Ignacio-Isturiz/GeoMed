@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from 'react';
-import { datasetsService } from '@/services/datasetsService';
+﻿import { useEffect, useMemo, useState } from 'react';
+import { datasetsService } from '@/services/movilidadDatasetsService';
 
 function formatNumber(value) {
   return Number(value || 0).toLocaleString('es-CO');
@@ -302,3 +302,4 @@ export default function NegociosCoberturaSection() {
     </div>
   );
 }
+

@@ -4,7 +4,7 @@
 
 El bot de Telegram usa exactamente la misma logica del chatbot ciudadano del dashboard:
 
-- Servicio compartido: `app.services.security_llm_service.security_chat_real`
+- Servicio compartido: `app.services.simmtraffic_llm_service.security_chat_real`
 - Proveedor LLM: `LLM_PROVIDER` (`openai` o `gemini`)
 - API keys: `OPENAI_API_KEY` y/o `GEMINI_API_KEY`
 
@@ -37,3 +37,4 @@ Comandos en Telegram:
 - `/help`
 
 Mensajes de texto normales se procesan con el mismo motor de respuestas del perfil ciudadano.
+

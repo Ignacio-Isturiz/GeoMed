@@ -6,8 +6,8 @@ import csv
 import os
 
 # Ruta al dataset de criminalidad
-_CRIMINALIDAD_PATH = os.path.join(
-    os.path.dirname(__file__), "..", "..", "datasets", "Criminalidad_por_Comuna_data.csv"
+_SIMMTRAFFIC_PATH = os.path.join(
+    os.path.dirname(__file__), "..", "..", "datasets", "simmtrafficdata_clean.csv"
 )
 
 # Aliases y variaciones comunes para detectar comunas en el texto del usuario
@@ -48,16 +48,33 @@ _ALIASES: Dict[str, str] = {
 }
 
 
-def _load_criminalidad() -> Dict[str, Dict[str, float]]:
+def _load_simmtraffic_data() -> Dict[str, Dict[str, float]]:
     """Carga y parsea el CSV de criminalidad por comuna."""
     data: Dict[str, Dict[str, float]] = {}
     try:
-        with open(_CRIMINALIDAD_PATH, encoding="utf-8") as f:
-            reader = csv.DictReader(f, delimiter=";")
+        with open(_SIMMTRAFFIC_PATH, encoding="utf-8") as f:
+            reader = csv.DictReader(f)
             for row in reader:
-                nombre = row["Nombre"].strip().upper()
-                total_str = row["([TotalCasos])"].strip().replace(".", "").replace(",", "")
-                tasa_str = row["TasaCriminalidad"].strip().replace(",", ".")
+                nombre = (
+                    row.get("Nombre")
+                    or row.get("Comuna")
+                    or row.get("CORREDOR")
+                    or row.get("DISPOSITIVO")
+                    or "N/A"
+                )
+                total_str = str(
+                    row.get("([TotalCasos])")
+                    or row.get("TotalCasos")
+                    or row.get("REGISTROS")
+                    or row.get("INTENSIDAD")
+                    or "0"
+                ).strip().replace(".", "").replace(",", "")
+                tasa_str = str(
+                    row.get("TasaCriminalidad")
+                    or row.get("VELOCIDAD")
+                    or row.get("OCUPACION")
+                    or "0"
+                ).strip().replace(".", "").replace(",", ".")
                 data[nombre] = {
                     "total": int(total_str),
                     "tasa": float(tasa_str),
@@ -223,7 +240,7 @@ class LLMMockService:
 
     def simulate_security_chat(self, prompt: str) -> Dict[str, Any]:
         """Responde preguntas de seguridad basadas en el dataset de criminalidad."""
-        data = _load_criminalidad()
+        data = _load_simmtraffic_data()
         time.sleep(0.6)
 
         prompt_upper = prompt.upper()
@@ -273,7 +290,7 @@ class LLMMockService:
         return {
             "output": response,
                 "comunas_detectadas": mentioned,
-            "data_source": "Criminalidad_por_Comuna_data.csv",
+            "data_source": "simmtrafficdata_clean.csv",
             "mock": True,
         }
 

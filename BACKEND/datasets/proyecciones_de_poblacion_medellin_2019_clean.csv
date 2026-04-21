@@ -1,0 +1,433 @@
+﻿codigoDane_municipio,tipo_division_geografica,codigo,grupo_edad,total_2019,hombres_2019,mujeres_2019
+5001,Comuna,Popular,Total,132482,62629,69853
+5001,Comuna,Popular,0-4,11684,5964,5720
+5001,Comuna,Popular,5-9,11664,5909,5755
+5001,Comuna,Popular,10-14,11275,5683,5592
+5001,Comuna,Popular,15-19,10972,5607,5365
+5001,Comuna,Popular,20-24,10555,5114,5441
+5001,Comuna,Popular,25-29,10630,5132,5498
+5001,Comuna,Popular,30-34,10648,4953,5695
+5001,Comuna,Popular,35-39,9140,4051,5089
+5001,Comuna,Popular,40-44,8137,3586,4551
+5001,Comuna,Popular,45-49,7610,3382,4228
+5001,Comuna,Popular,50-54,8317,3769,4548
+5001,Comuna,Popular,55-59,7231,3253,3978
+5001,Comuna,Popular,60-64,5300,2342,2958
+5001,Comuna,Popular,65-69,3646,1595,2051
+5001,Comuna,Popular,70-74,2462,1046,1416
+5001,Comuna,Popular,75-79,1510,613,897
+5001,Comuna,Popular,80 Y MÁS,1701,630,1071
+5001,Comuna,Santa Cruz,Total,113520,53463,60057
+5001,Comuna,Santa Cruz,0-4,8635,4416,4219
+5001,Comuna,Santa Cruz,5-9,8735,4445,4290
+5001,Comuna,Santa Cruz,10-14,8625,4402,4223
+5001,Comuna,Santa Cruz,15-19,8901,4640,4261
+5001,Comuna,Santa Cruz,20-24,8850,4422,4428
+5001,Comuna,Santa Cruz,25-29,9503,4746,4757
+5001,Comuna,Santa Cruz,30-34,9509,4598,4911
+5001,Comuna,Santa Cruz,35-39,8165,3687,4478
+5001,Comuna,Santa Cruz,40-44,6939,3091,3848
+5001,Comuna,Santa Cruz,45-49,6395,2813,3582
+5001,Comuna,Santa Cruz,50-54,7627,3370,4257
+5001,Comuna,Santa Cruz,55-59,7233,3115,4118
+5001,Comuna,Santa Cruz,60-64,5022,2085,2937
+5001,Comuna,Santa Cruz,65-69,3589,1484,2105
+5001,Comuna,Santa Cruz,70-74,2541,1004,1537
+5001,Comuna,Santa Cruz,75-79,1465,548,917
+5001,Comuna,Santa Cruz,80 Y MÁS,1786,597,1189
+5001,Comuna,Manrique,Total,162374,77927,84447
+5001,Comuna,Manrique,0-4,11340,5800,5540
+5001,Comuna,Manrique,5-9,11380,5798,5582
+5001,Comuna,Manrique,10-14,11418,5847,5571
+5001,Comuna,Manrique,15-19,11857,6228,5629
+5001,Comuna,Manrique,20-24,11821,5977,5844
+5001,Comuna,Manrique,25-29,13036,6627,6409
+5001,Comuna,Manrique,30-34,13474,6778,6696
+5001,Comuna,Manrique,35-39,11040,5298,5742
+5001,Comuna,Manrique,40-44,9598,4455,5143
+5001,Comuna,Manrique,45-49,9971,4582,5389
+5001,Comuna,Manrique,50-54,12222,5580,6642
+5001,Comuna,Manrique,55-59,11625,5159,6466
+5001,Comuna,Manrique,60-64,9090,3918,5172
+5001,Comuna,Manrique,65-69,5815,2496,3319
+5001,Comuna,Manrique,70-74,3990,1649,2341
+5001,Comuna,Manrique,75-79,2293,895,1398
+5001,Comuna,Manrique,80 Y MÁS,2404,840,1564
+5001,Comuna,Aranjuez,Total,163489,78004,85485
+5001,Comuna,Aranjuez,0-4,9854,5043,4811
+5001,Comuna,Aranjuez,5-9,10197,5209,4988
+5001,Comuna,Aranjuez,10-14,10439,5375,5064
+5001,Comuna,Aranjuez,15-19,11079,5874,5205
+5001,Comuna,Aranjuez,20-24,11276,5794,5482
+5001,Comuna,Aranjuez,25-29,12929,6656,6273
+5001,Comuna,Aranjuez,30-34,14123,7172,6951
+5001,Comuna,Aranjuez,35-39,12392,5986,6406
+5001,Comuna,Aranjuez,40-44,10202,4746,5456
+5001,Comuna,Aranjuez,45-49,10263,4650,5613
+5001,Comuna,Aranjuez,50-54,12199,5497,6702
+5001,Comuna,Aranjuez,55-59,11805,5121,6684
+5001,Comuna,Aranjuez,60-64,9741,4138,5603
+5001,Comuna,Aranjuez,65-69,6828,2887,3941
+5001,Comuna,Aranjuez,70-74,4596,1871,2725
+5001,Comuna,Aranjuez,75-79,2616,1000,1616
+5001,Comuna,Aranjuez,80 Y MÁS,2950,985,1965
+5001,Comuna,Castilla,Total,151785,71727,80058
+5001,Comuna,Castilla,0-4,7705,3942,3763
+5001,Comuna,Castilla,5-9,7972,4061,3911
+5001,Comuna,Castilla,10-14,8195,4198,3997
+5001,Comuna,Castilla,15-19,8851,4643,4208
+5001,Comuna,Castilla,20-24,9378,4719,4659
+5001,Comuna,Castilla,25-29,11961,6044,5917
+5001,Comuna,Castilla,30-34,12224,6133,6091
+5001,Comuna,Castilla,35-39,10638,5060,5578
+5001,Comuna,Castilla,40-44,9350,4324,5026
+5001,Comuna,Castilla,45-49,10298,4642,5656
+5001,Comuna,Castilla,50-54,14110,6363,7747
+5001,Comuna,Castilla,55-59,13497,6039,7458
+5001,Comuna,Castilla,60-64,9827,4314,5513
+5001,Comuna,Castilla,65-69,7344,3143,4201
+5001,Comuna,Castilla,70-74,4854,2002,2852
+5001,Comuna,Castilla,75-79,2752,1086,1666
+5001,Comuna,Castilla,80 Y MÁS,2829,1014,1815
+5001,Comuna,Doce de Octubre,Total,195800,92722,103078
+5001,Comuna,Doce de Octubre,0-4,12448,6361,6087
+5001,Comuna,Doce de Octubre,5-9,12544,6405,6139
+5001,Comuna,Doce de Octubre,10-14,12503,6387,6116
+5001,Comuna,Doce de Octubre,15-19,13057,6780,6277
+5001,Comuna,Doce de Octubre,20-24,13688,6821,6867
+5001,Comuna,Doce de Octubre,25-29,15364,7674,7690
+5001,Comuna,Doce de Octubre,30-34,15391,7567,7824
+5001,Comuna,Doce de Octubre,35-39,13069,6047,7022
+5001,Comuna,Doce de Octubre,40-44,11862,5275,6587
+5001,Comuna,Doce de Octubre,45-49,12482,5557,6925
+5001,Comuna,Doce de Octubre,50-54,16280,7381,8899
+5001,Comuna,Doce de Octubre,55-59,15010,6773,8237
+5001,Comuna,Doce de Octubre,60-64,11679,5182,6497
+5001,Comuna,Doce de Octubre,65-69,8193,3604,4589
+5001,Comuna,Doce de Octubre,70-74,5608,2364,3244
+5001,Comuna,Doce de Octubre,75-79,3228,1297,1931
+5001,Comuna,Doce de Octubre,80 Y MÁS,3394,1247,2147
+5001,Comuna,Robledo,Total,176810,83740,93070
+5001,Comuna,Robledo,0-4,10820,5534,5286
+5001,Comuna,Robledo,5-9,11202,5719,5483
+5001,Comuna,Robledo,10-14,11378,5825,5553
+5001,Comuna,Robledo,15-19,11990,6252,5738
+5001,Comuna,Robledo,20-24,12919,6492,6427
+5001,Comuna,Robledo,25-29,14842,7469,7373
+5001,Comuna,Robledo,30-34,14406,7182,7224
+5001,Comuna,Robledo,35-39,12965,6164,6801
+5001,Comuna,Robledo,40-44,10835,4980,5855
+5001,Comuna,Robledo,45-49,10609,4697,5912
+5001,Comuna,Robledo,50-54,13158,5915,7243
+5001,Comuna,Robledo,55-59,12936,5720,7216
+5001,Comuna,Robledo,60-64,10353,4463,5890
+5001,Comuna,Robledo,65-69,7575,3184,4391
+5001,Comuna,Robledo,70-74,5127,2077,3050
+5001,Comuna,Robledo,75-79,2835,1086,1749
+5001,Comuna,Robledo,80 Y MÁS,2860,981,1879
+5001,Comuna,Villa Hermosa,Total,139493,67112,72381
+5001,Comuna,Villa Hermosa,0-4,9940,5088,4852
+5001,Comuna,Villa Hermosa,5-9,10349,5294,5055
+5001,Comuna,Villa Hermosa,10-14,10523,5410,5113
+5001,Comuna,Villa Hermosa,15-19,11046,5808,5238
+5001,Comuna,Villa Hermosa,20-24,11671,5925,5746
+5001,Comuna,Villa Hermosa,25-29,12158,6192,5966
+5001,Comuna,Villa Hermosa,30-34,12379,6279,6100
+5001,Comuna,Villa Hermosa,35-39,10579,5101,5478
+5001,Comuna,Villa Hermosa,40-44,8486,3916,4570
+5001,Comuna,Villa Hermosa,45-49,7290,3238,4052
+5001,Comuna,Villa Hermosa,50-54,8242,3645,4597
+5001,Comuna,Villa Hermosa,55-59,7998,3500,4498
+5001,Comuna,Villa Hermosa,60-64,6358,2734,3624
+5001,Comuna,Villa Hermosa,65-69,4780,2024,2756
+5001,Comuna,Villa Hermosa,70-74,3308,1339,1969
+5001,Comuna,Villa Hermosa,75-79,1919,741,1178
+5001,Comuna,Villa Hermosa,80 Y MÁS,2467,878,1589
+5001,Comuna,Buenos Aires,Total,137494,64758,72736
+5001,Comuna,Buenos Aires,0-4,6802,3477,3325
+5001,Comuna,Buenos Aires,5-9,7254,3693,3561
+5001,Comuna,Buenos Aires,10-14,7312,3744,3568
+5001,Comuna,Buenos Aires,15-19,8084,4238,3846
+5001,Comuna,Buenos Aires,20-24,9420,4744,4676
+5001,Comuna,Buenos Aires,25-29,10737,5418,5319
+5001,Comuna,Buenos Aires,30-34,11466,5677,5789
+5001,Comuna,Buenos Aires,35-39,10153,4812,5341
+5001,Comuna,Buenos Aires,40-44,8882,4101,4781
+5001,Comuna,Buenos Aires,45-49,8485,3861,4624
+5001,Comuna,Buenos Aires,50-54,10977,5046,5931
+5001,Comuna,Buenos Aires,55-59,11297,4987,6310
+5001,Comuna,Buenos Aires,60-64,9611,4161,5450
+5001,Comuna,Buenos Aires,65-69,6559,2820,3739
+5001,Comuna,Buenos Aires,70-74,4549,1872,2677
+5001,Comuna,Buenos Aires,75-79,2703,1057,1646
+5001,Comuna,Buenos Aires,80 Y MÁS,3203,1050,2153
+5001,Comuna,La Candelaria,Total,85783,41748,44035
+5001,Comuna,La Candelaria,0-4,3006,1538,1468
+5001,Comuna,La Candelaria,5-9,3427,1755,1672
+5001,Comuna,La Candelaria,10-14,3694,1910,1784
+5001,Comuna,La Candelaria,15-19,4235,2246,1989
+5001,Comuna,La Candelaria,20-24,4226,2169,2057
+5001,Comuna,La Candelaria,25-29,5554,2878,2676
+5001,Comuna,La Candelaria,30-34,7348,3781,3567
+5001,Comuna,La Candelaria,35-39,7431,3674,3757
+5001,Comuna,La Candelaria,40-44,5934,2887,3047
+5001,Comuna,La Candelaria,45-49,5197,2502,2695
+5001,Comuna,La Candelaria,50-54,6981,3412,3569
+5001,Comuna,La Candelaria,55-59,7161,3448,3713
+5001,Comuna,La Candelaria,60-64,6681,3132,3549
+5001,Comuna,La Candelaria,65-69,5465,2522,2943
+5001,Comuna,La Candelaria,70-74,3817,1691,2126
+5001,Comuna,La Candelaria,75-79,2288,970,1318
+5001,Comuna,La Candelaria,80 Y MÁS,3338,1233,2105
+5001,Comuna,Laureles - Estadio,Total,123185,53639,69546
+5001,Comuna,Laureles - Estadio,0-4,2809,1434,1375
+5001,Comuna,Laureles - Estadio,5-9,3480,1761,1719
+5001,Comuna,Laureles - Estadio,10-14,3936,1989,1947
+5001,Comuna,Laureles - Estadio,15-19,4779,2463,2316
+5001,Comuna,Laureles - Estadio,20-24,5259,2582,2677
+5001,Comuna,Laureles - Estadio,25-29,6623,3220,3403
+5001,Comuna,Laureles - Estadio,30-34,9477,4424,5053
+5001,Comuna,Laureles - Estadio,35-39,9655,4315,5340
+5001,Comuna,Laureles - Estadio,40-44,7796,3405,4391
+5001,Comuna,Laureles - Estadio,45-49,6966,3023,3943
+5001,Comuna,Laureles - Estadio,50-54,9376,4011,5365
+5001,Comuna,Laureles - Estadio,55-59,11399,4795,6604
+5001,Comuna,Laureles - Estadio,60-64,11652,4854,6798
+5001,Comuna,Laureles - Estadio,65-69,10176,4121,6055
+5001,Comuna,Laureles - Estadio,70-74,8163,3185,4978
+5001,Comuna,Laureles - Estadio,75-79,5271,1958,3313
+5001,Comuna,Laureles - Estadio,80 Y MÁS,6368,2099,4269
+5001,Comuna,La América,Total,97457,43184,54273
+5001,Comuna,La América,0-4,2359,1207,1152
+5001,Comuna,La América,5-9,2831,1446,1385
+5001,Comuna,La América,10-14,2996,1556,1440
+5001,Comuna,La América,15-19,3725,1982,1743
+5001,Comuna,La América,20-24,4574,2340,2234
+5001,Comuna,La América,25-29,5554,2853,2701
+5001,Comuna,La América,30-34,6778,3410,3368
+5001,Comuna,La América,35-39,6653,3058,3595
+5001,Comuna,La América,40-44,5785,2601,3184
+5001,Comuna,La América,45-49,5597,2425,3172
+5001,Comuna,La América,50-54,8526,3629,4897
+5001,Comuna,La América,55-59,10551,4306,6245
+5001,Comuna,La América,60-64,9465,3844,5621
+5001,Comuna,La América,65-69,7938,3254,4684
+5001,Comuna,La América,70-74,6283,2484,3799
+5001,Comuna,La América,75-79,3639,1368,2271
+5001,Comuna,La América,80 Y MÁS,4203,1421,2782
+5001,Comuna,San Javier,Total,140243,67392,72851
+5001,Comuna,San Javier,0-4,9861,5043,4818
+5001,Comuna,San Javier,5-9,10735,5464,5271
+5001,Comuna,San Javier,10-14,11341,5794,5547
+5001,Comuna,San Javier,15-19,11747,6124,5623
+5001,Comuna,San Javier,20-24,11675,5851,5824
+5001,Comuna,San Javier,25-29,11787,5951,5836
+5001,Comuna,San Javier,30-34,11746,5908,5838
+5001,Comuna,San Javier,35-39,10788,5178,5610
+5001,Comuna,San Javier,40-44,9199,4277,4922
+5001,Comuna,San Javier,45-49,8133,3639,4494
+5001,Comuna,San Javier,50-54,8768,3944,4824
+5001,Comuna,San Javier,55-59,7866,3481,4385
+5001,Comuna,San Javier,60-64,5894,2512,3382
+5001,Comuna,San Javier,65-69,4165,1740,2425
+5001,Comuna,San Javier,70-74,2801,1117,1684
+5001,Comuna,San Javier,75-79,1633,618,1015
+5001,Comuna,San Javier,80 Y MÁS,2104,751,1353
+5001,Comuna,El Poblado,Total,133814,60412,73402
+5001,Comuna,El Poblado,0-4,3541,1813,1728
+5001,Comuna,El Poblado,5-9,4147,2104,2043
+5001,Comuna,El Poblado,10-14,4526,2310,2216
+5001,Comuna,El Poblado,15-19,5317,2781,2536
+5001,Comuna,El Poblado,20-24,5963,2967,2996
+5001,Comuna,El Poblado,25-29,7582,3768,3814
+5001,Comuna,El Poblado,30-34,9483,4516,4967
+5001,Comuna,El Poblado,35-39,9972,4325,5647
+5001,Comuna,El Poblado,40-44,9315,3819,5496
+5001,Comuna,El Poblado,45-49,9500,4043,5457
+5001,Comuna,El Poblado,50-54,12686,5840,6846
+5001,Comuna,El Poblado,55-59,14174,6330,7844
+5001,Comuna,El Poblado,60-64,12532,5494,7038
+5001,Comuna,El Poblado,65-69,9475,4118,5357
+5001,Comuna,El Poblado,70-74,6790,2836,3954
+5001,Comuna,El Poblado,75-79,4097,1642,2455
+5001,Comuna,El Poblado,80 Y MÁS,4714,1706,3008
+5001,Comuna,Guayabal,Total,96142,45241,50901
+5001,Comuna,Guayabal,0-4,4076,2087,1989
+5001,Comuna,Guayabal,5-9,4421,2246,2175
+5001,Comuna,Guayabal,10-14,4527,2325,2202
+5001,Comuna,Guayabal,15-19,5155,2736,2419
+5001,Comuna,Guayabal,20-24,5725,2909,2816
+5001,Comuna,Guayabal,25-29,6981,3552,3429
+5001,Comuna,Guayabal,30-34,7824,3941,3883
+5001,Comuna,Guayabal,35-39,7155,3443,3712
+5001,Comuna,Guayabal,40-44,5881,2679,3202
+5001,Comuna,Guayabal,45-49,5929,2681,3248
+5001,Comuna,Guayabal,50-54,8012,3673,4339
+5001,Comuna,Guayabal,55-59,8144,3643,4501
+5001,Comuna,Guayabal,60-64,7106,3088,4018
+5001,Comuna,Guayabal,65-69,5796,2527,3269
+5001,Comuna,Guayabal,70-74,4103,1705,2398
+5001,Comuna,Guayabal,75-79,2528,999,1529
+5001,Comuna,Guayabal,80 Y MÁS,2779,1007,1772
+5001,Comuna,Belén,Total,197593,90341,107252
+5001,Comuna,Belén,0-4,8310,4271,4039
+5001,Comuna,Belén,5-9,9352,4809,4543
+5001,Comuna,Belén,10-14,9911,5122,4789
+5001,Comuna,Belén,15-19,11394,5868,5526
+5001,Comuna,Belén,20-24,13650,6590,7060
+5001,Comuna,Belén,25-29,14736,7181,7555
+5001,Comuna,Belén,30-34,15735,7575,8160
+5001,Comuna,Belén,35-39,14934,6909,8025
+5001,Comuna,Belén,40-44,12143,5476,6667
+5001,Comuna,Belén,45-49,11342,4948,6394
+5001,Comuna,Belén,50-54,15559,6856,8703
+5001,Comuna,Belén,55-59,16927,7329,9598
+5001,Comuna,Belén,60-64,14844,6198,8646
+5001,Comuna,Belén,65-69,11064,4567,6497
+5001,Comuna,Belén,70-74,7880,3150,4730
+5001,Comuna,Belén,75-79,4538,1715,2823
+5001,Comuna,Belén,80 Y MÁS,5274,1777,3497
+5001,Corregimiento,Palmitas,Total,7819,3679,4140
+5001,Corregimiento,Palmitas,0-4,524,266,258
+5001,Corregimiento,Palmitas,5-9,470,239,231
+5001,Corregimiento,Palmitas,10-14,585,296,289
+5001,Corregimiento,Palmitas,15-19,671,339,332
+5001,Corregimiento,Palmitas,20-24,731,358,373
+5001,Corregimiento,Palmitas,25-29,717,349,368
+5001,Corregimiento,Palmitas,30-34,570,273,297
+5001,Corregimiento,Palmitas,35-39,501,237,264
+5001,Corregimiento,Palmitas,40-44,681,320,361
+5001,Corregimiento,Palmitas,45-49,686,318,368
+5001,Corregimiento,Palmitas,50-54,564,256,308
+5001,Corregimiento,Palmitas,55-59,399,173,226
+5001,Corregimiento,Palmitas,60-64,257,104,153
+5001,Corregimiento,Palmitas,65-69,208,77,131
+5001,Corregimiento,Palmitas,70-74,120,40,80
+5001,Corregimiento,Palmitas,75-79,92,28,64
+5001,Corregimiento,Palmitas,80 Y MÁS,43,6,37
+5001,Corregimiento,San Cristóbal,Total,105977,50293,55684
+5001,Corregimiento,San Cristóbal,0-4,7943,4043,3900
+5001,Corregimiento,San Cristóbal,5-9,7878,3997,3881
+5001,Corregimiento,San Cristóbal,10-14,9256,4683,4573
+5001,Corregimiento,San Cristóbal,15-19,9525,4808,4717
+5001,Corregimiento,San Cristóbal,20-24,10411,5105,5306
+5001,Corregimiento,San Cristóbal,25-29,10687,5159,5528
+5001,Corregimiento,San Cristóbal,30-34,9320,4389,4931
+5001,Corregimiento,San Cristóbal,35-39,8849,4103,4746
+5001,Corregimiento,San Cristóbal,40-44,9402,4355,5047
+5001,Corregimiento,San Cristóbal,45-49,7907,3625,4282
+5001,Corregimiento,San Cristóbal,50-54,5372,2423,2949
+5001,Corregimiento,San Cristóbal,55-59,3687,1579,2108
+5001,Corregimiento,San Cristóbal,60-64,2183,884,1299
+5001,Corregimiento,San Cristóbal,65-69,1398,524,874
+5001,Corregimiento,San Cristóbal,70-74,999,327,672
+5001,Corregimiento,San Cristóbal,75-79,814,237,577
+5001,Corregimiento,San Cristóbal,80 Y MÁS,346,52,294
+5001,Corregimiento,Altavista,Total,40911,19542,21369
+5001,Corregimiento,Altavista,0-4,3474,1768,1706
+5001,Corregimiento,Altavista,5-9,3372,1711,1661
+5001,Corregimiento,Altavista,10-14,3664,1853,1811
+5001,Corregimiento,Altavista,15-19,3694,1857,1837
+5001,Corregimiento,Altavista,20-24,4069,1997,2072
+5001,Corregimiento,Altavista,25-29,4107,2001,2106
+5001,Corregimiento,Altavista,30-34,3536,1685,1851
+5001,Corregimiento,Altavista,35-39,3249,1531,1718
+5001,Corregimiento,Altavista,40-44,3439,1614,1825
+5001,Corregimiento,Altavista,45-49,2884,1337,1547
+5001,Corregimiento,Altavista,50-54,2011,912,1099
+5001,Corregimiento,Altavista,55-59,1187,510,677
+5001,Corregimiento,Altavista,60-64,759,303,456
+5001,Corregimiento,Altavista,65-69,547,201,346
+5001,Corregimiento,Altavista,70-74,445,141,304
+5001,Corregimiento,Altavista,75-79,357,103,254
+5001,Corregimiento,Altavista,80 Y MÁS,117,18,99
+5001,Corregimiento,San Antonio,Total,126285,60230,66055
+5001,Corregimiento,San Antonio,0-4,9213,4688,4525
+5001,Corregimiento,San Antonio,5-9,8854,4492,4362
+5001,Corregimiento,San Antonio,10-14,10216,5170,5046
+5001,Corregimiento,San Antonio,15-19,10757,5428,5329
+5001,Corregimiento,San Antonio,20-24,12503,6141,6362
+5001,Corregimiento,San Antonio,25-29,12735,6206,6529
+5001,Corregimiento,San Antonio,30-34,11694,5573,6121
+5001,Corregimiento,San Antonio,35-39,11006,5189,5817
+5001,Corregimiento,San Antonio,40-44,11770,5521,6249
+5001,Corregimiento,San Antonio,45-49,9638,4469,5169
+5001,Corregimiento,San Antonio,50-54,6692,3040,3652
+5001,Corregimiento,San Antonio,55-59,4410,1904,2506
+5001,Corregimiento,San Antonio,60-64,2693,1084,1609
+5001,Corregimiento,San Antonio,65-69,1700,629,1071
+5001,Corregimiento,San Antonio,70-74,1169,382,787
+5001,Corregimiento,San Antonio,75-79,872,259,613
+5001,Corregimiento,San Antonio,80 Y MÁS,363,55,308
+5001,Corregimiento,Santa Elena,Total,21081,10053,11028
+5001,Corregimiento,Santa Elena,0-4,1674,852,822
+5001,Corregimiento,Santa Elena,5-9,1614,818,796
+5001,Corregimiento,Santa Elena,10-14,1808,915,893
+5001,Corregimiento,Santa Elena,15-19,1802,910,892
+5001,Corregimiento,Santa Elena,20-24,1931,949,982
+5001,Corregimiento,Santa Elena,25-29,2145,1046,1099
+5001,Corregimiento,Santa Elena,30-34,1921,920,1001
+5001,Corregimiento,Santa Elena,35-39,1647,777,870
+5001,Corregimiento,Santa Elena,40-44,1654,777,877
+5001,Corregimiento,Santa Elena,45-49,1599,741,858
+5001,Corregimiento,Santa Elena,50-54,1168,531,637
+5001,Corregimiento,Santa Elena,55-59,732,318,414
+5001,Corregimiento,Santa Elena,60-64,531,214,317
+5001,Corregimiento,Santa Elena,65-69,372,140,232
+5001,Corregimiento,Santa Elena,70-74,264,87,177
+5001,Corregimiento,Santa Elena,75-79,164,50,114
+5001,Corregimiento,Santa Elena,80 Y MÁS,55,8,47
+5001,Comuna,Suma Comunas,Total,2247464,1054039,1193425
+5001,Comuna,Suma Comunas,0-4,123190,63018,60172
+5001,Comuna,Suma Comunas,5-9,129690,66118,63572
+5001,Comuna,Suma Comunas,10-14,132599,67877,64722
+5001,Comuna,Suma Comunas,15-19,142189,74270,67919
+5001,Comuna,Suma Comunas,20-24,150650,75416,75234
+5001,Comuna,Suma Comunas,25-29,169977,85361,84616
+5001,Comuna,Suma Comunas,30-34,182011,89894,92117
+5001,Comuna,Suma Comunas,35-39,164729,77108,87621
+5001,Comuna,Suma Comunas,40-44,140344,63618,76726
+5001,Comuna,Suma Comunas,45-49,136067,60683,75384
+5001,Comuna,Suma Comunas,50-54,173040,77931,95109
+5001,Comuna,Suma Comunas,55-59,174854,76999,97855
+5001,Comuna,Suma Comunas,60-64,145155,62459,82696
+5001,Comuna,Suma Comunas,65-69,108408,46086,62322
+5001,Comuna,Suma Comunas,70-74,76872,31392,45480
+5001,Comuna,Suma Comunas,75-79,45315,17593,27722
+5001,Comuna,Suma Comunas,80 Y MÁS,52374,18216,34158
+5001,Corregimiento,Suma Corregimientos,Total,302073,143797,158276
+5001,Corregimiento,Suma Corregimientos,0-4,22828,11617,11211
+5001,Corregimiento,Suma Corregimientos,5-9,22188,11257,10931
+5001,Corregimiento,Suma Corregimientos,10-14,25529,12917,12612
+5001,Corregimiento,Suma Corregimientos,15-19,26449,13342,13107
+5001,Corregimiento,Suma Corregimientos,20-24,29645,14550,15095
+5001,Corregimiento,Suma Corregimientos,25-29,30391,14761,15630
+5001,Corregimiento,Suma Corregimientos,30-34,27041,12840,14201
+5001,Corregimiento,Suma Corregimientos,35-39,25252,11837,13415
+5001,Corregimiento,Suma Corregimientos,40-44,26946,12587,14359
+5001,Corregimiento,Suma Corregimientos,45-49,22714,10490,12224
+5001,Corregimiento,Suma Corregimientos,50-54,15807,7162,8645
+5001,Corregimiento,Suma Corregimientos,55-59,10415,4484,5931
+5001,Corregimiento,Suma Corregimientos,60-64,6423,2589,3834
+5001,Corregimiento,Suma Corregimientos,65-69,4225,1571,2654
+5001,Corregimiento,Suma Corregimientos,70-74,2997,977,2020
+5001,Corregimiento,Suma Corregimientos,75-79,2299,677,1622
+5001,Corregimiento,Suma Corregimientos,80 Y MÁS,924,139,785
+5001,Total medellín,Total Medellín,Total,2549537,1197836,1351701
+5001,Total medellín,Total Medellín,0-4,146018,74635,71383
+5001,Total medellín,Total Medellín,5-9,151878,77375,74503
+5001,Total medellín,Total Medellín,10-14,158128,80794,77334
+5001,Total medellín,Total Medellín,15-19,168638,87612,81026
+5001,Total medellín,Total Medellín,20-24,180295,89966,90329
+5001,Total medellín,Total Medellín,25-29,200368,100122,100246
+5001,Total medellín,Total Medellín,30-34,209052,102734,106318
+5001,Total medellín,Total Medellín,35-39,189981,88945,101036
+5001,Total medellín,Total Medellín,40-44,167290,76205,91085
+5001,Total medellín,Total Medellín,45-49,158781,71173,87608
+5001,Total medellín,Total Medellín,50-54,188847,85093,103754
+5001,Total medellín,Total Medellín,55-59,185269,81483,103786
+5001,Total medellín,Total Medellín,60-64,151578,65048,86530
+5001,Total medellín,Total Medellín,65-69,112633,47657,64976
+5001,Total medellín,Total Medellín,70-74,79869,32369,47500
+5001,Total medellín,Total Medellín,75-79,47614,18270,29344
+5001,Total medellín,Total Medellín,80 Y MÁS,53298,18355,34943
