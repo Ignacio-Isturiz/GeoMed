@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
-import { datasetsService } from "@/services/datasetsService";
+﻿import { useEffect, useMemo, useState } from "react";
+import { datasetsService } from "@/services/movilidadDatasetsService";
 
 function formatNumber(value) {
   return Number(value || 0).toLocaleString("es-CO");
@@ -24,7 +24,7 @@ export default function EmprendedorInsightsDashboard() {
         const availableYears = response?.data || [];
         setYears(availableYears);
       } catch (err) {
-        console.error("Error cargando años:", err);
+        console.error("Error cargando aÃ±os:", err);
       }
     };
 
@@ -117,7 +117,7 @@ export default function EmprendedorInsightsDashboard() {
 
           <div className="flex flex-col gap-3 sm:flex-row">
             <label className="flex flex-col text-sm text-slate-700">
-              Año
+              AÃ±o
               <select
                 className="mt-1 rounded-lg border border-slate-300 bg-white px-3 py-2"
                 value={selectedYear}
@@ -169,7 +169,7 @@ export default function EmprendedorInsightsDashboard() {
           </div>
 
           <div className="rounded-xl border border-rose-200 bg-rose-50 p-4">
-            <p className="text-sm font-semibold text-rose-700">Comuna Más Afectada (Crimen)</p>
+            <p className="text-sm font-semibold text-rose-700">Comuna MÃ¡s Afectada (Crimen)</p>
             <p className="text-xl font-bold text-rose-900">
               {overview?.criminalidad?.comuna_mas_afectada || "N/A"}
             </p>
@@ -179,7 +179,7 @@ export default function EmprendedorInsightsDashboard() {
 
       <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
         <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-          <h3 className="mb-4 text-lg font-bold text-slate-900">Top Actividades Económicas</h3>
+          <h3 className="mb-4 text-lg font-bold text-slate-900">Top Actividades EconÃ³micas</h3>
           <div className="space-y-3">
             {topActividades.map((item) => {
               const width = Math.max(
@@ -202,7 +202,7 @@ export default function EmprendedorInsightsDashboard() {
                     />
                   </div>
                   <p className="mt-1 text-xs text-slate-500">
-                    CIIU {item.ciiu} - Mayor concentración: {item.top_comuna}
+                    CIIU {item.ciiu} - Mayor concentraciÃ³n: {item.top_comuna}
                   </p>
                 </div>
               );
@@ -264,7 +264,7 @@ export default function EmprendedorInsightsDashboard() {
           </div>
 
           <div className="rounded-xl border border-indigo-200 bg-indigo-50 p-4">
-            <p className="text-sm font-semibold text-indigo-700">Comuna Más Afectada</p>
+            <p className="text-sm font-semibold text-indigo-700">Comuna MÃ¡s Afectada</p>
             <p className="text-xl font-bold text-indigo-900">
               {overview?.criminalidad?.comuna_mas_afectada || "N/A"}
             </p>
@@ -297,3 +297,4 @@ export default function EmprendedorInsightsDashboard() {
     </section>
   );
 }
+

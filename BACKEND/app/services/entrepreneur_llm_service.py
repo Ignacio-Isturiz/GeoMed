@@ -15,13 +15,13 @@ from app.core.geo_data import get_coordinates
 
 _BASE_PATH = os.path.join(os.path.dirname(__file__), "..", "..")
 
-_NEGOCIOS_PATH = os.path.join(_BASE_PATH, "datasets", "negocios_medellin_full.csv")
-_ESTRUCTURA_PATH = os.path.join(
-    _BASE_PATH, "datasets", "Estructura_empresarial_Medellín_según_comunas_y_actividad_económica_20260320.csv"
+_AFOROS_VEHICULARES_PATH = os.path.join(_BASE_PATH, "datasets", "Aforos_Vehiculares_clean.csv")
+_PROYECCIONES_POBLACION_PATH = os.path.join(
+    _BASE_PATH, "datasets", "proyecciones_de_poblacion_medellin_2019_clean.csv"
 )
-_TARIFA_ENERGIA_PATH = os.path.join(_BASE_PATH, "datasets", "tarifas_servicio_energia_epm.csv")
-_TARIFA_ACUEDUCTO_PATH = os.path.join(_BASE_PATH, "datasets", "tarifas_servicio_acueducto_epm.csv")
-_TARIFA_GAS_PATH = os.path.join(_BASE_PATH, "datasets", "tarifas_servicio_gas_epm.csv")
+_VELOCIDAD_INTENSIDAD_PATH = os.path.join(_BASE_PATH, "datasets", "velocidad_e_intensidad_vehicular_en_medellin_clean.csv")
+_PASAJEROS_MOVILIZADOS_PATH = os.path.join(_BASE_PATH, "datasets", "Pasajeros_movilizados_clean.csv")
+_SIMMTRAFFIC_PATH = os.path.join(_BASE_PATH, "datasets", "simmtrafficdata_clean.csv")
 
 # Mapping de comunas para búsqueda flexible
 COMUNA_MAPPING = {
@@ -523,12 +523,12 @@ def _append_top_barrios_summary(
 
 def _load_negocios_data() -> Dict[str, Dict[str, Dict[str, int]]]:
     """
-    Carga negocios_medellin_full.csv y estructura por comuna → barrio → tipo_negocio.
+    Carga Aforos_Vehiculares_clean.csv y estructura por comuna → barrio → tipo_negocio.
     Retorna: {comuna: {barrio: {tipo_negocio: cantidad}}}
     """
     data = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
     try:
-        with open(_NEGOCIOS_PATH, encoding="utf-8") as f:
+        with open(_AFOROS_VEHICULARES_PATH, encoding="utf-8") as f:
             reader = csv.DictReader(f, delimiter=",")
             for row in reader:
                 if not row.get("tipo_negocio"):
@@ -551,7 +551,7 @@ def _load_estructura_empresarial() -> Dict[str, Dict[str, int]]:
     """
     data = defaultdict(lambda: defaultdict(int))
     try:
-        with open(_ESTRUCTURA_PATH, encoding="utf-8") as f:
+        with open(_PROYECCIONES_POBLACION_PATH, encoding="utf-8") as f:
             reader = csv.DictReader(f, delimiter=",")
             for row in reader:
                 year = row.get("AÑO", "").strip()
@@ -589,10 +589,10 @@ def _load_epm_tariffs() -> Dict[str, Dict[str, Dict[str, float]]]:
 
 
 def _parse_energia_tariffs() -> Dict[str, Dict[str, float]]:
-    """Parse tarifas_servicio_energia_epm.csv - retorna estimates por estrato."""
+    """Parse velocidad_e_intensidad_vehicular_en_medellin_clean.csv - retorna estimates por estrato."""
     result = {}
     try:
-        with open(_TARIFA_ENERGIA_PATH, encoding="utf-8") as f:
+        with open(_VELOCIDAD_INTENSIDAD_PATH, encoding="utf-8") as f:
             reader = csv.DictReader(f, delimiter=",")
             for row in reader:
                 nivel = row.get("nivel", "").strip()
@@ -617,10 +617,10 @@ def _parse_energia_tariffs() -> Dict[str, Dict[str, float]]:
 
 
 def _parse_acueducto_tariffs() -> Dict[str, Dict[str, float]]:
-    """Parse tarifas_servicio_acueducto_epm.csv."""
+    """Parse Pasajeros_movilizados_clean.csv."""
     result = {}
     try:
-        with open(_TARIFA_ACUEDUCTO_PATH, encoding="utf-8") as f:
+        with open(_PASAJEROS_MOVILIZADOS_PATH, encoding="utf-8") as f:
             reader = csv.DictReader(f, delimiter=",")
             for row in reader:
                 if row.get("municipio", "").upper() == "MEDELLIN":
@@ -647,10 +647,10 @@ def _parse_acueducto_tariffs() -> Dict[str, Dict[str, float]]:
 
 
 def _parse_gas_tariffs() -> Dict[str, Dict[str, float]]:
-    """Parse tarifas_servicio_gas_epm.csv."""
+    """Parse simmtrafficdata_clean.csv."""
     result = {}
     try:
-        with open(_TARIFA_GAS_PATH, encoding="utf-8") as f:
+        with open(_SIMMTRAFFIC_PATH, encoding="utf-8") as f:
             reader = csv.DictReader(f, delimiter=",")
             for row in reader:
                 sector = row.get("sector", "").strip()
@@ -802,9 +802,9 @@ def _build_system_prompt(prompt: str, negocios: Dict, estructura: Dict, tariffs:
 
 def _compute_source_signature() -> tuple[float, float, float]:
     return (
-        os.path.getmtime(_NEGOCIOS_PATH),
-        os.path.getmtime(_ESTRUCTURA_PATH),
-        os.path.getmtime(_TARIFA_ENERGIA_PATH) + os.path.getmtime(_TARIFA_ACUEDUCTO_PATH) + os.path.getmtime(_TARIFA_GAS_PATH),
+        os.path.getmtime(_AFOROS_VEHICULARES_PATH),
+        os.path.getmtime(_PROYECCIONES_POBLACION_PATH),
+        os.path.getmtime(_VELOCIDAD_INTENSIDAD_PATH) + os.path.getmtime(_PASAJEROS_MOVILIZADOS_PATH) + os.path.getmtime(_SIMMTRAFFIC_PATH),
     )
 
 

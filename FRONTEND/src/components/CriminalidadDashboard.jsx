@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
-import { datasetsService } from "../services/datasetsService";
+﻿import { useState, useEffect } from "react";
+import { datasetsService } from "../services/movilidadDatasetsService";
 
 /**
  * Componente de Dashboard de Criminalidad
- * Muestra estadísticas y tabla de datos de criminalidad por comuna
+ * Muestra estadÃ­sticas y tabla de datos de criminalidad por comuna
  */
 export default function CriminalidadDashboard() {
   const [data, setData] = useState([]);
@@ -103,7 +103,7 @@ export default function CriminalidadDashboard() {
           Dashboard de Criminalidad
         </h1>
         <p className="text-gray-600">
-          Análisis de tasas de criminalidad por comuna
+          AnÃ¡lisis de tasas de criminalidad por comuna
         </p>
       </div>
 
@@ -130,17 +130,17 @@ export default function CriminalidadDashboard() {
             </p>
           </div>
 
-          {/* Tasa máxima */}
+          {/* Tasa mÃ¡xima */}
           <div className="bg-orange-50 p-4 rounded-lg border border-orange-200">
-            <p className="text-orange-600 text-sm font-semibold mb-1">Tasa Máxima</p>
+            <p className="text-orange-600 text-sm font-semibold mb-1">Tasa MÃ¡xima</p>
             <p className="text-3xl font-bold text-orange-900">
               {summary.tasa_maxima.toLocaleString('es-CO', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
             </p>
           </div>
 
-          {/* Tasa mínima */}
+          {/* Tasa mÃ­nima */}
           <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-            <p className="text-green-600 text-sm font-semibold mb-1">Tasa Mínima</p>
+            <p className="text-green-600 text-sm font-semibold mb-1">Tasa MÃ­nima</p>
             <p className="text-3xl font-bold text-green-900">
               {summary.tasa_minima.toLocaleString('es-CO', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
             </p>
@@ -148,7 +148,7 @@ export default function CriminalidadDashboard() {
         </div>
       )}
 
-      {/* Comuna más afectada */}
+      {/* Comuna mÃ¡s afectada */}
       {summary && summary.comuna_mas_afectada && (
         <div className="bg-gradient-to-r from-red-600 to-red-700 text-white p-6 rounded-lg">
           <p className="text-sm font-semibold mb-2">Comuna con Mayor Criminalidad</p>
@@ -166,19 +166,19 @@ export default function CriminalidadDashboard() {
                   className="px-6 py-4 text-left text-sm font-semibold text-gray-700 cursor-pointer hover:bg-gray-200"
                   onClick={() => handleSort("nombre")}
                 >
-                  Comuna {sortConfig.key === "nombre" && (sortConfig.direction === "asc" ? "↑" : "↓")}
+                  Comuna {sortConfig.key === "nombre" && (sortConfig.direction === "asc" ? "â†‘" : "â†“")}
                 </th>
                 <th
                   className="px-6 py-4 text-right text-sm font-semibold text-gray-700 cursor-pointer hover:bg-gray-200"
                   onClick={() => handleSort("total_casos")}
                 >
-                  Casos {sortConfig.key === "total_casos" && (sortConfig.direction === "asc" ? "↑" : "↓")}
+                  Casos {sortConfig.key === "total_casos" && (sortConfig.direction === "asc" ? "â†‘" : "â†“")}
                 </th>
                 <th
                   className="px-6 py-4 text-right text-sm font-semibold text-gray-700 cursor-pointer hover:bg-gray-200"
                   onClick={() => handleSort("tasa_criminalidad")}
                 >
-                  Tasa de Criminalidad {sortConfig.key === "tasa_criminalidad" && (sortConfig.direction === "asc" ? "↑" : "↓")}
+                  Tasa de Criminalidad {sortConfig.key === "tasa_criminalidad" && (sortConfig.direction === "asc" ? "â†‘" : "â†“")}
                 </th>
               </tr>
             </thead>
@@ -212,13 +212,14 @@ export default function CriminalidadDashboard() {
         </div>
       </div>
 
-      {/* Información adicional */}
+      {/* InformaciÃ³n adicional */}
       <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
         <p className="text-sm text-gray-600">
-          <span className="font-semibold">Nota:</span> Los datos de criminalidad están ordenados por tasa en orden descendente.
-          Las tasas superiores al promedio aparecen en rojo para fácil identificación de áreas problemáticas.
+          <span className="font-semibold">Nota:</span> Los datos de criminalidad estÃ¡n ordenados por tasa en orden descendente.
+          Las tasas superiores al promedio aparecen en rojo para fÃ¡cil identificaciÃ³n de Ã¡reas problemÃ¡ticas.
         </p>
       </div>
     </div>
   );
 }
+

@@ -1,9 +1,9 @@
-// src/pages/EmprendedorDashboard.jsx
+﻿// src/pages/EmprendedorDashboard.jsx
 import { useEffect, useRef, useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import authService from '@/services/authService';
 import { llmService } from '@/services/llmService';
-import { datasetsService } from '@/services/datasetsService';
+import { datasetsService } from '@/services/movilidadDatasetsService';
 
 import DashboardLayout, { Icons, StyledSelect } from '@/components/dashboard/DashboardLayout';
 import ChatMap from '@/components/ChatMap';
@@ -17,19 +17,19 @@ const NAV = [
 ];
 
 const SUGERENCIAS_EMP = [
-  'Quiero montar una cafetería en Medellín',
-  '¿Cuántas cafeterías hay en el Poblado?',
+  'Quiero montar una cafeterÃ­a en MedellÃ­n',
+  'Â¿CuÃ¡ntas cafeterÃ­as hay en el Poblado?',
   'Negocio de ropa en Aranjuez, estratos 3 y 4',
-  '¿Dónde abro una tienda con bajo presupuesto?',
+  'Â¿DÃ³nde abro una tienda con bajo presupuesto?',
 ];
 
-/* ════════════════════════════════
-   CHATBOT EMPRENDEDOR — solo chat
-════════════════════════════════ */
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   CHATBOT EMPRENDEDOR â€” solo chat
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function ChatEmprendedor({ conversationId, onConversationChange }) {
   const [messages, setMessages] = useState([{
     role:'bot',
-    text:'¡Hola emprendedor! Soy tu asesor de negocios. Cuéntame tu idea y te ayudo a elegir la mejor zona en Medellín con datos reales.',
+    text:'Â¡Hola emprendedor! Soy tu asesor de negocios. CuÃ©ntame tu idea y te ayudo a elegir la mejor zona en MedellÃ­n con datos reales.',
   }]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -45,7 +45,7 @@ function ChatEmprendedor({ conversationId, onConversationChange }) {
       if (!conversationId) {
         setMessages([{
           role:'bot',
-          text:'¡Hola emprendedor! Soy tu asesor de negocios. Cuéntame tu idea y te ayudo a elegir la mejor zona.',
+          text:'Â¡Hola emprendedor! Soy tu asesor de negocios. CuÃ©ntame tu idea y te ayudo a elegir la mejor zona.',
         }]);
         return;
       }
@@ -93,7 +93,7 @@ function ChatEmprendedor({ conversationId, onConversationChange }) {
                     Costos mensuales estimados
                   </div>
                   {msg.costos.energia_estimada && (
-                    <div className="db-chat-costs-row"><span>Energía</span><span>${msg.costos.energia_estimada.toLocaleString('es-CO')}</span></div>
+                    <div className="db-chat-costs-row"><span>EnergÃ­a</span><span>${msg.costos.energia_estimada.toLocaleString('es-CO')}</span></div>
                   )}
                   {msg.costos.agua_estimada && (
                     <div className="db-chat-costs-row"><span>Agua</span><span>${msg.costos.agua_estimada.toLocaleString('es-CO')}</span></div>
@@ -140,7 +140,7 @@ function ChatEmprendedor({ conversationId, onConversationChange }) {
           className="db-chat-input" type="text" value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={e => { if(e.key==='Enter' && !e.shiftKey){ e.preventDefault(); enviar(input); }}}
-          placeholder="Cuéntame tu idea de negocio..." disabled={loading}
+          placeholder="CuÃ©ntame tu idea de negocio..." disabled={loading}
         />
         <button className="db-chat-send" onClick={() => enviar(input)} disabled={loading||!input.trim()}>
           Enviar
@@ -150,9 +150,9 @@ function ChatEmprendedor({ conversationId, onConversationChange }) {
   );
 }
 
-/* ════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    LISTA DE CONVERSACIONES (styled)
-════════════════════════════════ */
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function ConvList({ currentId, onSelect, onNew, onDelete, refreshKey }) {
   const [convs, setConvs] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -167,7 +167,7 @@ function ConvList({ currentId, onSelect, onNew, onDelete, refreshKey }) {
 
   const del = async (e,id) => {
     e.stopPropagation();
-    if(!confirm('¿Eliminar conversación?')) return;
+    if(!confirm('Â¿Eliminar conversaciÃ³n?')) return;
     try { await llmService.deleteConversation(id); setConvs(p=>p.filter(c=>c.id!==id)); onDelete?.(id); } catch{}
   };
 
@@ -188,14 +188,14 @@ function ConvList({ currentId, onSelect, onNew, onDelete, refreshKey }) {
               className="db-conv-open"
               onClick={() => onSelect(c.id)}
               aria-current={currentId===c.id ? 'true' : undefined}
-              aria-label={`Abrir conversación ${c.title || 'sin título'}`}
+              aria-label={`Abrir conversaciÃ³n ${c.title || 'sin tÃ­tulo'}`}
             >
               <div style={{flex:1,minWidth:0}}>
-              <div className="db-conv-title">{c.title||'Sin título'}</div>
+              <div className="db-conv-title">{c.title||'Sin tÃ­tulo'}</div>
               <div className="db-conv-date">{new Date(c.created_at).toLocaleDateString('es-CO',{month:'short',day:'numeric'})}</div>
               </div>
             </button>
-            <button className="db-conv-del" onClick={e=>del(e,c.id)}>✕</button>
+            <button className="db-conv-del" onClick={e=>del(e,c.id)}>âœ•</button>
           </div>
         ))}
       </div>
@@ -203,9 +203,9 @@ function ConvList({ currentId, onSelect, onNew, onDelete, refreshKey }) {
   );
 }
 
-/* ════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    INSIGHTS WIDGET (barras)
-════════════════════════════════ */
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 const ACT_PAGE_SIZE = 4;
 
 function InsightsWidget() {
@@ -261,7 +261,7 @@ function InsightsWidget() {
         <StyledSelect
           value={selectedYear}
           onChange={setSelectedYear}
-          options={[{value:'',label:'Todos los años'}, ...years.map(y=>({value:String(y),label:String(y)}))]}
+          options={[{value:'',label:'Todos los aÃ±os'}, ...years.map(y=>({value:String(y),label:String(y)}))]}
         />
         <div style={{display:'flex',gap:6,marginLeft:'auto'}}>
           {[['zonas','Zonas'],['sectores','Sectores']].map(([id,label])=>(
@@ -274,10 +274,10 @@ function InsightsWidget() {
       {summary && (
         <div className="db-insights-stats db-insights-stats--4" style={{flexShrink:0}}>
           {[
-            {label:'Empresas',      value:`${(summary.total_empresas/1000).toFixed(1)}k`, tooltip:'Total de empresas registradas formalmente en Medellín'},
-            {label:'Sectores',      value:summary.total_actividades, tooltip:'Sectores económicos activos (CIIU-DANE)'},
-            {label:'Zona más activa', value:summary.comuna_top?.nombre||'N/A', small:true, tooltip:'Mayor concentración de empresas'},
-            {label:'Mayor riesgo',   value:crimComuna||'N/A', small:true, cls:'red', tooltip:'Zona con mayor índice de criminalidad'},
+            {label:'Empresas',      value:`${(summary.total_empresas/1000).toFixed(1)}k`, tooltip:'Total de empresas registradas formalmente en MedellÃ­n'},
+            {label:'Sectores',      value:summary.total_actividades, tooltip:'Sectores econÃ³micos activos (CIIU-DANE)'},
+            {label:'Zona mÃ¡s activa', value:summary.comuna_top?.nombre||'N/A', small:true, tooltip:'Mayor concentraciÃ³n de empresas'},
+            {label:'Mayor riesgo',   value:crimComuna||'N/A', small:true, cls:'red', tooltip:'Zona con mayor Ã­ndice de criminalidad'},
           ].map((s,i)=>(
             <div key={i} className="db-insights-stat" data-tooltip={s.tooltip}>
               <div className="db-insights-stat-label">{s.label}</div>
@@ -294,7 +294,7 @@ function InsightsWidget() {
             Cruza <b style={{color:'var(--text-h)'}}>actividad empresarial</b> con <b style={{color:'#f87171'}}>criminalidad</b> para detectar zonas con alta oportunidad y menor riesgo.
           </div>
           {oportunidadZonas.length > 0 ? oportunidadZonas.map((item,i)=>(
-            <div key={i} data-tooltip={`${(item.total_empresas||0).toLocaleString('es-CO')} empresas · No es la zona de mayor riesgo`}
+            <div key={i} data-tooltip={`${(item.total_empresas||0).toLocaleString('es-CO')} empresas Â· No es la zona de mayor riesgo`}
               style={{display:'flex',alignItems:'center',gap:12,padding:'10px 14px',background:'rgba(0,200,150,.07)',border:'1px solid rgba(0,200,150,.18)',borderRadius:11,cursor:'default',flex:1}}
             >
               <div style={{width:28,height:28,borderRadius:8,background:'rgba(0,200,150,.18)',display:'flex',alignItems:'center',justifyContent:'center',fontSize:13,fontWeight:800,color:'var(--accent)',flexShrink:0}}>#{i+1}</div>
@@ -305,7 +305,7 @@ function InsightsWidget() {
               <span style={{fontSize:10,fontWeight:700,background:'rgba(0,200,150,.15)',border:'1px solid rgba(0,200,150,.30)',color:'var(--accent)',padding:'3px 9px',borderRadius:100,letterSpacing:'.04em'}}>OPORTUNIDAD</span>
             </div>
           )) : (
-            <div style={{fontSize:12,color:'var(--text-dim)',padding:'10px 0'}}>No hay datos de zonas disponibles para el año seleccionado.</div>
+            <div style={{fontSize:12,color:'var(--text-dim)',padding:'10px 0'}}>No hay datos de zonas disponibles para el aÃ±o seleccionado.</div>
           )}
         </div>
       )}
@@ -315,7 +315,7 @@ function InsightsWidget() {
         <div style={{display:'flex',flexDirection:'column',gap:6,flex:1}}>
           <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:4,flexShrink:0}}>
             <div style={{fontSize:11,fontWeight:700,letterSpacing:'.07em',textTransform:'uppercase',color:'var(--text-dim)'}}>
-              Sectores con más empresas
+              Sectores con mÃ¡s empresas
             </div>
             {actTotal > 1 && (
               <div style={{fontSize:11,color:'var(--text-dim)'}}>{actPage+1}/{actTotal}</div>
@@ -325,7 +325,7 @@ function InsightsWidget() {
             const w = Math.max(8,Math.round(((item.total_empresas||0)/maxA)*100));
             return (
               <div key={i} className="db-bar-item" style={{flex:1,justifyContent:'center'}}
-                data-tooltip={`CIIU ${item.ciiu} · ${(item.total_empresas||0).toLocaleString('es-CO')} empresas · Zona: ${item.top_comuna||'N/A'}`}
+                data-tooltip={`CIIU ${item.ciiu} Â· ${(item.total_empresas||0).toLocaleString('es-CO')} empresas Â· Zona: ${item.top_comuna||'N/A'}`}
               >
                 <div className="db-bar-row">
                   <span style={{whiteSpace:'normal',lineHeight:1.35,maxWidth:'70%'}}>{item.descripcion}</span>
@@ -338,8 +338,8 @@ function InsightsWidget() {
           })}
           {actTotal > 1 && (
             <div style={{display:'flex',justifyContent:'center',gap:8,marginTop:4,flexShrink:0}}>
-              <button className="db-fpill" onClick={()=>setActPage(p=>Math.max(0,p-1))} disabled={actPage===0} style={{padding:'5px 14px',fontSize:12,opacity:actPage===0?.4:1}}>← Ant.</button>
-              <button className="db-fpill" onClick={()=>setActPage(p=>Math.min(actTotal-1,p+1))} disabled={actPage>=actTotal-1} style={{padding:'5px 14px',fontSize:12,opacity:actPage>=actTotal-1?.4:1}}>Sig. →</button>
+              <button className="db-fpill" onClick={()=>setActPage(p=>Math.max(0,p-1))} disabled={actPage===0} style={{padding:'5px 14px',fontSize:12,opacity:actPage===0?.4:1}}>â† Ant.</button>
+              <button className="db-fpill" onClick={()=>setActPage(p=>Math.min(actTotal-1,p+1))} disabled={actPage>=actTotal-1} style={{padding:'5px 14px',fontSize:12,opacity:actPage>=actTotal-1?.4:1}}>Sig. â†’</button>
             </div>
           )}
         </div>
@@ -348,9 +348,9 @@ function InsightsWidget() {
   );
 }
 
-/* ════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    NEGOCIOS CERCANOS (barras)
-════════════════════════════════ */
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function NegociosWidget() {
   const [loading, setLoading]       = useState(true);
   const [filters, setFilters]       = useState({comuna:'',categoria:'',fecha_recoleccion:''});
@@ -400,7 +400,7 @@ function NegociosWidget() {
         <StyledSelect
           value={filters.categoria}
           onChange={v=>setF('categoria',v)}
-          options={[{value:'',label:'Todas las categorías'}, ...available.categorias.map(o=>({value:o,label:o}))]}
+          options={[{value:'',label:'Todas las categorÃ­as'}, ...available.categorias.map(o=>({value:o,label:o}))]}
         />
         {available.fechas_recoleccion.length>0 && (
           <StyledSelect
@@ -417,8 +417,8 @@ function NegociosWidget() {
           {[
             {label:'Registros', value:(summary.total_registros||0).toLocaleString('es-CO'), tooltip:'Establecimientos registrados con los filtros actuales'},
             {label:'Unidades',  value:(summary.total_cantidad||0).toLocaleString('es-CO'),  tooltip:'Total de unidades de negocio contadas'},
-            {label:'Barrios',   value:summary.barrios_unicos||0, tooltip:'Barrios distintos con negocios en la selección'},
-            {label:'Tipos',     value:summary.tipos_unicos||0,   tooltip:'Categorías únicas de negocios en la selección'},
+            {label:'Barrios',   value:summary.barrios_unicos||0, tooltip:'Barrios distintos con negocios en la selecciÃ³n'},
+            {label:'Tipos',     value:summary.tipos_unicos||0,   tooltip:'CategorÃ­as Ãºnicas de negocios en la selecciÃ³n'},
           ].map((s,i)=>(
             <div key={i} className="db-insights-stat" data-tooltip={s.tooltip}>
               <div className="db-insights-stat-label">{s.label}</div>
@@ -428,7 +428,7 @@ function NegociosWidget() {
         </div>
       )}
 
-      {/* Barras — flex:1 para llenar el espacio */}
+      {/* Barras â€” flex:1 para llenar el espacio */}
       <div className="db-negocios-split" style={{flex:1,minHeight:0}}>
         <div style={{display:'flex',flexDirection:'column'}}>
           <div style={{fontSize:11,fontWeight:700,letterSpacing:'.07em',textTransform:'uppercase',color:'var(--text-dim)',marginBottom:8,flexShrink:0}}>
@@ -439,7 +439,7 @@ function NegociosWidget() {
             return (
               <div key={i} className="db-bar-item" style={{flex:1,justifyContent:'center'}}>
                 <div className="db-bar-row">
-                  <span style={{fontSize:12}}>C{item.comuna} · {item.barrio}</span>
+                  <span style={{fontSize:12}}>C{item.comuna} Â· {item.barrio}</span>
                   <b>{item.total_cantidad}</b>
                 </div>
                 <div className="db-bar-track"><div className="db-bar-fill" style={{width:`${w}%`}}/></div>
@@ -470,9 +470,9 @@ function NegociosWidget() {
   );
 }
 
-/* ════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    COBERTURA EPM
-════════════════════════════════ */
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 function CoberturaWidget() {
   const [view, setView]               = useState('estratificacion');
   const [loading, setLoading]         = useState(true);
@@ -510,7 +510,7 @@ function CoberturaWidget() {
     <div style={{display:'flex',flexDirection:'column',gap:14,height:'100%'}}>
       {/* Toggle */}
       <div style={{display:'flex',gap:8,flexShrink:0}}>
-        {[['estratificacion','Estratificación'],['tarifas','Tarifas EPM']].map(([id,label])=>(
+        {[['estratificacion','EstratificaciÃ³n'],['tarifas','Tarifas EPM']].map(([id,label])=>(
           <button key={id} className={`db-fpill${view===id?' active':''}`} onClick={()=>setView(id)}>{label}</button>
         ))}
       </div>
@@ -526,9 +526,9 @@ function CoberturaWidget() {
             <div className="db-insights-stats" style={{flexShrink:0}}>
               {[
                 {label:'Suscriptores',   value:`${((summary.total_suscriptores||0)/1000).toFixed(0)}k`, tooltip:'Total de hogares/negocios suscritos a servicios EPM'},
-                {label:'Cobertura prom.',value:`${Number(summary.cobertura_promedio||0).toFixed(1)}%`,  tooltip:'Porcentaje promedio de cobertura de todos los servicios públicos'},
-                {label:'Servicio líder', value:porServicio[0]?.servicio||'N/A', small:true, tooltip:'El servicio con más suscriptores en Medellín'},
-                {label:'Periodo',        value:periodo||'Todos', small:true, tooltip:'Período de recolección de los datos mostrados'},
+                {label:'Cobertura prom.',value:`${Number(summary.cobertura_promedio||0).toFixed(1)}%`,  tooltip:'Porcentaje promedio de cobertura de todos los servicios pÃºblicos'},
+                {label:'Servicio lÃ­der', value:porServicio[0]?.servicio||'N/A', small:true, tooltip:'El servicio con mÃ¡s suscriptores en MedellÃ­n'},
+                {label:'Periodo',        value:periodo||'Todos', small:true, tooltip:'PerÃ­odo de recolecciÃ³n de los datos mostrados'},
               ].map((s,i)=>(
                 <div key={i} className="db-insights-stat" data-tooltip={s.tooltip}>
                   <div className="db-insights-stat-label">{s.label}</div>
@@ -539,7 +539,7 @@ function CoberturaWidget() {
           )}
           <div style={{display:'flex',flexDirection:'column',flex:1,minHeight:0}}>
             <div style={{fontSize:11,fontWeight:700,letterSpacing:'.07em',textTransform:'uppercase',color:'var(--text-dim)',marginBottom:8,flexShrink:0}}>
-              Suscriptores por servicio público
+              Suscriptores por servicio pÃºblico
             </div>
             {porServicio.map((item,i)=>{
               const w=Math.max(8,Math.round(((item.total_suscriptores||0)/maxS)*100));
@@ -562,21 +562,21 @@ function CoberturaWidget() {
             <StyledSelect
               value={tarifaDs}
               onChange={setTarifaDs}
-              options={[{value:'acueducto',label:'Acueducto'},{value:'gas',label:'Gas'},{value:'energia',label:'Energía'}]}
+              options={[{value:'acueducto',label:'Acueducto'},{value:'gas',label:'Gas'},{value:'energia',label:'EnergÃ­a'}]}
             />
             <StyledSelect
               value={tarifaYear}
               onChange={setTarifaYear}
-              options={[{value:'',label:'Todos los años'}, ...tarifaYears.map(y=>({value:String(y),label:String(y)}))]}
+              options={[{value:'',label:'Todos los aÃ±os'}, ...tarifaYears.map(y=>({value:String(y),label:String(y)}))]}
             />
           </div>
           {tarifaSummary && (
             <div className="db-insights-stats">
               {[
-                {label:'Servicio',        value:tarifaDs, small:true, tooltip:`Servicio público seleccionado para ver tarifas`},
-                {label:'Tarifa promedio', value:`$${Number(tarifaSummary.tarifa_promedio||0).toLocaleString('es-CO')}`, tooltip:'Costo promedio mensual de este servicio en Medellín — útil para estimar gastos operativos'},
-                {label:'Registros',       value:(tarifaSummary.total_registros||0).toLocaleString('es-CO'), tooltip:'Número de registros tarifarios en la base de datos'},
-                {label:'Años disponibles',value:tarifaYears.length||0, tooltip:'Años con datos de tarifas disponibles para análisis histórico'},
+                {label:'Servicio',        value:tarifaDs, small:true, tooltip:`Servicio pÃºblico seleccionado para ver tarifas`},
+                {label:'Tarifa promedio', value:`$${Number(tarifaSummary.tarifa_promedio||0).toLocaleString('es-CO')}`, tooltip:'Costo promedio mensual de este servicio en MedellÃ­n â€” Ãºtil para estimar gastos operativos'},
+                {label:'Registros',       value:(tarifaSummary.total_registros||0).toLocaleString('es-CO'), tooltip:'NÃºmero de registros tarifarios en la base de datos'},
+                {label:'AÃ±os disponibles',value:tarifaYears.length||0, tooltip:'AÃ±os con datos de tarifas disponibles para anÃ¡lisis histÃ³rico'},
               ].map((s,i)=>(
                 <div key={i} className="db-insights-stat" data-tooltip={s.tooltip}>
                   <div className="db-insights-stat-label">{s.label}</div>
@@ -587,13 +587,13 @@ function CoberturaWidget() {
           )}
           <div style={{display:'flex',flexDirection:'column',flex:1,minHeight:0}}>
             <div style={{fontSize:11,fontWeight:700,letterSpacing:'.07em',textTransform:'uppercase',color:'var(--text-dim)',marginBottom:8,flexShrink:0}}>
-              Tarifa promedio por estrato socioeconómico
+              Tarifa promedio por estrato socioeconÃ³mico
             </div>
             {tarifaEstrato.filter(i=>i.estrato).map((item,i)=>{
               const w=Math.max(8,Math.round(((item.tarifa_promedio||0)/maxE)*100));
               return (
                 <div key={i} className="db-bar-item" style={{flex:1,justifyContent:'center'}}
-                  data-tooltip={`Estrato ${item.estrato}: $${Number(item.tarifa_promedio||0).toLocaleString('es-CO')}/mes · considera el estrato de tu zona`}
+                  data-tooltip={`Estrato ${item.estrato}: $${Number(item.tarifa_promedio||0).toLocaleString('es-CO')}/mes Â· considera el estrato de tu zona`}
                 >
                   <div className="db-bar-row"><span>Estrato {item.estrato}</span><b>${Number(item.tarifa_promedio||0).toLocaleString('es-CO')}</b></div>
                   <div className="db-bar-track">
@@ -608,9 +608,9 @@ function CoberturaWidget() {
   );
 }
 
-/* ════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    EMPRENDEDOR DASHBOARD
-════════════════════════════════ */
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 export default function EmprendedorDashboard() {
   const navigate = useNavigate();
   const [user, setUser]     = useState(null);
@@ -641,39 +641,39 @@ export default function EmprendedorDashboard() {
 
   const handleLogout = () => { authService.logout(); navigate('/login'); };
 
-  // Cuando se crea una conversación nueva, refrescar la lista
+  // Cuando se crea una conversaciÃ³n nueva, refrescar la lista
   const handleConversationChange = (newId) => {
     if (!convId && newId) setConvListKey(k => k + 1);
     setConvId(newId);
   };
 
-  if(loading) return <div className="db-loading"><div className="db-spinner"/>Cargando inteligencia empresarial…</div>;
+  if(loading) return <div className="db-loading"><div className="db-spinner"/>Cargando inteligencia empresarialâ€¦</div>;
   if(!user) return null;
 
   const firstName = user.full_name?.split(' ')[0] || 'Emprendedor';
 
   const META = {
-    inicio:      { accent:'Hola,', title:firstName,          subtitle:'Panel ejecutivo para emprendedores de Medellín' },
-    emprendedor: { accent:'',      title:'Abre Tu Negocio',  subtitle:'Consultor IA · Análisis de viabilidad · Datos reales de Medellín' },
-    insights:    { accent:'',      title:'Inteligencia',     subtitle:'Actividad económica cruzada con contexto de seguridad' },
-    negocios:    { accent:'',      title:'Datos de Negocios',subtitle:'Negocios cercanos · Cobertura EPM · Tarifas por estrato' },
-    cobertura:   { accent:'',      title:'Cobertura y Tarifas EPM', subtitle:'Estratificación · Servicios · Tendencias de tarifas' },
+    inicio:      { accent:'Hola,', title:firstName,          subtitle:'Panel ejecutivo para emprendedores de MedellÃ­n' },
+    emprendedor: { accent:'',      title:'Abre Tu Negocio',  subtitle:'Consultor IA Â· AnÃ¡lisis de viabilidad Â· Datos reales de MedellÃ­n' },
+    insights:    { accent:'',      title:'Inteligencia',     subtitle:'Actividad econÃ³mica cruzada con contexto de seguridad' },
+    negocios:    { accent:'',      title:'Datos de Negocios',subtitle:'Negocios cercanos Â· Cobertura EPM Â· Tarifas por estrato' },
+    cobertura:   { accent:'',      title:'Cobertura y Tarifas EPM', subtitle:'EstratificaciÃ³n Â· Servicios Â· Tendencias de tarifas' },
   };
   const m = META[mod];
 
-  /* ══ COL-R dinámico ══ */
-  // Bloque "Panel Emprendedor" — sin ícono de edición
+  /* â•â• COL-R dinÃ¡mico â•â• */
+  // Bloque "Panel Emprendedor" â€” sin Ã­cono de ediciÃ³n
   const panelEmprendedor = (
     <div className="db-rc db-card-note" style={{flexShrink:0}}>
       <div className="db-card-header">
         <span className="db-card-title">Panel Emprendedor</span>
       </div>
       <div className="db-note-body">
-        Datos <b>reales de Medellín</b> para tomar mejores decisiones de negocio. Consulta el asesor IA para análisis de viabilidad.
+        Datos <b>reales de MedellÃ­n</b> para tomar mejores decisiones de negocio. Consulta el asesor IA para anÃ¡lisis de viabilidad.
       </div>
       <div className="db-note-footer">
-        <span className="db-note-time">Medellín · Valle de Aburrá</span>
-        <div className="db-note-badge"><span className="ck">✓</span> IA Activa</div>
+        <span className="db-note-time">MedellÃ­n Â· Valle de AburrÃ¡</span>
+        <div className="db-note-badge"><span className="ck">âœ“</span> IA Activa</div>
       </div>
     </div>
   );
@@ -688,7 +688,7 @@ export default function EmprendedorDashboard() {
           return (
             <div className="db-rc db-sector-share-card" style={{flexShrink:0}}>
               <div className="db-card-header" style={{marginBottom:10}}>
-                <span className="db-card-title">Participación sectorial</span>
+                <span className="db-card-title">ParticipaciÃ³n sectorial</span>
               </div>
               {/* Mini donut bar */}
               <div className="db-sector-share-bar">
@@ -717,9 +717,9 @@ export default function EmprendedorDashboard() {
           </div>
           <div className="db-market-context-list">
             {[
-              {icon:'🏙️', label:'Medellín formal', desc:`${summary ? `${(summary.total_empresas/1000).toFixed(1)}k` : '—'} empresas registradas en el DANE — ciudad con alta formalización empresarial.`},
-              {icon:'📈', label:'Dinamismo sectorial', desc:`${summary ? summary.total_actividades : '—'} sectores económicos activos. Los servicios y el comercio dominan el mapa.`},
-              {icon:'🗺️', label:'Distribución comunal', desc:`${summary?.comuna_top?.nombre || 'El Centro'} lidera en concentración. Las zonas periféricas tienen menor competencia.`},
+              {icon:'ðŸ™ï¸', label:'MedellÃ­n formal', desc:`${summary ? `${(summary.total_empresas/1000).toFixed(1)}k` : 'â€”'} empresas registradas en el DANE â€” ciudad con alta formalizaciÃ³n empresarial.`},
+              {icon:'ðŸ“ˆ', label:'Dinamismo sectorial', desc:`${summary ? summary.total_actividades : 'â€”'} sectores econÃ³micos activos. Los servicios y el comercio dominan el mapa.`},
+              {icon:'ðŸ—ºï¸', label:'DistribuciÃ³n comunal', desc:`${summary?.comuna_top?.nombre || 'El Centro'} lidera en concentraciÃ³n. Las zonas perifÃ©ricas tienen menor competencia.`},
             ].map((item,i)=>(
               <div key={i} className="db-market-context-item" style={{borderBottom:i<2?'1px solid var(--sep)':'none'}}>
                 <span className="db-market-context-icon">{item.icon}</span>
@@ -739,13 +739,13 @@ export default function EmprendedorDashboard() {
         {panelEmprendedor}
         <div className="db-rc" style={{flexShrink:0}}>
           <div className="db-card-header" style={{marginBottom:10}}>
-            <span className="db-card-title">¿Cómo funciona?</span>
+            <span className="db-card-title">Â¿CÃ³mo funciona?</span>
           </div>
           <div style={{display:'flex',flexDirection:'column',gap:10}}>
             {[
-              {icon:'📊', title:'Actividad empresarial', desc:'Sectores con más empresas registradas en el DANE para detectar mercados en crecimiento.'},
-              {icon:'🛡️', title:'Índice de criminalidad', desc:'Datos de incidencia delictiva por zona, para evaluar el riesgo de seguridad de tu local.'},
-              {icon:'🎯', title:'Zonas de oportunidad', desc:'Cruce de ambas fuentes: alta actividad + baja criminalidad = mejor potencial para tu negocio.'},
+              {icon:'ðŸ“Š', title:'Actividad empresarial', desc:'Sectores con mÃ¡s empresas registradas en el DANE para detectar mercados en crecimiento.'},
+              {icon:'ðŸ›¡ï¸', title:'Ãndice de criminalidad', desc:'Datos de incidencia delictiva por zona, para evaluar el riesgo de seguridad de tu local.'},
+              {icon:'ðŸŽ¯', title:'Zonas de oportunidad', desc:'Cruce de ambas fuentes: alta actividad + baja criminalidad = mejor potencial para tu negocio.'},
             ].map((item,i)=>(
               <div key={i} style={{display:'flex',gap:9,alignItems:'flex-start'}}>
                 <span style={{fontSize:15,flexShrink:0,marginTop:1}}>{item.icon}</span>
@@ -763,10 +763,10 @@ export default function EmprendedorDashboard() {
           </div>
           <div style={{display:'flex',flexDirection:'column',gap:0,flex:1}}>
             {[
-              {num:'1', tip:'Filtra por año para ver si un sector está creciendo o estancándose en el tiempo.'},
-              {num:'2', tip:'La pestaña "Zonas" muestra dónde abrir con menos competencia y menos riesgo.'},
-              {num:'3', tip:'El sector líder tiene más demanda, pero también más competidores establecidos.'},
-              {num:'4', tip:'Usa "Sectores" para encontrar nichos de mercado con menor saturación.'},
+              {num:'1', tip:'Filtra por aÃ±o para ver si un sector estÃ¡ creciendo o estancÃ¡ndose en el tiempo.'},
+              {num:'2', tip:'La pestaÃ±a "Zonas" muestra dÃ³nde abrir con menos competencia y menos riesgo.'},
+              {num:'3', tip:'El sector lÃ­der tiene mÃ¡s demanda, pero tambiÃ©n mÃ¡s competidores establecidos.'},
+              {num:'4', tip:'Usa "Sectores" para encontrar nichos de mercado con menor saturaciÃ³n.'},
             ].map((item,i)=>(
               <div key={i} style={{display:'flex',gap:10,alignItems:'flex-start',flex:1,padding:'6px 0',borderBottom:i<3?'1px solid var(--sep)':'none'}}>
                 <div style={{width:20,height:20,borderRadius:6,background:'var(--active-bg)',display:'flex',alignItems:'center',justifyContent:'center',fontSize:10,fontWeight:800,color:'var(--accent)',flexShrink:0,marginTop:1}}>{item.num}</div>
@@ -782,23 +782,23 @@ export default function EmprendedorDashboard() {
         {panelEmprendedor}
         <div className="db-rc" style={{flexShrink:0}}>
           <div className="db-card-header" style={{marginBottom:10}}>
-            <span className="db-card-title">¿Qué es Negocios?</span>
+            <span className="db-card-title">Â¿QuÃ© es Negocios?</span>
           </div>
           <div style={{fontSize:12.5,color:'var(--text-mid)',lineHeight:1.7,display:'flex',flexDirection:'column',gap:6}}>
-            <p style={{margin:0}}>Registros <b style={{color:'var(--text-h)'}}>reales</b> de negocios en Medellín, filtrados por comuna, categoría y período.</p>
-            <p style={{margin:0}}>Úsalo para conocer la <b style={{color:'var(--text-h)'}}>densidad de competidores</b> en tu zona objetivo.</p>
+            <p style={{margin:0}}>Registros <b style={{color:'var(--text-h)'}}>reales</b> de negocios en MedellÃ­n, filtrados por comuna, categorÃ­a y perÃ­odo.</p>
+            <p style={{margin:0}}>Ãšsalo para conocer la <b style={{color:'var(--text-h)'}}>densidad de competidores</b> en tu zona objetivo.</p>
           </div>
         </div>
         <div className="db-rc" style={{flex:1,display:'flex',flexDirection:'column',minHeight:0}}>
           <div className="db-card-header" style={{marginBottom:8,flexShrink:0}}>
-            <span className="db-card-title">Cómo interpretar</span>
+            <span className="db-card-title">CÃ³mo interpretar</span>
           </div>
           <div style={{display:'flex',flexDirection:'column',gap:0,flex:1}}>
             {[
               {n:'1', tip:'Filtra por tu comuna para ver solo la competencia en tu zona objetivo.'},
-              {n:'2', tip:'Compara categorías de negocio para detectar nichos con poca oferta.'},
-              {n:'3', tip:'Más barrios cubiertos en el resultado = mercado más diverso y distribuido.'},
-              {n:'4', tip:'Usa el período más reciente para datos actualizados del mercado local.'},
+              {n:'2', tip:'Compara categorÃ­as de negocio para detectar nichos con poca oferta.'},
+              {n:'3', tip:'MÃ¡s barrios cubiertos en el resultado = mercado mÃ¡s diverso y distribuido.'},
+              {n:'4', tip:'Usa el perÃ­odo mÃ¡s reciente para datos actualizados del mercado local.'},
             ].map(({n,tip},i)=>(
               <div key={i} style={{display:'flex',gap:10,alignItems:'flex-start',flex:1,padding:'6px 0',borderBottom:i<3?'1px solid var(--sep)':'none'}}>
                 <div style={{width:20,height:20,borderRadius:6,background:'var(--active-bg)',display:'flex',alignItems:'center',justifyContent:'center',fontSize:10,fontWeight:800,color:'var(--accent)',flexShrink:0,marginTop:1}}>{n}</div>
@@ -814,13 +814,13 @@ export default function EmprendedorDashboard() {
         {panelEmprendedor}
         <div className="db-rc" style={{flexShrink:0}}>
           <div className="db-card-header" style={{marginBottom:10}}>
-            <span className="db-card-title">Guía EPM</span>
+            <span className="db-card-title">GuÃ­a EPM</span>
           </div>
           <div style={{display:'flex',flexDirection:'column',gap:9}}>
             {[
-              {servicio:'Energía eléctrica', rango:'$45k – $200k/mes', color:'#fbbf24'},
-              {servicio:'Acueducto',         rango:'$20k – $80k/mes',  color:'#60a5fa'},
-              {servicio:'Gas natural',       rango:'$15k – $60k/mes',  color:'#f87171'},
+              {servicio:'EnergÃ­a elÃ©ctrica', rango:'$45k â€“ $200k/mes', color:'#fbbf24'},
+              {servicio:'Acueducto',         rango:'$20k â€“ $80k/mes',  color:'#60a5fa'},
+              {servicio:'Gas natural',       rango:'$15k â€“ $60k/mes',  color:'#f87171'},
             ].map(({servicio,rango,color})=>(
               <div key={servicio} style={{display:'flex',alignItems:'center',gap:9}}>
                 <div style={{width:7,height:7,borderRadius:'50%',background:color,flexShrink:0}}/>
@@ -831,19 +831,19 @@ export default function EmprendedorDashboard() {
               </div>
             ))}
             <div style={{fontSize:11,color:'var(--text-dim)',borderTop:'1px solid var(--sep)',paddingTop:8,lineHeight:1.5}}>
-              Valores estimados según estrato socioeconómico.
+              Valores estimados segÃºn estrato socioeconÃ³mico.
             </div>
           </div>
         </div>
         <div className="db-rc" style={{flex:1,display:'flex',flexDirection:'column',minHeight:0}}>
           <div className="db-card-header" style={{marginBottom:8,flexShrink:0}}>
-            <span className="db-card-title">¿Para qué sirve?</span>
+            <span className="db-card-title">Â¿Para quÃ© sirve?</span>
           </div>
           <div style={{display:'flex',flexDirection:'column',gap:0,flex:1}}>
             {[
-              {n:'1', tip:'Estima el costo mensual de servicios públicos según el estrato de tu local.'},
-              {n:'2', tip:'Compara tarifas entre acueducto, gas y energía para planear tu presupuesto.'},
-              {n:'3', tip:'Analiza tendencias históricas de precios para anticipar variaciones de costos.'},
+              {n:'1', tip:'Estima el costo mensual de servicios pÃºblicos segÃºn el estrato de tu local.'},
+              {n:'2', tip:'Compara tarifas entre acueducto, gas y energÃ­a para planear tu presupuesto.'},
+              {n:'3', tip:'Analiza tendencias histÃ³ricas de precios para anticipar variaciones de costos.'},
               {n:'4', tip:'Proyecta los gastos operativos de tu negocio antes de firmar un arriendo.'},
             ].map(({n,tip},i)=>(
               <div key={i} style={{display:'flex',gap:10,alignItems:'flex-start',flex:1,padding:'6px 0',borderBottom:i<3?'1px solid var(--sep)':'none'}}>
@@ -858,13 +858,13 @@ export default function EmprendedorDashboard() {
   };
   const rightCol = rightColByMod[mod];
 
-  /* ══ COL-L ══ */
+  /* â•â• COL-L â•â• */
 
-  // ── INICIO: datos reales con visualización innovadora ──
-  // Labels de posición de mercado según rank
+  // â”€â”€ INICIO: datos reales con visualizaciÃ³n innovadora â”€â”€
+  // Labels de posiciÃ³n de mercado segÃºn rank
   const mktLabel = (i, total) => {
     const pct = (total > 0 ? topActividades[i]?.total_empresas / total : 0);
-    if (i === 0) return {txt:'Sector líder', cls:''};
+    if (i === 0) return {txt:'Sector lÃ­der', cls:''};
     if (pct > 0.15) return {txt:'Muy activo', cls:''};
     if (pct > 0.08) return {txt:'Activo', cls:'medio'};
     return {txt:'Nicho', cls:'saturado'};
@@ -877,10 +877,10 @@ export default function EmprendedorDashboard() {
       {summary && (
         <div className="db-stat-row db-stat-row--4" style={{flexShrink:0}}>
           {[
-            {label:'Empresas registradas', value:`${(summary.total_empresas/1000).toFixed(1)}k`, tooltip:'Total de empresas formalmente registradas en Medellín'},
-            {label:'Sectores activos',     value:summary.total_actividades, tooltip:'Tipos de actividades económicas únicas presentes en la ciudad'},
-            {label:'Comuna líder',         value:summary.comuna_top?.nombre||'N/A', small:true, tooltip:'La comuna con mayor concentración de empresas registradas'},
-            {label:'Tasa de formalidad',   value:'Alta', cls:'green', tooltip:'Medellín tiene una de las tasas de formalización empresarial más altas del país'},
+            {label:'Empresas registradas', value:`${(summary.total_empresas/1000).toFixed(1)}k`, tooltip:'Total de empresas formalmente registradas en MedellÃ­n'},
+            {label:'Sectores activos',     value:summary.total_actividades, tooltip:'Tipos de actividades econÃ³micas Ãºnicas presentes en la ciudad'},
+            {label:'Comuna lÃ­der',         value:summary.comuna_top?.nombre||'N/A', small:true, tooltip:'La comuna con mayor concentraciÃ³n de empresas registradas'},
+            {label:'Tasa de formalidad',   value:'Alta', cls:'green', tooltip:'MedellÃ­n tiene una de las tasas de formalizaciÃ³n empresarial mÃ¡s altas del paÃ­s'},
           ].map((s,i)=>(
             <div key={i} className="db-stat-item" data-tooltip={s.tooltip}>
               <div className="db-stat-label">{s.label}</div>
@@ -893,7 +893,7 @@ export default function EmprendedorDashboard() {
       {/* Sectores: lista 2 columnas, texto completo */}
       <div style={{flexShrink:0}}>
         <div style={{fontSize:11,fontWeight:700,letterSpacing:'.07em',textTransform:'uppercase',color:'var(--text-dim)',marginBottom:10}}>
-          Sectores económicos · Posición de mercado
+          Sectores econÃ³micos Â· PosiciÃ³n de mercado
         </div>
         <div className="db-sectores-grid">
           {topActividades.length === 0 ? (
@@ -902,7 +902,7 @@ export default function EmprendedorDashboard() {
             const lbl = mktLabel(i, totalEmpresas);
             return (
               <div key={i} className="db-sector-tile"
-                data-tooltip={`${(item.total_empresas||0).toLocaleString('es-CO')} empresas · Zona: ${item.top_comuna||'N/A'} · CIIU ${item.ciiu}`}
+                data-tooltip={`${(item.total_empresas||0).toLocaleString('es-CO')} empresas Â· Zona: ${item.top_comuna||'N/A'} Â· CIIU ${item.ciiu}`}
                 style={{padding:'10px 12px',gap:6}}
               >
                 <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:2}}>
@@ -910,7 +910,7 @@ export default function EmprendedorDashboard() {
                   <div className="db-sector-rank" style={{fontSize:10,width:18,height:18,borderRadius:5}}>{i+1}</div>
                 </div>
                 <div style={{fontSize:12,fontWeight:600,color:'var(--text-h)',lineHeight:1.4}}>{item.descripcion}</div>
-                <div style={{fontSize:10.5,color:'var(--text-dim)',marginTop:2}}>{(item.total_empresas||0).toLocaleString('es-CO')} emp · {item.top_comuna||'—'}</div>
+                <div style={{fontSize:10.5,color:'var(--text-dim)',marginTop:2}}>{(item.total_empresas||0).toLocaleString('es-CO')} emp Â· {item.top_comuna||'â€”'}</div>
               </div>
             );
           })}
@@ -944,11 +944,11 @@ export default function EmprendedorDashboard() {
         </div>
       )}
 
-      {/* Distribución del mercado */}
+      {/* DistribuciÃ³n del mercado */}
       {topActividades.length > 0 && (
         <div className="db-card db-market-dist-card" style={{padding:'14px 18px',display:'flex',flexDirection:'column',gap:10}}>
           <div style={{fontSize:11,fontWeight:700,letterSpacing:'.07em',textTransform:'uppercase',color:'var(--text-dim)'}}>
-            Distribución del mercado por sector
+            DistribuciÃ³n del mercado por sector
           </div>
           {/* Stacked bar */}
           <div style={{height:10,borderRadius:6,display:'flex',overflow:'hidden',gap:1}}>
@@ -964,9 +964,9 @@ export default function EmprendedorDashboard() {
             {topActividades.slice(0,4).map((item,i)=>{
               const pct = totalEmpresas > 0 ? ((item.total_empresas||0)/totalEmpresas*100) : 0;
               const colors = ['#00C896','#239677','#60a5fa','#f59e0b'];
-              const short = item.descripcion.length > 40 ? item.descripcion.slice(0,38)+'…' : item.descripcion;
+              const short = item.descripcion.length > 40 ? item.descripcion.slice(0,38)+'â€¦' : item.descripcion;
               return (
-                <div key={i} style={{display:'flex',alignItems:'center',gap:7}} data-tooltip={`${item.descripcion} · ${pct.toFixed(1)}% del mercado`}>
+                <div key={i} style={{display:'flex',alignItems:'center',gap:7}} data-tooltip={`${item.descripcion} Â· ${pct.toFixed(1)}% del mercado`}>
                   <div style={{width:8,height:8,borderRadius:2,background:colors[i],flexShrink:0}}/>
                   <span style={{fontSize:11,color:'var(--text-mid)',lineHeight:1.3,flex:1,overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>{short}</span>
                   <span style={{fontSize:11,fontWeight:700,color:'var(--text-h)',flexShrink:0}}>{pct.toFixed(1)}%</span>
@@ -984,7 +984,7 @@ export default function EmprendedorDashboard() {
     </>
   );
 
-  // ── EMPRENDEDOR: chat + historial, full-width ──
+  // â”€â”€ EMPRENDEDOR: chat + historial, full-width â”€â”€
   const emprendedorLeft = (
     <div className="db-card" style={{flex:1,display:'flex',overflow:'hidden',padding:0}}>
       {/* Sidebar: Lista de conversaciones (Estilo Gemini) */}
@@ -1030,7 +1030,7 @@ export default function EmprendedorDashboard() {
               e.target.style.transform = 'translateX(0)';
             }}
           >
-            ← Ocultar
+            â† Ocultar
           </button>
         </div>
 
@@ -1089,12 +1089,12 @@ export default function EmprendedorDashboard() {
                   e.currentTarget.style.transform = 'scale(1)';
                 }}
               >
-                ☰
+                â˜°
               </button>
             )}
             <div style={{minWidth:0,flex:1}}>
               <div className="db-card-title" style={{fontSize:'14px',fontWeight:'700',color:'var(--text-h)',overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>Consultor de Negocios IA</div>
-              <div className="db-card-subtitle" style={{fontSize:'12px',color:'var(--text-dim)',overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>Análisis de viabilidad · Datos reales</div>
+              <div className="db-card-subtitle" style={{fontSize:'12px',color:'var(--text-dim)',overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>AnÃ¡lisis de viabilidad Â· Datos reales</div>
             </div>
           </div>
         </div>
@@ -1107,13 +1107,13 @@ export default function EmprendedorDashboard() {
     </div>
   );
 
-  // ── INSIGHTS: tabs internas, sin scroll ──
+  // â”€â”€ INSIGHTS: tabs internas, sin scroll â”€â”€
   const insightsLeft = (
     <div className="db-card" style={{flex:1,display:'flex',flexDirection:'column',overflow:'hidden'}}>
       <div className="db-card-header" style={{flexShrink:0}}>
         <div>
           <div className="db-card-title">Inteligencia Empresarial</div>
-          <div className="db-card-subtitle">Actividad económica cruzada con índice de seguridad por zona</div>
+          <div className="db-card-subtitle">Actividad econÃ³mica cruzada con Ã­ndice de seguridad por zona</div>
         </div>
       </div>
       <div style={{flex:1,padding:'0 22px 16px',minHeight:0,display:'flex',flexDirection:'column'}}>
@@ -1122,12 +1122,12 @@ export default function EmprendedorDashboard() {
     </div>
   );
 
-  // ── NEGOCIOS: solo datos de negocios (cobertura tiene su propio módulo) ──
+  // â”€â”€ NEGOCIOS: solo datos de negocios (cobertura tiene su propio mÃ³dulo) â”€â”€
   const negociosLeft = (
     <div className="db-card" style={{flex:1,display:'flex',flexDirection:'column',overflow:'hidden'}}>
       <div style={{padding:'16px 22px 12px',flexShrink:0,borderBottom:'1px solid var(--sep)'}}>
         <div className="db-card-title" style={{fontSize:16}}>Negocios del mercado local</div>
-        <div className="db-card-subtitle">Negocios registrados en Medellín · Filtra por comuna, categoría y período</div>
+        <div className="db-card-subtitle">Negocios registrados en MedellÃ­n Â· Filtra por comuna, categorÃ­a y perÃ­odo</div>
       </div>
       <div style={{flex:1,padding:'14px 22px 16px',display:'flex',flexDirection:'column',minHeight:0}}>
         <NegociosWidget/>
@@ -1135,13 +1135,13 @@ export default function EmprendedorDashboard() {
     </div>
   );
 
-  // ── COBERTURA standalone ──
+  // â”€â”€ COBERTURA standalone â”€â”€
   const coberturaLeft = (
     <div className="db-card" style={{flex:1,display:'flex',flexDirection:'column',overflow:'hidden'}}>
       <div className="db-card-header" style={{flexShrink:0}}>
         <div>
           <div className="db-card-title" style={{fontSize:16}}>Cobertura y Tarifas EPM</div>
-          <div className="db-card-subtitle">Estratificación · Servicios públicos · Tendencias de tarifas</div>
+          <div className="db-card-subtitle">EstratificaciÃ³n Â· Servicios pÃºblicos Â· Tendencias de tarifas</div>
         </div>
       </div>
       <div style={{flex:1,padding:'0 22px 16px',minHeight:0,display:'flex',flexDirection:'column'}}>
@@ -1168,3 +1168,4 @@ export default function EmprendedorDashboard() {
     />
   );
 }
+

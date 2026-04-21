@@ -1,7 +1,7 @@
-"""Bot de Telegram para el flujo ciudadano de seguridad.
+﻿"""Bot de Telegram para el flujo ciudadano de seguridad.
 
-Reutiliza exactamente la misma lógica del dashboard ciudadano:
-`security_chat_real` en `app.services.security_llm_service`.
+Reutiliza exactamente la misma lÃ³gica del dashboard ciudadano:
+`security_chat_real` en `app.services.simmtraffic_llm_service`.
 """
 
 from __future__ import annotations
@@ -17,7 +17,7 @@ from telegram.constants import ChatAction
 from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters
 
 from app.core.config import get_settings
-from app.services.security_llm_service import security_chat_real
+from app.services.simmtraffic_llm_service import security_chat_real
 
 logger = logging.getLogger(__name__)
 
@@ -41,8 +41,8 @@ async def _start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     if not update.message:
         return
     await update.message.reply_text(
-        "¡Hola! Soy MECIA — puedo ayudarte con información sobre seguridad en Medellín y recomendaciones locales. "
-        "Dime a dónde piensas ir o qué te preocupa y te doy una respuesta cercana y práctica; si quieres, también puedo listar zonas más seguras o peligrosas."
+        "Â¡Hola! Soy MECIA â€” puedo ayudarte con informaciÃ³n sobre seguridad en MedellÃ­n y recomendaciones locales. "
+        "Dime a dÃ³nde piensas ir o quÃ© te preocupa y te doy una respuesta cercana y prÃ¡ctica; si quieres, tambiÃ©n puedo listar zonas mÃ¡s seguras o peligrosas."
     )
 
 
@@ -78,18 +78,18 @@ async def _on_text(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         # tone and includes a short sample of local businesses to allow recommendations.
         instruction = (
             "Responde con un tono cercano y explicativo, como si hablaras con un vecino. "
-            "Si recomiendas un lugar, explica por qué y da contexto breve sobre su ubicación. "
-            "Evita contradicciones: si sugieres una comuna como recomendación, no la listes después como peligrosa.\n\n"
+            "Si recomiendas un lugar, explica por quÃ© y da contexto breve sobre su ubicaciÃ³n. "
+            "Evita contradicciones: si sugieres una comuna como recomendaciÃ³n, no la listes despuÃ©s como peligrosa.\n\n"
         )
 
-        # Prefer natural phrasing: do not obligatorily enumerate las más/menos seguras
+        # Prefer natural phrasing: do not obligatorily enumerate las mÃ¡s/menos seguras
         instruction += (
-            "Solo proporciona listas de 'más seguras' o 'más peligrosas' si el usuario las pide explícitamente; "
-            "si la consulta es general, ofrece una recomendación concreta y ofrece la opción de mostrar un resumen de zonas.\n\n"
+            "Solo proporciona listas de 'mÃ¡s seguras' o 'mÃ¡s peligrosas' si el usuario las pide explÃ­citamente; "
+            "si la consulta es general, ofrece una recomendaciÃ³n concreta y ofrece la opciÃ³n de mostrar un resumen de zonas.\n\n"
         )
 
-        negocios_summary = _load_negocios_summary()
-        combined_prompt = f"{instruction}Consulta: {prompt}\n\nNegocios (muestra): {negocios_summary}"
+        aforos_summary = _load_aforos_summary()
+        combined_prompt = f"{instruction}Consulta: {prompt}\n\nAforos (muestra): {aforos_summary}"
 
         # Force usage of Gemini for Telegram interactions
         result = await security_chat_real(
@@ -101,7 +101,7 @@ async def _on_text(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
         # If Gemini failed and we fell back to mock, try OpenAI (if available) to get a fuller response.
         if result.get("fallback_mock") and settings.OPENAI_API_KEY:
-            logger.debug("Gemini failed — retrying security_chat_real with OpenAI")
+            logger.debug("Gemini failed â€” retrying security_chat_real with OpenAI")
             result = await security_chat_real(
                 prompt=combined_prompt,
                 provider="openai",
@@ -127,10 +127,10 @@ def build_application(token: str) -> Application:
 
 # Cargar una muestra resumida del dataset de negocios para incluir en el prompt.
 @lru_cache()
-def _load_negocios_summary(max_items: int = 20) -> str:
+def _load_aforos_summary(max_items: int = 20) -> str:
     try:
         base = Path(__file__).resolve().parents[2]
-        csv_path = base / "datasets" / "negocios_medellin_full.csv"
+        csv_path = base / "datasets" / "Aforos_Vehiculares_clean.csv"
         if not csv_path.exists():
             return "(dataset no disponible)"
 
@@ -157,7 +157,7 @@ def _load_negocios_summary(max_items: int = 20) -> str:
 
         return "; ".join(items)
     except Exception:
-        logger.exception("No se pudo leer negocios_medellin_full.csv")
+        logger.exception("No se pudo leer Aforos_Vehiculares_clean.csv")
         return "(error cargando dataset)"
 
 
@@ -173,3 +173,4 @@ def run_polling() -> None:
 
 if __name__ == "__main__":
     run_polling()
+

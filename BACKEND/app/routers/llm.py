@@ -1,4 +1,4 @@
-"""Endpoints de LLM: análisis de modelos, seguridad, análisis de facturas e historial de conversaciones."""
+﻿"""Endpoints de LLM: anÃ¡lisis de modelos, seguridad, anÃ¡lisis de facturas e historial de conversaciones."""
 
 from pydantic import BaseModel, Field
 from typing import Optional
@@ -8,9 +8,9 @@ import logging
 import httpx
 
 from app.services.llm_mock import LLMMockService
-from app.services.security_llm_service import security_chat_real
+from app.services.simmtraffic_llm_service import security_chat_real
 from app.services.entrepreneur_llm_service import entrepreneur_chat_real
-from app.services.bill_analysis_service import analyze_bill
+from app.services.movilidad_bill_analysis_service import analyze_bill
 from app.services.conversation_service import ConversationService
 from app.core.config import get_settings
 from app.core.dependencies import get_current_user, get_db
@@ -78,7 +78,7 @@ async def chat(payload: SimulateChatRequest):
 @router.post(
     "/recommendation",
     status_code=status.HTTP_200_OK,
-    summary="Obtener recomendación de zona para negocio"
+    summary="Obtener recomendaciÃ³n de zona para negocio"
 )
 async def recommendation(payload: SimulateRecommendationRequest):
     try:
@@ -89,29 +89,29 @@ async def recommendation(payload: SimulateRecommendationRequest):
         )
         return {"success": True, "data": result}
     except Exception as e:
-        logger.error(f"Error al generar recomendación: {e}")
-        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Error procesando recomendación de zona")
+        logger.error(f"Error al generar recomendaciÃ³n: {e}")
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Error procesando recomendaciÃ³n de zona")
 
 
 @router.post(
     "/facturas/analizar",
     status_code=status.HTTP_200_OK,
-    summary="Analizar factura EPM (1 o varias imágenes) con visión IA y tarifas reales",
+    summary="Analizar factura EPM (1 o varias imÃ¡genes) con visiÃ³n IA y tarifas reales",
 )
 async def analizar_factura(files: list[UploadFile] = File(...)):
     _ALLOWED = {"image/jpeg", "image/png", "image/webp", "image/gif"}
     if not files:
         raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail="Debes subir al menos una imagen.")
     if len(files) > 6:
-        raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail="Máximo 6 imágenes por factura.")
+        raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail="MÃ¡ximo 6 imÃ¡genes por factura.")
     try:
         images = []
         for file in files:
             if file.content_type not in _ALLOWED:
-                raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail=f"Archivo '{file.filename}' no es una imagen válida (JPG, PNG, WEBP).")
+                raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail=f"Archivo '{file.filename}' no es una imagen vÃ¡lida (JPG, PNG, WEBP).")
             image_bytes = await file.read()
             if len(image_bytes) > 10 * 1024 * 1024:
-                raise HTTPException(status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE, detail=f"'{file.filename}' supera el límite de 10 MB.")
+                raise HTTPException(status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE, detail=f"'{file.filename}' supera el lÃ­mite de 10 MB.")
             images.append((image_bytes, file.content_type))
 
         settings = get_settings()
@@ -154,7 +154,7 @@ async def text_to_speech(payload: TextToSpeechRequest):
         if not settings.OPENAI_API_KEY:
             raise HTTPException(
                 status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
-                detail="OPENAI_API_KEY no está configurada en el backend",
+                detail="OPENAI_API_KEY no estÃ¡ configurada en el backend",
             )
 
         allowed_voices = {
@@ -259,9 +259,9 @@ async def entrepreneur_chat(
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Error procesando consulta de emprendedor")
 
 
-# ═══════════════════════════════════════════════════════════════
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 # CONVERSATION MANAGEMENT ENDPOINTS
-# ═══════════════════════════════════════════════════════════════
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 
 @router.get(
@@ -333,3 +333,4 @@ async def delete_conversation(
     except Exception as e:
         logger.error(f"Error deleting conversation: {e}")
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Error deleting conversation")
+

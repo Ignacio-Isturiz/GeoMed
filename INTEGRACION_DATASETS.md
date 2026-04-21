@@ -1,53 +1,53 @@
-# Integración del Dashboard de Criminalidad
+﻿# IntegraciÃ³n del Dashboard de Criminalidad
 
-Este documento explica cómo se ha implementado y cómo integrar el nuevo Dashboard de Criminalidad en los dashboards existentes.
+Este documento explica cÃ³mo se ha implementado y cÃ³mo integrar el nuevo Dashboard de Criminalidad en los dashboards existentes.
 
 ## Estructura Creada
 
 ### Backend
 
-#### 1. Servicio de Datasets (`app/services/datasets.py`)
-- **Responsabilidad**: Lógica de negocio para lectura y procesamiento de CSV
-- **Métodos principales**:
+#### 1. Servicio de Datasets (`app/services/movilidad_datasets_service.py`)
+- **Responsabilidad**: LÃ³gica de negocio para lectura y procesamiento de CSV
+- **MÃ©todos principales**:
   - `get_criminalidad_data()`: Lee el CSV y retorna lista de diccionarios con campos procesados
-  - `get_criminalidad_summary()`: Calcula estadísticas agregadas (total, promedio, máxima, mínima, etc.)
+  - `get_criminalidad_summary()`: Calcula estadÃ­sticas agregadas (total, promedio, mÃ¡xima, mÃ­nima, etc.)
 
-#### 2. Router de Datasets (`app/routers/datasets.py`)
+#### 2. Router de Datasets (`app/routers/movilidad_datasets.py`)
 - **Endpoint GET** `/api/datasets/criminalidad`
   - Retorna lista completa de datos de criminalidad por comuna
   - Response: `{ success: true, data: [...], count: N }`
 
 - **Endpoint GET** `/api/datasets/criminalidad/resumen`
-  - Retorna estadísticas agregadas
+  - Retorna estadÃ­sticas agregadas
   - Response: `{ success: true, data: { total_comunas, total_casos, tasa_promedio, ... } }`
 
 #### 3. Registro en main.py
-- Se agregó el import: `from app.routers import auth, datasets`
-- Se registró el router: `app.include_router(datasets.router)`
+- Se agregÃ³ el import: `from app.routers import auth, movilidad_datasets`
+- Se registrÃ³ el router: `app.include_router(movilidad_datasets.router)`
 
 ### Frontend
 
-#### 1. Servicio (`src/services/datasetsService.js`)
-- **Métodos**:
+#### 1. Servicio (`src/services/movilidadDatasetsService.js`)
+- **MÃ©todos**:
   - `getCriminalidadData()`: Consume GET `/api/datasets/criminalidad`
   - `getCriminalidadSummary()`: Consume GET `/api/datasets/criminalidad/resumen`
 - Manejo de errores incorporado
-- Usa configuración de API desde `api.js`
+- Usa configuraciÃ³n de API desde `api.js`
 
 #### 2. Componente (`src/components/CriminalidadDashboard.jsx`)
 - Componente React reutilizable
-- **Características**:
+- **CaracterÃ­sticas**:
   - Carga datos automaticamente al montar
   - Muestra 5 tarjetas de resumen (comunas, casos, tasas)
   - Tabla interactiva con datos ordenables por cualquier columna
-  - Código de colores: Rojo si tasa > promedio, Verde si tasa < promedio
+  - CÃ³digo de colores: Rojo si tasa > promedio, Verde si tasa < promedio
   - Manejo de estados: loading, error, success
-  - Botón para reintentar si falla la carga
+  - BotÃ³n para reintentar si falla la carga
   - Responsivo (grid 1 col mobile, 5 cols desktop)
 
-## Cómo Integrar en los Dashboards Existentes
+## CÃ³mo Integrar en los Dashboards Existentes
 
-### Opción 1: Agregar al Dashboard de Ciudadano
+### OpciÃ³n 1: Agregar al Dashboard de Ciudadano
 
 En `src/pages/CiudadanoDashboard.jsx`:
 
@@ -60,7 +60,7 @@ import CriminalidadDashboard from '../components/CriminalidadDashboard';
 </div>
 ```
 
-### Opción 2: Agregar al Dashboard de Emprendedor
+### OpciÃ³n 2: Agregar al Dashboard de Emprendedor
 
 En `src/pages/EmprendedorDashboard.jsx`:
 
@@ -73,7 +73,7 @@ import CriminalidadDashboard from '../components/CriminalidadDashboard';
 </div>
 ```
 
-### Opción 3: Crear Página Dedicada
+### OpciÃ³n 3: Crear PÃ¡gina Dedicada
 
 Crear `src/pages/CriminalidadPage.jsx`:
 
@@ -148,47 +148,48 @@ GET http://localhost:8000/api/datasets/criminalidad/resumen
 
 ```
 BACKEND/
-├── app/
-│   ├── services/
-│   │   ├── auth.py          (existente)
-│   │   └── datasets.py      (NUEVO)
-│   ├── routers/
-│   │   ├── auth.py          (existente)
-│   │   └── datasets.py      (NUEVO)
-│   └── main.py              (modificado - se agregó datasets router)
+â”œâ”€â”€ app/
+â”‚   â”œâ”€â”€ services/
+â”‚   â”‚   â”œâ”€â”€ auth.py          (existente)
+â”‚   â”‚   â””â”€â”€ datasets.py      (NUEVO)
+â”‚   â”œâ”€â”€ routers/
+â”‚   â”‚   â”œâ”€â”€ auth.py          (existente)
+â”‚   â”‚   â””â”€â”€ datasets.py      (NUEVO)
+â”‚   â””â”€â”€ main.py              (modificado - se agregÃ³ datasets router)
 
 FRONTEND/
-├── src/
-│   ├── services/
-│   │   ├── authService.js       (existente)
-│   │   └── datasetsService.js   (NUEVO)
-│   ├── components/
-│   │   └── CriminalidadDashboard.jsx (NUEVO)
-│   └── pages/
-│       ├── CiudadanoDashboard.jsx    (existente)
-│       └── EmprendedorDashboard.jsx  (existente)
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ services/
+â”‚   â”‚   â”œâ”€â”€ authService.js       (existente)
+â”‚   â”‚   â””â”€â”€ datasetsService.js   (NUEVO)
+â”‚   â”œâ”€â”€ components/
+â”‚   â”‚   â””â”€â”€ CriminalidadDashboard.jsx (NUEVO)
+â”‚   â””â”€â”€ pages/
+â”‚       â”œâ”€â”€ CiudadanoDashboard.jsx    (existente)
+â”‚       â””â”€â”€ EmprendedorDashboard.jsx  (existente)
 ```
 
-## Validación
+## ValidaciÃ³n
 
-- No se modificaron archivos existentes excepto `main.py` (solo se agregó 1 import y 1 línea de incluir router)
-- Endpoints de autenticación siguen funcionando
-- CORS está configurado correctamente
+- No se modificaron archivos existentes excepto `main.py` (solo se agregÃ³ 1 import y 1 lÃ­nea de incluir router)
+- Endpoints de autenticaciÃ³n siguen funcionando
+- CORS estÃ¡ configurado correctamente
 - El componente maneja errores y estados de carga
-- Los datos se sirven en formato JSON estándar
+- Los datos se sirven en formato JSON estÃ¡ndar
 - El CSV se parsea correctamente con delimitador `;`
 
-## Próximos Pasos Opcionales
+## PrÃ³ximos Pasos Opcionales
 
-1. **Gráficas**: Usar `recharts` o `chart.js` para visualizar datos
+1. **GrÃ¡ficas**: Usar `recharts` o `chart.js` para visualizar datos
 ```bash
 npm install recharts
 ```
 
-2. **Filtros**: Agregar filtros por rango de tasa o número de casos
+2. **Filtros**: Agregar filtros por rango de tasa o nÃºmero de casos
 
-3. **Exportar**: Botón para descargar datos en CSV o PDF
+3. **Exportar**: BotÃ³n para descargar datos en CSV o PDF
 
-4. **Búsqueda**: Input para buscar comunas específicas
+4. **BÃºsqueda**: Input para buscar comunas especÃ­ficas
 
-5. **Paginación**: Si el dataset crece mucho
+5. **PaginaciÃ³n**: Si el dataset crece mucho
+
