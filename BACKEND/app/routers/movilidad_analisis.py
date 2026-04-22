@@ -26,3 +26,29 @@ async def get_dashboard_summary():
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Error al obtener datos analíticos"
         )
+from pydantic import BaseModel
+
+class AnalysisRequest(BaseModel):
+    corredor: str
+    hora: int
+
+@router.post(
+    "/analyze",
+    status_code=status.HTTP_200_OK,
+    summary="Analizar corredor y hora específica",
+    description="Devuelve un análisis inteligente y recomendaciones para un corredor y hora dados."
+)
+async def analyze_corridor_hour(request: AnalysisRequest):
+    try:
+        service = AnalisisService()
+        result = service.analyze_corridor_hour(request.corredor, request.hora)
+        return {
+            "success": True,
+            "data": result
+        }
+    except Exception as e:
+        logger.error(f"Error al analizar corredor: {e}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Error al procesar el análisis inteligente"
+        )

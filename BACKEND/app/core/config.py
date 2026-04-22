@@ -50,11 +50,15 @@ class Settings(BaseSettings):
     # Configuración de LLM real
     OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
-    # "openai" | "gemini" | "mock"
+    ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
+    # "openai" | "gemini" | "anthropic" | "mock"
     LLM_PROVIDER: str = os.getenv("LLM_PROVIDER", "openai")
 
     # Bot de Telegram (ciudadano)
     TELEGRAM_BOT_TOKEN: str = os.getenv("TELEGRAM_BOT_TOKEN", "")
+
+    # Nueva clave de análisis IA
+    AI_API_KEY: str = os.getenv("AI_API_KEY", "")
     
     # Validación de email
     EMAIL_RESET_TOKEN_EXPIRE_HOURS: int = 24

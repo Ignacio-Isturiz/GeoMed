@@ -37,6 +37,16 @@ const mobilityService = {
         if (!response.ok) throw new Error('Error al cargar resumen estratégico');
         const result = await response.json();
         return result.data || null;
+    },
+    analyzeCorridorHour: async (corredor, hora) => {
+        const response = await fetch(`${API_URL}/analytics/analyze`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ corredor, hora })
+        });
+        if (!response.ok) throw new Error('Error al analizar corredor');
+        const result = await response.json();
+        return result.data || null;
     }
 };
 

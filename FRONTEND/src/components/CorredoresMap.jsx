@@ -46,7 +46,7 @@ const CorredoresMap = ({ data = [] }) => {
         <Polyline 
           key={i} 
           positions={c.coords} 
-          color={c.criticidad > 8 ? '#f43f5e' : (c.criticidad > 5 ? '#f59e0b' : '#10b981')} 
+          color={c.displayColor || (c.criticidad > 8 ? '#f43f5e' : (c.criticidad > 5 ? '#f59e0b' : '#10b981'))} 
           weight={4} 
           opacity={0.8}
         >

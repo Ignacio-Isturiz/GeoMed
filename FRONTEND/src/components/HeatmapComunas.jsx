@@ -40,8 +40,8 @@ const HeatmapComunas = ({ data = [] }) => {
     }
 
     const ratio = match.intensidad / maxIntensidad;
-    // Escala de color: de verde suave a rojo intenso
-    const color = ratio > 0.8 ? '#f43f5e' : (ratio > 0.5 ? '#f59e0b' : '#10b981');
+    // Escala de color: rojos (fuerte, medio, suave)
+    const color = ratio > 0.8 ? '#be123c' : (ratio > 0.5 ? '#f43f5e' : '#fda4af');
 
     return {
       fillColor: color,
