@@ -1,12 +1,22 @@
 """Endpoints de LLM: análisis de modelos, seguridad, análisis de facturas e historial de conversaciones."""
 
 from pydantic import BaseModel, Field
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, HTTPException, status, File, UploadFile, Response, Depends
+from app.core.database import get_db
+from app.core.dependencies import get_current_user
+from app.models.user import User
 import logging
+import httpx
+from typing import Optional, List
 
 from app.services.llm_mock import LLMMockService
-from app.services.security_llm_service import security_chat_real
-from app.services.entrepreneur_llm_service import entrepreneur_chat_real
+from app.services.simmtraffic_llm_service import security_chat_real
+# from app.services.entrepreneur_llm_service import entrepreneur_chat_real
+# Placeholder for entrepreneur_chat_real to avoid import error
+async def entrepreneur_chat_real(*args, **kwargs):
+    from app.services.llm_mock import LLMMockService
+    mock = LLMMockService()
+    return mock.simulate_entrepreneur_chat(kwargs.get('prompt', ''))
 from app.services.movilidad_bill_analysis_service import analyze_bill
 from app.services.conversation_service import ConversationService
 from app.core.config import get_settings
@@ -28,6 +38,17 @@ class SimulateRecommendationRequest(BaseModel):
 
 class SecurityChatRequest(BaseModel):
     prompt: str = Field(min_length=3, max_length=2000)
+
+
+class TextToSpeechRequest(BaseModel):
+    text: str = Field(..., min_length=1)
+    voice: Optional[str] = None
+    language: Optional[str] = None
+
+
+class EmprendedorChatRequest(BaseModel):
+    prompt: str = Field(..., min_length=3)
+    conversation_id: Optional[str] = None
 
 
 @router.get(

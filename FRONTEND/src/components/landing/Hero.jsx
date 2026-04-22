@@ -64,10 +64,6 @@ export default function Hero() {
                     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                     Inicio
                   </div>
-                  <div className="mk-nav-item">
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                    Noticias
-                  </div>
                 </div>
                 <div className="mk-sidebar-bottom">
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
@@ -110,15 +106,6 @@ export default function Hero() {
                   <div className="mk-rcard-body">GEOMED integra <strong>datos reales</strong> de Medellín: seguridad, servicios públicos y noticias en tiempo real.</div>
                   <div className="mk-rcard-badge">Medellín · Valle de Aburrá</div>
                   <div className="mk-connected">✓ Conectado</div>
-                </div>
-                <div className="mk-rcard">
-                  <div className="mk-rcard-title">Seguridad · Resumen</div>
-                  <div className="mk-sec-grid">
-                    <div className="mk-sec-item"><div className="mk-sec-label">COMUNAS</div><div className="mk-sec-val">21</div></div>
-                    <div className="mk-sec-item"><div className="mk-sec-label">CASOS TOTALES</div><div className="mk-sec-val mk-stat-red">296k</div></div>
-                    <div className="mk-sec-item"><div className="mk-sec-label">TASA PROMEDIO</div><div className="mk-sec-val">133.3</div></div>
-                    <div className="mk-sec-item"><div className="mk-sec-label">+ AFECTADA</div><div className="mk-sec-val mk-stat-sm">LA CANDELARIA</div></div>
-                  </div>
                 </div>
                 <div className="mk-rcard">
                   <div className="mk-rcard-title">Noticias recientes</div>
