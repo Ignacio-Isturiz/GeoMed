@@ -31,6 +31,12 @@ const mobilityService = {
         if (!response.ok) throw new Error('Error al cargar ciclorrutas');
         const result = await response.json();
         return result.data || [];
+    },
+    getDashboardSummary: async () => {
+        const response = await fetch(`${API_URL}/analytics/dashboard-summary`);
+        if (!response.ok) throw new Error('Error al cargar resumen estratégico');
+        const result = await response.json();
+        return result.data || null;
     }
 };
 

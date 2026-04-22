@@ -9,7 +9,7 @@ import logging
 
 from app.core.config import get_settings
 from app.core.database import init_db
-from app.routers import auth, movilidad_datasets, news, llm, mobility
+from app.routers import auth, movilidad_datasets, news, llm, mobility, movilidad_analisis
 
 # Configurar logging
 logging.basicConfig(level=logging.INFO)
@@ -61,6 +61,7 @@ app.include_router(news.router)
 app.include_router(llm.router)
 app.include_router(mobility.router)
 app.include_router(mobility.router_es)
+app.include_router(movilidad_analisis.router)
 
 
 # Health check

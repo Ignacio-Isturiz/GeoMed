@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import authService from '@/services/authService';
 import newsService from '@/services/newsService';
@@ -6,8 +6,10 @@ import mobilityService from '@/services/mobilityService';
 
 import DashboardLayout, { Icons } from '@/components/dashboard/DashboardLayout';
 import MobilityMap from '@/components/MobilityMap';
+import MobilityDashboard from '@/components/MobilityDashboard';
 
 const NAV = [
+  { id: 'analisis',  label: 'Análisis Estratégico', icon: <Icons.Chart /> },
   { id: 'inicio',    label: 'Movilidad', icon: <Icons.Dashboard /> },
   { id: 'noticias',  label: 'Noticias',  icon: <Icons.News /> },
 ];
@@ -25,7 +27,7 @@ export default function CiudadanoDashboard() {
   const navigate = useNavigate();
   const [user, setUser]       = useState(null);
   const [loading, setLoading] = useState(true);
-  const [mod, setMod]         = useState('inicio');
+  const [mod, setMod]         = useState('analisis');
 
   const [comunaData, setComunaData] = useState([]);
   const [corridors, setCorridors]   = useState([]);
@@ -33,6 +35,7 @@ export default function CiudadanoDashboard() {
   const [topNoticias, setTopNoticias] = useState([]);
   const [hourData, setHourData] = useState([]);
   const [filterType, setFilterType] = useState('all');
+  const [dashboardData, setDashboardData] = useState(null);
 
   useEffect(() => {
     authService.getMe()
@@ -56,6 +59,7 @@ export default function CiudadanoDashboard() {
       loadSection(mobilityService.getComunaSummary, setComunaData);
       loadSection(mobilityService.getCriticalCorridors, setCorridors);
       loadSection(mobilityService.getRecommendations, setRecs);
+      loadSection(mobilityService.getDashboardSummary, setDashboardData);
       loadSection(() => newsService.getMedellinNews(6, 'movilidad'), setTopNoticias);
     };
 
@@ -73,7 +77,8 @@ export default function CiudadanoDashboard() {
   const firstName = user.full_name?.split(' ')[0] || 'Usuario';
 
   const META = {
-    inicio:    { accent:'Bienvenido,', title:firstName, subtitle:'' },
+    analisis:  { accent:'Análisis', title:'Estratégico', subtitle:'Visión de alto nivel y detección de anomalías' },
+    inicio:    { accent:'Geovisor de', title:'Movilidad', subtitle:'Exploración de tráfico en tiempo real' },
     noticias:  { accent:'', title:'Noticias', subtitle:'Actualidad de Medellín y Antioquia' },
   };
 
@@ -83,26 +88,17 @@ export default function CiudadanoDashboard() {
   const peakHour = peakHourItem ? peakHourItem.hora : null;
 
   const inicioLeft = (
-    <div style={{display:'flex', flexDirection:'column', height:'100%'}}>
-
+    <div style={{display:'flex', flexDirection:'column', height:'100%', gap: '20px'}}>
       {/* SOLO MAPA */}
       <div className="db-card" style={{ padding: '15px', flex:1, display:'flex', flexDirection:'column' }}>
-        
         <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:10 }}>
           <div>
             <h2 style={{ fontSize:16, fontWeight:700, margin:0 }}>
-              Análisis de Criticidad Vial 3D
+              Geovisor de Tráfico 3D
             </h2>
             <div style={{ fontSize:11, color:'var(--text-dim)' }}>
-              Visualización en tiempo real
+              Monitoreo de corredores y velocidad
             </div>
-          </div>
-
-          {/* Filtros */}
-          <div style={{ display:'flex', gap:8 }}>
-            <button onClick={()=>setFilterType('all')}>TODOS</button>
-            <button onClick={()=>setFilterType('corridors')}>PEOR</button>
-            <button onClick={()=>setFilterType('hour')}>HORA</button>
           </div>
         </div>
 
@@ -115,6 +111,12 @@ export default function CiudadanoDashboard() {
           />
         </div>
       </div>
+    </div>
+  );
+
+  const analisisLeft = (
+    <div style={{display:'flex', flexDirection:'column', height:'100%', gap: '20px'}}>
+      <MobilityDashboard data={dashboardData} />
     </div>
   );
 
@@ -144,7 +146,7 @@ export default function CiudadanoDashboard() {
       pageTitle={m.title}
       pageSubtitle={m.subtitle}
       breadcrumb={`Ciudadano / ${m.title}`}
-      colL={mod === 'inicio' ? inicioLeft : noticiasLeft}
+      colL={mod === 'inicio' ? inicioLeft : (mod === 'analisis' ? analisisLeft : noticiasLeft)}
       colR={null}
     />
   );
