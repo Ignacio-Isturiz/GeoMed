@@ -591,3 +591,29 @@ async def get_negocios_medellin_top_tipos(
         logger.error(f"Error inesperado: {e}")
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Error al obtener top tipos de negocio")
 
+
+@router.get(
+    "/ciclorrutas",
+    status_code=status.HTTP_200_OK,
+    summary="Obtener datos de ciclorrutas",
+    description="Devuelve la red de ciclorrutas de Medellín"
+)
+async def get_ciclorrutas_data():
+    """
+    Obtiene los datos de la red de ciclorrutas.
+    """
+    try:
+        service = DatasetsService()
+        data = service.get_ciclorrutas_data()
+        return {
+            "success": True,
+            "data": data,
+            "count": len(data)
+        }
+    except Exception as e:
+        logger.error(f"Error al obtener ciclorrutas: {e}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Error al obtener datos de ciclorrutas"
+        )
+

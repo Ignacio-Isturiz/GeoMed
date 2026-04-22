@@ -25,6 +25,12 @@ const mobilityService = {
         const response = await fetch(`${API_URL}/mobility/recommendations`);
         if (!response.ok) throw new Error('Error al cargar recomendaciones');
         return await response.json();
+    },
+    getCiclorrutas: async () => {
+        const response = await fetch(`${API_URL}/datasets/ciclorrutas`);
+        if (!response.ok) throw new Error('Error al cargar ciclorrutas');
+        const result = await response.json();
+        return result.data || [];
     }
 };
 

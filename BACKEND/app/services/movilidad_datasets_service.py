@@ -1094,3 +1094,27 @@ class DatasetsService:
         except Exception as e:
             logger.error(f"Error al calcular summary: {e}")
             raise
+
+    def get_ciclorrutas_data(self) -> List[Dict[str, Any]]:
+        """
+        Lee el archivo de ciclorrutas y devuelve lista de datos.
+        """
+        csv_path = self.datasets_path / "Ciclorrutas_clean.csv"
+        try:
+            if not csv_path.exists():
+                logger.warning(f"Archivo de ciclorrutas no encontrado: {csv_path}")
+                return []
+            
+            data = []
+            with open(csv_path, 'r', encoding='utf-8-sig', newline='') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    data.append({
+                        "id": row.get("id", ""),
+                        "nombre": row.get("nombre", ""),
+                        "estado": row.get("estado", "")
+                    })
+            return data
+        except Exception as e:
+            logger.error(f"Error reading ciclorrutas: {e}")
+            return []
