@@ -2,7 +2,7 @@ import logging
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, filters
 
-from app.services.simmtraffic_llm_service import security_chat_real
+from app.services.llm_services import LLMMockService
 from app.core.config import get_settings
 
 logger = logging.getLogger(__name__)
@@ -10,19 +10,19 @@ logger = logging.getLogger(__name__)
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Maneja el comando /start"""
     await update.message.reply_text(
-        "¡Hola! Soy GEOMED Seguridad, tu asistente ciudadano para Medellín. 🏙️\n\n"
-        "Puedo ayudarte a tomar decisiones informadas sobre seguridad basándome en datos reales de criminalidad.\n"
-        "Dime a qué zona piensas ir o pregúntame por la seguridad en alguna comuna."
+        "¡Hola! Soy GEOMED Movilidad, tu asistente ciudadano para Medellín. 🚦\n\n"
+        "Puedo ayudarte a tomar decisiones informadas sobre corredores críticos, horas pico, presión vehicular y recomendaciones operativas.\n"
+        "Pregúntame por un corredor, comuna o franja horaria."
     )
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Maneja el comando /help"""
     await update.message.reply_text(
-        "Simplemente escríbeme el nombre de una zona o hazme una pregunta sobre seguridad.\n\n"
+        "Simplemente escríbeme el nombre de un corredor, comuna o franja horaria y hazme una pregunta sobre movilidad.\n\n"
         "Ejemplos:\n"
-        "- ¿Qué tan seguro es El Poblado?\n"
-        "- Compara la seguridad en Laureles y Aranjuez.\n"
-        "- ¿Cuáles son las zonas más seguras para trotar?"
+        "- ¿Cuáles son los 10 corredores más críticos entre semana?\n"
+        "- ¿Qué comunas concentran más presión vehicular en hora pico?\n"
+        "- ¿Dónde hay baja velocidad y alto flujo al mismo tiempo?"
     )
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -36,16 +36,10 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     try:
         settings = get_settings()
-        # Llamar al servicio de IA
-        result = await security_chat_real(
-            prompt=user_text,
-            provider=settings.LLM_PROVIDER,
-            openai_key=settings.OPENAI_API_KEY,
-            gemini_key=settings.GEMINI_API_KEY
-        )
+        service = LLMMockService()
+        result = service.simulate_chat(prompt=user_text, model=settings.LLM_PROVIDER)
         
         # Extraer el texto de la respuesta
-        # security_chat_real retorna un dict con "output"
         response_text = result.get("output", "Lo siento, no pude procesar tu consulta en este momento.")
         
         await update.message.reply_text(response_text)

@@ -103,7 +103,7 @@ export default function Hero() {
               <div className="mk-right">
                 <div className="mk-rcard">
                   <div className="mk-rcard-title">Ciudad Inteligente</div>
-                  <div className="mk-rcard-body">GEOMED integra <strong>datos reales</strong> de Medellín: seguridad, servicios públicos y noticias en tiempo real.</div>
+                  <div className="mk-rcard-body">GEOMED integra <strong>información abierta y actualizada</strong> de Medellín: movilidad, servicios públicos y noticias en tiempo real.</div>
                   <div className="mk-rcard-badge">Medellín · Valle de Aburrá</div>
                   <div className="mk-connected">✓ Conectado</div>
                 </div>

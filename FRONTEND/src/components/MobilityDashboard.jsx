@@ -24,18 +24,27 @@ const MobilityDashboard = ({ data }) => {
 
   // Efecto para obtener análisis inteligente cada vez que cambia el corredor o la hora
   useEffect(() => {
+    let cancelled = false;
     const fetchAnalysis = async () => {
       setLoadingAnalysis(true);
       try {
         const result = await mobilityService.analyzeCorridorHour(selectedCorridor, selectedHour);
-        setAiAnalysis(result);
+        if (!cancelled) setAiAnalysis(result);
       } catch (err) {
-        console.error('Error al obtener análisis IA:', err);
+        // Evitar ruido en consola para timeouts transitorios.
+        if (!String(err?.message || '').toLowerCase().includes('timeout')) {
+          console.error('Error al obtener análisis IA:', err);
+        }
       } finally {
-        setLoadingAnalysis(false);
+        if (!cancelled) setLoadingAnalysis(false);
       }
     };
-    fetchAnalysis();
+
+    const id = setTimeout(fetchAnalysis, 250);
+    return () => {
+      cancelled = true;
+      clearTimeout(id);
+    };
   }, [selectedCorridor, selectedHour]);
 
   const CORREDOR_COLORS = [
@@ -78,6 +87,7 @@ const MobilityDashboard = ({ data }) => {
 
   // Gráfico dinámico: usa la tendencia específica del corredor si ya cargó el análisis IA
   const currentTrend = (aiAnalysis && aiAnalysis.anomaly_trend) ? aiAnalysis.anomaly_trend : anomaly_trend;
+  const hasTrend = Array.isArray(currentTrend) && currentTrend.length > 0;
 
   return (
     <div style={{
@@ -174,7 +184,8 @@ const MobilityDashboard = ({ data }) => {
         </div>
 
         <div style={{ flex: 1, minHeight: '250px', width: '100%' }}>
-          <ResponsiveContainer width="100%" height="100%">
+          {hasTrend ? (
+          <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={220}>
             <AreaChart data={currentTrend} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
               <defs>
                 <linearGradient id="colorPeak" x1="0" y1="0" x2="0" y2="1">
@@ -219,6 +230,11 @@ const MobilityDashboard = ({ data }) => {
               </ReferenceDot>
             </AreaChart>
           </ResponsiveContainer>
+          ) : (
+            <div style={{ height: '100%', minHeight: 220, display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0.75 }}>
+              {loadingAnalysis ? 'Analizando patrón...' : 'Sin datos de tendencia disponibles'}
+            </div>
+          )}
         </div>
 
         <div style={{ marginTop: '15px' }}>
@@ -262,7 +278,7 @@ const MobilityDashboard = ({ data }) => {
 
         {loadingAnalysis ? (
           <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.5)', fontSize: '13px' }}>
-            <div className="pulse" style={{ marginRight: '10px' }}>🤖</div> Consultando modelos de IA...
+            <div className="pulse" style={{ marginRight: '10px' }}>🤖</div> Consultando información de movilidad...
           </div>
         ) : (
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '20px' }}>

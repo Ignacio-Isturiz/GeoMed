@@ -3,6 +3,8 @@
 
 import { API_CONFIG, API_ENDPOINTS, getAuthHeaders } from '@/config/api';
 
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
 class AuthService {
   /**
    * Registra un nuevo usuario
@@ -146,25 +148,49 @@ class AuthService {
    * Obtiene el usuario actual
    * @returns {Promise} - Datos del usuario
    */
-  async getMe() {
-    try {
-      const response = await fetch(
-        `${API_CONFIG.baseURL}${API_ENDPOINTS.auth.me}`,
-        {
-          method: 'GET',
-          headers: getAuthHeaders()
+  async getMe({ retries = 3, retryDelayMs = 600 } = {}) {
+    let lastError;
+
+    for (let attempt = 0; attempt <= retries; attempt += 1) {
+      try {
+        const response = await fetch(
+          `${API_CONFIG.baseURL}${API_ENDPOINTS.auth.me}`,
+          {
+            method: 'GET',
+            headers: getAuthHeaders()
+          }
+        );
+
+        if (!response.ok) {
+          if (response.status === 401 || response.status === 403) {
+            throw new Error('No autorizado');
+          }
+
+          if (response.status >= 500) {
+            throw new Error(`Servidor no disponible (${response.status})`);
+          }
+
+          throw new Error(`Error de sesión (${response.status})`);
         }
-      );
 
-      if (!response.ok) {
-        throw new Error('No autorizado');
+        return await response.json();
+      } catch (error) {
+        lastError = error;
+        const message = String(error?.message || '').toLowerCase();
+        const shouldRetry =
+          !message.includes('no autorizado')
+          && attempt < retries;
+
+        if (!shouldRetry) {
+          console.error('Error al obtener usuario:', error);
+          throw error;
+        }
+
+        await sleep(retryDelayMs * (attempt + 1));
       }
-
-      return await response.json();
-    } catch (error) {
-      console.error('Error al obtener usuario:', error);
-      throw error;
     }
+
+    throw lastError;
   }
 
   /**
