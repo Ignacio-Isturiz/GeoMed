@@ -1,4 +1,5 @@
 import logging
+import time
 import pandas as pd
 import numpy as np
 from pathlib import Path
@@ -11,14 +12,27 @@ from .mobility_service import MobilityService
 logger = logging.getLogger(__name__)
 
 class AnalisisService:
+    _shared_mobility_service = MobilityService()
+    _summary_cache: Dict[str, Any] | None = None
+    _summary_cache_ts: float = 0.0
+    _summary_cache_ttl_seconds: float = 120.0
+
     def __init__(self):
-        self.mobility_service = MobilityService()
+        # Reutiliza una sola instancia para evitar recargar el dataset en cada request.
+        self.mobility_service = self.__class__._shared_mobility_service
         self.settings = get_settings()
         
     def _get_df(self):
         return self.mobility_service._load_data()
 
     def get_dashboard_summary(self) -> Dict[str, Any]:
+        now = time.time()
+        if (
+            self.__class__._summary_cache is not None
+            and (now - self.__class__._summary_cache_ts) < self.__class__._summary_cache_ttl_seconds
+        ):
+            return self.__class__._summary_cache
+
         df = self._get_df()
         if df is None:
             return self._get_mock_summary()
@@ -45,6 +59,36 @@ class AnalisisService:
 
             # 2. Comunas con más presión en hora pico (6-9, 16-19)
             df_pico = df[df['hora'].isin([6,7,8,9,16,17,18,19])]
+            if 'nombre_comuna' in df_pico.columns:
+                invalid_tokens = {
+                    'SIN ASIGNAR',
+                    'SISTEMA VIAL',
+                    'SISTEMA VIAL DEL RIO',
+                    'NO APLICA',
+                    'DESCONOCIDO'
+                }
+
+                clean_name = (
+                    df_pico['nombre_comuna']
+                    .astype(str)
+                    .str.strip()
+                    .str.upper()
+                    .str.normalize('NFD')
+                    .str.replace(r'[\u0300-\u036f]', '', regex=True)
+                    .str.replace(r'[^A-Z0-9\s]', '', regex=True)
+                    .str.replace(r'\s+', ' ', regex=True)
+                    .str.strip()
+                )
+
+                invalid_pattern = r'SIN ASIGNAR|SISTEMA VIAL|NO APLICA|DESCONOCIDO'
+
+                df_pico = df_pico[
+                    clean_name.notna()
+                    & (clean_name != '')
+                    & (~clean_name.isin(invalid_tokens))
+                    & (~clean_name.str.contains(invalid_pattern, na=False))
+                ]
+
             presion_comunas = df_pico.groupby('nombre_comuna').agg({
                 'intensidad': 'sum',
                 'criticidad': 'mean'
@@ -85,7 +129,7 @@ class AnalisisService:
             # 6. Lista completa de corredores para el selector
             todos_corredores = sorted(df['corredor'].unique().tolist())
 
-            return {
+            result = {
                 "top_corredores": top_corredores.to_dict(orient='records'),
                 "presion_comunas": presion_comunas.to_dict(orient='records'),
                 "puntos_congestion": puntos_congestión.to_dict(orient='records'),
@@ -98,6 +142,9 @@ class AnalisisService:
                     "criticidad_max": float(df['criticidad'].max())
                 }
             }
+            self.__class__._summary_cache = result
+            self.__class__._summary_cache_ts = now
+            return result
         except Exception as e:
             logger.error(f"Error calculando dashboard summary: {e}")
             return self._get_mock_summary()
@@ -204,8 +251,7 @@ class AnalisisService:
         """
         
         try:
-            # Priorizamos AI_API_KEY si el usuario la proporcionó
-            effective_key = self.settings.AI_API_KEY or self.settings.OPENAI_API_KEY
+            effective_key = self.settings.OPENAI_API_KEY
             
             logger.info(f"🤖 Intentando generar recomendación con {self.settings.LLM_PROVIDER}...")
 
@@ -222,7 +268,7 @@ class AnalisisService:
                 logger.info("✅ Recomendación OpenAI generada con éxito.")
                 return result
             
-            effective_gemini_key = self.settings.AI_API_KEY or self.settings.GEMINI_API_KEY
+            effective_gemini_key = self.settings.GEMINI_API_KEY
             if self.settings.LLM_PROVIDER == "gemini" and effective_gemini_key:
                 genai.configure(api_key=effective_gemini_key)
                 model = genai.GenerativeModel('gemini-pro')
@@ -234,7 +280,7 @@ class AnalisisService:
                 logger.info("✅ Recomendación Gemini generada con éxito.")
                 return result
 
-            effective_anthropic_key = self.settings.AI_API_KEY or self.settings.ANTHROPIC_API_KEY
+            effective_anthropic_key = self.settings.ANTHROPIC_API_KEY or self.settings.AI_API_KEY
             if self.settings.LLM_PROVIDER == "anthropic" and effective_anthropic_key:
                 import anthropic
                 client = anthropic.Anthropic(api_key=effective_anthropic_key)

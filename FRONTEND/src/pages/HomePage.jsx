@@ -76,8 +76,7 @@ export default function HomePage() {
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
             </svg>
           </button>
-          <Link to="/dashboard" className="btn btn-outline" style={{padding:'9px 20px',fontSize:'13px'}} viewTransition>Dashboard</Link>
-          <Link to="/dashboard" className="btn btn-g" style={{padding:'9px 20px',fontSize:'13px'}} viewTransition>Explorar GEOMED →</Link>
+          <Link to="/dashboard" className="btn btn-g" style={{padding:'9px 24px',fontSize:'13px'}} viewTransition>Ir al Dashboard →</Link>
         </div>
       </header>
 

@@ -24,18 +24,27 @@ const MobilityDashboard = ({ data }) => {
 
   // Efecto para obtener análisis inteligente cada vez que cambia el corredor o la hora
   useEffect(() => {
+    let cancelled = false;
     const fetchAnalysis = async () => {
       setLoadingAnalysis(true);
       try {
         const result = await mobilityService.analyzeCorridorHour(selectedCorridor, selectedHour);
-        setAiAnalysis(result);
+        if (!cancelled) setAiAnalysis(result);
       } catch (err) {
-        console.error('Error al obtener análisis IA:', err);
+        // Evitar ruido en consola para timeouts transitorios.
+        if (!String(err?.message || '').toLowerCase().includes('timeout')) {
+          console.error('Error al obtener análisis IA:', err);
+        }
       } finally {
-        setLoadingAnalysis(false);
+        if (!cancelled) setLoadingAnalysis(false);
       }
     };
-    fetchAnalysis();
+
+    const id = setTimeout(fetchAnalysis, 250);
+    return () => {
+      cancelled = true;
+      clearTimeout(id);
+    };
   }, [selectedCorridor, selectedHour]);
 
   const CORREDOR_COLORS = [
@@ -78,22 +87,25 @@ const MobilityDashboard = ({ data }) => {
 
   // Gráfico dinámico: usa la tendencia específica del corredor si ya cargó el análisis IA
   const currentTrend = (aiAnalysis && aiAnalysis.anomaly_trend) ? aiAnalysis.anomaly_trend : anomaly_trend;
+  const hasTrend = Array.isArray(currentTrend) && currentTrend.length > 0;
 
   return (
     <div style={{
       display: 'grid',
       gridTemplateColumns: 'repeat(2, 1fr)',
-      gridTemplateRows: 'repeat(2, 450px)',
-      gap: '20px',
-      marginBottom: '25px'
+      gridTemplateRows: 'repeat(2, 1fr)',
+      gap: '24px',
+      height: '100%',
+      padding: '4px 4px 12px 4px',
+      boxSizing: 'border-box'
     }}>
 
       {/* ── CARD 1: CORREDORES CRÍTICOS ── */}
-      <div className="db-card" style={{ padding: '25px', position: 'relative', overflow: 'hidden', display: 'flex', gap: '18px' }}>
+      <div className="db-card" style={{ padding: '24px', position: 'relative', overflow: 'hidden', display: 'flex', gap: '18px' }}>
         <div style={{ flex: 1 }}>
           <h2 style={{ fontSize: '18px', fontWeight: 700, marginBottom: '20px' }}>Corredores más críticos en semana</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            {top_corredores.slice(0, 10).map((c, i) => (
+            {top_corredores.slice(0, 7).map((c, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '140px' }}>
                   <span style={{
@@ -121,12 +133,12 @@ const MobilityDashboard = ({ data }) => {
           </div>
         </div>
         <div style={{ flex: 1, minWidth: 0, height: 280, alignSelf: 'center', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 2px 12px rgba(0,0,0,0.10)' }}>
-          <CorredoresMap data={top_corredores.slice(0, 10).map((c, i) => ({ ...c, displayColor: CORREDOR_COLORS[i % CORREDOR_COLORS.length] }))} />
+          <CorredoresMap data={top_corredores.slice(0, 7).map((c, i) => ({ ...c, displayColor: CORREDOR_COLORS[i % CORREDOR_COLORS.length] }))} />
         </div>
       </div>
 
       {/* ── CARD 2: COMUNAS PRESIÓN VEHICULAR ── */}
-      <div className="db-card" style={{ padding: '25px', display: 'flex', flexDirection: 'column', gap: '15px' }}>
+      <div className="db-card" style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '15px' }}>
         <h2 style={{ fontSize: '18px', fontWeight: 700, margin: 0 }}>Comunas más presión vehicular en hora pico</h2>
         <div style={{ flex: 1, display: 'flex', gap: '20px' }}>
           <div style={{ flex: 1.5, borderRadius: '12px', overflow: 'hidden', position: 'relative', minWidth: 0, height: 280, boxShadow: '0 2px 12px rgba(0,0,0,0.10)' }}>
@@ -149,7 +161,7 @@ const MobilityDashboard = ({ data }) => {
       </div>
 
       {/* ── CARD 3: EXPLORADOR DE ANOMALÍAS DINÁMICO ── */}
-      <div className="db-card" style={{ padding: '25px', display: 'flex', flexDirection: 'column', background: 'rgba(255,255,255,0.02)', backdropFilter: 'blur(20px)', borderRadius: '20px' }}>
+      <div className="db-card" style={{ padding: '24px', display: 'flex', flexDirection: 'column', background: 'rgba(255,255,255,0.02)', backdropFilter: 'blur(20px)', borderRadius: '20px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
           <div>
             <h2 style={{ fontSize: '18px', fontWeight: 700, margin: 0 }}>Explorador de Anomalías</h2>
@@ -174,7 +186,8 @@ const MobilityDashboard = ({ data }) => {
         </div>
 
         <div style={{ flex: 1, minHeight: '250px', width: '100%' }}>
-          <ResponsiveContainer width="100%" height="100%">
+          {hasTrend ? (
+          <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={220}>
             <AreaChart data={currentTrend} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
               <defs>
                 <linearGradient id="colorPeak" x1="0" y1="0" x2="0" y2="1">
@@ -219,6 +232,11 @@ const MobilityDashboard = ({ data }) => {
               </ReferenceDot>
             </AreaChart>
           </ResponsiveContainer>
+          ) : (
+            <div style={{ height: '100%', minHeight: 220, display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0.75 }}>
+              {loadingAnalysis ? 'Analizando patrón...' : 'Sin datos de tendencia disponibles'}
+            </div>
+          )}
         </div>
 
         <div style={{ marginTop: '15px' }}>
@@ -246,7 +264,7 @@ const MobilityDashboard = ({ data }) => {
 
       {/* ── CARD 4: RECOMENDACIONES Y PRIORIDADES ── */}
       <div className="db-card" style={{ 
-        padding: '25px', 
+        padding: '24px', 
         display: 'flex', 
         flexDirection: 'column',
         background: 'rgba(255,255,255,0.02)',
@@ -254,7 +272,7 @@ const MobilityDashboard = ({ data }) => {
         borderRadius: '24px',
         border: '1px solid rgba(255,255,255,0.08)',
         boxShadow: '0 20px 50px rgba(0,0,0,0.2)',
-        minHeight: '400px'
+        minHeight: '100%'
       }}>
         <h2 style={{ fontSize: '19px', fontWeight: 800, marginBottom: '25px', color: '#fff' }}>
           Recomendaciones y Prioridades de Intervención
@@ -262,7 +280,7 @@ const MobilityDashboard = ({ data }) => {
 
         {loadingAnalysis ? (
           <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.5)', fontSize: '13px' }}>
-            <div className="pulse" style={{ marginRight: '10px' }}>🤖</div> Consultando modelos de IA...
+            <div className="pulse" style={{ marginRight: '10px' }}>🤖</div> Consultando información de movilidad...
           </div>
         ) : (
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '20px' }}>

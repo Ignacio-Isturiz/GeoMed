@@ -7,16 +7,12 @@ from app.core.dependencies import get_current_user
 from app.models.user import User
 import logging
 import httpx
-from typing import Optional, List
-
-from app.services.llm_mock import LLMMockService
+from typing import Optional, List, Dict
+from app.services.llm_services import MobilityAIEngine, LLMMockService
 from app.services.simmtraffic_llm_service import security_chat_real
-# from app.services.entrepreneur_llm_service import entrepreneur_chat_real
-# Placeholder for entrepreneur_chat_real to avoid import error
 async def entrepreneur_chat_real(*args, **kwargs):
-    from app.services.llm_mock import LLMMockService
-    mock = LLMMockService()
-    return mock.simulate_entrepreneur_chat(kwargs.get('prompt', ''))
+    service = LLMMockService()
+    return service.simulate_entrepreneur_chat(kwargs.get('prompt', ''))
 from app.services.movilidad_bill_analysis_service import analyze_bill
 from app.services.conversation_service import ConversationService
 from app.core.config import get_settings
@@ -28,7 +24,7 @@ router = APIRouter(prefix="/api/llm", tags=["llm"])
 
 class SimulateChatRequest(BaseModel):
     prompt: str = Field(min_length=3, max_length=3000)
-    model: str = Field(default="gpt-4o-mini-sim")
+    model: str = Field(default="auto")
 
 
 class SimulateRecommendationRequest(BaseModel):
@@ -142,6 +138,8 @@ async def security_chat(payload: SecurityChatRequest):
             provider=settings.LLM_PROVIDER,
             openai_key=settings.OPENAI_API_KEY,
             gemini_key=settings.GEMINI_API_KEY,
+            anthropic_key=settings.ANTHROPIC_API_KEY,
+            ai_api_key=settings.AI_API_KEY,
         )
         return {"success": True, "data": result}
     except Exception as e:
@@ -339,3 +337,11 @@ async def delete_conversation(
         logger.error(f"Error deleting conversation: {e}")
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Error deleting conversation")
 
+ai_engine = MobilityAIEngine()
+
+@router.post("/ask")
+async def chat_mobility(request: Dict[str, str]):
+    # El frontend envía {"prompt": "donde hay mas trafico?"}
+    prompt = request.get("prompt")
+    response = ai_engine.ask_assistant(prompt)
+    return response

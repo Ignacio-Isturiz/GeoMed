@@ -27,7 +27,15 @@ const HeatmapComunas = ({ data = [] }) => {
     // Buscar match en la data de presión
     const match = data.find(c => {
       const normData = norm(c.nombre_comuna);
-      return normData === normGeo || normData.includes(normGeo) || normGeo.includes(normData);
+      // Estrategia 1: Match exacto
+      if (normData === normGeo) return true;
+      // Estrategia 2: Uno contiene al otro
+      if (normData.includes(normGeo) || normGeo.includes(normData)) return true;
+      // Estrategia 3: Palabras compartidas (para "Comunas" vs nombres)
+      const palabrasData = normData.split(/\s+/).filter(w => w.length > 3);
+      const palabrasGeo = normGeo.split(/\s+/).filter(w => w.length > 3);
+      const coincidencias = palabrasData.filter(w => palabrasGeo.includes(w));
+      return coincidencias.length > 0;
     });
 
     if (!match) {
@@ -40,14 +48,14 @@ const HeatmapComunas = ({ data = [] }) => {
     }
 
     const ratio = match.intensidad / maxIntensidad;
-    // Escala de color: rojos (fuerte, medio, suave)
+    // Escala de color: rojo oscuro > 80%, rojo medio > 50%, rosa
     const color = ratio > 0.8 ? '#be123c' : (ratio > 0.5 ? '#f43f5e' : '#fda4af');
 
     return {
       fillColor: color,
       fillOpacity: 0.4 + (ratio * 0.4),
       color: '#fff',
-      weight: 1.5,
+      weight: ratio > 0.7 ? 2 : 1.5,
     };
   };
 
@@ -90,6 +98,7 @@ const HeatmapComunas = ({ data = [] }) => {
           }}
         />
       )}
+
     </MapContainer>
   );
 };

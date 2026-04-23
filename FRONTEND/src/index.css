@@ -9,11 +9,11 @@
 :root{
   min-height: 100vh;
   overflow-x: hidden;
-  --ink:#050810;
-  --ink2:#070c18;
-  --ink3:#0d1525;
-  --card:rgba(10,18,38,0.75);
-  --card2:rgba(14,24,46,0.9);
+  --ink:#0F172A;
+  --ink2:#11192e;
+  --ink3:#1e293b;
+  --card:#1F2937;
+  --card2:rgba(31, 41, 55, 0.95);
   --glass:rgba(255,255,255,0.04);
   --glass2:rgba(255,255,255,0.07);
   --bdr:rgba(0,200,150,0.16);

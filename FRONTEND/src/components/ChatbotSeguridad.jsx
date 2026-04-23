@@ -5,10 +5,10 @@ import { llmService } from '@/services/llmService';
 import MapaLeafletComunas from '@/components/MapaLeafletComunas';
 
 const SUGERENCIAS = [
-  '¿Cuál es el barrio más seguro para vivir?',
-  'Quiero ir a trotar por La Candelaria, ¿es seguro?',
-  'Compara la seguridad entre Laureles y Buenos Aires',
-  '¿Cuáles son las zonas más peligrosas de Medellín?',
+  '¿Cuáles son los 10 corredores más críticos entre semana?',
+  '¿Qué comunas concentran más presión vehicular en hora pico?',
+  '¿Dónde hay baja velocidad y alto flujo al mismo tiempo?',
+  '¿Qué zonas deberían priorizar rutas alternas?',
 ];
 
 function Mensaje({ msg }) {
@@ -40,7 +40,7 @@ export default function ChatbotSeguridad() {
   const [messages, setMessages] = useState([
     {
       role: 'bot',
-      text: '¡Hola! Soy tu asistente de seguridad de Medellín. Pregúntame sobre cualquier barrio o comuna y te digo qué tan seguro es según los datos más recientes. 🛡️',
+      text: '¡Hola! Soy tu asistente de movilidad de Medellín. Pregúntame sobre corredores, comunas o horas pico y te doy análisis con base en los datos más recientes. 🚦',
     },
   ]);
   const [input, setInput] = useState('');
@@ -155,7 +155,7 @@ export default function ChatbotSeguridad() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Pregunta sobre un barrio o zona..."
+          placeholder="Pregunta sobre un corredor, comuna u hora pico..."
           disabled={loading}
           style={{
             flex: 1,
@@ -174,7 +174,7 @@ export default function ChatbotSeguridad() {
           style={{
             padding: '0.6rem 1.1rem',
             borderRadius: '0.5rem',
-            backgroundColor: loading || !input.trim() ? '#475569' : '#ef4444',
+            backgroundColor: loading || !input.trim() ? '#475569' : '#0f766e',
             color: 'white',
             border: 'none',
             cursor: loading || !input.trim() ? 'not-allowed' : 'pointer',

@@ -28,10 +28,10 @@ app = FastAPI(
 )
 
 # Configurar CORS para permitir requests del frontend (DEBE ser ANTES de los routers)
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[
-        settings.FRONTEND_URL,
+# En desarrollo, permitir localhost; en producción, solo FRONTEND_URL
+allowed_origins = [settings.FRONTEND_URL]
+if settings.DEBUG:
+    allowed_origins.extend([
         "http://localhost:3000",
         "http://127.0.0.1:3000",
         "http://localhost:5173",
@@ -42,7 +42,11 @@ app.add_middleware(
         "http://127.0.0.1:5175",
         "http://localhost:3001",
         "http://127.0.0.1:3001",
-    ],
+    ])
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -110,7 +114,7 @@ if __name__ == "__main__":
     import uvicorn
     uvicorn.run(
         "app.main:app",
-        host="0.0.0.0",
+        host="127.0.0.1",
         port=8000,
         reload=settings.DEBUG
     )
