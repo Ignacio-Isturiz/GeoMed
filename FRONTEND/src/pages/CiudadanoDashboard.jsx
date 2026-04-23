@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import authService from '@/services/authService';
-import newsService from '@/services/newsService';
 import mobilityService from '@/services/mobilityService';
 
 import DashboardLayout, { Icons } from '@/components/dashboard/DashboardLayout';
@@ -25,24 +23,15 @@ const CAT_OPTIONS = [
 
 export default function CiudadanoDashboard() {
   const navigate = useNavigate();
-  const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const user = { full_name: 'Invitado GEOMED' };
   const [mod, setMod] = useState('analisis');
 
   const [comunaData, setComunaData] = useState([]);
   const [corridors, setCorridors] = useState([]);
-  const [recs, setRecs] = useState([]);
   const [topNoticias, setTopNoticias] = useState([]);
   const [hourData, setHourData] = useState([]);
   const [filterType, setFilterType] = useState('all');
   const [dashboardData, setDashboardData] = useState(null);
-
-  useEffect(() => {
-    authService.getMe()
-      .then(setUser)
-      .catch(() => navigate('/login'))
-      .finally(() => setLoading(false));
-  }, [navigate]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -58,23 +47,15 @@ export default function CiudadanoDashboard() {
       loadSection(mobilityService.getHourSummary, setHourData);
       loadSection(mobilityService.getComunaSummary, setComunaData);
       loadSection(mobilityService.getCriticalCorridors, setCorridors);
-      loadSection(mobilityService.getRecommendations, setRecs);
       loadSection(mobilityService.getDashboardSummary, setDashboardData);
-      // loadSection(() => newsService.getMedellinNews(6, 'movilidad'), setTopNoticias);
     };
 
     fetchData();
   }, []);
 
   const handleLogout = () => {
-    authService.logout();
-    navigate('/login');
+    navigate('/');
   };
-
-  if (loading) return <div className="db-loading"><div className="db-spinner" />Analizando movilidad...</div>;
-  if (!user) return null;
-
-  const firstName = user.full_name?.split(' ')[0] || 'Usuario';
 
   const META = {
     analisis: { accent: 'Análisis', title: 'Estratégico', subtitle: 'Visión de alto nivel y detección de anomalías' },

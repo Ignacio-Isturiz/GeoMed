@@ -189,11 +189,11 @@ export default function DashboardLayout({
             ))}
           </nav>
 
-          {/* Footer: logout */}
+          {/* Footer: volver al inicio */}
           <div className="db-sidebar-footer">
-            <button className="db-logout-btn" onClick={onLogout} aria-label="Cerrar sesión">
+            <button className="db-logout-btn" onClick={onLogout} aria-label="Volver al inicio">
               <span className="db-nav-icon"><Icons.LogOut /></span>
-              <span className="db-nav-label">Cerrar Sesión</span>
+              <span className="db-nav-label">Volver al Inicio</span>
             </button>
           </div>
         </aside>
