@@ -19,28 +19,28 @@ const SplineLoader = () => (
 
 const FAQ_ITEMS = [
   {
-    q: '¿Qué hace esta plataforma?',
-    a: 'Es una herramienta que ayuda a tomar decisiones usando datos de Medellín para mejorar la vida en la ciudad.'
+    q: '¿Cómo puedo evitar congestión en Medellín?',
+    a: 'Consulta GEOMED para obtener recomendaciones en tiempo real sobre corredores alternativos, horarios de menor tráfico y tiempo estimado de viaje según la hora del día.'
   },
   {
-    q: '¿Qué tipo de datos utiliza?',
-    a: 'Utiliza datos de seguridad, servicios públicos y actividad económica para analizar qué tan viable es una zona y qué decisiones se pueden tomar en ella.'
+    q: '¿Qué fuentes de datos utiliza GEOMED?',
+    a: 'Integra datos del SIMM Traffic (velocidad, volumen vehicular), Aforos de transporte, ciclorrutas disponibles, proyecciones de movilidad y patrones de flujo en vías principales.'
   },
   {
-    q: '¿Cómo ayuda a ciudadanos?',
-    a: 'Sugiere decisiones como a dónde ir o qué hacer, teniendo en cuenta factores como seguridad y condiciones del entorno.'
+    q: '¿Cómo el análisis de movilidad mejora mi transporte diario?',
+    a: 'Identifica zonas críticas, sugiere rutas alternas, optimiza horarios de viaje y predice congestión, ahorrándote tiempo y combustible en tu desplazamiento.'
   },
   {
-    q: '¿Qué hace diferente esta solución?',
-    a: 'No solo muestra datos, los interpreta y los convierte en recomendaciones claras para personas que no saben analizarlos.'
+    q: '¿Qué diferencia tiene GEOMED de otras soluciones?',
+    a: 'No solo muestra congestión: interpreta datos de movilidad y genera recomendaciones inteligentes basadas en IA para cada usuario según su ubicación y hora.'
   },
   {
-    q: '¿Se pueden encontrar oportunidades nuevas?',
-    a: 'Sí. El sistema identifica zonas donde hay actividad pero falta cierto tipo de negocio, mostrando oportunidades que no son evidentes.'
+    q: '¿Puedo planificar rutas de cicloruta en GEOMED?',
+    a: 'Sí. Visualiza todas las ciclorrutas disponibles, consulta sobre seguridad de rutas, duración estimada y lugares de parada cercanos en tiempo real.'
   },
   {
-    q: '¿Es viable en la vida real?',
-    a: 'Sí. Funciona con datos abiertos y puede implementarse como una herramienta accesible para apoyar decisiones reales en la ciudad.'
+    q: '¿Es GEOMED accesible para todos los ciudadanos?',
+    a: 'Sí. Funciona con datos públicos, es accesible vía web, y está diseñado para apoyar decisiones de movilidad reales en Medellín para todas las personas.'
   },
 ];
 

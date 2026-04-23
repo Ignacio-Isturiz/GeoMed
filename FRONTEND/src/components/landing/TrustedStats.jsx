@@ -52,9 +52,18 @@ export function StatsStrip() {
       <div className="w">
         <div style={{maxWidth:'840px',margin:'0 auto'}}>
           <div className="stats-strip">
-            <div className="st-it"><div className="st-n" id="s1">0</div><div className="st-l">Tasa de criminalidad en Medellín (casos por cada 1.000 hab.)</div></div>
-            <div className="st-it"><div className="st-n" id="s2">0</div><div className="st-l">Casos en las 3 comunas más afectadas</div></div>
-            <div className="st-it"><div className="st-n" id="s3">0</div><div className="st-l">Casos reportados en La Candelaria</div></div>
+            <div className="st-it">
+              <div className="st-n" id="s1">12.4k</div>
+              <div className="st-l">Volumen promedio de tráfico vehicular (vehículos/hora)</div>
+            </div>
+            <div className="st-it">
+              <div className="st-n" id="s2">45</div>
+              <div className="st-l">Corredores críticos monitoreados en tiempo real</div>
+            </div>
+            <div className="st-it">
+              <div className="st-n" id="s3">28</div>
+              <div className="st-l">Velocidad promedio en vías principales (km/h)</div>
+            </div>
           </div>
         </div>
       </div>

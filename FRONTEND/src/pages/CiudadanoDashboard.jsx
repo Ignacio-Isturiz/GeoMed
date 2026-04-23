@@ -1,5 +1,4 @@
-﻿import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import authService from '@/services/authService';
 import mobilityService from '@/services/mobilityService';
 
@@ -10,8 +9,7 @@ import ChatWidget from '@/components/ChatWidget';
 
 const NAV = [
   { id: 'analisis', label: 'Análisis Estratégico', icon: <Icons.Chart /> },
-  { id: 'inicio', label: 'Movilidad', icon: <Icons.Dashboard /> },
-  { id: 'noticias', label: 'Noticias', icon: <Icons.News /> },
+  { id: 'inicio', label: 'Geovisor 3D', icon: <Icons.Dashboard /> },
 ];
 
 const CAT_OPTIONS = [
@@ -24,7 +22,6 @@ const CAT_OPTIONS = [
 ];
 
 export default function CiudadanoDashboard() {
-  const navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [authError, setAuthError] = useState('');
@@ -33,7 +30,6 @@ export default function CiudadanoDashboard() {
   const [comunaData, setComunaData] = useState([]);
   const [corridors, setCorridors] = useState([]);
   const [recs, setRecs] = useState([]);
-  const [topNoticias, setTopNoticias] = useState([]);
   const [hourData, setHourData] = useState([]);
   const [filterType, setFilterType] = useState('all');
   const [dashboardData, setDashboardData] = useState(null);
@@ -41,21 +37,29 @@ export default function CiudadanoDashboard() {
   const [dashboardError, setDashboardError] = useState('');
   const [inicioLoaded, setInicioLoaded] = useState(false);
 
+  const guestUser = { full_name: 'Invitado GEOMED' };
+
   useEffect(() => {
+    // El dashboard es público: si no hay token, seguimos como invitado.
+    if (!authService.isAuthenticated()) {
+      setUser(guestUser);
+      setAuthError('');
+      setLoading(false);
+      return;
+    }
+
     authService.getMe()
       .then((u) => {
         setUser(u);
         setAuthError('');
       })
-      .catch((err) => {
-        if (err?.message?.includes('No autorizado')) {
-          navigate('/login');
-          return;
-        }
-        setAuthError('No se pudo validar la sesión por un problema de red. Reintenta en unos segundos.');
+      .catch(() => {
+        // Si falla auth en entorno Docker o sesión vencida, no bloqueamos dashboard público.
+        setUser(guestUser);
+        setAuthError('');
       })
       .finally(() => setLoading(false));
-  }, [navigate]);
+  }, []);
 
   useEffect(() => {
     if (!user) return;
@@ -123,7 +127,6 @@ export default function CiudadanoDashboard() {
   const META = {
     analisis: { accent: 'Análisis', title: 'Estratégico', subtitle: 'Visión de alto nivel y detección de anomalías' },
     inicio: { accent: 'Geovisor de', title: 'Movilidad', subtitle: 'Exploración de tráfico en tiempo real' },
-    noticias: { accent: '', title: 'Noticias', subtitle: 'Actualidad de Medellín y Antioquia' },
   };
 
   const m = META[mod];
@@ -172,20 +175,7 @@ export default function CiudadanoDashboard() {
     </div>
   );
 
-  const noticiasLeft = (
-    <div className="db-card" style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: 0 }}>
-      <div style={{ padding: '18px' }}>
-        <div className="db-card-title">Noticias</div>
-      </div>
-      <div style={{ flex: 1, overflowY: 'auto', padding: '0 18px' }}>
-        {topNoticias?.map?.((art, i) => (
-          <a key={i} href={art.url} target="_blank" rel="noreferrer" className="db-news-item">
-            <div className="db-news-title">{art.title}</div>
-          </a>
-        ))}
-      </div>
-    </div>
-  );
+
 
   return (
     <>
@@ -199,7 +189,7 @@ export default function CiudadanoDashboard() {
         pageTitle={m.title}
         pageSubtitle={m.subtitle}
         breadcrumb={`Ciudadano / ${m.title}`}
-        colL={mod === 'inicio' ? inicioLeft : (mod === 'analisis' ? analisisLeft : noticiasLeft)}
+        colL={mod === 'inicio' ? inicioLeft : analisisLeft}
         colR={null}
       />
       {/* GeoBot — chatbot flotante, se adapta a la sección activa */}

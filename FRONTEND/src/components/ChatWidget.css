@@ -11,14 +11,14 @@
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #2ecc71, #1a9e4e);
+  background: linear-gradient(135deg, #00C896, #239677);
   color: #fff;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 18px rgba(46, 204, 113, 0.45);
+  box-shadow: 0 4px 18px rgba(0, 200, 150, 0.45);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   z-index: 1200;
   outline: none;
@@ -26,7 +26,7 @@
 
 .cw-fab:hover {
   transform: translateY(-2px) scale(1.06);
-  box-shadow: 0 8px 28px rgba(46, 204, 113, 0.55);
+  box-shadow: 0 8px 28px rgba(0, 200, 150, 0.55);
 }
 
 .cw-fab--open {
@@ -38,7 +38,7 @@
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  background: rgba(46, 204, 113, 0.35);
+  background: rgba(0, 200, 150, 0.35);
   animation: cw-pulse 2.4s ease-out infinite;
   pointer-events: none;
 }
@@ -65,7 +65,7 @@
   border-radius: 18px;
   box-shadow:
     0 24px 64px rgba(0, 0, 0, 0.5),
-    0 0 0 1px rgba(46, 204, 113, 0.12);
+    0 0 0 1px rgba(0, 200, 150, 0.12);
   z-index: 1199;
   overflow: hidden;
   animation: cw-in 0.24s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -83,7 +83,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 13px 14px;
-  background: linear-gradient(135deg, rgba(26, 94, 52, 0.9), rgba(39, 174, 96, 0.7));
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(31, 41, 55, 0.9));
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   flex-shrink: 0;
 }
@@ -183,7 +183,7 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #27ae60, #1a5c34);
+  background: linear-gradient(135deg, #00C896, #239677);
   color: #fff;
   display: flex;
   align-items: center;
@@ -206,7 +206,7 @@
 }
 
 .cw-msg--user .cw-bubble {
-  background: linear-gradient(135deg, #27ae60, #1e8449);
+  background: linear-gradient(135deg, #00C896, #239677);
   color: #fff;
   border-color: transparent;
 }
@@ -229,7 +229,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #2ecc71;
+  background: #00C896;
   animation: cw-bounce 1.2s ease-in-out infinite;
 }
 .cw-dot:nth-child(2) { animation-delay: 0.2s; }
@@ -252,9 +252,9 @@
   text-align: left;
   padding: 7px 11px;
   border-radius: 9px;
-  background: rgba(46, 204, 113, 0.08);
-  border: 1px solid rgba(46, 204, 113, 0.22);
-  color: #6ee7b7;
+  background: rgba(0, 200, 150, 0.08);
+  border: 1px solid rgba(0, 200, 150, 0.22);
+  color: #00C896;
   font-size: 12px;
   cursor: pointer;
   transition: all 0.14s ease;
@@ -262,8 +262,8 @@
 }
 
 .cw-chip:hover {
-  background: rgba(46, 204, 113, 0.16);
-  border-color: rgba(46, 204, 113, 0.45);
+  background: rgba(0, 200, 150, 0.16);
+  border-color: rgba(0, 200, 150, 0.45);
   transform: translateX(2px);
 }
 
@@ -311,8 +311,8 @@
 .cw-input::placeholder { color: rgba(255,255,255,0.3); font-size: 12.5px; }
 
 .cw-input:focus {
-  border-color: rgba(46, 204, 113, 0.55);
-  box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.1);
+  border-color: rgba(0, 200, 150, 0.55);
+  box-shadow: 0 0 0 3px rgba(0, 200, 150, 0.1);
 }
 
 .cw-input:disabled {
@@ -324,7 +324,7 @@
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #2ecc71, #1a9e4e);
+  background: linear-gradient(135deg, #00C896, #239677);
   color: #fff;
   border: none;
   cursor: pointer;

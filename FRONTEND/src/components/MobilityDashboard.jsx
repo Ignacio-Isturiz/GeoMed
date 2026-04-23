@@ -93,17 +93,19 @@ const MobilityDashboard = ({ data }) => {
     <div style={{
       display: 'grid',
       gridTemplateColumns: 'repeat(2, 1fr)',
-      gridTemplateRows: 'repeat(2, 450px)',
-      gap: '20px',
-      marginBottom: '25px'
+      gridTemplateRows: 'repeat(2, 1fr)',
+      gap: '24px',
+      height: '100%',
+      padding: '4px 4px 12px 4px',
+      boxSizing: 'border-box'
     }}>
 
       {/* ── CARD 1: CORREDORES CRÍTICOS ── */}
-      <div className="db-card" style={{ padding: '25px', position: 'relative', overflow: 'hidden', display: 'flex', gap: '18px' }}>
+      <div className="db-card" style={{ padding: '24px', position: 'relative', overflow: 'hidden', display: 'flex', gap: '18px' }}>
         <div style={{ flex: 1 }}>
           <h2 style={{ fontSize: '18px', fontWeight: 700, marginBottom: '20px' }}>Corredores más críticos en semana</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            {top_corredores.slice(0, 10).map((c, i) => (
+            {top_corredores.slice(0, 7).map((c, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '140px' }}>
                   <span style={{
@@ -131,12 +133,12 @@ const MobilityDashboard = ({ data }) => {
           </div>
         </div>
         <div style={{ flex: 1, minWidth: 0, height: 280, alignSelf: 'center', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 2px 12px rgba(0,0,0,0.10)' }}>
-          <CorredoresMap data={top_corredores.slice(0, 10).map((c, i) => ({ ...c, displayColor: CORREDOR_COLORS[i % CORREDOR_COLORS.length] }))} />
+          <CorredoresMap data={top_corredores.slice(0, 7).map((c, i) => ({ ...c, displayColor: CORREDOR_COLORS[i % CORREDOR_COLORS.length] }))} />
         </div>
       </div>
 
       {/* ── CARD 2: COMUNAS PRESIÓN VEHICULAR ── */}
-      <div className="db-card" style={{ padding: '25px', display: 'flex', flexDirection: 'column', gap: '15px' }}>
+      <div className="db-card" style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '15px' }}>
         <h2 style={{ fontSize: '18px', fontWeight: 700, margin: 0 }}>Comunas más presión vehicular en hora pico</h2>
         <div style={{ flex: 1, display: 'flex', gap: '20px' }}>
           <div style={{ flex: 1.5, borderRadius: '12px', overflow: 'hidden', position: 'relative', minWidth: 0, height: 280, boxShadow: '0 2px 12px rgba(0,0,0,0.10)' }}>
@@ -159,7 +161,7 @@ const MobilityDashboard = ({ data }) => {
       </div>
 
       {/* ── CARD 3: EXPLORADOR DE ANOMALÍAS DINÁMICO ── */}
-      <div className="db-card" style={{ padding: '25px', display: 'flex', flexDirection: 'column', background: 'rgba(255,255,255,0.02)', backdropFilter: 'blur(20px)', borderRadius: '20px' }}>
+      <div className="db-card" style={{ padding: '24px', display: 'flex', flexDirection: 'column', background: 'rgba(255,255,255,0.02)', backdropFilter: 'blur(20px)', borderRadius: '20px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
           <div>
             <h2 style={{ fontSize: '18px', fontWeight: 700, margin: 0 }}>Explorador de Anomalías</h2>
@@ -262,7 +264,7 @@ const MobilityDashboard = ({ data }) => {
 
       {/* ── CARD 4: RECOMENDACIONES Y PRIORIDADES ── */}
       <div className="db-card" style={{ 
-        padding: '25px', 
+        padding: '24px', 
         display: 'flex', 
         flexDirection: 'column',
         background: 'rgba(255,255,255,0.02)',
@@ -270,7 +272,7 @@ const MobilityDashboard = ({ data }) => {
         borderRadius: '24px',
         border: '1px solid rgba(255,255,255,0.08)',
         boxShadow: '0 20px 50px rgba(0,0,0,0.2)',
-        minHeight: '400px'
+        minHeight: '100%'
       }}>
         <h2 style={{ fontSize: '19px', fontWeight: 800, marginBottom: '25px', color: '#fff' }}>
           Recomendaciones y Prioridades de Intervención
