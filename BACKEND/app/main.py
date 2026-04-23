@@ -9,7 +9,7 @@ import logging
 
 from app.core.config import get_settings
 from app.core.database import init_db
-from app.routers import auth, movilidad_datasets, news, llm, mobility
+from app.routers import auth, movilidad_datasets, news, llm, mobility, movilidad_analisis
 
 # Configurar logging
 logging.basicConfig(level=logging.INFO)
@@ -33,14 +33,18 @@ app.add_middleware(
     allow_origins=[
         settings.FRONTEND_URL,
         "http://localhost:3000",
+        "http://127.0.0.1:3000",
         "http://localhost:5173",
         "http://127.0.0.1:5173",
         "http://localhost:5174",
         "http://127.0.0.1:5174",
-        "*"
+        "http://localhost:5175",
+        "http://127.0.0.1:5175",
+        "http://localhost:3001",
+        "http://127.0.0.1:3001",
     ],
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+    allow_methods=["*"],
     allow_headers=["*"],
     expose_headers=["*"],
 )
@@ -61,6 +65,7 @@ app.include_router(news.router)
 app.include_router(llm.router)
 app.include_router(mobility.router)
 app.include_router(mobility.router_es)
+app.include_router(movilidad_analisis.router)
 
 
 # Health check

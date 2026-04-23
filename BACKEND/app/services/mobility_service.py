@@ -99,7 +99,12 @@ class MobilityService:
 
                 logger.info(f"✅ Archivo cargado. Filas iniciales: {len(self._cached_data)}")
                 
-                # Basic cleaning
+                # Limpieza básica y normalización de strings
+                if 'corredor' in self._cached_data.columns:
+                    self._cached_data['corredor'] = self._cached_data['corredor'].astype(str).str.strip()
+                if 'nombre_comuna' in self._cached_data.columns:
+                    self._cached_data['nombre_comuna'] = self._cached_data['nombre_comuna'].astype(str).str.strip()
+
                 for col in ['velocidad', 'intensidad', 'hora', 'latitud', 'longitud']:
                     if col in self._cached_data.columns:
                         self._cached_data[col] = pd.to_numeric(self._cached_data[col], errors='coerce')
